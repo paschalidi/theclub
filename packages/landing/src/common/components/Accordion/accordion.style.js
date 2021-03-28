@@ -1,12 +1,12 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes } from "styled-components";
 import {
   AccordionItemHeading,
   AccordionItemButton,
   Accordion,
   AccordionItem,
   AccordionItemPanel,
-} from 'react-accessible-accordion';
-import 'react-accessible-accordion/dist/fancy-example.css';
+} from "react-accessible-accordion";
+import "react-accessible-accordion/dist/fancy-example.css";
 
 const fadeIn = keyframes`
   0% {
@@ -33,7 +33,7 @@ export const AccordionTitleWrapper = styled(AccordionItemHeading)`
     align-items: center;
     cursor: pointer;
     position: relative;
-    &[aria-expanded='false'] {
+    &[aria-expanded="false"] {
       ${OpenIcon} {
         opacity: 0;
       }
@@ -66,6 +66,7 @@ export const IconWrapper = styled.div`
 
   ${OpenIcon},
   ${CloseIcon} {
+    color: #EE2541;
     position: absolute;
     top: 50%;
     right: 0;

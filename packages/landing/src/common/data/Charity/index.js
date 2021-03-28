@@ -65,6 +65,7 @@ import bannerSlide1 from 'common/assets/image/charity/banner/banner-1.jpeg';
 import bannerSlide2 from 'common/assets/image/charity/banner/banner-2.jpeg';
 import bannerSlide3 from 'common/assets/image/charity/banner/banner-3.jpeg';
 import bannerSlide4 from 'common/assets/image/charity/banner/banner-4.jpeg';
+import bannerSlide5 from 'common/assets/image/charity/banner/banner-5.jpeg';
 
 export const bannerSlides = [
   {
@@ -87,6 +88,10 @@ export const bannerSlides = [
     id: 4,
     thumb_url: bannerSlide4,
   },
+  {
+    id: 5,
+    thumb_url: bannerSlide5,
+  }
 ];
 
 /* ------------------------------------ */
@@ -250,8 +255,6 @@ import checkIn from 'common/assets/image/charity/check-in.svg';
 
 export const workData = {
   title: 'Πως δουλεύει',
-  slogan:
-    'Water is a non-profit organization bringing clean and safe drinking water to people in developing countries',
   features: [
     {
       id: 1,
@@ -310,54 +313,64 @@ export const milestoneData = {
 /* ------------------------------------ */
 // Humanity block data
 /* ------------------------------------ */
-import humanityGlob from 'common/assets/image/charity/humanity-glob.png';
+import humanityGlob from 'common/assets/image/charity/section-partner.jpeg';
 
 export const humanityData = {
   image: humanityGlob,
-  slogan: 'ONLINE SOCIAL FUNDRAISING',
-  title: 'We need your help to promotr humanity',
+  slogan: 'Συνεγραζομαστε για την επιτυχια',
+  title: 'Γίνε συνέταιρος!',
   text:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.',
+    'Όταν συνεργαζόμαστε με χώρους, κερδίζουν και οι δύο πλευρές. Σας ενδιαφέρει να γίνετε ένας από τους συνεργάτες μας;',
   lists: [
     {
       id: 1,
-      text: 'Let them drink pure',
+      text: '1. Επιπρόσθετο εισόδημα',
     },
     {
       id: 2,
-      text: 'Ensure them medicare',
+      text: '2. Νέοι πελάτες',
     },
     {
       id: 3,
-      text: 'create opportunity of education',
+      text: '3. Δωρεάν marketing',
     },
+    {
+      id: 4,
+      text: '4. Χωρίς κόστος',
+    },
+    {
+      id: 5,
+      text: '5. Ελκιστικά οφέλοι',
+    }
   ],
 };
 
 /* ------------------------------------ */
 // Promotion block data
 /* ------------------------------------ */
-import happyKids from 'common/assets/image/charity/promotion.svg';
+import happyKids from 'common/assets/image/charity/section-corporate.jpeg';
 
 export const promotionData = {
-  slogan: 'GET YOUR COMMUNITY ON BOARD',
-  title: 'We are creating a world with basic safety for all.',
+  slogan: 'Προγραμμα Εταιρικης Ευεξιας',
+  title: 'Χαρήστε στους υπαλλήλους σας φυσική κατάσταση και ευεξία',
   text1:
-    'We exist to permanently end violent conict and exploitation facing our world’s most isolated and unprotected communities.',
-  text2:
-    'We partner with local visionaries in volatile conict zones to build community-run initiatives and drive global policy change to end violent conict, save lives, and give communities the safety they deserve.',
+    'Τώρα είναι η τέλεια στιγμή για να επενδύσετε στους υπαλλήλους σας.',
   lists: [
     {
       id: 1,
-      text: 'Let them drink pure',
+      text: '1. Χωρίς ετήσιες συμβάσεις για υπαλλήλους - ακυρώστε ανά πάσα στιγμή',
     },
     {
       id: 2,
-      text: 'Ensure them medicare',
+      text: '2. Αυξήστε την παραγωγικότητα και το ομαδικό πνεύμα',
     },
     {
       id: 3,
-      text: 'create opportunity of education',
+      text: '3. Βελτιώστε την υγία των υπαλλήλων σας',
+    },
+    {
+      id: 4,
+      text: '4. Αυξηστε την αφοσίωση των εργαζομένων σας',
     },
   ],
   image: happyKids,
@@ -629,3 +642,35 @@ export const socialLinks = [
     link: '4#',
   },
 ];
+
+export const faq = {
+  slogan: 'FREQUENT QUESTION',
+  title: 'Do you have any question',
+  faqs: [
+    {
+      id: 1,
+      question: 'How to contact with riders emergency?',
+      answer:
+        'Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home. Your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news.',
+    },
+    {
+      id: 2,
+      question: 'App installation failed, how to update system information?',
+      answer:
+        'Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home. Your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news.',
+    },
+    {
+      id: 3,
+      question: 'Website reponse taking time, how to improve?',
+      answer:
+        'Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home. Your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news.',
+    },
+    {
+      id: 4,
+      question: 'New update fixed all bug and issues',
+      answer:
+        'Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home. Your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news.',
+    },
+  ],
+};
+

@@ -39,7 +39,7 @@ const BannerSection = () => {
           <Link href="#1">
             <a className="learn__more-btn">
               <span className="hyphen" />
-              <span className="btn_text">Κάνε εγγραγή τώρα</span>
+              <span className="btn_text">Κάνε εγγραφή τώρα.</span>
             </a>
           </Link>
         </TextArea>

@@ -336,6 +336,47 @@ const CharityWrapper = styled.div`
   }
 `;
 
+export const SectionHeader = styled.header`
+  max-width: 352px;
+  width: 100%;
+  margin: 0 auto 58px;
+  text-align: center;
+  @media only screen and (max-width: 991px) {
+    margin-bottom: 50px;
+  }
+  h5 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 12px;
+    letter-spacing: 1.5px;
+    color: ${themeGet('colors.secondary2', '#EE2541')};
+    text-transform: uppercase;
+    @media only screen and (max-width: 991px) {
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+  }
+  h2 {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    color: ${themeGet('colors.headingColor', '#0F2137')};
+    margin: 0;
+    letter-spacing: -1px;
+    @media only screen and (max-width: 1366px) {
+      font-size: 28px;
+      letter-spacing: -0.7px;
+    }
+    @media only screen and (max-width: 991px) {
+      font-size: 26px;
+      line-height: 38px;
+      letter-spacing: -0.5px;
+    }
+  }
+`;
+
+
 const ContentWrapper = styled.div`
   flex: 1 0 auto;
   width: 100%;

@@ -35,7 +35,7 @@ const PromotionBlock = ({ row, col }) => {
               <Link href="#1">
                 <a className="learn__more-btn">
                   <span className="hyphen" />
-                  <span className="btn_text">Learn More </span>
+                  <span className="btn_text">Μάθετε περισσότερα.</span>
                 </a>
               </Link>
             </ContentWrapper>
