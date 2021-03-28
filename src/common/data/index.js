@@ -69,6 +69,10 @@ import bannerSlide5 from 'common/assets/image/charity/banner/banner-5.jpeg';
 
 export const bannerSlides = [
   {
+    id: 4,
+    thumb_url: bannerSlide1,
+  },
+  {
     id: 0,
     thumb_url: bannerSlide0,
   },
@@ -83,10 +87,6 @@ export const bannerSlides = [
   {
     id: 3,
     thumb_url: bannerSlide2,
-  },
-  {
-    id: 4,
-    thumb_url: bannerSlide1,
   },
   {
     id: 5,

@@ -10,7 +10,6 @@ import DrawerSection from '../containers/DrawerSection';
 import BannerSection from '../containers/BannerSection';
 import FeatureSection from '../containers/FeatureSection';
 import WorkSection from '../containers/WorkSection';
-import PromotionBlock from '../containers/PromotionBlock';
 import BranchSectionLeft from '../containers/BranchSectionLeft';
 import BranchSectionRight from '../containers/BranchSectionRight';
 import ClientBlock from '../containers/ClientBlock';
