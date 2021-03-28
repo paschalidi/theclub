@@ -5,16 +5,16 @@ import patter2 from 'common/assets/image/charity/branch/highlight-pattern2.svg';
 
 const SectionWrapper = styled.section`
   width: 100%;
-  margin: 81px 0;
+  margin: 81px 0 0 0 ;
   background-color: ${themeGet('colors.heading', '#060F1E')};
   @media only screen and (max-width: 1440px) {
     margin: 70px 0;
   }
   @media only screen and (max-width: 1360px) {
-    margin: 50px 0;
+    margin: 50px 0 0 0;
   }
   @media only screen and (max-width: 991px) {
-    margin: 40px 0;
+    margin: 40px 0 0 0;
   }
 
   .rq_tab {
@@ -230,11 +230,11 @@ export const ContentWrapper = styled.div`
     p {
       font-size: 18px;
       line-height: 30px;
-      margin-bottom: 30px;
+      margin-bottom: 8px;
       color: ${themeGet('colors.text', '#294859')};
       @media only screen and (max-width: 1440px) {
         font-size: 16px;
-        margin-bottom: 40px;
+        margin-bottom: 8px;
       }
       @media only screen and (max-width: 1360px) {
         font-size: 15px;
@@ -251,5 +251,40 @@ export const ContentWrapper = styled.div`
     }
   }
 `;
+
+export const List = styled.ul`
+  margin-bottom: 50px;
+  padding-top: 5px;
+  @media only screen and (max-width: 1440px) {
+    padding-top: 0;
+    margin-bottom: 45px;
+  }
+  @media only screen and (max-width: 1360px) {
+    margin-bottom: 40px;
+  }
+  @media only screen and (max-width: 991px) {
+    margin-bottom: 30px;
+  }
+`;
+
+export const Item = styled.li`
+  font-size: 20px;
+  line-height: 40px;
+  padding: 4px 0;
+  color: ${themeGet('colors.heading', '#060F1E')};
+  @media only screen and (max-width: 1440px) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  @media only screen and (max-width: 1360px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  @media only screen and (max-width: 991px) {
+    font-size: 15px;
+    line-height: 20px;
+  }
+`;
+
 
 export default SectionWrapper;

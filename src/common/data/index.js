@@ -74,24 +74,24 @@ export const bannerSlides = [
   },
   {
     id: 1,
-    thumb_url: bannerSlide1,
+    thumb_url: bannerSlide5,
   },
   {
     id: 2,
-    thumb_url: bannerSlide2,
-  },
-  {
-    id: 3,
-    thumb_url: bannerSlide3,
-  },
-  {
-    id: 4,
     thumb_url: bannerSlide4,
   },
   {
+    id: 3,
+    thumb_url: bannerSlide2,
+  },
+  {
+    id: 4,
+    thumb_url: bannerSlide1,
+  },
+  {
     id: 5,
-    thumb_url: bannerSlide5,
-  }
+    thumb_url: bannerSlide3,
+  },
 ];
 
 /* ------------------------------------ */
@@ -148,103 +148,6 @@ export const featureData = {
     },
   ],
 };
-
-/* ------------------------------------ */
-// Branch section data
-/* ------------------------------------ */
-import thumbImage from 'common/assets/image/charity/branch/image.png';
-import thumbImage1 from 'common/assets/image/charity/branch/image1.png';
-import thumbImage2 from 'common/assets/image/charity/branch/image2.png';
-import thumbImage3 from 'common/assets/image/charity/branch/image3.png';
-import thumbImage4 from 'common/assets/image/charity/branch/image4.png';
-import thumbImage5 from 'common/assets/image/charity/branch/image5.png';
-
-export const branchData = [
-  {
-    id: 1,
-    menuItem: 'Afganistan',
-    image: thumbImage1,
-    slogan: 'WITH YOUR LOVE',
-    title: `We’ve funded <strong>12,925</strong> 
-    water projects for 
-    <strong>5.2 million</strong> people
-    around the world.`,
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    linkUrl: '#1',
-    linkText: 'SEE MORE OF OUR IMPACT',
-  },
-  {
-    id: 2,
-    menuItem: 'ukraine',
-    image: thumbImage2,
-    slogan: 'WITH YOUR CARE',
-    title: `We’ve funded <strong>19,571</strong> 
-    water projects for 
-    <strong>6.7 million</strong> people
-    around the world.`,
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    linkUrl: '#1',
-    linkText: 'SEE MORE OF OUR IMPACT',
-  },
-  {
-    id: 3,
-    menuItem: 'Africa',
-    image: thumbImage,
-    slogan: 'WITH YOUR HELP',
-    title: `We’ve funded <strong>29,725</strong> 
-    water projects for 
-    <strong>8.4 million</strong> people
-    around the world.`,
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    linkUrl: '#1',
-    linkText: 'SEE MORE OF OUR IMPACT',
-  },
-  {
-    id: 4,
-    menuItem: 'India',
-    image: thumbImage3,
-    slogan: 'WITH YOUR LOVE',
-    title: `We’ve funded <strong>10,792</strong> 
-    water projects for 
-    <strong>4.9 million</strong> people
-    around the world.`,
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    linkUrl: '#1',
-    linkText: 'SEE MORE OF OUR IMPACT',
-  },
-  {
-    id: 5,
-    menuItem: 'South Sudan',
-    image: thumbImage4,
-    slogan: 'WITH YOUR CARE',
-    title: `We’ve funded <strong>10,071</strong> 
-    water projects for 
-    <strong>3.7 million</strong> people
-    around the world.`,
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    linkUrl: '#1',
-    linkText: 'SEE MORE OF OUR IMPACT',
-  },
-  {
-    id: 6,
-    menuItem: 'Bhutan',
-    image: thumbImage5,
-    slogan: 'WITH YOUR HELP',
-    title: `We’ve funded <strong>19,792</strong> 
-    water projects for 
-    <strong>7.9 million</strong> people
-    around the world.`,
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    linkUrl: '#1',
-    linkText: 'SEE MORE OF OUR IMPACT',
-  },
-];
 
 /* ------------------------------------ */
 // Work feature data
@@ -310,16 +213,18 @@ export const milestoneData = {
   ],
 };
 
-/* ------------------------------------ */
-// Humanity block data
-/* ------------------------------------ */
-import humanityGlob from 'common/assets/image/charity/section-partner.jpeg';
 
-export const humanityData = {
-  image: humanityGlob,
-  slogan: 'Συνεγραζομαστε για την επιτυχια',
-  title: 'Γίνε συνέταιρος!',
-  text:
+/* ------------------------------------ */
+// BranchLelft section data
+/* ------------------------------------ */
+import thumbImage1 from 'common/assets/image/charity/section-partner.jpeg';
+
+export const branchData =   {
+  id: 1,
+  image: thumbImage1,
+  slogan: 'ΣΥΝΕΡΓΑΖΟΜΑΣΤΕ ΓΙΑ ΤΗΝ ΕΠΙΤΥΧΙΑ',
+  textTitle: `Γίνε  <strong>συνέταιρος</strong>!`,
+  description:
     'Όταν συνεργαζόμαστε με χώρους, κερδίζουν και οι δύο πλευρές. Σας ενδιαφέρει να γίνετε ένας από τους συνεργάτες μας;',
   lists: [
     {
@@ -343,6 +248,42 @@ export const humanityData = {
       text: '5. Ελκιστικά οφέλοι',
     }
   ],
+  linkUrl: '#1',
+  linkText: 'Μάθετε περισσότερα.',
+};
+
+/* ------------------------------------ */
+// BranchRight section data
+/* ------------------------------------ */
+import thumbImage2 from 'common/assets/image/charity/section-corporate.jpeg';
+
+export const branchRightData =   {
+  id: 1,
+  image: thumbImage2,
+  slogan: 'ΠΡΟΓΡΑΜΜΑΤΑ ΕΤΑΙΡΙΚΗΣ ΕΥΕΞΙΑΣ',
+  textTitle: `Χαρήστε στους υπαλλήλους σας φυσική <strong>κατάσταση</strong> και <strong>ευεξία</strong>!`,
+  description:
+    'Τώρα είναι η τέλεια στιγμή για να επενδύσετε στους υπαλλήλους σας. Χαρήστε στους υπαλλήλους σας φυσική κατάσταση και ευεξία!',
+  lists: [
+    {
+      id: 1,
+      text: '1. Χωρίς ετήσιες συμβάσεις για υπαλλήλους - ακυρώστε ανά πάσα στιγμή',
+    },
+    {
+      id: 2,
+      text: '2. Αυξήστε την παραγωγικότητα και το ομαδικό πνεύμα',
+    },
+    {
+      id: 3,
+      text: '3. Βελτιώστε την υγία των υπαλλήλων σας',
+    },
+    {
+      id: 4,
+      text: '4. Αυξηστε την αφοσίωση των εργαζομένων σας',
+    },
+  ],
+  linkUrl: '#1',
+  linkText: 'Μάθετε περισσότερα.',
 };
 
 /* ------------------------------------ */

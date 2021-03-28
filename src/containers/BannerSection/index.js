@@ -1,8 +1,5 @@
 import React, { Fragment } from 'react';
 import Link from 'next/link';
-import { Icon } from 'react-icons-kit';
-import { chevronRight } from 'react-icons-kit/feather/chevronRight';
-import Text from 'common/components/Text';
 import Heading from 'common/components/Heading';
 import Image from 'common/components/Image';
 import GlideCarousel from 'common/components/GlideCarousel';
@@ -12,10 +9,9 @@ import BannerWrapper, {
   ContentWrapper,
   TextArea,
   ImageArea,
-  HighlightedText,
 } from './bannerSection.style';
 
-import { bannerSlides } from 'common/data';
+import { bannerSlides } from '../../common/data';
 
 const BannerSection = () => {
   const glideOptions = {

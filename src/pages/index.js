@@ -5,21 +5,22 @@ import { ThemeProvider } from 'styled-components';
 import { charityTheme } from 'common/theme/charity';
 import { ResetCSS } from 'common/assets/css/style';
 import { DrawerProvider } from 'common/contexts/DrawerContext';
-import Navbar from 'containers/Navbar';
-import DrawerSection from 'containers/DrawerSection';
-import BannerSection from 'containers/BannerSection';
-import FeatureSection from 'containers/FeatureSection';
-import WorkSection from 'containers/WorkSection';
-import HumanityBlock from 'containers/HumanityBlock';
-import PromotionBlock from 'containers/PromotionBlock';
-import ClientBlock from 'containers/ClientBlock';
-import Faq from 'containers/Faq';
-import Footer from 'containers/Footer';
+import Navbar from '../containers/Navbar';
+import DrawerSection from '../containers/DrawerSection';
+import BannerSection from '../containers/BannerSection';
+import FeatureSection from '../containers/FeatureSection';
+import WorkSection from '../containers/WorkSection';
+import PromotionBlock from '../containers/PromotionBlock';
+import BranchSectionLeft from '../containers/BranchSectionLeft';
+import BranchSectionRight from '../containers/BranchSectionRight';
+import ClientBlock from '../containers/ClientBlock';
+import Faq from '../containers/Faq';
+import Footer from '../containers/Footer';
 import {
   GlobalStyle,
   CharityWrapper,
   ContentWrapper,
-} from 'containers/charity.style';
+} from '../containers/charity.style';
 
 const Index = () => {
   return (
@@ -53,8 +54,8 @@ const Index = () => {
             <BannerSection />
             <FeatureSection />
             <WorkSection />
-            <HumanityBlock />
-            <PromotionBlock />
+            <BranchSectionLeft />
+            <BranchSectionRight />
             <Faq />
             <ClientBlock />
           </ContentWrapper>

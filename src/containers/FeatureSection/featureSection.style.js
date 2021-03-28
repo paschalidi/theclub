@@ -45,6 +45,7 @@ export const SectionHeader = styled.header`
   }
 
   p {
+    text-align: center;
     font-size: 18px;
     line-height: 40px;
     margin-bottom: 0;
@@ -75,13 +76,13 @@ export const FeatureWrapper = styled.div`
     padding: 0 35px;
     display: flex;
     align-items: flex-start;
-    margin-top: 120px;
+    margin-top: 70px;
     @media only screen and (max-width: 1440px) {
-      margin-top: 70px;
+      margin-top: 30px;
       padding: 0 30px;
     }
     @media only screen and (max-width: 1360px) {
-      margin-top: 50px;
+      margin-top: 20px;
       padding: 0 15px;
     }
     @media only screen and (max-width: 991px) {

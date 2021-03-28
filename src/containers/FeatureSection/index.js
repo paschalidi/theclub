@@ -16,10 +16,12 @@ const FeatureSection = () => {
   return (
     <SectionWrapper id="feature">
       <Container width="1260px">
-        <SectionHeader>
-          <Heading content={title} />
-          <Text content={slogan} />
-        </SectionHeader>
+        <Container width="700">
+          <SectionHeader>
+            <Heading content={title} />
+            <Text content={slogan} />
+          </SectionHeader>
+        </Container>
         <FeatureWrapper>
           {features.map((item) => (
             <BlogPost
