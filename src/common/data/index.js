@@ -60,12 +60,12 @@ export const menuItems = [
 /* ------------------------------------ */
 // Banner section data
 /* ------------------------------------ */
-import bannerSlide0 from 'common/assets/image/charity/banner/banner-0.jpeg';
-import bannerSlide1 from 'common/assets/image/charity/banner/banner-1.jpeg';
-import bannerSlide2 from 'common/assets/image/charity/banner/banner-2.jpeg';
-import bannerSlide3 from 'common/assets/image/charity/banner/banner-3.jpeg';
-import bannerSlide4 from 'common/assets/image/charity/banner/banner-4.jpeg';
-import bannerSlide5 from 'common/assets/image/charity/banner/banner-5.jpeg';
+import bannerSlide0 from '../../pages/images/banner-0.jpeg';
+import bannerSlide1 from '../../pages/images/banner-1.jpeg';
+import bannerSlide2 from '../../pages/images/banner-2.jpeg';
+import bannerSlide3 from '../../pages/images/banner-3.jpeg';
+import bannerSlide4 from '../../pages/images/banner-4.jpeg';
+import bannerSlide5 from '../../pages/images/banner-5.jpeg';
 
 export const bannerSlides = [
   {
@@ -217,7 +217,7 @@ export const milestoneData = {
 /* ------------------------------------ */
 // BranchLelft section data
 /* ------------------------------------ */
-import thumbImage1 from 'common/assets/image/charity/section-partner.jpeg';
+import thumbImage1 from '../../pages/images/section-partner.jpeg';
 
 export const branchData =   {
   id: 1,
@@ -255,7 +255,7 @@ export const branchData =   {
 /* ------------------------------------ */
 // BranchRight section data
 /* ------------------------------------ */
-import thumbImage2 from 'common/assets/image/charity/section-corporate.jpeg';
+import thumbImage2 from '../../pages/images/section-corporate.jpeg';
 
 export const branchRightData =   {
   id: 1,
