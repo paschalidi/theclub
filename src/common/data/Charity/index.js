@@ -250,8 +250,8 @@ export const branchData = [
 // Work feature data
 /* ------------------------------------ */
 import search from 'common/assets/image/charity/discover.svg';
-import booking from 'common/assets/image/charity/booking.svg';
-import checkIn from 'common/assets/image/charity/check-in.svg';
+import booking from 'common/assets/image/charity/sofa.svg';
+import checkIn from 'common/assets/image/charity/check.svg';
 
 export const workData = {
   title: 'Πως δουλεύει',

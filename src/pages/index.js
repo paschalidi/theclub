@@ -21,7 +21,7 @@ import {
   ContentWrapper,
 } from 'containers/Charity/charity.style';
 
-const Charity = () => {
+const Index = () => {
   return (
     <ThemeProvider theme={charityTheme}>
       <Fragment>
@@ -42,8 +42,6 @@ const Charity = () => {
         </Head>
         <ResetCSS />
         <GlobalStyle />
-        {/* End of charity head section */}
-        {/* Start charity wrapper section */}
         <CharityWrapper>
           <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
             <Navbar />
@@ -58,10 +56,6 @@ const Charity = () => {
             <HumanityBlock />
             <PromotionBlock />
             <Faq />
-            {/*<DonateSection />*/}
-            {/*<MapSection />*/}
-            {/*<FundraiserSection />*/}
-            {/*<BlogSection />*/}
             <ClientBlock />
           </ContentWrapper>
           <Footer />
@@ -71,4 +65,4 @@ const Charity = () => {
     </ThemeProvider>
   );
 };
-export default Charity;
+export default Index;

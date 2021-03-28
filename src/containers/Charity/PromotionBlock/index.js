@@ -40,7 +40,7 @@ const PromotionBlock = ({ row, col }) => {
               </Link>
             </ContentWrapper>
           </Box>
-          <Box className="col" {...col}>
+          <Box className="col-lg" {...col}>
             <ImageWrapper>
               <Image src={image} alt="Charity Landing" />
             </ImageWrapper>

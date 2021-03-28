@@ -123,7 +123,7 @@ export const List = styled.ul`
 export const Item = styled.li`
   font-size: 20px;
   line-height: 40px;
-  padding: 10px 0;
+  padding: 4px 0;
   color: ${themeGet('colors.heading', '#060F1E')};
   @media only screen and (max-width: 1440px) {
     font-size: 18px;
