@@ -162,10 +162,10 @@ export const featureData = {
 /* ------------------------------------ */
 // About section data
 /* ------------------------------------ */
-import parentImg from '../../../common/assets/image/partners/about_parent.png';
+import product from '../../../common/assets/image/partners/product.png';
 
 export const aboutData = {
-  thumb_url: parentImg,
+  thumb_url: product,
   title: 'Πως δουλεύει',
   title1: "1. Εγγραφείτε online (σε λιγότερο από 10 λεπτά)",
   text1:

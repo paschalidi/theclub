@@ -88,18 +88,9 @@ const Banner = () => {
               ))}
             </List>
             <FormWrapper onSubmit={handleSubscriptionForm}>
-              <Input
-                className={state.valid}
-                type="email"
-                placeholder=" Η διέυθηνση email σας"
-                icon={<Icon icon={iosEmailOutline} />}
-                iconPosition="left"
-                required={true}
-                onChange={handleOnChange}
-                aria-label="email"
-              />
               <ButtonGroup>
                 <Button
+                  onClick={()=>{ window.location = "https://forms.gle/gVe6rsUiMEAbvJW66"}}
                   type="submit"
                   colors="primaryWithBg"
                   title="Εικοινώνησε μαζί μας"

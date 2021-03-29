@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import Fade from 'react-reveal/Fade';
 import Image from '../../../common/components/Image';
 import Heading from '../../../common/components/Heading';
@@ -11,7 +10,6 @@ import SectionWrapper, {
 } from './aboutUs.style';
 
 import { aboutData } from '../../../common/data/partners';
-import { SectionHeader } from "../interior.style";
 
 const AboutUs = () => {
   const { thumb_url, title, title1, title2, title3, text1, text2, text3} = aboutData;
@@ -36,12 +34,10 @@ const AboutUs = () => {
             <Text content={text2} />
             <Heading as="h4" content={title3} />
             <Text content={text3} />
-            <Link href="#1">
-              <a className="learn__more-btn">
-                <span className="btn_text">EΓΓΡΑΦΕΙΤΕ</span>
-                <span className="next_arrow"></span>
-              </a>
-            </Link>
+            <a href="https://forms.gle/gVe6rsUiMEAbvJW66" className="learn__more-btn">
+              <span className="btn_text">ΣΤΕΙΛΤΕ ΜΑΣ ΜΥΝΗΜΑ</span>
+              <span className="next_arrow"></span>
+            </a>
           </Fade>
         </TextWrapper>
       </Container>
