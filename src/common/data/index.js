@@ -248,7 +248,7 @@ export const branchData =   {
       text: '5. Ελκιστικά οφέλοι',
     }
   ],
-  linkUrl: '#1',
+  linkUrl: '/partners',
   linkText: 'Μάθετε περισσότερα.',
 };
 
