@@ -26,7 +26,7 @@ export const menuItems = [
     offset: '81',
   },
   {
-    label: 'Πως δουλευει',
+    label: 'Πως δουλεύει',
     path: '#work',
     offset: '81',
   },
