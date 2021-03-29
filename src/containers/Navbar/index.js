@@ -19,16 +19,16 @@ const Navbar = ({type}) => {
           title="Charity React Next Landing"
         />
         <MenuWrapper>
-          <Button>
-            <Link href="/partners">
-              <a>
+          <Link href="/partners">
+            <a>
+              <Button>
                 <span className="text">
                   Γίνε συνέταιρος
                 </span>
                 <Image src={heartImage} alt="Charity Landing" />
-              </a>
-            </Link>
-          </Button>
+              </Button>
+            </a>
+          </Link>
         </MenuWrapper>
       </Container>
     </NavbarWrapper>
