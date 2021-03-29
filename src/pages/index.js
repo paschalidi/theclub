@@ -27,7 +27,7 @@ const Index = () => {
       <Fragment>
         {/* Start charity head section */}
         <Head>
-          <title>One membership for fitness, wellness and beauty</title>
+          <title>Μία συνδρομή για γυμναστήριο, ευεξία και ομορφιά</title>
           <meta name="Description" content="React next landing page" />
           <meta name="theme-color" content="#FCF22B" />
           <meta

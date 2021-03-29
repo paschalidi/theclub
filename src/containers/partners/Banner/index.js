@@ -93,7 +93,7 @@ const Banner = () => {
                   onClick={()=>{ window.location = "https://forms.gle/gVe6rsUiMEAbvJW66"}}
                   type="submit"
                   colors="primaryWithBg"
-                  title="Εικοινώνησε μαζί μας"
+                  title="ΣΤΕΙΛΤΕ ΜΑΣ ΜΥΝΗΜΑ"
                 />
               </ButtonGroup>
             </FormWrapper>
