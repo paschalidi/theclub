@@ -12,7 +12,6 @@ import Footer from '../containers/Footer';
 import { ResetCSS } from '../common/assets/css/style';
 import {
   GlobalStyle,
-  InteriorWrapper,
   ContentWrapper,
 } from '../containers/partners/interior.style';
 import { CharityWrapper } from "../containers/charity.style";
@@ -22,7 +21,7 @@ const Partners = () => {
     <ThemeProvider theme={interiorTheme}>
       <Fragment>
         <Head>
-          <title>Interior | A react next landing page</title>
+          <title>Γίνε συνέταιρος</title>
           <meta name="theme-color" content="#171717" />
           <meta name="description" content="React next landing page" />
           <meta
