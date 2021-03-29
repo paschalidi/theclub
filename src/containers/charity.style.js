@@ -17,7 +17,7 @@ const shake = keyframes`
 /* Charity global style */
 const GlobalStyle = createGlobalStyle`
   body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
   }
 
   h1,
@@ -27,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
   h5,
   h6 {
     color: ${themeGet('colors.heading', '#060F1E')};
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
   }
 
   section {
@@ -206,7 +206,7 @@ const CharityWrapper = styled.div`
   .learn__more-btn {
     display: inline-flex;
     align-items: center;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     color: ${themeGet('colors.heading', '#060F1E')};
     font-size: 14px;
     font-weight: 700;

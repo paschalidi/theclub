@@ -15,13 +15,13 @@ const shake = keyframes`
 
 const GlobalStyle = createGlobalStyle`
   body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
   }
 
   h1 {
     font-size: 36px;
     line-height: 56px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-weight: 500;
     @media only screen and (max-width: 1440px) {
       font-size: 34px;
@@ -37,7 +37,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${themeGet('colors.heading', '#191919')};
     font-size: 40px;
     line-height: 56px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-weight: 600;
     @media only screen and (max-width: 1440px) {
       font-size: 36px;
@@ -53,7 +53,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${themeGet('colors.heading3', '#273343')};
     font-size: 24px;
     line-height: 36px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     @media only screen and (max-width: 1440px) {
       font-size: 22px;
@@ -68,7 +68,7 @@ const GlobalStyle = createGlobalStyle`
   h4 {
     font-size: 22px;
     line-height: 32px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-weight: 600;
     @media only screen and (max-width: 1440px) {
       font-size: 20px;
@@ -80,7 +80,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${themeGet('colors.text', '#4E5865')};
     font-size: 16px;
     line-height: 26px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     @media only screen and (max-width: 1440px) {
       font-size: 15px;
     }

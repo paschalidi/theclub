@@ -22,7 +22,7 @@ export const ErrorConatent = styled.div`
 `;
 
 export const ButtonWrapper = styled.div`
-  font-family: 'roboto';
+  font-family: 'Work Sans', sans-serif;
   text-align: center;
   > * {
     margin: 0 8px;
