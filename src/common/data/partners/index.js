@@ -162,7 +162,7 @@ export const featureData = {
 /* ------------------------------------ */
 // About section data
 /* ------------------------------------ */
-import product from '../../../common/assets/image/partners/product.png';
+import product from '../../../common/assets/image/partners/win.jpeg';
 
 export const aboutData = {
   thumb_url: product,
