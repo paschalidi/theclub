@@ -34,7 +34,7 @@ const BranchSectionLeft = () => {
             <Text content={description} />
             <List>
               {lists.map((item) => (
-                <Item key={`list_key${id}`}>{item.text}</Item>
+                <Item key={`list_key${item.id}`}>{item.text}</Item>
               ))}
             </List>
             <Link href={linkUrl}>

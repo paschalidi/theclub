@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import Link from 'next/link';
 import Heading from 'common/components/Heading';
 import Image from '../../common/components/Image';
-import GlideCarousel from 'common/components/GlideCarousel';
+import GlideCarousel from '../../common/components/GlideCarousel';
 import GlideSlide from 'common/components/GlideCarousel/glideSlide';
 import LeftBar from './leftBar';
 import BannerWrapper, {

@@ -1,7 +1,10 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
 
 const NavbarWrapper = styled.nav`
+   ${props => props.type === 'dark' && css`
+    background: black;
+  `}
   .container {
     padding: 0 200px;
     display: flex;
@@ -38,27 +41,18 @@ export const MenuWrapper = styled.div`
   }
 
   a {
+    display: flex;
+    align-items: center;
     font-size: 16px;
     font-weight: 600;
-    margin-right: 46px;
-    color: ${themeGet('colors.white', '#ffffff')};
     transition: all 0.25s ease;
-    @media only screen and (max-width: 1440px) {
-      margin-right: 40px;
-    }
-    @media only screen and (max-width: 1360px) {
-      margin-right: 30px;
-    }
-
-    &:hover {
-      color: ${themeGet('colors.primary', '#FCF22B')};
-    }
+    color: inherit
   }
 `;
 
 export const Button = styled.button`
   border: 0;
-  padding: 0;
+  padding: 0 16px;
   min-width: 150px;
   min-height: 50px;
   display: flex;

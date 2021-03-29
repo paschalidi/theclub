@@ -2,6 +2,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 import FavIcon from 'common/assets/image/favicon.png';
 
+
 export default class CustomDocument extends Document {
   static async getInitialProps(ctx) {
     const sheet = new ServerStyleSheet();

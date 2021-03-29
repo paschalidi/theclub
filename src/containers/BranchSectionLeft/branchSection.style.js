@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
 import patter1 from 'common/assets/image/charity/branch/highlight-pattern.svg';
 import patter2 from 'common/assets/image/charity/branch/highlight-pattern2.svg';
@@ -136,13 +136,13 @@ export const ContentWrapper = styled.div`
   }
 
   .image {
-    width: calc(100% - 650px);
+    width: calc(100% - 750px);
     overflow: hidden;
     @media only screen and (max-width: 1440px) {
-      width: calc(100% - 500px);
+      width: calc(100% - 600px);
     }
     @media only screen and (max-width: 1360px) {
-      width: calc(100% - 432px);
+      width: calc(100% - 550px);
     }
     @media only screen and (max-width: 991px) {
       width: 100%;
@@ -161,15 +161,15 @@ export const ContentWrapper = styled.div`
   }
 
   .content {
-    width: 650px;
+    width: 750px;
     padding: 80px 86px 77px;
     background-color: ${themeGet('colors.primary', '#FCF22B')};
     @media only screen and (max-width: 1440px) {
-      width: 500px;
+      width: 600px;
       padding: 70px 65px;
     }
     @media only screen and (max-width: 1360px) {
-      width: 432px;
+      width: 550px;
       padding: 56px 50px;
     }
     @media only screen and (max-width: 991px) {
@@ -271,7 +271,7 @@ export const Item = styled.li`
   font-size: 20px;
   line-height: 40px;
   padding: 4px 0;
-  color: ${themeGet('colors.heading', '#060F1E')};
+  color: ${props => props.type==='light' ? `white`: `#060F1E`};
   @media only screen and (max-width: 1440px) {
     font-size: 18px;
     line-height: 30px;

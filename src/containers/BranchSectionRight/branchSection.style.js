@@ -136,13 +136,13 @@ export const ContentWrapper = styled.div`
   }
 
   .image {
-    width: calc(100% - 650px);
+    width: calc(100% - 750px);
     overflow: hidden;
     @media only screen and (max-width: 1440px) {
-      width: calc(100% - 500px);
+      width: calc(100% - 600px);
     }
     @media only screen and (max-width: 1360px) {
-      width: calc(100% - 432px);
+      width: calc(100% - 550px);
     }
     @media only screen and (max-width: 991px) {
       width: 100%;
@@ -161,15 +161,15 @@ export const ContentWrapper = styled.div`
   }
 
   .content {
-    width: 650px;
+    width: 750px;
     padding: 80px 86px 77px;
     background-color: ${themeGet('colors.primary', '#FCF22B')};
     @media only screen and (max-width: 1440px) {
-      width: 500px;
+      width: 5600px;
       padding: 70px 65px;
     }
     @media only screen and (max-width: 1360px) {
-      width: 432px;
+      width: 550px;
       padding: 56px 50px;
     }
     @media only screen and (max-width: 991px) {
