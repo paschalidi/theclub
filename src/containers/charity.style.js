@@ -166,7 +166,6 @@ const CharityWrapper = styled.div`
       display: block;
       height: 100%;
       position: absolute;
-      background: linear-gradient(#0000006e, rgba(0, 0, 0, 0));
       right: 0;
       top: 0;
       z-index: -1;
