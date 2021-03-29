@@ -21,38 +21,28 @@
 /* ------------------------------------ */
 export const menuItems = [
   {
-    label: 'Feature',
+    label: 'Τι προσφέρουμε',
     path: '#feature',
     offset: '81',
   },
   {
-    label: 'Our Branch',
-    path: '#branch',
-    offset: '100',
-  },
-  {
-    label: 'How We Works',
+    label: 'Πως δουλευει',
     path: '#work',
     offset: '81',
   },
   {
-    label: 'Our Milestone',
-    path: '#milestone',
+    label: 'Γίνε συναίτερος',
+    path: '#partner',
     offset: '81',
   },
   {
-    label: 'Donate Us',
-    path: '#donate',
+    label: 'Πακέτα για επιχηρήσεις',
+    path: '#corporate',
     offset: '81',
   },
   {
-    label: 'Fundraisers',
-    path: '#fundraisers',
-    offset: '81',
-  },
-  {
-    label: 'Our Blog',
-    path: '#blog',
+    label: 'FAQ',
+    path: '#faq',
     offset: '81',
   },
 ];

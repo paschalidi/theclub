@@ -17,7 +17,7 @@ const BranchSectionRight = () => {
   const { id, slogan, lists, image, menuItem, description, linkText, linkUrl, textTitle } = branchRightData;
 
   return (
-    <SectionWrapper id="branch">
+    <SectionWrapper id="corporate">
       <Panel
         title={<Text content={menuItem} />}
         key={`tab_key${id}`}

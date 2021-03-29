@@ -1,13 +1,13 @@
 import React, { useState, useContext } from 'react';
 import Scrollspy from 'react-scrollspy';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import Drawer from 'common/components/Drawer';
-import Image from 'common/components/Image';
-import { DrawerContext } from 'common/contexts/DrawerContext';
+import Drawer from '../../common/components/Drawer';
+import Image from '../../common/components/Image';
+import { DrawerContext } from '../../common/contexts/DrawerContext';
 import InnerWrapper, { SpreadButton } from './drawerSection.style';
 
-import { menuItems } from 'common/data';
-import heartImage from 'common/assets/image/charity/heart-red.png';
+import { menuItems } from '../../common/data';
+import heartImage from '../../common/assets/image/charity/heart-red.png';
 
 const DrawerSection = () => {
   const [toggleState, setToggleState] = useState(false);
