@@ -79,11 +79,6 @@ export const bannerData = {
       title: 'Yoga',
     },
     {
-      id: 2,
-      thumb_url: slide2,
-      title: 'Boxing',
-    },
-    {
       id: 5,
       thumb_url: slide5,
       title: 'Studios',
@@ -92,6 +87,11 @@ export const bannerData = {
       id: 8,
       thumb_url: slide8,
       title: 'Γυμναστήρια',
+    },
+    {
+      id: 2,
+      thumb_url: slide2,
+      title: 'Boxing',
     },
     {
       id: 3,
