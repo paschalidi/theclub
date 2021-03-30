@@ -2,9 +2,9 @@ import React, { Fragment } from "react";
 import { Icon } from "react-icons-kit";
 import { plusCircled } from "react-icons-kit/ionicons/plusCircled";
 import { minusCircled } from "react-icons-kit/ionicons/minusCircled";
-import Text from "common/components/Text";
-import Heading from "common/components/Heading";
-import Container from "common/components/UI/Container";
+import Text from "../../common/components/Text";
+import Heading from "../../common/components/Heading";
+import Container from "../../common/components/UI/Container";
 import {
   Accordion,
   AccordionItem,
@@ -13,11 +13,11 @@ import {
   IconWrapper,
   OpenIcon,
   CloseIcon,
-} from "common/components/Accordion";
+} from "../../common/components/Accordion";
 import { SectionHeader } from "../charity.style";
 import FaqSection from "./faq.style";
 
-import { faq } from "common/data";
+import { faq } from "../../common/data";
 
 const Faq = () => {
   const { slogan, title, faqs } = faq;

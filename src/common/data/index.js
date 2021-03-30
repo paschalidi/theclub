@@ -595,7 +595,7 @@ export const socialLinks = [
 ];
 
 export const faq = {
-  slogan: 'FREQUENT QUESTION',
+  slogan: 'ΣΥΧΝΕΣ ΕΡΩΤΗΣΕΙΣ',
   title: 'Do you have any question',
   faqs: [
     {
