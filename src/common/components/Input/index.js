@@ -2,7 +2,8 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import InputField, { EyeButton } from './input.style';
-const Input = ({
+
+const Input = React.forwardRef(({
   label,
   value,
   onBlur,
@@ -15,7 +16,7 @@ const Input = ({
   passwordShowHide,
   className,
   ...props
-}) => {
+}, ref) => {
   // use toggle hooks
   const [state, setState] = useState({
     toggle: false,
@@ -105,6 +106,7 @@ const Input = ({
       inputElement = (
         <textarea
           {...props}
+          ref={ref}
           id={htmlFor}
           name={htmlFor}
           value={state.value}
@@ -120,6 +122,7 @@ const Input = ({
         <div className="field-wrapper">
           <input
             {...props}
+            ref={ref}
             id={htmlFor}
             name={htmlFor}
             type={state.toggle ? 'password' : 'text'}
@@ -145,6 +148,7 @@ const Input = ({
         <div className="field-wrapper">
           <input
             {...props}
+            ref={ref}
             id={htmlFor}
             name={htmlFor}
             type={inputType}
@@ -168,7 +172,7 @@ const Input = ({
       {LabelPosition === 'bottom' && LabelField}
     </InputField>
   );
-};
+});
 
 /** Inout prop type checking. */
 Input.propTypes = {

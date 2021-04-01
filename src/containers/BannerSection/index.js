@@ -1,5 +1,6 @@
-import React, { Fragment } from 'react';
-import Link from 'next/link';
+import React, { Fragment, useState, useRef } from 'react';
+import { iosEmailOutline } from 'react-icons-kit/ionicons/iosEmailOutline';
+
 import Heading from 'common/components/Heading';
 import Image from '../../common/components/Image';
 import GlideCarousel from '../../common/components/GlideCarousel';
@@ -10,14 +11,70 @@ import BannerWrapper, {
   TextArea,
   ImageArea,
 } from './bannerSection.style';
+import {
+  FormWrapper,
+  ButtonGroup,
+} from '../partners/Banner/banner.style';
 
 import { bannerSlides } from '../../common/data';
+import { Icon } from "react-icons-kit";
+import Input from "../../common/components/Input";
+import Button from "../../common/components/Button";
+
 
 const BannerSection = () => {
   const glideOptions = {
     type: 'carousel',
     perView: 1,
     gap: 0,
+  };
+  const inputEl = useRef(null);
+  const [message, setMessage] = useState('');
+  const [state, setState] = useState({ email: '', valid: '' });
+  const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; //eslint-disable-line
+
+  const handleOnChange = (value) => {
+    let localValue = '';
+    if (value.match(emailRegex)) {
+      if (value.length > 0) {
+        localValue = value;
+        setState({ ...state, email: localValue, valid: 'valid' });
+      }
+    } else {
+      if (value.length > 0) {
+        setState({ ...state, valid: 'invalid' });
+      } else {
+        setState({ ...state, valid: '' });
+      }
+    }
+  };
+
+
+  const handleSubscriptionForm =  async(e) => {
+    e.preventDefault();
+
+    if (state.email.match(emailRegex)) {
+      debugger
+      const res = await fetch('/api/email', {
+        body: JSON.stringify({
+          email: inputEl.current.value
+        }),
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        method: 'POST'
+      })
+
+      const { error } = await res.json();
+
+      if (error) {
+        setMessage(error);
+        return;
+      }
+
+      setState({ email: '', valid: '' });
+      setMessage('Success! 🎉 You are now in the list!');
+    }
   };
 
   return (
@@ -32,12 +89,34 @@ const BannerSection = () => {
             as="h4"
             content="Με μία συνδρομή, έχεις πρόσβαση στα καλύτερα γυμναστήρια, πισίνες, αθλητικά κέντρα, εγκαταστάσεις χορού και άλλα πακέτα δραστηριοτήτων ευεξίας, προσαρμοσμένα στις δικές σου προτιμήσεις ενώ παράλληλα γλυτώνεις χρήματα και χρόνο."
           />
-          <Link href="#1">
-            <a className="learn__more-btn">
-              <span className="hyphen" />
-              <span className="btn_text">Κάνε εγγραφή τώρα.</span>
-            </a>
-          </Link>
+          {
+            message !== ''
+              ?
+              message
+              :
+              <FormWrapper onSubmit={handleSubscriptionForm}>
+                <Input
+                  ref={inputEl}
+                  className={state.valid}
+                  type="email"
+                  placeholder="Enter email address"
+                  icon={<Icon icon={iosEmailOutline} />}
+                  iconPosition="left"
+                  required={true}
+                  onChange={handleOnChange}
+                  aria-label="email"
+                />
+
+                <ButtonGroup>
+                  <Button
+                    type="submit"
+                    colors="primaryWithBg"
+                    title="FREE CONSULT"
+                  />
+                </ButtonGroup>
+              </FormWrapper>
+          }
+
         </TextArea>
         <ImageArea>
           <GlideCarousel
