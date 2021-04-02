@@ -63,7 +63,7 @@ const InputField = styled.div`
     margin-bottom: ${themeGet('space.3', '10')}px;
     transition: 0.2s ease all;
   }
-
+  
   /* Input and textarea default style */
   textarea,
   input {
@@ -75,11 +75,12 @@ const InputField = styled.div`
     box-shadow: none;
     border-radius: 4px;
     box-sizing: border-box;
-    border: 1px solid ${themeGet('colors.inactiveIcon', '#ebebeb')};
     transition: border-color 0.2s ease;
+    border: 1px solid ${themeGet('colors.inactiveIcon', '#767676')};
+    
+    
     &:focus {
       outline: none;
-      border-color: ${themeGet('colors.primary', '#028489')};
     }
   }
 
@@ -160,7 +161,7 @@ const InputField = styled.div`
     /* Material input focus style */
     &.is-focus {
       input {
-        border-color: ${themeGet('colors.inactiveIcon', '#ebebeb')};
+        border-color: ${themeGet('colors.inactiveIcon', '#767676')};
       }
 
       label {

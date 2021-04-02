@@ -1,7 +1,7 @@
 import React, { Fragment, useState, useRef } from 'react';
 import { iosEmailOutline } from 'react-icons-kit/ionicons/iosEmailOutline';
 
-import Heading from 'common/components/Heading';
+import Heading from '../../common/components/Heading';
 import Image from '../../common/components/Image';
 import GlideCarousel from '../../common/components/GlideCarousel';
 import GlideSlide from 'common/components/GlideCarousel/glideSlide';
@@ -27,24 +27,24 @@ const BannerSection = () => {
     type: 'carousel',
     perView: 1,
     gap: 0,
+    hoverpause: false,
+    autoplay: 2500,
   };
   const inputEl = useRef(null);
   const [message, setMessage] = useState('');
-  const [state, setState] = useState({ email: '', valid: '' });
+  const [state, setState] = useState({ email: '', valid: '', error: false });
   const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; //eslint-disable-line
 
   const handleOnChange = (value) => {
-    let localValue = '';
     if (value.match(emailRegex)) {
       if (value.length > 0) {
-        localValue = value;
-        setState({ ...state, email: localValue, valid: 'valid' });
+        setState({ ...state, email: value, valid: 'valid' });
       }
     } else {
       if (value.length > 0) {
-        setState({ ...state, valid: 'invalid' });
+        setState({ ...state, email: value, valid: 'invalid' });
       } else {
-        setState({ ...state, valid: '' });
+        setState({ ...state, email: value, valid: '' });
       }
     }
   };
@@ -54,7 +54,6 @@ const BannerSection = () => {
     e.preventDefault();
 
     if (state.email.match(emailRegex)) {
-      debugger
       const res = await fetch('/api/email', {
         body: JSON.stringify({
           email: inputEl.current.value
@@ -68,12 +67,14 @@ const BannerSection = () => {
       const { error } = await res.json();
 
       if (error) {
-        setMessage(error);
+        setState({ ...state, error: error });
         return;
       }
 
-      setState({ email: '', valid: '' });
-      setMessage('Success! 🎉 You are now in the list!');
+      setState({ email: '', valid: '', error: '' });
+      setMessage('Συγχαρητήρια! 🎉 Θα λάβετε ενα mail με την έκπτωση σύντομα!');
+    } else{
+      setState({ ...state, error: 'Το e-mail δεν ειναι έγκυρο. Δοκιμάστε άλλο email.' });
     }
   };
 
@@ -92,14 +93,17 @@ const BannerSection = () => {
           {
             message !== ''
               ?
-              message
+              <Heading
+                as="h3"
+                content={message}
+              />
               :
               <FormWrapper onSubmit={handleSubscriptionForm}>
                 <Input
                   ref={inputEl}
                   className={state.valid}
                   type="email"
-                  placeholder="Enter email address"
+                  placeholder="Πληκτρολογείστε το email σας εδώ"
                   icon={<Icon icon={iosEmailOutline} />}
                   iconPosition="left"
                   required={true}
@@ -107,11 +111,14 @@ const BannerSection = () => {
                   aria-label="email"
                 />
 
+                <div style={{margin: "8px 0"}}>
+                  {state.error.length ? <div className='formError'>{state.error}</div> : <div style={{visibility: 'hidden'}}>empty</div>}
+                </div>
                 <ButtonGroup>
                   <Button
                     type="submit"
                     colors="primaryWithBg"
-                    title="FREE CONSULT"
+                    title="ΣΤΕΙΛΤΕ ΜΑΣ ΜΥΝΗΜΑ"
                   />
                 </ButtonGroup>
               </FormWrapper>
@@ -120,6 +127,7 @@ const BannerSection = () => {
         </TextArea>
         <ImageArea>
           <GlideCarousel
+            controls={false}
             carouselSelector="charitySlide"
             options={glideOptions}
             nextButton={<span className="next_arrow" />}

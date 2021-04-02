@@ -129,6 +129,10 @@ export const FormWrapper = styled.form`
     margin-top: 40px;
   }
 
+  .formError {
+    font-size:13px;
+    color: #ff0033;
+  }
   .input_element {
     display: flex;
     align-items: center;
@@ -184,7 +188,6 @@ export const FormWrapper = styled.form`
 `;
 
 export const ButtonGroup = styled.div`
-  margin-top: 50px;
   @media only screen and (max-width: 767px) {
     margin-top: 25px;
     margin-bottom: 54px;
