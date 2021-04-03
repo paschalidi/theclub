@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { iosEmailOutline } from 'react-icons-kit/ionicons/iosEmailOutline';
 
 import Heading from '../../common/components/Heading';
@@ -107,7 +107,7 @@ const BannerSection = () => {
               :
               <FormWrapper onSubmit={handleSubscriptionForm}>
                 <Input
-                  // ref={inputEl}
+                  ref={inputEl}
                   inputType="email"
                   htmlFor="remember"
                   id="remember"
