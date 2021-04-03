@@ -70,6 +70,7 @@ export const ResetCSS = createGlobalStyle`
 
   a:hover {
     text-decoration: none;
+    cursor: pointer;
   }
 
   .reuseModalHolder {

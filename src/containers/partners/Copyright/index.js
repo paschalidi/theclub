@@ -19,7 +19,7 @@ const Copyright = () => {
           </li>
         ))}
       </ul>
-      <Text content="Copyrights 2019 @RedQ Inc" />
+      <Text content="Copyrights 2021 Urbanfit" />
     </CopyrightWrapper>
   );
 };

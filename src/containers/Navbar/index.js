@@ -23,7 +23,7 @@ const Navbar = ({type}) => {
             <a>
               <Button>
                 <span className="text">
-                  Γίνε συνέταιρος
+                  Γίνε Συνεργάτης
                 </span>
                 <Image src={heartImage} alt="Charity Landing" />
               </Button>

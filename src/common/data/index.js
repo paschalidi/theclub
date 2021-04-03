@@ -233,7 +233,7 @@ export const branchData =   {
   id: 1,
   image: thumbImage1,
   slogan: 'ΣΥΝΕΡΓΑΖΟΜΑΣΤΕ ΓΙΑ ΤΗΝ ΕΠΙΤΥΧΙΑ',
-  textTitle: `Γίνε  <strong>συνέταιρος</strong>!`,
+  textTitle: `Γίνε  <strong>συνεργάτης</strong>!`,
   description:
     'Όταν συνεργαζόμαστε με χώρους, κερδίζουν και οι δύο πλευρές. Σας ενδιαφέρει να γίνετε ένας από τους συνεργάτες μας;',
   lists: [
@@ -445,104 +445,55 @@ export const clients = [
 export const menuWidgets = [
   {
     id: 1,
-    title: 'FUNDRAISE FOR',
+    title: 'Urbanfit',
     menu: [
       {
         id: 1,
-        text: 'Medical',
-        link: '#1',
+        label: 'Γίνε μέλος',
+        href: '/',
+      },
+      {
+        id: 1,
+        label: 'Μάθε τι προσφέρουμε',
+        href: '/#feature',
+        offset: '81',
       },
       {
         id: 2,
-        text: 'Emergency',
-        link: '#1',
-      },
-      {
-        id: 3,
-        text: 'Memorial',
-        link: '#1',
-      },
-      {
-        id: 4,
-        text: 'Education',
-        link: '#1',
-      },
-      {
-        id: 5,
-        text: 'Charity',
-        link: '#1',
-      },
-      {
-        id: 6,
-        text: 'Nonprofit organization',
-        link: '#1',
+        label: 'Μάθε πως δουλεύει',
+        href: '/#work',
       },
     ],
   },
   {
     id: 2,
-    title: 'LEARN MORE',
+    title: 'Συνεργασία',
     menu: [
       {
         id: 1,
-        text: 'How invisiblechildren works',
-        link: '#1',
+        label: 'Γίνε Συνεργάτης',
+        href: '/partners',
       },
       {
         id: 2,
-        text: 'Pricing and Fees',
-        link: '#1',
-      },
-      {
-        id: 3,
-        text: 'Common questions',
-        link: '#1',
-      },
-      {
-        id: 4,
-        text: 'Success stories',
-        link: '#1',
-      },
-      {
-        id: 5,
-        text: 'Supported countries',
-        link: '#1',
+        label: 'Επιχειρησιακά πακέτα',
+        href: '/#corporate',
       },
     ],
   },
   {
     id: 3,
-    title: 'RESOURCES',
+    title: 'Υποστήριξη',
     menu: [
       {
         id: 1,
-        text: 'Help center',
-        link: '#1',
+        label: 'Συχνές ερωτήσεις για μέλη',
+        href: '/#faq',
       },
       {
         id: 2,
-        text: 'Blog',
-        link: '#1',
-      },
-      {
-        id: 3,
-        text: 'GoFundMe Stories',
-        link: '#1',
-      },
-      {
-        id: 4,
-        text: 'Press center',
-        link: '#1',
-      },
-      {
-        id: 5,
-        text: 'Careers',
-        link: '#1',
-      },
-      {
-        id: 6,
-        text: 'About',
-        link: '#1',
+        label: 'Συχνές ερωτήσεις για συνεργάτες',
+        href: '/partners#faq',
       },
     ],
   },
@@ -564,34 +515,27 @@ export const copyright = [
 import { Icon } from 'react-icons-kit';
 import { linkedin } from 'react-icons-kit/fa/linkedin';
 import { facebook } from 'react-icons-kit/fa/facebook';
-import { twitter } from 'react-icons-kit/fa/twitter';
-import { github } from 'react-icons-kit/fa/github';
+import { instagram } from 'react-icons-kit/fa/instagram';
 
 export const socialLinks = [
   {
     id: 1,
     icon: <Icon icon={linkedin} />,
     name: 'linkedin',
-    link: '1#',
+    link: 'http://linkedin.com/in/urbanfit-gr-b7899020a',
   },
   {
     id: 2,
     icon: <Icon icon={facebook} />,
     name: 'facebook',
-    link: '2#',
+    link: 'https://www.facebook.com/urbanfitgr.urbanfitgr',
   },
   {
     id: 3,
-    icon: <Icon icon={twitter} />,
-    name: 'twitter',
-    link: '3#',
-  },
-  {
-    id: 4,
-    icon: <Icon icon={github} />,
-    name: 'github',
-    link: '4#',
-  },
+    icon: <Icon icon={instagram} />,
+    name: 'instagram',
+    link: 'https://instagram.com/urbanfit.gr',
+  }
 ];
 
 export const faq = {

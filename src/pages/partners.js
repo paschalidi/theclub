@@ -15,26 +15,19 @@ import {
   ContentWrapper,
 } from '../containers/partners/interior.style';
 import { CharityWrapper } from "../containers/charity.style";
+import Faq from "../containers/Faq";
 
 const Partners = () => {
   return (
     <ThemeProvider theme={interiorTheme}>
       <Fragment>
         <Head>
-          <title>Γίνε συνέταιρος</title>
+          <title>Γίνε Συνεργάτης</title>
           <meta name="theme-color" content="#171717" />
-          <meta name="description" content="React next landing page" />
+          <meta name="description" content="Γίνε Συνεργάτης με την Urbanfit.gr" />
           <meta
             name="keywords"
-            content="React, React js, Next, Next js, Gatsby, Gatsby Js, Fast Landing, Modren Landing"
-          />
-          <link
-            href="https://fonts.googleapis.com/css?family=Raleway:500,600&display=swap"
-            rel="stylesheet"
-          ></link>
-          <link
-            href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
-            rel="stylesheet"
+            content="Urbanfit, Ελλάδα, Γυμναστηρια, Yoga, Crossfit"
           />
         </Head>
         <ResetCSS />
@@ -50,10 +43,7 @@ const Partners = () => {
             <Feature />
             <Testimonial />
             <AboutUs />
-            {/*<Project />*/}
-            {/*<Team />*/}
-            {/*<News />*/}
-            {/*<Gallery />*/}
+            <Faq />
           </ContentWrapper>
           <Footer />
         </CharityWrapper>

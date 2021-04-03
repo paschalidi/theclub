@@ -14,6 +14,7 @@ const Logo = ({
   logoSrc,
   title,
   href,
+  ref,
   ...props
 }) => (
   <NextLink href={href}>
