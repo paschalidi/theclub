@@ -21,39 +21,45 @@ import { Icon } from "react-icons-kit";
 import Input from "../../common/components/Input";
 import Button from "../../common/components/Button";
 
-
-const BannerSection = () => {
+const Glide = ({slides}) =>{
   const glideOptions = {
     type: 'carousel',
+    autoplay: 3000,
     perView: 1,
     gap: 0,
     hoverpause: false,
-    autoplay: 2500,
   };
+
+  return <GlideCarousel
+    controls={false}
+    carouselSelector="charitySlide"
+    options={glideOptions}
+    nextButton={<span className="next_arrow" />}
+    prevButton={<span className="prev_arrow" />}
+  >
+    {slides.map((slide) => (
+      <GlideSlide key={slide.id}>
+        <Image src={slide.thumb_url} alt="Charity Landing" />
+      </GlideSlide>
+    ))}
+  </GlideCarousel>
+}
+
+const BannerSection = () => {
   const inputEl = useRef(null);
   const [message, setMessage] = useState('');
-  const [state, setState] = useState({ email: '', valid: '', error: false });
+  const [email, setEmail] = useState('');
+  const [error, setError] = useState('');
   const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; //eslint-disable-line
 
   const handleOnChange = (value) => {
-    if (value.match(emailRegex)) {
-      if (value.length > 0) {
-        setState({ ...state, email: value, valid: 'valid' });
-      }
-    } else {
-      if (value.length > 0) {
-        setState({ ...state, email: value, valid: 'invalid' });
-      } else {
-        setState({ ...state, email: value, valid: '' });
-      }
-    }
+    setEmail(value);
   };
-
 
   const handleSubscriptionForm =  async(e) => {
     e.preventDefault();
 
-    if (state.email.match(emailRegex)) {
+    if (email.match(emailRegex)) {
       const res = await fetch('/api/email', {
         body: JSON.stringify({
           email: inputEl.current.value
@@ -67,20 +73,21 @@ const BannerSection = () => {
       const { error } = await res.json();
 
       if (error) {
-        setState({ ...state, error: error });
+        setError(error);
         return;
       }
 
-      setState({ email: '', valid: '', error: '' });
+      setEmail('');
+      setError('');
       setMessage('Συγχαρητήρια! 🎉 Θα λάβετε ενα mail επιβεβαίωσης σύντομα.');
     } else{
-      setState({ ...state, error: 'Το e-mail δεν ειναι έγκυρο. Δοκιμάστε άλλο email.' });
+      setError('Το e-mail δεν ειναι έγκυρο. Δοκιμάστε άλλο email.');
     }
   };
 
   return (
     <BannerWrapper>
-      <LeftBar text="SCROLL DOWN" offset={81} sectionId="#feature" />
+      <LeftBar text="SCROLL" offset={81} sectionId="#feature" />
       <ContentWrapper>
         <TextArea>
           <Heading
@@ -100,9 +107,10 @@ const BannerSection = () => {
               :
               <FormWrapper onSubmit={handleSubscriptionForm}>
                 <Input
-                  ref={inputEl}
-                  className={state.valid}
-                  type="email"
+                  // ref={inputEl}
+                  inputType="email"
+                  htmlFor="remember"
+                  id="remember"
                   placeholder="Πληκτρολογείστε το email σας εδώ"
                   icon={<Icon icon={iosEmailOutline} />}
                   iconPosition="left"
@@ -111,8 +119,8 @@ const BannerSection = () => {
                   aria-label="email"
                 />
 
-                <div style={{margin: "8px 0"}}>
-                  {state.error.length ? <div className='formError'>{state.error}</div> : <div style={{visibility: 'hidden'}}>empty</div>}
+                <div style={{margin: "8px 0"}} className='formError'>
+                  {error.length ? <div>{error}</div> : <div style={{visibility: 'hidden'}}>empty</div>}
                 </div>
                 <ButtonGroup>
                   <Button
@@ -126,21 +134,7 @@ const BannerSection = () => {
 
         </TextArea>
         <ImageArea>
-          <GlideCarousel
-            controls={false}
-            carouselSelector="charitySlide"
-            options={glideOptions}
-            nextButton={<span className="next_arrow" />}
-            prevButton={<span className="prev_arrow" />}
-          >
-            <Fragment>
-              {bannerSlides.map((slide) => (
-                <GlideSlide key={slide.id}>
-                  <Image src={slide.thumb_url} alt="Charity Landing" />
-                </GlideSlide>
-              ))}
-            </Fragment>
-          </GlideCarousel>
+          <Glide slides={bannerSlides}/>
         </ImageArea>
       </ContentWrapper>
     </BannerWrapper>

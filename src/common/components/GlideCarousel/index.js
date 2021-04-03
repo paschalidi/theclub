@@ -50,7 +50,7 @@ const GlideCarousel = ({
       }
     );
     glide.mount();
-  });
+  },[]);
 
   return (
     <GlideWrapper

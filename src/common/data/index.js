@@ -90,18 +90,18 @@ export const bannerSlides = [
     id: 6,
     thumb_url: bannerSlide6,
   },
-  // {
-  //   id: 7,
-  //   thumb_url: bannerSlide7,
-  // },
-  // {
-  //   id: 8,
-  //   thumb_url: bannerSlide8,
-  // },
-  // {
-  //   id: 9,
-  //   thumb_url: bannerSlide9,
-  // }
+  {
+    id: 7,
+    thumb_url: bannerSlide7,
+  },
+  {
+    id: 8,
+    thumb_url: bannerSlide8,
+  },
+  {
+    id: 9,
+    thumb_url: bannerSlide9,
+  }
 ];
 
 /* ------------------------------------ */
