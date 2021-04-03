@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
 
 const FooterWrapper = styled.footer`
   width: 100%;
@@ -28,7 +28,7 @@ const FooterWrapper = styled.footer`
 
     .mail {
       font-size: 18px;
-      color: ${themeGet('colors.secondary', '#D50032')};
+      color: ${themeGet("colors.secondary", "#D50032")};
       @media only screen and (max-width: 1440px) {
         font-size: 16px;
       }
@@ -39,7 +39,7 @@ const FooterWrapper = styled.footer`
   }
 
   .widget_title {
-    color: ${themeGet('colors.heading', '#060F1E')};
+    color: ${themeGet("colors.heading", "#060F1E")};
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 24px;
@@ -54,7 +54,7 @@ const FooterWrapper = styled.footer`
   }
 
   .text {
-    color: ${themeGet('colors.secondaryText', '#616970')};
+    color: ${themeGet("colors.secondaryText", "#616970")};
     font-size: 18px;
     margin-bottom: 20px;
     @media only screen and (max-width: 1440px) {
@@ -104,7 +104,7 @@ export const SelectWrapper = styled.div`
     outline: none;
     background: transparent;
     appearance: none;
-    color: ${themeGet('colors.select', '#525F7F')};
+    color: ${themeGet("colors.select", "#525F7F")};
     font-size: 18px;
     cursor: pointer;
     position: absolute;
@@ -126,7 +126,7 @@ export const SelectWrapper = styled.div`
     top: 1px;
     right: 10px;
     path {
-      fill: ${themeGet('colors.secondaryText', '#616970')};
+      fill: ${themeGet("colors.secondaryText", "#616970")};
     }
   }
 `;
@@ -137,7 +137,7 @@ export const List = styled.ul`
 
 export const ListItem = styled.li`
   a {
-    color: ${themeGet('colors.secondaryText', '#616970')};
+    color: ${themeGet("colors.secondaryText", "#616970")};
     font-size: 18px;
     line-height: 38px;
     transition: all 0.3s ease;
@@ -152,7 +152,7 @@ export const ListItem = styled.li`
     &:focus {
       outline: 0;
       text-decoration: none;
-      color: ${themeGet('colors.text', '#294859')};
+      color: ${themeGet("colors.text", "#294859")};
     }
   }
 `;
@@ -190,7 +190,7 @@ export const SocialList = styled.ul`
       border-radius: 50%;
       overflow: hidden;
       line-height: 1;
-      color: ${themeGet('colors.secondaryText', '#616970')};
+      color: ${themeGet("colors.secondaryText", "#616970")};
       position: relative;
       @media only screen and (max-width: 480px) {
         width: 20px;
@@ -199,11 +199,11 @@ export const SocialList = styled.ul`
       }
 
       &::before {
-        content: '';
+        content: "";
         display: block;
         width: 100%;
         height: 100%;
-        background-color: ${themeGet('colors.text', '#294859')};
+        background-color: ${themeGet("colors.text", "#294859")};
         position: absolute;
         z-index: 0;
         opacity: 0;
@@ -231,7 +231,7 @@ export const SocialList = styled.ul`
     &.linkedin {
       a {
         &::before {
-          background-color: ${themeGet('colors.linkedin', '#0077B5')};
+          background-color: ${themeGet("colors.linkedin", "#0077B5")};
         }
       }
     }
@@ -239,7 +239,7 @@ export const SocialList = styled.ul`
     &.facebook {
       a {
         &::before {
-          background-color: ${themeGet('colors.facebook', '#3b5998')};
+          background-color: ${themeGet("colors.facebook", "#3b5998")};
         }
       }
     }
@@ -247,7 +247,7 @@ export const SocialList = styled.ul`
     &.twitter {
       a {
         &::before {
-          background-color: ${themeGet('colors.twitter', '#38A1F3')};
+          background-color: ${themeGet("colors.twitter", "#38A1F3")};
         }
       }
     }
@@ -255,14 +255,14 @@ export const SocialList = styled.ul`
     &.github {
       a {
         &::before {
-          background-color: ${themeGet('colors.github', '#211f1f')};
+          background-color: ${themeGet("colors.github", "#211f1f")};
         }
       }
     }
 
     &:hover {
       a {
-        color: ${themeGet('colors.white', '#ffffff')};
+        color: ${themeGet("colors.white", "#ffffff")};
         &::before {
           opacity: 1;
           transform: scale(1);
