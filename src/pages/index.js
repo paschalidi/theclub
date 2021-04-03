@@ -12,7 +12,6 @@ import FeatureSection from '../containers/FeatureSection';
 import WorkSection from '../containers/WorkSection';
 import BranchSectionLeft from '../containers/BranchSectionLeft';
 import BranchSectionRight from '../containers/BranchSectionRight';
-import ClientBlock from '../containers/ClientBlock';
 import Faq from '../containers/Faq';
 import Footer from '../containers/Footer';
 import {
@@ -56,7 +55,6 @@ const Index = () => {
             <BranchSectionLeft />
             <BranchSectionRight />
             <Faq />
-            <ClientBlock />
           </ContentWrapper>
           <Footer />
         </CharityWrapper>
