@@ -7,14 +7,13 @@ import BannerWrapper from "./bannerSection.style";
 const BannerSection = ({ title }) => (
   <BannerWrapper>
     <Container>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <Heading
         textAlign="center"
-        style={{ color: "#f3f3f3" }}
         content="Το site βρήσκεται υπό κατασκευή"
         {...title}
       />
@@ -57,7 +56,7 @@ BannerSection.defaultProps = {
   },
   description: {
     fontSize: "16px",
-    color: "#343d48cc",
+    color: "#0f2137",
     lineHeight: "2.1",
     mb: "0",
   },
