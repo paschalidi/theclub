@@ -55,6 +55,7 @@ const FooterWrapper = styled.footer`
 
   .text {
     color: ${themeGet("colors.secondaryText", "#616970")};
+    line-height: 1.7rem;
     font-size: 18px;
     margin-bottom: 20px;
     @media only screen and (max-width: 1440px) {
@@ -138,7 +139,7 @@ export const List = styled.ul`
 export const ListItem = styled.li`
   a {
     color: ${themeGet("colors.secondaryText", "#616970")};
-    font-size: 18px;
+    font-size: 16px;
     line-height: 38px;
     transition: all 0.3s ease;
     @media only screen and (max-width: 1440px) {

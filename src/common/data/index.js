@@ -480,7 +480,7 @@ export const menuWidgets = [
     menu: [
       {
         id: 1,
-        label: "Γίνε Συνεργάτης",
+        label: "Γίνε συνεργάτης",
         href: "/partners",
       },
       {
@@ -543,8 +543,8 @@ export const socialLinks = [
 ];
 
 export const faq = {
-  slogan: "ΣΥΧΝΕΣ ΕΡΩΤΗΣΕΙΣ",
-  title: "Ερωτήσεις που τα μέλη μας κάνουν συχνά",
+  slogan: "Συχνες Ερωτησεις Μελων",
+  title: "Μπορείτε να μας καλέσετε στο +306988221619",
   faqs: [
     {
       id: 1,

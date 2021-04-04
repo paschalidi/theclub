@@ -336,7 +336,6 @@ const CharityWrapper = styled.div`
 `;
 
 export const SectionHeader = styled.header`
-  max-width: 352px;
   width: 100%;
   margin: 0 auto 58px;
   text-align: center;
