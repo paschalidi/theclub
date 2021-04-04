@@ -36,6 +36,7 @@ import bannerSlide6 from "../../pages/images/banner-6.jpeg";
 import bannerSlide7 from "../../pages/images/banner-7.jpeg";
 import bannerSlide8 from "../../pages/images/banner-8.jpeg";
 import bannerSlide9 from "../../pages/images/banner-9.jpeg";
+import bannerSlide10 from "../../pages/images/banner-10.jpeg";
 
 /* ------------------------------------ */
 // Feature section data
@@ -129,6 +130,10 @@ export const bannerSlides = [
   {
     id: 2,
     thumbUrl: bannerSlide4,
+  },
+  {
+    id: 10,
+    thumbUrl: bannerSlide10,
   },
   {
     id: 3,
