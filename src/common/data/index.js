@@ -116,43 +116,43 @@ export const menuItems = [
 export const bannerSlides = [
   {
     id: 0,
-    thumb_url: bannerSlide0,
+    thumbUrl: bannerSlide0,
   },
   {
     id: 4,
-    thumb_url: bannerSlide1,
+    thumbUrl: bannerSlide1,
   },
   {
     id: 1,
-    thumb_url: bannerSlide5,
+    thumbUrl: bannerSlide5,
   },
   {
     id: 2,
-    thumb_url: bannerSlide4,
+    thumbUrl: bannerSlide4,
   },
   {
     id: 3,
-    thumb_url: bannerSlide2,
+    thumbUrl: bannerSlide2,
   },
   {
     id: 5,
-    thumb_url: bannerSlide3,
+    thumbUrl: bannerSlide3,
   },
   {
     id: 6,
-    thumb_url: bannerSlide6,
+    thumbUrl: bannerSlide6,
   },
   {
     id: 7,
-    thumb_url: bannerSlide7,
+    thumbUrl: bannerSlide7,
   },
   {
     id: 8,
-    thumb_url: bannerSlide8,
+    thumbUrl: bannerSlide8,
   },
   {
     id: 9,
-    thumb_url: bannerSlide9,
+    thumbUrl: bannerSlide9,
   },
 ];
 
@@ -544,31 +544,58 @@ export const socialLinks = [
 
 export const faq = {
   slogan: "ΣΥΧΝΕΣ ΕΡΩΤΗΣΕΙΣ",
-  title: "Do you have any question",
+  title: "Ερωτήσεις που τα μέλη μας κάνουν συχνά",
   faqs: [
     {
       id: 1,
-      question: "How to contact with riders emergency?",
+      question: "Τι χρειάζομαι για την εγγραφή μου;",
       answer:
-        "Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home. Your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news.",
+        "Το Urbanfit είναι μια αποκλειστικά ψηφιακή συνδρομή, πράγμα που σημαίνει ότι μπορείτε να κάνετε check-in σε αθλητικούς χώρους μόνο εάν έχετε με την εφαρμογή μας. Μπορείτε να κατεβάσετε την εφαρμογή δωρεάν από το Google Play Store ή το App Store. Πρέπει να έχετε smartphone iOS ή Android, καθώς και σύνδεση στο διαδίκτυο που λειτουργεί.",
     },
     {
       id: 2,
-      question: "App installation failed, how to update system information?",
+      question: "Πώς μπορώ να κάνω κράτηση και να επισκεφτώ χώρους;",
       answer:
-        "Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home. Your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news.",
+        "Μπορείτε να βρείτε τη γκάμα αθλητικών δραστηριοτήτων απευθείας στην εφαρμογή μας. Όταν φτάσετε σε ένα χώρο, μπορείτε να κάνετε check in σαρώνοντας τον κωδικό QR Urbanfit που εμφανίζεται κοντά στην είσοδο. Ορισμένες δραστηριότητες ενδέχεται να απαιτούν κράτηση για προχωρημένους.",
     },
     {
       id: 3,
-      question: "Website reponse taking time, how to improve?",
+      question:
+        "Μπορώ να διακόψω ή να ακυρώσω τη συνδρομή μου ανά πάσα στιγμή;",
       answer:
-        "Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home. Your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news.",
+        "Μπορείτε να θέσετε τη συνδρομή σας σε παύση ανά πάσα στιγμή, ξεκινώντας από τον επόμενο μήνα συνδρομής. Οι συνδρομές απαιτούν ειδοποίηση ενός ολόκληρου μήνα πριν από την ακύρωση.",
     },
     {
       id: 4,
-      question: "New update fixed all bug and issues",
+      question: "Τι χρειάζομαι στο προφίλ μου για να μπορώ να κάνω check in;",
       answer:
-        "Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home. Your blood tests delivered at the home collect a sample from management news. Get your blood tests delivered at the home collect a sample from management news.",
+        "https://urbansports.zendesk.com/hc/en-us/articles/115003466389-What-do-I-need-on-my-profile-so-that-I-can-check-in-",
+    },
+    {
+      id: 6,
+      question: "Πώς μπορώ να δοκιμάσω τη συνδρομή μόνο για ένα μήνα;",
+      answer:
+        "https://urbansports.zendesk.com/hc/en-us/articles/115005506545-How-can-I-test-the-membership-for-one-month-only-",
+    },
+    {
+      id: 7,
+      question: "Πρέπει να κάνω κράτηση πριν μπορώ να κάνω check in;",
+      answer:
+        "https://urbansports.zendesk.com/hc/en-us/articles/115003465809-Do-I-need-to-make-a-booking-before-I-can-check-in-",
+    },
+    {
+      id: 5,
+      question: "Μπορεί κάποιος άλλος να χρησιμοποιήσει τη συνδρομή μου;",
+      answer:
+        "Η συνδρομή σας ισχύει μόνο για ένα άτομο και δεν μπορεί να μεταφερθεί.",
+    },
+    {
+      id: 5,
+      question:
+        "Έκανα μια δεσμευτική κράτηση, αλλά δεν μπορώ να τη διατηρήσω - τι πρέπει να κάνω;",
+      answer:
+        "https://urbansports.zendesk.com/hc/en-us/articles/115003496645-I-made-a-binding-booking-but-I-am-unable-to-keep-it-what-should-I-do-",
     },
   ],
+  link: "",
 };

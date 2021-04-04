@@ -16,7 +16,7 @@ import SectionWrapper, {
 import { projectData } from "../../../common/data/partners";
 
 const Project = () => {
-  const { title, slogan, thumb_url, projects } = projectData;
+  const { title, slogan, thumbUrl, projects } = projectData;
   const glideOptions = {
     type: "carousel",
     perView: 1,
@@ -53,7 +53,7 @@ const Project = () => {
           </GlideCarousel>
 
           <ImageWrapper>
-            <Image src={thumb_url} alt="Interiro landing by RedQ" />
+            <Image src={thumbUrl} alt="Interiro landing by RedQ" />
           </ImageWrapper>
         </ProjectWrapper>
       </Container>

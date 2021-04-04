@@ -15,86 +15,89 @@ import FooterWrapper, {
 import LogoImage from "../../common/assets/image/charity/logo.svg";
 import { menuWidgets, socialLinks } from "../../common/data";
 
-const Footer = ({ row, col, colOne, colTwo }) => {
-  return (
-    <FooterWrapper>
-      <Container width="1260px">
-        <Box className="row" {...row}>
-          <Box className="col-one" {...colOne}>
-            <Logo
-              className="logo"
-              href="/"
-              logoSrc={LogoImage}
-              title="urbanfit"
-            />
-            <Text className="text" content="EU: +077 1456 5924" />
-            <Text className="text" content="US: +361-541-4241" />
-            <a
-              onClick={() => {
-                window.location.href = `mailto:urbanfitgr@gmail.com?subject=${encodeURIComponent(
-                  "Επικοινώνησε με την urbanfit."
-                )}&body=${encodeURIComponent(
-                  "Πείτε μας πως θα μπορούσαμε να βοηθήσουμε."
-                )}`;
-              }}
-              className="mail"
+const Footer = ({ row, col, colOne, colTwo }) => (
+  <FooterWrapper>
+    <Container width="1260px">
+      <Box className="row" {...row}>
+        <Box className="col-one" {...colOne}>
+          <Logo
+            className="logo"
+            href="/"
+            logoSrc={LogoImage}
+            title="urbanfit"
+          />
+          <Text
+            className="text"
+            fontWeight="bold"
+            content="GR: +30 698 82 21 619"
+          />
+          {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-static-element-interactions */}
+          <a
+            onClick={() => {
+              window.location.href = `mailto:urbanfitgr@gmail.com?subject=${encodeURIComponent(
+                "Επικοινώνησε με την urbanfit."
+              )}&body=${encodeURIComponent(
+                "Πείτε μας πως θα μπορούσαμε να βοηθήσουμε."
+              )}`;
+            }}
+            className="mail"
+          >
+            urbanfitgr@gmail.com
+          </a>
+        </Box>
+        {/* End of logo column */}
+        <Box className="col-two" {...colTwo}>
+          {menuWidgets.map((widget) => (
+            <Box
+              className="col"
+              {...col}
+              key={`footer__widget-key${widget.id}`}
             >
-              urbanfitgr@gmail.com
-            </a>
-          </Box>
-          {/* End of logo column */}
-          <Box className="col-two" {...colTwo}>
-            {menuWidgets.map((widget) => (
-              <Box
-                className="col"
-                {...col}
-                key={`footer__widget-key${widget.id}`}
+              <Heading
+                className="widget_title"
+                as="h3"
+                content={widget.title}
+              />
+              <List>
+                {widget.menu.map((item) => (
+                  <ListItem key={`list__item-${item.id}`}>
+                    {item.href && <Link href={item.href}>{item.label}</Link>}
+                  </ListItem>
+                ))}
+              </List>
+            </Box>
+          ))}
+        </Box>
+        {/* End of List column */}
+      </Box>
+      {/* End of widgets row */}
+      <Box className="row copyright" {...row}>
+        <CopyrightText>
+          <Text
+            className="text"
+            content="© 2021 Urbanfit. All Rights Reserved"
+          />
+        </CopyrightText>
+        <SocialList>
+          {socialLinks.map((item) => (
+            <li className={item.name} key={`social__link-key${item.id}`}>
+              {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-static-element-interactions */}
+              <a
+                onClick={() => {
+                  window.open(item.link, "mywindow").focus();
+                }}
+                aria-label="social share link"
               >
-                <Heading
-                  className="widget_title"
-                  as="h3"
-                  content={widget.title}
-                />
-                <List>
-                  {widget.menu.map((item) => (
-                    <ListItem key={`list__item-${item.id}`}>
-                      {item.href && <Link href={item.href}>{item.label}</Link>}
-                    </ListItem>
-                  ))}
-                </List>
-              </Box>
-            ))}
-          </Box>
-          {/* End of List column */}
-        </Box>
-        {/* End of widgets row */}
-        <Box className="row copyright" {...row}>
-          <CopyrightText>
-            <Text
-              className="text"
-              content="© 2021 Urbanfit. All Rights Reserved"
-            />
-          </CopyrightText>
-          <SocialList>
-            {socialLinks.map((item) => (
-              <li className={item.name} key={`social__link-key${item.id}`}>
-                <a
-                  onClick={() => {
-                    window.open(item.link, "mywindow").focus();
-                  }}
-                  aria-label="social share link"
-                >
-                  {item.icon}
-                </a>
-              </li>
-            ))}
-          </SocialList>
-        </Box>
-        {/* End of copyright row */}
-      </Container>
-    </FooterWrapper>
-  );
-};
+                {item.icon}
+              </a>
+            </li>
+          ))}
+        </SocialList>
+      </Box>
+      {/* End of copyright row */}
+    </Container>
+  </FooterWrapper>
+);
 
 // Footer style props
 Footer.propTypes = {

@@ -13,7 +13,7 @@ import { aboutData } from "../../../common/data/partners";
 
 const AboutUs = () => {
   const {
-    thumb_url,
+    thumbUrl,
     title,
     title1,
     title2,
@@ -33,7 +33,7 @@ const AboutUs = () => {
           <Fade left>
             <Image
               style={{ width: "90%", borderRadius: "16%" }}
-              src={thumb_url}
+              src={thumbUrl}
               alt="Interior Landing by RedQ"
             />
           </Fade>

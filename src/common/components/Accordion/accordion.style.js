@@ -43,6 +43,10 @@ export const AccordionTitleWrapper = styled(AccordionItemHeading)`
     }
   }
 
+  h3 {
+    line-height: 1.7rem !important;
+  }
+
   &:focus {
     outline: none;
   }
@@ -53,6 +57,10 @@ export const AccordionTitleWrapper = styled(AccordionItemHeading)`
 `;
 export const AccordionItemButtonWrapper = styled(AccordionItemButton)``;
 export const AccordionBodyWrapper = styled(AccordionItemPanel)`
+  p {
+    color: #0f2137 !important;
+  }
+
   animation: 0.35s ${fadeIn} ease-in;
   &.accordion__body--hidden {
     animation: 0.35s ${fadeIn} ease-in;

@@ -19,6 +19,7 @@ import {
   CharityWrapper,
   ContentWrapper,
 } from "../containers/charity.style";
+import { faq } from "../common/data";
 
 const Index = () => (
   <ThemeProvider theme={charityTheme}>
@@ -44,7 +45,7 @@ const Index = () => (
           <WorkSection />
           <BranchSectionLeft />
           <BranchSectionRight />
-          <Faq />
+          <Faq faq={faq} />
         </ContentWrapper>
         <Footer />
       </CharityWrapper>

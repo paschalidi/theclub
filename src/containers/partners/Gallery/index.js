@@ -38,7 +38,7 @@ const Gallery = () => {
               <GalleryCard>
                 <Link href={item.link}>
                   <a>
-                    <Image src={item.thumb_url} alt={item.name} />
+                    <Image src={item.thumbUrl} alt={item.name} />
                     <Button className="read_more__btn">
                       <span className="arrow"></span>
                       {item.name}

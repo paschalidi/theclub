@@ -11,6 +11,12 @@ const FaqSection = styled.section`
     padding: 45px 0;
   }
 
+  .centeredButton {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
   .reusecore__accordion {
     max-width: 750px;
     margin: 0 auto;

@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { iosEmailOutline } from "react-icons-kit/ionicons/iosEmailOutline";
 
+import { Icon } from "react-icons-kit";
 import Heading from "../../common/components/Heading";
 import Image from "../../common/components/Image";
 import GlideCarousel from "../../common/components/GlideCarousel";
@@ -14,7 +15,6 @@ import BannerWrapper, {
 import { FormWrapper, ButtonGroup } from "../partners/Banner/banner.style";
 
 import { bannerSlides } from "../../common/data";
-import { Icon } from "react-icons-kit";
 import Input from "../../common/components/Input";
 import Button from "../../common/components/Button";
 
@@ -37,7 +37,7 @@ const Glide = ({ slides }) => {
     >
       {slides.map((slide) => (
         <GlideSlide key={slide.id}>
-          <Image src={slide.thumb_url} alt="Charity Landing" />
+          <Image src={slide.thumbUrl} alt="Charity Landing" />
         </GlideSlide>
       ))}
     </GlideCarousel>
@@ -106,7 +106,7 @@ const BannerSection = () => {
                 placeholder="Πληκτρολογείστε το email σας εδώ"
                 icon={<Icon icon={iosEmailOutline} />}
                 iconPosition="left"
-                required={true}
+                required
                 onChange={handleOnChange}
                 aria-label="email"
               />

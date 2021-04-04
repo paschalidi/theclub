@@ -17,6 +17,69 @@
 /* ------------------------------------ */
 // Menu data
 /* ------------------------------------ */
+/* ------------------------------------ */
+// Banner section data
+/* ------------------------------------ */
+import { Icon } from "react-icons-kit";
+import { socialFacebook } from "react-icons-kit/ionicons/socialFacebook";
+import { socialDribbble } from "react-icons-kit/ionicons/socialDribbble";
+import { socialGoogleplus } from "react-icons-kit/ionicons/socialGoogleplus";
+import { socialSkype } from "react-icons-kit/ionicons/socialSkype";
+import { socialTwitter } from "react-icons-kit/ionicons/socialTwitter";
+import { facebook } from "react-icons-kit/fa/facebook";
+import { dribbble } from "react-icons-kit/fa/dribbble";
+import { googlePlus } from "react-icons-kit/fa/googlePlus";
+import { skype } from "react-icons-kit/fa/skype";
+import { twitter } from "react-icons-kit/fa/twitter";
+import slide1 from "../../../pages/images/partners-banner-1.jpeg";
+import slide2 from "../../../pages/images/partners-banner-2.jpeg";
+import slide3 from "../../../pages/images/partners-banner-3.jpeg";
+import slide4 from "../../../pages/images/partners-banner-4.jpeg";
+import slide5 from "../../../pages/images/partners-banner-5.jpeg";
+import slide6 from "../../../pages/images/partners-banner-6.jpeg";
+import slide7 from "../../../pages/images/partners-banner-7.jpeg";
+import slide8 from "../../../pages/images/partners-banner-8.jpeg";
+
+/* ------------------------------------ */
+// Feature section data
+/* ------------------------------------ */
+import icon1 from "../../assets/image/partners/feature/svg-4.svg";
+import icon2 from "../../assets/image/partners/feature/svg-3.svg";
+import icon3 from "../../assets/image/partners/feature/svg-1.svg";
+import icon4 from "../../assets/image/partners/feature/svg-2.svg";
+
+/* ------------------------------------ */
+// About section data
+/* ------------------------------------ */
+import product from "../../assets/image/partners/win.jpeg";
+
+/* ------------------------------------ */
+// Projects section data
+/* ------------------------------------ */
+import project1 from "../../assets/image/partners/projects/1.png";
+
+/* ------------------------------------ */
+// Team section data
+/* ------------------------------------ */
+
+import member1 from "../../assets/image/partners/team/member1.jpg";
+import member2 from "../../assets/image/partners/team/member2.jpg";
+import member3 from "../../assets/image/partners/team/member3.jpg";
+
+/* ------------------------------------ */
+// Gallery data
+/* ------------------------------------ */
+import galleryImg1 from "../../assets/image/partners/gallery/1.jpg";
+import galleryImg2 from "../../assets/image/partners/gallery/2.jpg";
+import galleryImg3 from "../../assets/image/partners/gallery/3.jpg";
+import galleryImg4 from "../../assets/image/partners/gallery/4.jpg";
+import galleryImg5 from "../../assets/image/partners/gallery/5.jpg";
+
+/* ------------------------------------ */
+// Footer data
+/* ------------------------------------ */
+import logo from "../../assets/image/partners/logo.svg";
+
 export const menuData = [
   {
     label: "Feature",
@@ -50,18 +113,6 @@ export const menuData = [
   },
 ];
 
-/* ------------------------------------ */
-// Banner section data
-/* ------------------------------------ */
-import slide1 from "../../../pages/images/partners-banner-1.jpeg";
-import slide2 from "../../../pages/images/partners-banner-2.jpeg";
-import slide3 from "../../../pages/images/partners-banner-3.jpeg";
-import slide4 from "../../../pages/images/partners-banner-4.jpeg";
-import slide5 from "../../../pages/images/partners-banner-5.jpeg";
-import slide6 from "../../../pages/images/partners-banner-6.jpeg";
-import slide7 from "../../../pages/images/partners-banner-7.jpeg";
-import slide8 from "../../../pages/images/partners-banner-8.jpeg";
-
 export const bannerData = {
   discount: "25%",
   discountLabel: "περισσοτερα κερδη τα δυο πρωτα χρονια",
@@ -76,54 +127,46 @@ export const bannerData = {
   carousel: [
     {
       id: 1,
-      thumb_url: slide1,
+      thumbUrl: slide1,
       title: "Yoga",
     },
     {
       id: 5,
-      thumb_url: slide5,
+      thumbUrl: slide5,
       title: "Studios",
     },
     {
       id: 8,
-      thumb_url: slide8,
+      thumbUrl: slide8,
       title: "Γυμναστήρια",
     },
     {
       id: 2,
-      thumb_url: slide2,
+      thumbUrl: slide2,
       title: "Boxing",
     },
     {
       id: 3,
-      thumb_url: slide3,
+      thumbUrl: slide3,
       title: "Lift",
     },
     {
       id: 7,
-      thumb_url: slide7,
+      thumbUrl: slide7,
       title: "Yoga",
     },
     {
       id: 6,
-      thumb_url: slide6,
+      thumbUrl: slide6,
       title: "Crossfit",
     },
     {
       id: 4,
-      thumb_url: slide4,
+      thumbUrl: slide4,
       title: "Γυμναστήρια",
     },
   ],
 };
-
-/* ------------------------------------ */
-// Feature section data
-/* ------------------------------------ */
-import icon1 from "../../../common/assets/image/partners/feature/svg-4.svg";
-import icon2 from "../../../common/assets/image/partners/feature/svg-3.svg";
-import icon3 from "../../../common/assets/image/partners/feature/svg-1.svg";
-import icon4 from "../../../common/assets/image/partners/feature/svg-2.svg";
 
 export const featureData = {
   title: "OΙ ΥΠΗΡΕΣΙΕΣ ΜΑΣ",
@@ -160,13 +203,8 @@ export const featureData = {
   ],
 };
 
-/* ------------------------------------ */
-// About section data
-/* ------------------------------------ */
-import product from "../../../common/assets/image/partners/win.jpeg";
-
 export const aboutData = {
-  thumb_url: product,
+  thumbUrl: product,
   title: "Πως δουλεύει",
   title1: "1. Εγγραφείτε online (σε λιγότερο από 10 λεπτά)",
   text1:
@@ -179,15 +217,10 @@ export const aboutData = {
     "Λάβετε κρατήσεις, πληρωθήτε. Το SmartSpot, το έξυπνο εργαλείο διαχείρισης σημείων μας, θα εξετάσει το πρόγραμμά σας και τα δεδομένα σε πραγματικό χρόνο για να δυναμικά τιμολογήσει τα μη συμπληρωμένα σημεία σας για να μεγιστοποιήσετε τα έσοδά σας.",
 };
 
-/* ------------------------------------ */
-// Projects section data
-/* ------------------------------------ */
-import project1 from "../../../common/assets/image/partners/projects/1.png";
-
 export const projectData = {
   title: "WORK PROCEDURE",
   slogan: "How We Do Our Projects",
-  thumb_url: project1,
+  thumbUrl: project1,
   projects: [
     {
       id: 1,
@@ -212,20 +245,6 @@ export const projectData = {
     },
   ],
 };
-
-/* ------------------------------------ */
-// Team section data
-/* ------------------------------------ */
-import { Icon } from "react-icons-kit";
-import { socialFacebook } from "react-icons-kit/ionicons/socialFacebook";
-import { socialDribbble } from "react-icons-kit/ionicons/socialDribbble";
-import { socialGoogleplus } from "react-icons-kit/ionicons/socialGoogleplus";
-import { socialSkype } from "react-icons-kit/ionicons/socialSkype";
-import { socialTwitter } from "react-icons-kit/ionicons/socialTwitter";
-
-import member1 from "../../../common/assets/image/partners/team/member1.jpg";
-import member2 from "../../../common/assets/image/partners/team/member2.jpg";
-import member3 from "../../../common/assets/image/partners/team/member3.jpg";
 
 export const teamData = {
   title: "OUR TEAM MEMBER",
@@ -434,43 +453,34 @@ export const testimonialData = {
   ],
 };
 
-/* ------------------------------------ */
-// Gallery data
-/* ------------------------------------ */
-import galleryImg1 from "../../../common/assets/image/partners/gallery/1.jpg";
-import galleryImg2 from "../../../common/assets/image/partners/gallery/2.jpg";
-import galleryImg3 from "../../../common/assets/image/partners/gallery/3.jpg";
-import galleryImg4 from "../../../common/assets/image/partners/gallery/4.jpg";
-import galleryImg5 from "../../../common/assets/image/partners/gallery/5.jpg";
-
 export const galleryData = [
   {
     id: 1,
-    thumb_url: galleryImg1,
+    thumbUrl: galleryImg1,
     name: "Eco friendly",
     link: "#",
   },
   {
     id: 2,
-    thumb_url: galleryImg2,
+    thumbUrl: galleryImg2,
     name: "Living",
     link: "#",
   },
   {
     id: 3,
-    thumb_url: galleryImg3,
+    thumbUrl: galleryImg3,
     name: "Corner",
     link: "#",
   },
   {
     id: 4,
-    thumb_url: galleryImg4,
+    thumbUrl: galleryImg4,
     name: "Wall decor",
     link: "#",
   },
   {
     id: 5,
-    thumb_url: galleryImg5,
+    thumbUrl: galleryImg5,
     name: "Restroom",
     link: "#",
   },
@@ -486,18 +496,8 @@ export const newsletterData = {
     "Note: Please call us at 12pm to 8am. otherwise our customer supporter will not available to reach your call, but you can drop mail anytime.",
 };
 
-/* ------------------------------------ */
-// Footer data
-/* ------------------------------------ */
-import { facebook } from "react-icons-kit/fa/facebook";
-import { dribbble } from "react-icons-kit/fa/dribbble";
-import { googlePlus } from "react-icons-kit/fa/googlePlus";
-import { skype } from "react-icons-kit/fa/skype";
-import { twitter } from "react-icons-kit/fa/twitter";
-import logo from "../../../common/assets/image/partners/logo.svg";
-
 export const footerData = {
-  logo: logo,
+  logo,
   mail: "hello@redq.io",
   phone: "123-456-7890",
   socialLinks: [
@@ -685,3 +685,72 @@ export const socialProfile = [
     link: "#",
   },
 ];
+
+export const faq = {
+  slogan: "ΣΥΧΝΕΣ ΕΡΩΤΗΣΕΙΣ",
+  title: "Ερωτήσεις που οι συνεργάτες μας κάνουν συχνά",
+  faqs: [
+    {
+      id: 9,
+      question: "Πώς μπορώ να έρθω σε επαφή με το Urbanfit;",
+      answer:
+        "Απαντούμε στις ερωτήσεις σας από Δευτέρα έως Παρασκευή. Καλέστε μας στο 004917645732805 ή αλλιως μπορειτε να μας στείλετε ενα email στο urbanfitgr@gmail.com και θα σας απαντήσουμε άμεσα!",
+    },
+    {
+      id: 1,
+      question:
+        "Με ποιον μπορώ να επικοινωνήσω εάν έχω ερωτήσεις σχετικά με τη συμφωνία συνεργασίας μου ή αν θέλω να προσαρμόσω τη σύμβασή μου;",
+      answer:
+        "Εάν έχετε απορίες σχετικά με τη συμφωνία συνεργασίας σας, απλώς επικοινωνήστε μαζί μας είτε μέσω τηλεφώνου στο 004917645732805 είτε μέσω email στο urbanfitgr@gmail.com και θα σας απαντήσουμε άμεσα! Στο μήνυμά σας, εξηγήστε το αίτημά σας όσο το δυνατόν ακριβέστερα, ώστε να μπορέσουμε να το διαβιβάσουμε στον αρμόδιο υπάλληλο το συντομότερο δυνατό. Το ερώτημά σας θα προωθηθεί στη συνέχεια στο αρμόδιο τμήμα, ώστε να λάβετε μια απάντηση το συντομότερο δυνατό.",
+    },
+    {
+      id: 2,
+      question: "Πώς λειτουργεί το check στην Urbanfit;",
+      answer:
+        "Η διαδικασία check in είναι εύκολη και πραγματοποιείται μέσω της εφαρμογής Urbanfit, την οποία κάθε μέλος έχει εγκαταστήσει εκ των προτέρων στο κινητό τους. Τα μέλη μας πηγαίνουν στον επιθυμητό συνεργάτη (γυμναστήριο, στούντιο yoga κτλπ), σαρώσουν τον κωδικό QR που βρήσκετε κόντα στην είσοδο του χώρου και μπορούν να ξεκινήσουν αμέσως. Εάν η κράτηση είναι απαραίτητη εκ των προτέρων (περιορισμένος αριθμός συμμετεχόντων για μαθήματα, ομαδικά αθλήματα ή επιθυμητό ατομικό ραντεβού), τα μέλη θα ενημερωθούν για αυτό κατά την προεγγραφή μέσω την εφαρμογής μας.",
+    },
+    {
+      id: 3,
+      question:
+        "Πώς μπορώ να επιβεβαιώσω το check-in ενός μέλους του Urbanfit;",
+      answer:
+        "Αφού κάποιο μέλος σαρώσει τον κωδικό QR και επιλέξει τη σωστή δραστηριότητα, η οθόνη στην εφαρμογή γίνετε πράσινη. Αυτό επιβεβαιώνει ένα επιτυχημένο check-in. Στην εφαρμογή συνεργατών μπορείτε να παρακολουθείτε τα check-in σας σε πραγματικό χρόνο ή να ελέγχετε τη μηνιαία επισκόπηση των check-in. Επιπλέον, μπορείτε να βρείτε τα μηνιαία τιμολόγιά σας εδώ και να προσθέσετε χειροκίνητα check-in σε περίπτωση που υπάρχει κάποιο σφάλμα στην εφαρμογή.",
+    },
+    {
+      id: 4,
+      question:
+        "Τι συμβαίνει όταν το check-in ενός μέλους του Urbanfit δεν λειτουργεί;",
+      answer:
+        "https://uscpam.zendesk.com/hc/en-gb/articles/360020981654-What-happens-when-a-Urban-Sports-Club-member-s-check-in-doesn-t-work-",
+    },
+    {
+      id: 6,
+      question:
+        "Πώς πρέπει να συμπεριφέρομαι όταν ένα μέλος του Urbanfit μου δείχνει ένα μήνυμα σφάλματος κατά τη διαδικασία του check in;",
+      answer:
+        "Ένα μήνυμα σφάλματος σημαίνει ότι δεν επιτρέπεται η αποδοχή και η επίσκεψη δεν θα αντισταθμιστεί από το Urbanfit. Τα μηνύματα σφάλματος έχουν συνήθως έναν καλό λόγο (έληξε η ιδιότητα μέλους, εξαντλημένο όριο επισκέψεων κ.λπ.). \nΜερικές φορές ένα ίσως το μέλος να μην έχει καλο σήμα δικτύου, οπότε σε ορισμένες περιπτώσεις, εάν δεν υπάρχει προφανής λόγος για το μήνυμα σφάλματος, βοηθάει να εκτελέσετε τη διαδικασία check in για δεύτερη φορά. \nΕάν εξακολουθεί να μην είναι δυνατή η είσοδος στο check in, δεν επιτρέπεται η αποδοχή. Το Urbanfit δεν επιστρέφει αυτές τις επισκέψεις. Εάν το μέλος εξακολουθεί να θέλει να εκπαιδεύσει μαζί σας, μπορείτε να χρεώσετε την επίσκεψη σε αυτήν την περίπτωση απευθείας με το μέλος σχετικά με τις κανονικές σας συνθήκες. Το μέλος μπορεί στη συνέχεια να επικοινωνήσει με την υποστήριξη των μελών μας.",
+    },
+    {
+      id: 7,
+      question: "Πώς μπορώ να λάβω έναν νέο κωδικό QR;",
+      answer:
+        'Εάν ο κωδικός QR σας είναι φθαρμένος, σπασμένος ή δυσανάγνωστος, θα χαρούμε να σας στείλουμε έναν νέο. Επικοινωνήστε μαζί μας μέσω email στο urbanfitgr@gmail.com. \nΩς τίτλο παρακαλούμε να έχετε "Χρειάζομαι έναν νέο κωδικό QR". \n\nΕπίσης παρακαλούμε να εισαγάγετε τα ακόλουθα στοιχεία \n1. Ονομα τοποθεσίας, \n2. αριθμός και μορφή του επιθυμητού κωδικού QR (A5 stand-up ή A6 card, \n3. πλήρης διεύθυνση αποστολή. \n\nΘα σας στείλουμε έναν νέο κωδικό QR το συντομότερο δυνατό σε μορφή pdf. Στη συνέχεια θα μπορείτε να εκτυπώσετε τον κωδικό ωστε τα μέλη να μπορούν να τον σκανάρουν.',
+    },
+    {
+      id: 5,
+      question:
+        "Πώς λειτουργεί η τιμολόγηση μεταξύ των συνεργατών και του Urbanfit;",
+      answer:
+        "Το Urbanfit αντισταθμίζει το προηγούμενο συμφωνηθέν κόστος ενός checkin ανά μέλος του Urbanfit. Το τιμολόγιο για τα check-in για έναν ολόκληρο μήνα υποβάλλεται σε επεξεργασία το αργότερο έως τις 15 κάθε επόμενου μήνα. Μπορείτε να βρείτε ένα αντίγραφο του μηνιαίου τιμολογίου στο εργαλείο συνεργάτη." +
+        "https://uscpam.zendesk.com/hc/en-gb/articles/360020981194-How-does-the-invoicing-work-between-the-partners-and-Urban-Sports-Club-",
+    },
+    {
+      id: 5,
+      question:
+        "Τι συμβαίνει όταν ένα μέλος του Urbanfit δεν εμφανίζεται για επιβεβαιωμένο ραντεβού;",
+      answer:
+        "Όταν ένα μέλος του Urbanfit δεν μπορεί να παρευρεθεί σε ένα συγκεκριμένο ραντεβού, έχει τη δυνατότητα να ακυρώσει το εν λόγω ραντεβού εντός του παραχωρημένου παραθύρου ακύρωσης που έχει ορίσει ο συνεργάτης. Σε περίπτωση καθυστερημένης ακύρωσης, η κράτηση θα εξακολουθεί να αφαιρείται από τα όρια επισκέψεων του μέλους και το στούντιο θα λάβει κανόνικα τη πληρωμή για αυτό το check-in. Σε περίπτωση πολλαπλών παραβιάσεων, θα χρεώσουμε στο μέλος πρόστιμο.",
+    },
+  ],
+  link: "",
+};

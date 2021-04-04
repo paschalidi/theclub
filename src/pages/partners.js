@@ -16,6 +16,8 @@ import {
 import { CharityWrapper } from "../containers/charity.style";
 import Faq from "../containers/Faq";
 
+import { faq } from "../common/data/partners";
+
 const Partners = () => (
   <ThemeProvider theme={charityTheme}>
     <>
@@ -30,7 +32,6 @@ const Partners = () => (
       <ResetCSS />
       <GlobalStyle />
 
-      {/* Start writing your markup from here. */}
       <CharityWrapper>
         <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
           <Navbar type="dark" />
@@ -39,11 +40,10 @@ const Partners = () => (
           <Banner />
           <Feature />
           <AboutUs />
-          <Faq />
+          <Faq faq={faq} />
         </ContentWrapper>
         <Footer />
       </CharityWrapper>
-      {/* End of markup section. */}
     </>
   </ThemeProvider>
 );
