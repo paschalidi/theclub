@@ -32,9 +32,7 @@ import bannerSlide2 from "../../pages/images/banner-2.jpeg";
 import bannerSlide3 from "../../pages/images/banner-3.jpeg";
 import bannerSlide4 from "../../pages/images/banner-4.jpeg";
 import bannerSlide5 from "../../pages/images/banner-5.jpeg";
-import bannerSlide6 from "../../pages/images/banner-6.jpeg";
 import bannerSlide7 from "../../pages/images/banner-7.jpeg";
-import bannerSlide8 from "../../pages/images/banner-8.jpeg";
 import bannerSlide9 from "../../pages/images/banner-9.jpeg";
 import bannerSlide10 from "../../pages/images/banner-10.jpeg";
 
@@ -120,12 +118,12 @@ export const bannerSlides = [
     thumbUrl: bannerSlide0,
   },
   {
-    id: 4,
-    thumbUrl: bannerSlide1,
-  },
-  {
     id: 1,
     thumbUrl: bannerSlide5,
+  },
+  {
+    id: 4,
+    thumbUrl: bannerSlide1,
   },
   {
     id: 2,
@@ -144,16 +142,8 @@ export const bannerSlides = [
     thumbUrl: bannerSlide3,
   },
   {
-    id: 6,
-    thumbUrl: bannerSlide6,
-  },
-  {
     id: 7,
     thumbUrl: bannerSlide7,
-  },
-  {
-    id: 8,
-    thumbUrl: bannerSlide8,
   },
   {
     id: 9,
