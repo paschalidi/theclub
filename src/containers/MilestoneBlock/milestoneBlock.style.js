@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
-import bgImage from 'common/assets/image/charity/milestone-bg.png';
+import styled from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
+import bgImage from "../../common/assets/image/charity/milestone-bg.png";
 
 const BlockWrapper = styled.div`
   width: 100%;
@@ -33,7 +33,7 @@ export const MilestoneCard = styled.div`
   max-width: 323px;
   padding: 62px 55px 70px;
   border-radius: 10px;
-  background-color: ${themeGet('colors.primary', '#FCF22B')};
+  background-color: ${themeGet("colors.primary", "#FCF22B")};
   text-align: center;
   @media only screen and (max-width: 1440px) {
     padding: 56px 45px 56px;
@@ -51,7 +51,7 @@ export const MilestoneCard = styled.div`
     font-size: 20px;
     line-height: 32px;
     text-transform: uppercase;
-    color: ${themeGet('colors.heading', '#060F1E')};
+    color: ${themeGet("colors.heading", "#060F1E")};
     margin: 0;
     @media only screen and (max-width: 1440px) {
       font-size: 18px;
@@ -67,7 +67,7 @@ export const MilestoneCard = styled.div`
     font-size: 80px;
     line-height: 70px;
     font-weight: 700;
-    color: ${themeGet('colors.heading', '#060F1E')};
+    color: ${themeGet("colors.heading", "#060F1E")};
     margin: 30px 0;
     @media only screen and (max-width: 1440px) {
       font-size: 56px;

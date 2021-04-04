@@ -1,15 +1,15 @@
-import React from 'react';
-import Link from 'next/link';
-import Fade from 'react-reveal/Fade';
-import Heading from '../../../common/components/Heading';
-import Text from '../../../common/components/Text';
+import React from "react";
+import Link from "next/link";
+import Fade from "react-reveal/Fade";
+import Heading from "../../../common/components/Heading";
+import Text from "../../../common/components/Text";
 import SectionWrapper, {
   ContentWrapper,
   NewsWrapper,
   NewsItem,
-} from './news.style';
+} from "./news.style";
 
-import { newsData } from '../../../common/data/partners';
+import { newsData } from "../../../common/data/partners";
 
 const News = () => {
   return (

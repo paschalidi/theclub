@@ -1,14 +1,14 @@
-import React, { useEffect } from 'react';
-import Glide from '@glidejs/glide';
-import '@glidejs/glide/dist/css/glide.core.min.css';
-import Text from 'common/components/Text';
-import Image from 'common/components/Image';
-import Heading from 'common/components/Heading';
+import React, { useEffect } from "react";
+import Glide from "@glidejs/glide";
+import "@glidejs/glide/dist/css/glide.core.min.css";
+import Text from "../../../common/components/Text";
+import Image from "../../../common/components/Image";
+import Heading from "../../../common/components/Heading";
 
 const Carousel = ({ data }) => {
   useEffect(() => {
-    const glide = new Glide('#glide_carousel', {
-      type: 'carousel',
+    const glide = new Glide("#glide_carousel", {
+      type: "carousel",
       perView: 1,
       gap: 0,
     });
@@ -26,7 +26,7 @@ const Carousel = ({ data }) => {
                   <div className="user_info">
                     <Heading as="h3" content={item.name} />
                     <p>
-                      {item.designation}{' '}
+                      {item.designation}{" "}
                       <a href={item.account_url}>{item.username}</a>
                     </p>
                   </div>

@@ -1,9 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Text from '../../Text';
-import Link from '../../Link';
-import Image from '../../Image';
-import NextLink from 'next/link';
+import React from "react";
+import PropTypes from "prop-types";
+import Text from "../../Text";
+import Link from "../../Link";
+import Image from "../../Image";
+import NextLink from "next/link";
 
 const Logo = ({
   logoWrapperStyle,
@@ -52,17 +52,17 @@ Logo.propTypes = {
 
 Logo.defaultProps = {
   logoWrapperStyle: {
-    display: 'inline-block',
-    mr: '1rem',
-    'a:hover,a:focus': {
-      textDecoration: 'none',
+    display: "inline-block",
+    mr: "1rem",
+    "a:hover,a:focus": {
+      textDecoration: "none",
     },
   },
   titleStyle: {
-    display: 'inline-block',
-    fontSize: '2rem',
-    lineHeight: 'inherit',
-    whiteSpace: 'nowrap',
+    display: "inline-block",
+    fontSize: "2rem",
+    lineHeight: "inherit",
+    whiteSpace: "nowrap",
   },
 };
 export default Logo;

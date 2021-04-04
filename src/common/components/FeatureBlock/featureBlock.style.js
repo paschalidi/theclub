@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 import {
   color,
   width,
@@ -17,7 +17,7 @@ import {
   overflow,
   fontSize,
   textAlign,
-} from 'styled-system';
+} from "styled-system";
 
 // FeatureBlock wrapper style
 const FeatureBlockWrapper = styled.div`

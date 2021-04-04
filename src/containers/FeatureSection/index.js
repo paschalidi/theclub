@@ -1,14 +1,14 @@
-import React from 'react';
-import Text from 'common/components/Text';
-import Heading from 'common/components/Heading';
-import BlogPost from 'common/components/BlogPost';
-import Container from 'common/components/UI/Container';
+import React from "react";
+import Text from "../../common/components/Text";
+import Heading from "../../common/components/Heading";
+import BlogPost from "../../common/components/BlogPost";
+import Container from "../../common/components/UI/Container";
 import SectionWrapper, {
   SectionHeader,
   FeatureWrapper,
-} from './featureSection.style';
+} from "./featureSection.style";
 
-import { featureData } from 'common/data';
+import { featureData } from "../../common/data";
 
 const FeatureSection = () => {
   const { title, slogan, features } = featureData;

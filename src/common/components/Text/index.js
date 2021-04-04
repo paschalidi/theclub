@@ -1,23 +1,23 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
 import {
   fontFamily,
   fontWeight,
   textAlign,
   lineHeight,
   letterSpacing,
-} from 'styled-system';
-import { base, themed } from '../base';
+} from "styled-system";
+import { base, themed } from "../base";
 
-const TextWrapper = styled('p')(
+const TextWrapper = styled("p")(
   base,
   fontFamily,
   fontWeight,
   textAlign,
   lineHeight,
   letterSpacing,
-  themed('Text')
+  themed("Text")
 );
 
 const Text = ({ content, ...props }) => (
@@ -82,7 +82,7 @@ Text.propTypes = {
 };
 
 Text.defaultProps = {
-  as: 'p',
+  as: "p",
   mt: 0,
-  mb: '1rem',
+  mb: "1rem",
 };

@@ -1,15 +1,15 @@
-import React, { Fragment } from 'react';
-import Link from 'next/link';
-import Image from '../../../common/components/Image';
-import GlideCarousel from '../../../common/components/GlideCarousel';
-import GlideSlide from '../../../common/components/GlideCarousel/glideSlide';
-import GalleryWrapper, { GalleryCard, Button } from './gallery.style';
+import React, { Fragment } from "react";
+import Link from "next/link";
+import Image from "../../../common/components/Image";
+import GlideCarousel from "../../../common/components/GlideCarousel";
+import GlideSlide from "../../../common/components/GlideCarousel/glideSlide";
+import GalleryWrapper, { GalleryCard, Button } from "./gallery.style";
 
-import { galleryData } from '../../../common/data/partners';
+import { galleryData } from "../../../common/data/partners";
 
 const Gallery = () => {
   const glideOptions = {
-    type: 'carousel',
+    type: "carousel",
     perView: 5,
     gap: 0,
     breakpoints: {

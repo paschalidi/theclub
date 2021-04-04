@@ -1,5 +1,5 @@
-import styled, { keyframes } from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled, { keyframes } from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
 
 const shake = keyframes`
 0% {
@@ -64,7 +64,7 @@ const BannerWrapper = styled.div`
         display: inline-flex;
       }
       &:hover {
-        color: ${themeGet('colors.text', '#294859')};
+        color: ${themeGet("colors.text", "#294859")};
 
         i {
           animation: ${shake} 1s infinite;
@@ -136,7 +136,7 @@ export const TextArea = styled.div`
     font-size: 25px;
     line-height: 40px;
     font-weight: 400;
-    color: ${themeGet('colors.text', '#294859')};
+    color: ${themeGet("colors.text", "#294859")};
     margin-bottom: 22px;
     @media only screen and (max-width: 1440px) {
       font-size: 22px;
@@ -165,7 +165,7 @@ export const TextArea = styled.div`
       margin: 0 0 40px;
       font-size: 14px;
       line-height: 17px;
-      color: ${themeGet('colors.heading', '#060F1E')};
+      color: ${themeGet("colors.heading", "#060F1E")};
       @media only screen and (max-width: 1440px) {
         margin: 0 0 30px;
       }
@@ -192,8 +192,8 @@ export const HighlightedText = styled.p`
     border-radius: 30px;
     font-size: 10px;
     text-transform: uppercase;
-    color: ${themeGet('colors.white', '#ffffff')};
-    background-color: ${themeGet('colors.secondary', '#D50032')};
+    color: ${themeGet("colors.white", "#ffffff")};
+    background-color: ${themeGet("colors.secondary", "#D50032")};
     margin-right: 10px;
   }
 `;
@@ -268,18 +268,18 @@ export const ImageArea = styled.div`
           width: 30px;
           height: 2px;
           border-radius: 4px;
-          background-color: ${themeGet('colors.text', '#294859')};
+          background-color: ${themeGet("colors.text", "#294859")};
           position: relative;
           transition: all 0.3s ease;
 
           &::before,
           &::after {
-            content: '';
+            content: "";
             display: block;
             width: 14px;
             height: 2px;
             border-radius: 4px;
-            background-color: ${themeGet('colors.text', '#294859')};
+            background-color: ${themeGet("colors.text", "#294859")};
             position: absolute;
             z-index: 1;
             transition: all 0.3s ease;
@@ -317,14 +317,14 @@ export const ImageArea = styled.div`
         &:hover {
           > span {
             width: 100px;
-            background-color: ${themeGet('colors.secondary', '#D50032')};
+            background-color: ${themeGet("colors.secondary", "#D50032")};
             @media only screen and (max-width: 1440px) {
               width: 70px;
             }
 
             &::before,
             &::after {
-              background-color: ${themeGet('colors.secondary', '#D50032')};
+              background-color: ${themeGet("colors.secondary", "#D50032")};
             }
           }
         }

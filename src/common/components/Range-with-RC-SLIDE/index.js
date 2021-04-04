@@ -1,9 +1,9 @@
-import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
-import Slider from 'rc-slider';
-import Tooltip from 'rc-tooltip';
-import 'rc-slider/assets/index.css';
-import RangeBoxStyle from './range.style';
+import React, { Fragment } from "react";
+import PropTypes from "prop-types";
+import Slider from "rc-slider";
+import Tooltip from "rc-tooltip";
+import "rc-slider/assets/index.css";
+import RangeBoxStyle from "./range.style";
 
 const createSliderWithTooltip = Slider.createSliderWithTooltip;
 const Range = createSliderWithTooltip(Slider.Range);
@@ -72,7 +72,7 @@ const RangeBox = (props) => {
     rangeDefaultValue && rangeDefaultValue[1] ? rangeDefaultValue[1] : 0;
   const toolTipConfig = {
     placement,
-    prefixCls: 'reusecore__rc_slider_tooltip rc-slider-tooltip',
+    prefixCls: "reusecore__rc_slider_tooltip rc-slider-tooltip",
   };
   return (
     <Range
@@ -93,13 +93,13 @@ const RangeBox = (props) => {
 
 export default ({ className, labelText, labelPosition, type, ...props }) => {
   // Add all classs to an array
-  const addAllClasses = ['reusecore__rangebox'];
+  const addAllClasses = ["reusecore__rangebox"];
   // Add label position class
   if (labelPosition) {
     addAllClasses.push(`label_${labelPosition}`);
   }
   // label control
-  const position = labelPosition || 'right';
+  const position = labelPosition || "right";
   const LabelField = labelText && (
     <span className="reusecore__field-label">{labelText}</span>
   );
@@ -109,10 +109,10 @@ export default ({ className, labelText, labelPosition, type, ...props }) => {
   }
   return (
     <Fragment>
-      <RangeBoxStyle className={addAllClasses.join(' ')}>
+      <RangeBoxStyle className={addAllClasses.join(" ")}>
         <label>
-          {position === 'left' || position === 'right' ? LabelField : ''}
-          {type && type === 'range' ? (
+          {position === "left" || position === "right" ? LabelField : ""}
+          {type && type === "range" ? (
             <RangeBox {...props} />
           ) : (
             <SliderBox {...props} />
@@ -134,21 +134,21 @@ RangeBox.propTypes = {
   labelText: PropTypes.string,
 
   /** labelText of the range-box field */
-  labelPosition: PropTypes.oneOf(['right', 'left']),
+  labelPosition: PropTypes.oneOf(["right", "left"]),
 
   /** type of the range-box  */
-  type: PropTypes.oneOf(['range', 'slide']).isRequired,
+  type: PropTypes.oneOf(["range", "slide"]).isRequired,
 
   /** toolitip-placement of the range-box [for type="range" only]  */
   placement: PropTypes.oneOf([
-    'left',
-    'right',
-    'top',
-    'bottom',
-    'topLeft',
-    'topRight',
-    'bottomLeft',
-    'bottomRight',
+    "left",
+    "right",
+    "top",
+    "bottom",
+    "topLeft",
+    "topRight",
+    "bottomLeft",
+    "bottomRight",
   ]),
 
   /** Minimum value of the range-box field */
@@ -181,16 +181,16 @@ RangeBox.propTypes = {
 
 /** RangeBox default proptype */
 RangeBox.defaultProps = {
-  labelText: 'ReuseCore RangeBox',
-  labelPosition: 'right',
-  className: 'rangebox_wrapper_className',
-  type: 'slide',
+  labelText: "ReuseCore RangeBox",
+  labelPosition: "right",
+  className: "rangebox_wrapper_className",
+  type: "slide",
   disabled: false,
   min: 0,
   max: 100,
   stepper: 5,
-  unit: '',
-  placement: 'top',
+  unit: "",
+  placement: "top",
   slideDefaultValue: 3,
   rangeDefaultValue: [0, 50],
   dots: true,

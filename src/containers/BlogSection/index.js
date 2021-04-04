@@ -1,17 +1,17 @@
-import React from 'react';
-import Link from 'next/link';
-import Container from 'common/components/UI/Container';
-import Heading from 'common/components/Heading';
-import BlogPost from 'common/components/BlogPost';
+import React from "react";
+import Link from "next/link";
+import Container from "../../common/components/UI/Container";
+import Heading from "../../common/components/Heading";
+import BlogPost from "../../common/components/BlogPost";
 import SectionWrapper, {
   SectionHeader,
   TitleArea,
   LinkArea,
   Text,
   PostArea,
-} from './blogSection.style';
+} from "./blogSection.style";
 
-import { posts } from 'common/data';
+import { posts } from "../../common/data";
 
 const BlogSection = () => {
   return (

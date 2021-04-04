@@ -1,9 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
 const BlogPost = ({ className, thumbUrl, title, excerpt, link }) => {
   // Add all classes to an array
-  const addAllClasses = ['blog_post'];
+  const addAllClasses = ["blog_post"];
 
   // className prop checking
   if (className) {
@@ -11,7 +11,7 @@ const BlogPost = ({ className, thumbUrl, title, excerpt, link }) => {
   }
 
   return (
-    <div className={addAllClasses.join(' ')}>
+    <div className={addAllClasses.join(" ")}>
       <div className="thumbnail">
         <img src={thumbUrl} alt={title} />
       </div>

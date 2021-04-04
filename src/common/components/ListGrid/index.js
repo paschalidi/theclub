@@ -1,9 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Box from '../Box';
-import Button from '../Button';
-import Loader from '../Loader';
-import Text from '../Text';
+import React from "react";
+import PropTypes from "prop-types";
+import Box from "../Box";
+import Button from "../Button";
+import Loader from "../Loader";
+import Text from "../Text";
 
 const LoadMore = ({
   handleLoadMore,
@@ -25,7 +25,7 @@ const LoadMore = ({
           ) : (
             <Button
               variant={buttonVariant}
-              title={buttonText || 'Load More'}
+              title={buttonText || "Load More"}
               isLoading={isLoading}
               loader={<Loader loaderColor={loaderColor} />}
               onClick={handleLoadMore}
@@ -148,18 +148,18 @@ ListGrid.propTypes = {
 ListGrid.defaultProps = {
   componentWrapperStyle: {
     flexBox: true,
-    flexWrap: 'wrap',
-    mr: '-1rem',
-    ml: '-1rem',
+    flexWrap: "wrap",
+    mr: "-1rem",
+    ml: "-1rem",
   },
   componentContainerStyle: {
-    pr: '1rem',
-    pl: '1rem',
+    pr: "1rem",
+    pl: "1rem",
   },
   loadMoreWrapperStyle: {
     flexBox: true,
-    justifyContent: 'center',
-    mt: '1rem',
+    justifyContent: "center",
+    mt: "1rem",
   },
 };
 

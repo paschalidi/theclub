@@ -1,14 +1,14 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
-import { base } from '../base';
+import styled from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
+import { base } from "../base";
 
 const CheckBoxStyle = styled.div`
   display: inline-flex;
   /* Switch label default style */
   .reusecore__field-label {
-    color: ${themeGet('colors.textColor', '#484848')};
-    font-size: ${themeGet('fontSizes.4', '16')}px;
-    font-weight: ${themeGet('fontWeights.4', '500')};
+    color: ${themeGet("colors.textColor", "#484848")};
+    font-size: ${themeGet("fontSizes.4", "16")}px;
+    font-weight: ${themeGet("fontWeights.4", "500")};
   }
 
   /* Switch label style when labelPosition on left */
@@ -17,7 +17,7 @@ const CheckBoxStyle = styled.div`
       display: flex;
       align-items: center;
       .reusecore__field-label {
-        margin-right: ${themeGet('space.3', '10')}px;
+        margin-right: ${themeGet("space.3", "10")}px;
       }
     }
   }
@@ -30,13 +30,13 @@ const CheckBoxStyle = styled.div`
       align-items: center;
 
       .reusecore__field-label {
-        margin-left: ${themeGet('space.3', '10')}px;
+        margin-left: ${themeGet("space.3", "10")}px;
       }
     }
   }
 
   /* Checkbox default style */
-  input[type='checkbox'] {
+  input[type="checkbox"] {
     &.checkbox {
       opacity: 0;
       position: absolute;
@@ -48,8 +48,8 @@ const CheckBoxStyle = styled.div`
       pointer-events: none;
 
       &:checked + div {
-        border-color: ${themeGet('colors.primary', '#028489')};
-        background-color: ${themeGet('colors.primary', '#028489')};
+        border-color: ${themeGet("colors.primary", "#028489")};
+        background-color: ${themeGet("colors.primary", "#028489")};
         &::after {
           opacity: 1;
           visibility: visible;
@@ -64,16 +64,16 @@ const CheckBoxStyle = styled.div`
       width: 16px;
       height: 16px;
       border-radius: 3px;
-      border: 1px solid ${themeGet('colors.borderColor', '#dadada')};
+      border: 1px solid ${themeGet("colors.borderColor", "#dadada")};
       position: relative;
       transition: all 0.3s ease;
       &::after {
-        content: '';
+        content: "";
         width: 4px;
         height: 10px;
         transform: rotate(45deg) scale(0.8);
-        border-bottom: 2px solid ${themeGet('colors.white', '#ffffff')};
-        border-right: 2px solid ${themeGet('colors.white', '#ffffff')};
+        border-bottom: 2px solid ${themeGet("colors.white", "#ffffff")};
+        border-right: 2px solid ${themeGet("colors.white", "#ffffff")};
         position: absolute;
         top: 0;
         opacity: 0;
@@ -91,6 +91,6 @@ const CheckBoxStyle = styled.div`
 // prop types can also be added from the style functions
 CheckBoxStyle.propTypes = {};
 
-CheckBoxStyle.displayName = 'CheckBoxStyle';
+CheckBoxStyle.displayName = "CheckBoxStyle";
 
 export default CheckBoxStyle;

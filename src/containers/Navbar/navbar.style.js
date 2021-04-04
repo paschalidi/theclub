@@ -1,10 +1,12 @@
-import styled, {css} from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled, { css } from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
 
 const NavbarWrapper = styled.nav`
-   ${props => props.type === 'dark' && css`
-    background: black;
-  `}
+  ${(props) =>
+    props.type === "dark" &&
+    css`
+      background: black;
+    `}
   .container {
     padding: 0 200px;
     display: flex;
@@ -46,7 +48,7 @@ export const MenuWrapper = styled.div`
     font-size: 16px;
     font-weight: 600;
     transition: all 0.25s ease;
-    color: inherit
+    color: inherit;
   }
 `;
 
@@ -62,8 +64,8 @@ export const Button = styled.button`
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
-  color: ${themeGet('colors.heading', '#060F1E')};
-  background-color: ${themeGet('colors.primary', '#FCF22B')};
+  color: ${themeGet("colors.heading", "#060F1E")};
+  background-color: ${themeGet("colors.primary", "#FCF22B")};
   transition: all 0.3s ease;
   @media only screen and (max-width: 1440px) {
     font-size: 15px;
@@ -73,7 +75,7 @@ export const Button = styled.button`
   }
 
   &:hover {
-    background-color: ${themeGet('colors.primaryHover', '#ECF22F')};
+    background-color: ${themeGet("colors.primaryHover", "#ECF22F")};
   }
 
   img {

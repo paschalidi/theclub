@@ -1,18 +1,27 @@
-import React from 'react';
-import Fade from 'react-reveal/Fade';
-import Image from '../../../common/components/Image';
-import Heading from '../../../common/components/Heading';
-import Text from '../../../common/components/Text';
+import React from "react";
+import Fade from "react-reveal/Fade";
+import Image from "../../../common/components/Image";
+import Heading from "../../../common/components/Heading";
+import Text from "../../../common/components/Text";
 import SectionWrapper, {
   Container,
   ImageWrapper,
   TextWrapper,
-} from './aboutUs.style';
+} from "./aboutUs.style";
 
-import { aboutData } from '../../../common/data/partners';
+import { aboutData } from "../../../common/data/partners";
 
 const AboutUs = () => {
-  const { thumb_url, title, title1, title2, title3, text1, text2, text3} = aboutData;
+  const {
+    thumb_url,
+    title,
+    title1,
+    title2,
+    title3,
+    text1,
+    text2,
+    text3,
+  } = aboutData;
   const setTitle = (title) => {
     return { __html: title };
   };
@@ -22,7 +31,11 @@ const AboutUs = () => {
       <Container>
         <ImageWrapper>
           <Fade left>
-            <Image style={{width:"90%", borderRadius:"16%"}} src={thumb_url} alt="Interior Landing by RedQ" />
+            <Image
+              style={{ width: "90%", borderRadius: "16%" }}
+              src={thumb_url}
+              alt="Interior Landing by RedQ"
+            />
           </Fade>
         </ImageWrapper>
         <TextWrapper>
@@ -34,7 +47,10 @@ const AboutUs = () => {
             <Text content={text2} />
             <Heading as="h4" content={title3} />
             <Text content={text3} />
-            <a href="https://forms.gle/gVe6rsUiMEAbvJW66" className="learn__more-btn">
+            <a
+              href="https://forms.gle/gVe6rsUiMEAbvJW66"
+              className="learn__more-btn"
+            >
               <span className="btn_text">ΣΤΕΙΛΤΕ ΜΑΣ ΜΥΝΗΜΑ</span>
               <span className="next_arrow"></span>
             </a>

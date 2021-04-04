@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
-import pattern1 from 'common/assets/image/charity/pattern1.svg';
-import pattern2 from 'common/assets/image/charity/pattern2.svg';
+import styled from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
+import pattern1 from "../../common/assets/image/charity/pattern1.svg";
+import pattern2 from "../../common/assets/image/charity/pattern2.svg";
 
 const SectionWrapper = styled.section`
   width: 100%;
@@ -80,7 +80,7 @@ export const FeatureWrapper = styled.div`
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     display: block;
     width: 422px;
     height: 262px;
@@ -106,7 +106,7 @@ export const FeatureWrapper = styled.div`
     border-radius: 20px;
     padding: 50px 37px 54px;
     box-shadow: 0 0 100px rgba(175, 182, 194, 0.2);
-    background-color: ${themeGet('colors.white', '#ffffff')};
+    background-color: ${themeGet("colors.white", "#ffffff")};
     margin: 0 25px 25px;
     text-align: center;
     @media only screen and (max-width: 1360px) {
@@ -172,7 +172,7 @@ export const FeatureWrapper = styled.div`
         margin: 0;
         font-size: 16px;
         line-height: 28px;
-        color: ${themeGet('colors.text', '#294859')};
+        color: ${themeGet("colors.text", "#294859")};
         @media only screen and (max-width: 1360px) {
           font-size: 15px;
         }

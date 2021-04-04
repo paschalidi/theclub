@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes } from "styled-components";
 
 const slideShow = keyframes`
   from {
@@ -42,7 +42,7 @@ export const ImageSlider = styled.div`
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     display: block;
     width: 50px;
     height: 100%;

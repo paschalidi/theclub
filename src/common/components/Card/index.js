@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
 import {
   borders,
   borderColor,
@@ -11,11 +11,11 @@ import {
   backgroundPosition,
   backgroundRepeat,
   opacity,
-} from 'styled-system';
-import { cards } from '../customVariant';
-import { base, themed } from '../base';
+} from "styled-system";
+import { cards } from "../customVariant";
+import { base, themed } from "../base";
 
-const CardWrapper = styled('div')(
+const CardWrapper = styled("div")(
   base,
   borders,
   borderColor,
@@ -27,7 +27,7 @@ const CardWrapper = styled('div')(
   backgroundRepeat,
   opacity,
   cards,
-  themed('Card')
+  themed("Card")
 );
 
 const Card = ({ children, ...props }) => (
@@ -49,6 +49,6 @@ Card.propTypes = {
 };
 
 Card.defaultProps = {
-  boxShadow: '0px 20px 35px rgba(0, 0, 0, 0.05)',
+  boxShadow: "0px 20px 35px rgba(0, 0, 0, 0.05)",
 };
 export default Card;

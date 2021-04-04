@@ -1,8 +1,8 @@
-import React from 'react';
-import Logo from 'common/components/UIElements/Logo';
-import SectionWrapper, { ImageSlider, ImageSlide } from './clientBlock.style';
+import React from "react";
+import Logo from "../../common/components/UIElements/Logo";
+import SectionWrapper, { ImageSlider, ImageSlide } from "./clientBlock.style";
 
-import { clients } from 'common/data';
+import { clients } from "../../common/data";
 
 const ClientBlock = () => {
   return (

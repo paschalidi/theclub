@@ -1,5 +1,5 @@
-import React from 'react';
-import ContainerWrapper from './style';
+import React from "react";
+import ContainerWrapper from "./style";
 
 const Container = ({
   children,
@@ -10,7 +10,7 @@ const Container = ({
   width,
 }) => {
   // Add all classs to an array
-  const addAllClasses = ['container'];
+  const addAllClasses = ["container"];
   // className prop checking
   if (className) {
     addAllClasses.push(className);
@@ -18,7 +18,7 @@ const Container = ({
 
   return (
     <ContainerWrapper
-      className={addAllClasses.join(' ')}
+      className={addAllClasses.join(" ")}
       fullWidth={fullWidth}
       noGutter={noGutter}
       width={width}

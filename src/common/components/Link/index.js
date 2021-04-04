@@ -1,13 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { base, themed } from '../base';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import { base, themed } from "../base";
 
-
-const LinkWrapper = styled('a')(
-  { textDecoration: 'none' },
+const LinkWrapper = styled("a")(
+  { textDecoration: "none" },
   base,
-  themed('Link')
+  themed("Link")
 );
 
 const Link = ({ children, ...props }) => (
@@ -23,7 +22,7 @@ Link.propTypes = {
 };
 
 Link.defaultProps = {
-  as: 'a',
+  as: "a",
   m: 0,
-  display: 'inline-block',
+  display: "inline-block",
 };

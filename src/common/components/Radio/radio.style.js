@@ -1,14 +1,14 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
-import { base } from '../base';
+import styled from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
+import { base } from "../base";
 
 const RadioBoxStyle = styled.div`
   display: inline-flex;
   /* Switch label default style */
   .reusecore__field-label {
-    color: ${themeGet('colors.textColor', '#484848')};
-    font-size: ${themeGet('fontSizes.4', '16')}px;
-    font-weight: ${themeGet('fontWeights.4', '500')};
+    color: ${themeGet("colors.textColor", "#484848")};
+    font-size: ${themeGet("fontSizes.4", "16")}px;
+    font-weight: ${themeGet("fontWeights.4", "500")};
   }
 
   /* Switch label style when labelPosition on left */
@@ -17,7 +17,7 @@ const RadioBoxStyle = styled.div`
       display: flex;
       align-items: center;
       .reusecore__field-label {
-        margin-right: ${themeGet('space.3', '10')}px;
+        margin-right: ${themeGet("space.3", "10")}px;
       }
     }
   }
@@ -30,13 +30,13 @@ const RadioBoxStyle = styled.div`
       align-items: center;
 
       .reusecore__field-label {
-        margin-left: ${themeGet('space.3', '10')}px;
+        margin-left: ${themeGet("space.3", "10")}px;
       }
     }
   }
 
   /* Checkbox default style */
-  input[type='radio'] {
+  input[type="radio"] {
     &.radio {
       opacity: 0;
       position: absolute;
@@ -49,7 +49,7 @@ const RadioBoxStyle = styled.div`
 
       &:focus {
         + div {
-          border-color: ${themeGet('colors.primary', '#028489')};
+          border-color: ${themeGet("colors.primary", "#028489")};
         }
       }
 
@@ -68,17 +68,17 @@ const RadioBoxStyle = styled.div`
       width: 16px;
       height: 16px;
       border-radius: 50%;
-      border: 1px solid ${themeGet('colors.borderColor', '#dadada')};
+      border: 1px solid ${themeGet("colors.borderColor", "#dadada")};
       position: relative;
       transition: background-color 0.3s ease;
       &::after {
-        content: '';
+        content: "";
         display: flex;
         width: 8px;
         height: 8px;
         transform: scale(0.8);
         border-radius: 50%;
-        background-color: ${themeGet('colors.primary', '#028489')};
+        background-color: ${themeGet("colors.primary", "#028489")};
         opacity: 0;
         visibility: hidden;
         transition-property: opacity, visibility;
@@ -94,6 +94,6 @@ const RadioBoxStyle = styled.div`
 // prop types can also be added from the style functions
 RadioBoxStyle.propTypes = {};
 
-RadioBoxStyle.displayName = 'RadioBoxStyle';
+RadioBoxStyle.displayName = "RadioBoxStyle";
 
 export default RadioBoxStyle;

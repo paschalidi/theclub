@@ -1,14 +1,14 @@
-import React from 'react';
-import Heading from 'common/components/Heading';
-import Text from 'common/components/Text';
-import Image from 'common/components/Image';
-import Container from 'common/components/UI/Container';
+import React from "react";
+import Heading from "../../common/components/Heading";
+import Text from "../../common/components/Text";
+import Image from "../../common/components/Image";
+import Container from "../../common/components/UI/Container";
 import SectionWrapper, {
   SectionHeader,
   ImageWrapper,
-} from './mapSection.style';
+} from "./mapSection.style";
 
-import mapImage from 'common/assets/image/charity/map.png';
+import mapImage from "../../common/assets/image/charity/map.png";
 
 const MapSection = () => {
   return (

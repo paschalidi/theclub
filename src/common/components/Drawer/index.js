@@ -1,7 +1,7 @@
-import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
-import RcDrawer from 'rc-drawer';
-import 'rc-drawer/assets/index.css';
+import React, { Fragment } from "react";
+import PropTypes from "prop-types";
+import RcDrawer from "rc-drawer";
+import "rc-drawer/assets/index.css";
 
 const Drawer = ({
   className,
@@ -14,7 +14,7 @@ const Drawer = ({
   ...props
 }) => {
   // Add all classs to an array
-  const addAllClasses = ['reusecore__drawer'];
+  const addAllClasses = ["reusecore__drawer"];
 
   // className prop checking
   if (className) {
@@ -26,7 +26,7 @@ const Drawer = ({
       <RcDrawer
         open={open}
         onClose={toggleHandler}
-        className={addAllClasses.join(' ')}
+        className={addAllClasses.join(" ")}
         {...props}
       >
         <div
@@ -43,7 +43,7 @@ const Drawer = ({
       </RcDrawer>
       <div
         className="reusecore-drawer__handler"
-        style={{ display: 'inline-block' }}
+        style={{ display: "inline-block" }}
         onClick={toggleHandler}
         role="button"
         tabIndex="0"
@@ -66,7 +66,7 @@ Drawer.propTypes = {
   width: PropTypes.string,
 
   /** Set drawer position left || right || top || bottom. */
-  placement: PropTypes.oneOf(['left', 'right', 'top', 'bottom']),
+  placement: PropTypes.oneOf(["left", "right", "top", "bottom"]),
 
   /** drawerHandler could be button, icon, string or any component */
   // drawerHandler: PropTypes.element.isRequired
@@ -74,7 +74,7 @@ Drawer.propTypes = {
 };
 
 Drawer.defaultProps = {
-  width: '300px',
+  width: "300px",
   handler: false,
   level: null,
 };

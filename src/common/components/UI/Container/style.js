@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from "styled-components";
 
 const ContainerWrapper = styled.div`
   margin-left: auto;
@@ -28,7 +28,7 @@ const ContainerWrapper = styled.div`
     width: 100%;
   }
   @media (min-width: 1220px) {
-    max-width: ${(props) => props.width || '1170px'};
+    max-width: ${(props) => props.width || "1170px"};
     width: 100%;
   }
   @media (max-width: 768px) {

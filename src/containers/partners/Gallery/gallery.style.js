@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
 
 const GalleryWrapper = styled.div`
   padding: 0 0 160px;
@@ -44,7 +44,7 @@ const GalleryWrapper = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: ${themeGet('colors.primary', '#FDEF00')};
+        background-color: ${themeGet("colors.primary", "#FDEF00")};
         position: absolute;
         top: calc(50% - 20px);
         opacity: 0;
@@ -97,7 +97,7 @@ export const GalleryCard = styled.div`
     }
 
     &::after {
-      content: '';
+      content: "";
       display: block;
       width: 100%;
       height: 130px;
@@ -123,24 +123,24 @@ export const GalleryCard = styled.div`
       }
 
       .read_more__btn {
-        color: ${themeGet('colors.primary', '#FDEF00')};
+        color: ${themeGet("colors.primary", "#FDEF00")};
 
         .arrow {
           width: 28px;
           left: calc(100% + 10px);
           border-radius: 4px;
-          background-color: ${themeGet('colors.primary', '#FDEF00')};
+          background-color: ${themeGet("colors.primary", "#FDEF00")};
 
           &::before {
             transform: rotate(-42deg);
             transform-origin: top right;
-            background-color: ${themeGet('colors.primary', '#FDEF00')};
+            background-color: ${themeGet("colors.primary", "#FDEF00")};
           }
 
           &::after {
             transform: rotate(42deg);
             transform-origin: 10px 2px;
-            background-color: ${themeGet('colors.primary', '#FDEF00')};
+            background-color: ${themeGet("colors.primary", "#FDEF00")};
           }
         }
       }
@@ -160,7 +160,7 @@ export const Button = styled.button`
     font-size: 22px;
     font-weight: 600;
     text-transform: capitalize;
-    color: ${themeGet('colors.label', '#C6C6C6')};
+    color: ${themeGet("colors.label", "#C6C6C6")};
     z-index: 2;
 
     @media only screen and (max-width: 1440px) {

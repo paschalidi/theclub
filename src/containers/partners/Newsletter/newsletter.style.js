@@ -1,12 +1,12 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
 
-import error from 'common/assets/image/error.svg';
-import success from 'common/assets/image/success.svg';
+import error from "../../../common/assets/image/error.svg";
+import success from "../../../common/assets/image/success.svg";
 
 const SectionWrapper = styled.section`
   padding: 51px 0 130px;
-  background-color: ${themeGet('colors.lightBg', '#fbfafe')};
+  background-color: ${themeGet("colors.lightBg", "#fbfafe")};
   @media only screen and (max-width: 1440px) {
     padding: 20px 0 100px;
   }
@@ -65,19 +65,19 @@ export const FormGroup = styled.div`
       padding: 20px 25px 20px 65px;
       border-radius: 5px;
       border: 1px solid #f4f4fd;
-      color: ${themeGet('colors.heading', '#191919')};
-      background-color: ${themeGet('colors.white', '#ffffff')};
+      color: ${themeGet("colors.heading", "#191919")};
+      background-color: ${themeGet("colors.white", "#ffffff")};
       transition: all 0.3s ease;
       @media only screen and (max-width: 767px) {
         padding: 18px 25px 18px 60px;
       }
 
       &::placeholder {
-        color: ${themeGet('colors.lightText', '#7E7E7E')};
+        color: ${themeGet("colors.lightText", "#7E7E7E")};
       }
 
       &:focus {
-        border-color: ${themeGet('colors.inactiveIcon', '#EBEBEB')};
+        border-color: ${themeGet("colors.inactiveIcon", "#EBEBEB")};
       }
     }
 
@@ -86,7 +86,7 @@ export const FormGroup = styled.div`
       left: 22px;
 
       i {
-        color: ${themeGet('colors.lightText', '#7E7E7E')};
+        color: ${themeGet("colors.lightText", "#7E7E7E")};
         svg {
           width: auto;
           height: 24px;
@@ -95,7 +95,7 @@ export const FormGroup = styled.div`
     }
 
     &::after {
-      content: '';
+      content: "";
       width: 16px;
       height: 16px;
       position: absolute;

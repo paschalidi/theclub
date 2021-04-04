@@ -1,22 +1,22 @@
-import React, { useContext } from 'react';
-import PropTypes from 'prop-types';
-import { openModal, closeModal } from '@redq/reuse-modal';
-import { Icon } from 'react-icons-kit';
-import { androidClose } from 'react-icons-kit/ionicons/androidClose';
-import NavbarWrapper from 'common/components/Navbar';
-import Drawer from 'common/components/Drawer';
-import Button from 'common/components/Button';
-import Logo from 'common/components/UIElements/Logo';
-import HamburgMenu from 'common/components/HamburgMenu';
-import ScrollSpyMenu from 'common/components/ScrollSpyMenu';
-import { DrawerContext } from 'common/contexts/DrawerContext';
-import { Container } from './navbar.style';
-import SearchPanel from '../SearchPanel';
-import LoginModal from '../LoginModal';
-import Copyright from '../Copyright';
+import React, { useContext } from "react";
+import PropTypes from "prop-types";
+import { openModal, closeModal } from "@redq/reuse-modal";
+import { Icon } from "react-icons-kit";
+import { androidClose } from "react-icons-kit/ionicons/androidClose";
+import NavbarWrapper from "../../../common/components/Navbar";
+import Drawer from "../../../common/components/Drawer";
+import Button from "../../../common/components/Button";
+import Logo from "../../../common/components/UIElements/Logo";
+import HamburgMenu from "../../../common/components/HamburgMenu";
+import ScrollSpyMenu from "../../../common/components/ScrollSpyMenu";
+import { DrawerContext } from "../../../common/contexts/DrawerContext";
+import { Container } from "./navbar.style";
+import SearchPanel from "../SearchPanel";
+import LoginModal from "../LoginModal";
+import Copyright from "../Copyright";
 
-import { menuData } from 'common/data/Interior';
-import logo from 'common/assets/image/interior/logo.svg';
+import { menuData } from "../../../common/data/Interior";
+import logo from "../../../common/assets/image/interior/logo.svg";
 
 const CloseModalButton = () => (
   <Button
@@ -42,12 +42,12 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
   const handleSearchModal = () => {
     openModal({
       config: {
-        className: 'search-modal',
+        className: "search-modal",
         disableDragging: true,
-        width: '100%',
-        height: '100%',
-        animationFrom: { transform: 'translateY(100px)' },
-        animationTo: { transform: 'translateY(0)' }, //
+        width: "100%",
+        height: "100%",
+        animationFrom: { transform: "translateY(100px)" },
+        animationTo: { transform: "translateY(0)" }, //
         transition: {
           mass: 1,
           tension: 180,
@@ -64,12 +64,12 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
   const handleLoginModal = () => {
     openModal({
       config: {
-        className: 'login-modal',
+        className: "login-modal",
         disableDragging: true,
-        width: '100%',
-        height: '100%',
-        animationFrom: { transform: 'translateY(100px)' },
-        animationTo: { transform: 'translateY(0)' },
+        width: "100%",
+        height: "100%",
+        animationFrom: { transform: "translateY(100px)" },
+        animationTo: { transform: "translateY(0)" },
         transition: {
           mass: 1,
           tension: 180,
@@ -85,7 +85,7 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
 
   const toggleHandler = () => {
     dispatch({
-      type: 'TOGGLE',
+      type: "TOGGLE",
     });
   };
 
@@ -98,7 +98,7 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
           title="Interior"
           logoStyle={logoStyle}
         />
-        <div style={{ display: 'flex', alignItems: 'center' }}>
+        <div style={{ display: "flex", alignItems: "center" }}>
           <Button
             variant="textButton"
             onClick={handleSearchModal}
@@ -120,7 +120,7 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
           >
             <button
               type="button"
-              className={state.isOpen ? 'active' : ''}
+              className={state.isOpen ? "active" : ""}
               onClick={toggleHandler}
               aria-label="drawer toggle button"
             >
@@ -146,11 +146,11 @@ Navbar.propTypes = {
 
 Navbar.defaultProps = {
   navbarStyle: {
-    minHeight: '70px',
+    minHeight: "70px",
   },
   logoStyle: {
-    width: '128px',
-    height: 'auto',
+    width: "128px",
+    height: "auto",
   },
 };
 

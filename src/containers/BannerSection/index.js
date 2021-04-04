@@ -1,74 +1,73 @@
-import React, { useState, useRef } from 'react';
-import { iosEmailOutline } from 'react-icons-kit/ionicons/iosEmailOutline';
+import React, { useState, useRef } from "react";
+import { iosEmailOutline } from "react-icons-kit/ionicons/iosEmailOutline";
 
-import Heading from '../../common/components/Heading';
-import Image from '../../common/components/Image';
-import GlideCarousel from '../../common/components/GlideCarousel';
-import GlideSlide from 'common/components/GlideCarousel/glideSlide';
-import LeftBar from './leftBar';
+import Heading from "../../common/components/Heading";
+import Image from "../../common/components/Image";
+import GlideCarousel from "../../common/components/GlideCarousel";
+import GlideSlide from "../../common/components/GlideCarousel/glideSlide";
+import LeftBar from "./leftBar";
 import BannerWrapper, {
   ContentWrapper,
   TextArea,
   ImageArea,
-} from './bannerSection.style';
-import {
-  FormWrapper,
-  ButtonGroup,
-} from '../partners/Banner/banner.style';
+} from "./bannerSection.style";
+import { FormWrapper, ButtonGroup } from "../partners/Banner/banner.style";
 
-import { bannerSlides } from '../../common/data';
+import { bannerSlides } from "../../common/data";
 import { Icon } from "react-icons-kit";
 import Input from "../../common/components/Input";
 import Button from "../../common/components/Button";
 
-const Glide = ({slides}) =>{
+const Glide = ({ slides }) => {
   const glideOptions = {
-    type: 'carousel',
+    type: "carousel",
     autoplay: 3000,
     perView: 1,
     gap: 0,
     hoverpause: false,
   };
 
-  return <GlideCarousel
-    controls={false}
-    carouselSelector="charitySlide"
-    options={glideOptions}
-    nextButton={<span className="next_arrow" />}
-    prevButton={<span className="prev_arrow" />}
-  >
-    {slides.map((slide) => (
-      <GlideSlide key={slide.id}>
-        <Image src={slide.thumb_url} alt="Charity Landing" />
-      </GlideSlide>
-    ))}
-  </GlideCarousel>
-}
+  return (
+    <GlideCarousel
+      controls={false}
+      carouselSelector="charitySlide"
+      options={glideOptions}
+      nextButton={<span className="next_arrow" />}
+      prevButton={<span className="prev_arrow" />}
+    >
+      {slides.map((slide) => (
+        <GlideSlide key={slide.id}>
+          <Image src={slide.thumb_url} alt="Charity Landing" />
+        </GlideSlide>
+      ))}
+    </GlideCarousel>
+  );
+};
 
 const BannerSection = () => {
   const inputEl = useRef(null);
-  const [message, setMessage] = useState('');
-  const [email, setEmail] = useState('');
-  const [error, setError] = useState('');
+  const [message, setMessage] = useState("");
+  const [email, setEmail] = useState("");
+  const [error, setError] = useState("");
   const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; //eslint-disable-line
 
   const handleOnChange = (value) => {
     setEmail(value);
   };
 
-  const handleSubscriptionForm =  async(e) => {
+  const handleSubscriptionForm = async (e) => {
     e.preventDefault();
 
     if (email.match(emailRegex)) {
-      const res = await fetch('/api/email', {
+      const res = await fetch("/api/email", {
         body: JSON.stringify({
-          email: inputEl.current.value
+          email: inputEl.current.value,
         }),
         headers: {
-          'Content-Type': 'application/json'
+          "Content-Type": "application/json",
         },
-        method: 'POST'
-      })
+        method: "POST",
+      });
 
       const { error } = await res.json();
 
@@ -77,11 +76,11 @@ const BannerSection = () => {
         return;
       }
 
-      setEmail('');
-      setError('');
-      setMessage('Συγχαρητήρια! 🎉 Θα λάβετε ενα mail επιβεβαίωσης σύντομα.');
-    } else{
-      setError('Το e-mail δεν ειναι έγκυρο. Δοκιμάστε άλλο email.');
+      setEmail("");
+      setError("");
+      setMessage("Συγχαρητήρια! 🎉 Θα λάβετε ενα mail επιβεβαίωσης σύντομα.");
+    } else {
+      setError("Το e-mail δεν ειναι έγκυρο. Δοκιμάστε άλλο email.");
     }
   };
 
@@ -90,51 +89,47 @@ const BannerSection = () => {
       <LeftBar text="SCROLL" offset={81} sectionId="#feature" />
       <ContentWrapper>
         <TextArea>
-          <Heading
-            content="Με μία συνδρομή μονο"
-          />
+          <Heading content="Με μία συνδρομή μονο" />
           <Heading
             as="h4"
             content="Με μία συνδρομή, έχεις πρόσβαση στα καλύτερα γυμναστήρια, πισίνες, αθλητικά κέντρα, εγκαταστάσεις χορού και άλλα πακέτα δραστηριοτήτων ευεξίας, προσαρμοσμένα στις δικές σου προτιμήσεις ενώ παράλληλα γλυτώνεις χρήματα και χρόνο."
           />
-          {
-            message !== ''
-              ?
-              <Heading
-                as="h3"
-                content={message}
+          {message !== "" ? (
+            <Heading as="h3" content={message} />
+          ) : (
+            <FormWrapper onSubmit={handleSubscriptionForm}>
+              <Input
+                ref={inputEl}
+                inputType="email"
+                htmlFor="remember"
+                id="remember"
+                placeholder="Πληκτρολογείστε το email σας εδώ"
+                icon={<Icon icon={iosEmailOutline} />}
+                iconPosition="left"
+                required={true}
+                onChange={handleOnChange}
+                aria-label="email"
               />
-              :
-              <FormWrapper onSubmit={handleSubscriptionForm}>
-                <Input
-                  ref={inputEl}
-                  inputType="email"
-                  htmlFor="remember"
-                  id="remember"
-                  placeholder="Πληκτρολογείστε το email σας εδώ"
-                  icon={<Icon icon={iosEmailOutline} />}
-                  iconPosition="left"
-                  required={true}
-                  onChange={handleOnChange}
-                  aria-label="email"
+
+              <div style={{ margin: "8px 0" }} className="formError">
+                {error.length ? (
+                  <div>{error}</div>
+                ) : (
+                  <div style={{ visibility: "hidden" }}>empty</div>
+                )}
+              </div>
+              <ButtonGroup>
+                <Button
+                  type="submit"
+                  colors="primaryWithBg"
+                  title="ΣΤΕΙΛΤΕ ΜΑΣ ΜΥΝΗΜΑ"
                 />
-
-                <div style={{margin: "8px 0"}} className='formError'>
-                  {error.length ? <div>{error}</div> : <div style={{visibility: 'hidden'}}>empty</div>}
-                </div>
-                <ButtonGroup>
-                  <Button
-                    type="submit"
-                    colors="primaryWithBg"
-                    title="ΣΤΕΙΛΤΕ ΜΑΣ ΜΥΝΗΜΑ"
-                  />
-                </ButtonGroup>
-              </FormWrapper>
-          }
-
+              </ButtonGroup>
+            </FormWrapper>
+          )}
         </TextArea>
         <ImageArea>
-          <Glide slides={bannerSlides}/>
+          <Glide slides={bannerSlides} />
         </ImageArea>
       </ContentWrapper>
     </BannerWrapper>

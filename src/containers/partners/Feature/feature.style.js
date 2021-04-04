@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const SectionWrapper = styled.section`
   padding: 81px 0;

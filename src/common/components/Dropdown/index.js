@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import {
   DropdownMenuWrapper,
   DropdownMenuItemsWrapper,
   DropdownMenuItemWrapper,
-} from './dropdown.style';
+} from "./dropdown.style";
 
 const DropdownMenu = (props) => {
   const [menuState, setMenuState] = useState({
@@ -11,9 +11,9 @@ const DropdownMenu = (props) => {
   });
 
   useEffect(() => {
-    window.addEventListener('click', handleDocumentClick);
+    window.addEventListener("click", handleDocumentClick);
     return () => {
-      window.removeEventListener('click', handleDocumentClick);
+      window.removeEventListener("click", handleDocumentClick);
     };
   });
 

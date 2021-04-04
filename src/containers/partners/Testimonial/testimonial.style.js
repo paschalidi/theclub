@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
 
-import twitterIcon from '../../../common/assets/image/partners/twitter.svg';
+import twitterIcon from "../../../common/assets/image/partners/twitter.svg";
 
 const SectionWrapper = styled.section`
   padding: 162px 0 200px;
@@ -45,7 +45,7 @@ export const CarouselWrapper = styled.div`
       width: calc(100% - 500px);
       border-radius: 30px;
       padding: 85px 90px 90px 70px;
-      background-color: ${themeGet('colors.white', '#ffffff')};
+      background-color: ${themeGet("colors.white", "#ffffff")};
       box-shadow: 1px 2px 80px rgba(244, 244, 253, 0.83);
       position: relative;
       @media only screen and (max-width: 1440px) {
@@ -141,27 +141,27 @@ export const CarouselWrapper = styled.div`
         > span {
           &.next_arrow {
             width: 45px;
-            background-color: ${themeGet('colors.link', '#352FD9')};
+            background-color: ${themeGet("colors.link", "#352FD9")};
 
             &::before {
-              background-color: ${themeGet('colors.link', '#352FD9')};
+              background-color: ${themeGet("colors.link", "#352FD9")};
               transform: rotate(42deg) !important;
             }
 
             &::after {
               transform: rotate(-42deg) !important;
-              background-color: ${themeGet('colors.link', '#352FD9')};
+              background-color: ${themeGet("colors.link", "#352FD9")};
             }
           }
         }
 
         &:hover {
           > span {
-            background-color: ${themeGet('colors.link', '#352FD9')};
+            background-color: ${themeGet("colors.link", "#352FD9")};
 
             &::before,
             &::after {
-              background-color: ${themeGet('colors.link', '#352FD9')};
+              background-color: ${themeGet("colors.link", "#352FD9")};
             }
           }
         }
@@ -270,12 +270,12 @@ export const CarouselWrapper = styled.div`
           }
 
           &::before {
-            content: '';
+            content: "";
             display: block;
             width: 100%;
             height: 100%;
             border-radius: 50%;
-            border: 1px solid ${themeGet('colors.border', '#dadada')};
+            border: 1px solid ${themeGet("colors.border", "#dadada")};
             position: absolute;
             top: 0;
             left: 0;

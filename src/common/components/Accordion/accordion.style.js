@@ -66,7 +66,7 @@ export const IconWrapper = styled.div`
 
   ${OpenIcon},
   ${CloseIcon} {
-    color: #EE2541;
+    color: #ee2541;
     position: absolute;
     top: 50%;
     right: 0;

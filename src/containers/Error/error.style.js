@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const ErrorWrapper = styled.div`
   padding: 80px 15px;
@@ -22,7 +22,7 @@ export const ErrorConatent = styled.div`
 `;
 
 export const ButtonWrapper = styled.div`
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   text-align: center;
   > * {
     margin: 0 8px;

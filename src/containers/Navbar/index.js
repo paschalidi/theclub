@@ -1,14 +1,14 @@
-import React from 'react';
-import Logo from '../../common/components/UIElements/Logo';
-import Image from '../../common/components/Image';
-import Container from '../../common/components/UI/Container';
-import NavbarWrapper, { MenuWrapper, Button } from './navbar.style';
-import Link from 'next/link';
+import React from "react";
+import Logo from "../../common/components/UIElements/Logo";
+import Image from "../../common/components/Image";
+import Container from "../../common/components/UI/Container";
+import NavbarWrapper, { MenuWrapper, Button } from "./navbar.style";
+import Link from "next/link";
 
-import logoImage from '../../common/assets/image/charity/logo.svg';
-import heartImage from '../../common/assets/image/charity/heart-red.png';
+import logoImage from "../../common/assets/image/charity/logo.svg";
+import heartImage from "../../common/assets/image/charity/heart-red.png";
 
-const Navbar = ({type}) => {
+const Navbar = ({ type }) => {
   return (
     <NavbarWrapper type={type} className="navbar">
       <Container fullWidth={true}>
@@ -22,9 +22,7 @@ const Navbar = ({type}) => {
           <Link href="/partners">
             <a>
               <Button>
-                <span className="text">
-                  Γίνε Συνεργάτης
-                </span>
+                <span className="text">Γίνε Συνεργάτης</span>
                 <Image src={heartImage} alt="Charity Landing" />
               </Button>
             </a>

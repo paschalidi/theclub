@@ -1,14 +1,13 @@
-import React from 'react';
-import Text from 'common/components/Text';
-import Heading from 'common/components/Heading';
-import BlogPost from 'common/components/BlogPost';
-import Container from 'common/components/UI/Container';
+import React from "react";
+import Text from "../../common/components/Text";
+import Heading from "../../common/components/Heading";
+import BlogPost from "../../common/components/BlogPost";
+import Container from "../../common/components/UI/Container";
+import { workData } from "../../common/data";
 import SectionWrapper, {
   SectionHeader,
   FeatureWrapper,
-} from './workSection.style';
-
-import { workData } from 'common/data';
+} from "./workSection.style";
 
 const WorkSection = () => {
   const { title, slogan, features } = workData;

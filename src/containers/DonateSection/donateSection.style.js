@@ -1,12 +1,12 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
-import mapImage from 'common/assets/image/charity/map-alt.png';
+import styled from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
+import mapImage from "../../common/assets/image/charity/map-alt.png";
 
 const SectionWrapper = styled.div`
   width: 100%;
   padding: 130px 0 100px;
   margin: 81px 0;
-  background-color: ${themeGet('colors.heading', '#060F1E')};
+  background-color: ${themeGet("colors.heading", "#060F1E")};
   background-image: url(${mapImage});
   background-repeat: no-repeat;
   background-size: contain;
@@ -55,7 +55,7 @@ export const ContentArea = styled.div`
   }
 
   > p {
-    color: ${themeGet('colors.white', '#ffffff')};
+    color: ${themeGet("colors.white", "#ffffff")};
     font-size: 18px;
     @media only screen and (max-width: 1440px) {
       font-size: 16px;
@@ -74,7 +74,7 @@ export const Heading = styled.h2`
   line-height: 70px;
   font-weight: 300;
   margin: 0 0 20px;
-  color: ${themeGet('colors.white', '#ffffff')};
+  color: ${themeGet("colors.white", "#ffffff")};
   @media only screen and (max-width: 1440px) {
     font-size: 36px;
     line-height: 54px;
@@ -96,7 +96,7 @@ export const Heading = styled.h2`
   }
 
   span {
-    color: ${themeGet('color.primary', '#FCF22B')};
+    color: ${themeGet("color.primary", "#FCF22B")};
   }
 `;
 
@@ -122,45 +122,45 @@ export const ButtonGroup = styled.div`
   }
 
   .learn__more-btn {
-    color: ${themeGet('color.primary', '#FCF22B')} !important;
+    color: ${themeGet("color.primary", "#FCF22B")} !important;
 
     &::before {
       background-color: rgba(255, 255, 255, 0.1) !important;
     }
 
     .hyphen {
-      background-color: ${themeGet('color.primary', '#FCF22B')}!important;
+      background-color: ${themeGet("color.primary", "#FCF22B")}!important;
     }
 
     &:hover {
-      color: ${themeGet('colors.heading', '#060F1E')}!important;
+      color: ${themeGet("colors.heading", "#060F1E")}!important;
 
       &::before {
-        background-color: ${themeGet('color.primary', '#FCF22B')}!important;
+        background-color: ${themeGet("color.primary", "#FCF22B")}!important;
       }
 
       .hyphen {
-        background-color: ${themeGet('colors.heading', '#060F1E')}!important;
+        background-color: ${themeGet("colors.heading", "#060F1E")}!important;
       }
     }
 
     &.alt {
-      color: ${themeGet('colors.heading', '#060F1E')}!important;
+      color: ${themeGet("colors.heading", "#060F1E")}!important;
 
       &::before {
         width: 100%;
-        background-color: ${themeGet('color.primary', '#FCF22B')}!important;
+        background-color: ${themeGet("color.primary", "#FCF22B")}!important;
       }
 
       .hyphen {
-        background-color: ${themeGet('colors.heading', '#060F1E')}!important;
+        background-color: ${themeGet("colors.heading", "#060F1E")}!important;
       }
     }
   }
 
   p {
     margin: 0;
-    color: ${themeGet('colors.white', '#ffffff')};
+    color: ${themeGet("colors.white", "#ffffff")};
     font-size: 14px;
     font-weight: 700;
     padding: 0 22px;
@@ -178,7 +178,7 @@ export const ButtonGroup = styled.div`
 export const DonationForm = styled.form`
   padding: 50px;
   border-radius: 10px;
-  background-color: ${themeGet('colors.white', '#ffffff')};
+  background-color: ${themeGet("colors.white", "#ffffff")};
   @media only screen and (max-width: 1440px) {
     padding: 50px 45px;
   }
@@ -276,8 +276,8 @@ export const DonationForm = styled.form`
         margin: 10px 0;
       }
       &.active {
-        border-color: ${themeGet('colors.primary', '#FCF22B')};
-        background-color: ${themeGet('colors.primary', '#FCF22B')};
+        border-color: ${themeGet("colors.primary", "#FCF22B")};
+        background-color: ${themeGet("colors.primary", "#FCF22B")};
       }
 
       h4 {
@@ -293,7 +293,7 @@ export const DonationForm = styled.form`
       }
 
       p {
-        color: ${themeGet('colors.text', '#294859')};
+        color: ${themeGet("colors.text", "#294859")};
         font-size: 14px;
         @media only screen and (max-width: 1360px) {
           font-size: 13px;
@@ -314,8 +314,8 @@ export const DonateButton = styled.button`
   font-weight: 700;
   border-radius: 10px;
   cursor: pointer;
-  color: ${themeGet('colors.white', '#ffffff')};
-  background-color: ${themeGet('colors.secondary', '#D50032')};
+  color: ${themeGet("colors.white", "#ffffff")};
+  background-color: ${themeGet("colors.secondary", "#D50032")};
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -346,7 +346,7 @@ export const DonateButton = styled.button`
   }
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     width: 100%;
     height: 100%;
@@ -358,19 +358,19 @@ export const DonateButton = styled.button`
     visibility: hidden;
     background: repeating-linear-gradient(
       -45deg,
-      ${themeGet('colors.secondary', '#D50032')},
-      ${themeGet('colors.secondary', '#D50032')} 10px,
-      ${themeGet('colors.secondaryHover', '#FF282F')} 10px,
-      ${themeGet('colors.secondaryHover', '#FF282F')} 20px
+      ${themeGet("colors.secondary", "#D50032")},
+      ${themeGet("colors.secondary", "#D50032")} 10px,
+      ${themeGet("colors.secondaryHover", "#FF282F")} 10px,
+      ${themeGet("colors.secondaryHover", "#FF282F")} 20px
     );
     transition: all 0.45s ease;
     @media only screen and (max-width: 1440px) {
       background: repeating-linear-gradient(
         -45deg,
-        ${themeGet('colors.secondary', '#D50032')},
-        ${themeGet('colors.secondary', '#D50032')} 8px,
-        ${themeGet('colors.secondaryHover', '#FF282F')} 8px,
-        ${themeGet('colors.secondaryHover', '#FF282F')} 16px
+        ${themeGet("colors.secondary", "#D50032")},
+        ${themeGet("colors.secondary", "#D50032")} 8px,
+        ${themeGet("colors.secondaryHover", "#FF282F")} 8px,
+        ${themeGet("colors.secondaryHover", "#FF282F")} 16px
       );
     }
   }

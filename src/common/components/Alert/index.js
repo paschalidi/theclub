@@ -1,10 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import AlertStyle from './alert.style';
+import React from "react";
+import PropTypes from "prop-types";
+import AlertStyle from "./alert.style";
 
 const Alert = ({ className, isMaterial, children, ...props }) => {
   // Add all classs to an array
-  const addAllClasses = ['reusecore__alert'];
+  const addAllClasses = ["reusecore__alert"];
 
   // className prop checking
   if (className) {
@@ -13,11 +13,11 @@ const Alert = ({ className, isMaterial, children, ...props }) => {
 
   // isMaterial prop checking
   if (isMaterial) {
-    addAllClasses.push('is-material');
+    addAllClasses.push("is-material");
   }
 
   return (
-    <AlertStyle className={addAllClasses.join(' ')} {...props}>
+    <AlertStyle className={addAllClasses.join(" ")} {...props}>
       {children}
     </AlertStyle>
   );

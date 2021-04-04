@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+import React, { useState } from "react";
+import PropTypes from "prop-types";
 import {
   TooltipStyle,
   TriggerStyle,
   BubbleSize,
   BubbleStyle,
-} from './tooltip.style';
+} from "./tooltip.style";
 
 const Tooltip = ({
   className,
@@ -24,7 +24,7 @@ const Tooltip = ({
   });
 
   // Add all classs to an array
-  const addAllClasses = ['reusecore__tooltip'];
+  const addAllClasses = ["reusecore__tooltip"];
 
   // className prop checking
   if (className) {
@@ -43,7 +43,7 @@ const Tooltip = ({
 
   return (
     <TooltipStyle
-      className={addAllClasses.join(' ')}
+      className={addAllClasses.join(" ")}
       onMouseLeave={hideTooltip}
       tooltipColor={tooltipColor}
       {...props}
@@ -87,7 +87,7 @@ Tooltip.propTypes = {
   bubbleStyle: PropTypes.object,
 
   /** Set tooltip position left || right || top || bottom. */
-  position: PropTypes.oneOf(['left', 'right', 'top', 'bottom']),
+  position: PropTypes.oneOf(["left", "right", "top", "bottom"]),
 };
 
 /** Tooltip default proptype */

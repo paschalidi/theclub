@@ -1,12 +1,12 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
-import patter1 from 'common/assets/image/charity/branch/highlight-pattern.svg';
-import patter2 from 'common/assets/image/charity/branch/highlight-pattern2.svg';
+import styled from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
+import patter1 from "../../common/assets/image/charity/branch/highlight-pattern.svg";
+import patter2 from "../../common/assets/image/charity/branch/highlight-pattern2.svg";
 
 const SectionWrapper = styled.section`
   width: 100%;
-  margin: 0 0 81px 0; 
-  background-color: ${themeGet('colors.heading', '#060F1E')};
+  margin: 0 0 81px 0;
+  background-color: ${themeGet("colors.heading", "#060F1E")};
   @media only screen and (max-width: 1440px) {
     margin: 70px 0;
   }
@@ -51,10 +51,10 @@ const SectionWrapper = styled.section`
         font-weight: 600;
         margin: 21px 0;
         position: relative;
-        color: ${themeGet('colors.white', '#ffffff')};
+        color: ${themeGet("colors.white", "#ffffff")};
         transition: color 0.325s ease;
         p {
-          color: ${themeGet('colors.white', '#ffffff')};
+          color: ${themeGet("colors.white", "#ffffff")};
         }
         @media only screen and (max-width: 1440px) {
           font-size: 16px;
@@ -68,16 +68,16 @@ const SectionWrapper = styled.section`
         }
 
         &:hover {
-          color: ${themeGet('colors.primary', '#FCF22B')};
+          color: ${themeGet("colors.primary", "#FCF22B")};
           p {
-            color: ${themeGet('colors.primary', '#FCF22B')};
+            color: ${themeGet("colors.primary", "#FCF22B")};
           }
         }
 
         &.active {
           font-size: 30px;
           font-weight: 600;
-          color: ${themeGet('colors.primary', '#FCF22B')};
+          color: ${themeGet("colors.primary", "#FCF22B")};
           @media only screen and (max-width: 1440px) {
             font-size: 24px;
           }
@@ -86,11 +86,11 @@ const SectionWrapper = styled.section`
           }
 
           &::before {
-            content: '';
+            content: "";
             display: block;
             width: 50px;
             height: 2px;
-            background-color: ${themeGet('colors.primary', '#FCF22B')};
+            background-color: ${themeGet("colors.primary", "#FCF22B")};
             position: absolute;
             left: -99px;
             top: calc(50% - 1px);
@@ -163,7 +163,7 @@ export const ContentWrapper = styled.div`
   .content {
     width: 750px;
     padding: 80px 86px 77px;
-    background-color: ${themeGet('colors.primary', '#FCF22B')};
+    background-color: ${themeGet("colors.primary", "#FCF22B")};
     @media only screen and (max-width: 1440px) {
       width: 5600px;
       padding: 70px 65px;
@@ -231,7 +231,7 @@ export const ContentWrapper = styled.div`
       font-size: 18px;
       line-height: 30px;
       margin-bottom: 8px;
-      color: ${themeGet('colors.text', '#294859')};
+      color: ${themeGet("colors.text", "#294859")};
       @media only screen and (max-width: 1440px) {
         font-size: 16px;
         margin-bottom: 8px;
@@ -271,7 +271,7 @@ export const Item = styled.li`
   font-size: 20px;
   line-height: 40px;
   padding: 4px 0;
-  color: ${themeGet('colors.heading', '#060F1E')};
+  color: ${themeGet("colors.heading", "#060F1E")};
   @media only screen and (max-width: 1440px) {
     font-size: 18px;
     line-height: 30px;
@@ -285,6 +285,5 @@ export const Item = styled.li`
     line-height: 20px;
   }
 `;
-
 
 export default SectionWrapper;

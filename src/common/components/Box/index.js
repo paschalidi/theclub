@@ -1,26 +1,26 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
+import React from "react";
+import PropTypes from "prop-types";
+import styled, { css } from "styled-components";
 import {
   flexWrap,
   flexDirection,
   alignItems,
   justifyContent,
-} from 'styled-system';
-import { base, themed } from '../base';
+} from "styled-system";
+import { base, themed } from "../base";
 
-const BoxWrapper = styled('div')(
+const BoxWrapper = styled("div")(
   base,
-  themed('Box'),
+  themed("Box"),
   (props) =>
     props.flexBox &&
     css(
-      { display: 'flex' },
+      { display: "flex" },
       flexWrap,
       flexDirection,
       alignItems,
       justifyContent,
-      themed('FlexBox')
+      themed("FlexBox")
     )
 );
 
@@ -35,14 +35,14 @@ Box.propTypes = {
   /** Using this props we can convert our Box Component to a Flex Container or Component */
   flexBox: PropTypes.bool,
   as: PropTypes.oneOf([
-    'div',
-    'article',
-    'section',
-    'address',
-    'header',
-    'footer',
-    'nav',
-    'main',
+    "div",
+    "article",
+    "section",
+    "address",
+    "header",
+    "footer",
+    "nav",
+    "main",
   ]),
   width: PropTypes.oneOfType([
     PropTypes.string,
@@ -145,5 +145,5 @@ Box.propTypes = {
 };
 
 Box.defaultProps = {
-  as: 'div',
+  as: "div",
 };

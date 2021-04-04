@@ -1,24 +1,24 @@
-import React, { Fragment } from 'react';
-import Fade from 'react-reveal/Fade';
-import Text from '../../../common/components/Text';
-import Heading from '../../../common/components/Heading';
-import Image from '../../../common/components/Image';
-import Container from '../../../common/components/UI/Container';
-import GlideCarousel from '../../../common/components/GlideCarousel';
-import GlideSlide from '../../../common/components/GlideCarousel/glideSlide';
-import { SectionHeader } from '../interior.style';
+import React, { Fragment } from "react";
+import Fade from "react-reveal/Fade";
+import Text from "../../../common/components/Text";
+import Heading from "../../../common/components/Heading";
+import Image from "../../../common/components/Image";
+import Container from "../../../common/components/UI/Container";
+import GlideCarousel from "../../../common/components/GlideCarousel";
+import GlideSlide from "../../../common/components/GlideCarousel/glideSlide";
+import { SectionHeader } from "../interior.style";
 import SectionWrapper, {
   ProjectWrapper,
   TextWrapper,
   ImageWrapper,
-} from './project.style';
+} from "./project.style";
 
-import { projectData } from '../../../common/data/partners';
+import { projectData } from "../../../common/data/partners";
 
 const Project = () => {
   const { title, slogan, thumb_url, projects } = projectData;
   const glideOptions = {
-    type: 'carousel',
+    type: "carousel",
     perView: 1,
     gap: 0,
   };

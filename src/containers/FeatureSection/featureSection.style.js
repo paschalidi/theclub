@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
 
 const SectionWrapper = styled.section`
   width: 100%;
@@ -120,7 +120,7 @@ export const FeatureWrapper = styled.div`
         margin: 0;
         font-size: 18px;
         line-height: 28px;
-        color: ${themeGet('colors.text', '#294859')};
+        color: ${themeGet("colors.text", "#294859")};
         @media only screen and (max-width: 1440px) {
           font-size: 16px;
         }

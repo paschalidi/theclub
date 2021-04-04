@@ -19,99 +19,100 @@
 /* ------------------------------------ */
 export const menuData = [
   {
-    label: 'Feature',
-    path: '#feature',
-    offset: '80',
+    label: "Feature",
+    path: "#feature",
+    offset: "80",
   },
   {
-    label: 'About',
-    path: '#aboutUs',
-    offset: '80',
+    label: "About",
+    path: "#aboutUs",
+    offset: "80",
   },
   {
-    label: 'Project',
-    path: '#project',
-    offset: '80',
+    label: "Project",
+    path: "#project",
+    offset: "80",
   },
   {
-    label: 'Team',
-    path: '#team',
-    offset: '80',
+    label: "Team",
+    path: "#team",
+    offset: "80",
   },
   {
-    label: 'News',
-    path: '#news',
-    offset: '40',
+    label: "News",
+    path: "#news",
+    offset: "40",
   },
   {
-    label: 'Testimonial',
-    path: '#testimonial',
-    offset: '80',
+    label: "Testimonial",
+    path: "#testimonial",
+    offset: "80",
   },
 ];
 
 /* ------------------------------------ */
 // Banner section data
 /* ------------------------------------ */
-import slide1 from '../../../pages/images/partners-banner-1.jpeg';
-import slide2 from '../../../pages/images/partners-banner-2.jpeg';
-import slide3 from '../../../pages/images/partners-banner-3.jpeg';
-import slide4 from '../../../pages/images/partners-banner-4.jpeg';
-import slide5 from '../../../pages/images/partners-banner-5.jpeg';
-import slide6 from '../../../pages/images/partners-banner-6.jpeg';
-import slide7 from '../../../pages/images/partners-banner-7.jpeg';
-import slide8 from '../../../pages/images/partners-banner-8.jpeg';
+import slide1 from "../../../pages/images/partners-banner-1.jpeg";
+import slide2 from "../../../pages/images/partners-banner-2.jpeg";
+import slide3 from "../../../pages/images/partners-banner-3.jpeg";
+import slide4 from "../../../pages/images/partners-banner-4.jpeg";
+import slide5 from "../../../pages/images/partners-banner-5.jpeg";
+import slide6 from "../../../pages/images/partners-banner-6.jpeg";
+import slide7 from "../../../pages/images/partners-banner-7.jpeg";
+import slide8 from "../../../pages/images/partners-banner-8.jpeg";
 
 export const bannerData = {
-  discount: '25%',
-  discountLabel: 'περισσοτερα κερδη τα δυο πρωτα χρονια',
-  title: 'Συναργαζόμαστε με σκοπό την επιτυχία',
+  discount: "25%",
+  discountLabel: "περισσοτερα κερδη τα δυο πρωτα χρονια",
+  title: "Συναργαζόμαστε με σκοπό την επιτυχία",
   lists: [
     {
       id: 0,
-      text: 'Είστε έτοιμοι να αρχίσετε να κερδίζετε περισσότερα; Κορυφαίοι χώροι γυμναστήριων, σαλόνια ομορφιάς και ευεξίας αναφέρουν αύξηση κατά 20% στα έσοδα, βάζοντας τις ελεύθερες θεσεις τους στη πλατφόρμα μας!',
+      text:
+        "Είστε έτοιμοι να αρχίσετε να κερδίζετε περισσότερα; Κορυφαίοι χώροι γυμναστήριων, σαλόνια ομορφιάς και ευεξίας αναφέρουν αύξηση κατά 20% στα έσοδα, βάζοντας τις ελεύθερες θεσεις τους στη πλατφόρμα μας!",
     },
   ],
   carousel: [
     {
       id: 1,
       thumb_url: slide1,
-      title: 'Yoga',
+      title: "Yoga",
     },
     {
       id: 5,
       thumb_url: slide5,
-      title: 'Studios',
+      title: "Studios",
     },
     {
       id: 8,
       thumb_url: slide8,
-      title: 'Γυμναστήρια',
+      title: "Γυμναστήρια",
     },
     {
       id: 2,
       thumb_url: slide2,
-      title: 'Boxing',
+      title: "Boxing",
     },
     {
       id: 3,
       thumb_url: slide3,
-      title: 'Lift',
+      title: "Lift",
     },
     {
       id: 7,
       thumb_url: slide7,
-      title: 'Yoga',
+      title: "Yoga",
     },
     {
       id: 6,
       thumb_url: slide6,
-      title: 'Crossfit',
+      title: "Crossfit",
     },
     {
       id: 4,
       thumb_url: slide4,
-      title: 'Γυμναστήρια',
+      title: "Γυμναστήρια",
     },
   ],
 };
@@ -119,42 +120,42 @@ export const bannerData = {
 /* ------------------------------------ */
 // Feature section data
 /* ------------------------------------ */
-import icon1 from '../../../common/assets/image/partners/feature/svg-4.svg';
-import icon2 from '../../../common/assets/image/partners/feature/svg-3.svg';
-import icon3 from '../../../common/assets/image/partners/feature/svg-1.svg';
-import icon4 from '../../../common/assets/image/partners/feature/svg-2.svg';
+import icon1 from "../../../common/assets/image/partners/feature/svg-4.svg";
+import icon2 from "../../../common/assets/image/partners/feature/svg-3.svg";
+import icon3 from "../../../common/assets/image/partners/feature/svg-1.svg";
+import icon4 from "../../../common/assets/image/partners/feature/svg-2.svg";
 
 export const featureData = {
-  title: 'OΙ ΥΠΗΡΕΣΙΕΣ ΜΑΣ',
-  slogan: 'Τα οφέλοι σας ως συνεργάτες',
+  title: "OΙ ΥΠΗΡΕΣΙΕΣ ΜΑΣ",
+  slogan: "Τα οφέλοι σας ως συνεργάτες",
   features: [
     {
       id: 1,
       icon: icon1,
-      title: 'ΠΡΟΣΘΕΤΟ ΕΙΣΟΔΗΜΑ',
+      title: "ΠΡΟΣΘΕΤΟ ΕΙΣΟΔΗΜΑ",
       description:
-        'Περισσότεροι συμμετέχοντες στα αθλητικά σας προγράμματα και μαθήματα. Σας πληρώνουμε για κάθε check-in!',
+        "Περισσότεροι συμμετέχοντες στα αθλητικά σας προγράμματα και μαθήματα. Σας πληρώνουμε για κάθε check-in!",
     },
     {
       id: 2,
       icon: icon2,
-      title: 'ΑΠΕΚΤΗΣΕ ΝΕOΥΣ ΠΕΛΑΤΕΣ',
+      title: "ΑΠΕΚΤΗΣΕ ΝΕOΥΣ ΠΕΛΑΤΕΣ",
       description:
-        'Με το ****, θα προσεγγίσετε νέες ομάδες πελατών - αθλητές πολλαπλών αθλημάτων και λάτρεις του αθλητισμού που εργάζονται στε εταίριες.',
+        "Με το ****, θα προσεγγίσετε νέες ομάδες πελατών - αθλητές πολλαπλών αθλημάτων και λάτρεις του αθλητισμού που εργάζονται στε εταίριες.",
     },
     {
       id: 3,
       icon: icon3,
-      title: 'ΔΩΡΕΑΝ MARKETING',
+      title: "ΔΩΡΕΑΝ MARKETING",
       description:
-        'Προωθούμε εσάς και τις αθλητικές σας εγκαταστάσεις μέσω της παρουσίας μας στο διαδίκτυο, των κοινωνικών μέσων μαζικής ενημέρωσης, του ενημερωτικού δελτίου μας και άλλων.',
+        "Προωθούμε εσάς και τις αθλητικές σας εγκαταστάσεις μέσω της παρουσίας μας στο διαδίκτυο, των κοινωνικών μέσων μαζικής ενημέρωσης, του ενημερωτικού δελτίου μας και άλλων.",
     },
     {
       id: 4,
       icon: icon4,
-      title: 'ΧΩΡΙΣ ΕΠΙΠΛΕΟΝ ΕΞΟΔΑ',
+      title: "ΧΩΡΙΣ ΕΠΙΠΛΕΟΝ ΕΞΟΔΑ",
       description:
-        'Η συνεργασία με το **** είναι δωρεάν για εσάς - δεν υπάρχουν χρεώσεις.',
+        "Η συνεργασία με το **** είναι δωρεάν για εσάς - δεν υπάρχουν χρεώσεις.",
     },
   ],
 };
@@ -162,52 +163,52 @@ export const featureData = {
 /* ------------------------------------ */
 // About section data
 /* ------------------------------------ */
-import product from '../../../common/assets/image/partners/win.jpeg';
+import product from "../../../common/assets/image/partners/win.jpeg";
 
 export const aboutData = {
   thumb_url: product,
-  title: 'Πως δουλεύει',
+  title: "Πως δουλεύει",
   title1: "1. Εγγραφείτε online (σε λιγότερο από 10 λεπτά)",
   text1:
-    'Πείτε μας για την επιχείρησή σας και αποκτήστε μια ιδέα για το πόσο θα μπορούσατε να κερδίσετε στην πλατφόρμα.',
+    "Πείτε μας για την επιχείρησή σας και αποκτήστε μια ιδέα για το πόσο θα μπορούσατε να κερδίσετε στην πλατφόρμα.",
   title2: "2. Προσθέστε τα διαθέσιμα μαθήματα και τα ραντεβού σας",
   text2:
-    'Αξιοποιήστε νέα είδη κοινού και προσεγγίστε χιλιάδες πελάτες στην περιοχή σας. Αξιοποιήστε την εφαρμογή μας για να δείτε την απόδοσή και τα κέρδη σας',
+    "Αξιοποιήστε νέα είδη κοινού και προσεγγίστε χιλιάδες πελάτες στην περιοχή σας. Αξιοποιήστε την εφαρμογή μας για να δείτε την απόδοσή και τα κέρδη σας",
   title3: "3. Πληρωθήτε για κάθε check-in!",
   text3:
-    'Λάβετε κρατήσεις, πληρωθήτε. Το SmartSpot, το έξυπνο εργαλείο διαχείρισης σημείων μας, θα εξετάσει το πρόγραμμά σας και τα δεδομένα σε πραγματικό χρόνο για να δυναμικά τιμολογήσει τα μη συμπληρωμένα σημεία σας για να μεγιστοποιήσετε τα έσοδά σας.',
+    "Λάβετε κρατήσεις, πληρωθήτε. Το SmartSpot, το έξυπνο εργαλείο διαχείρισης σημείων μας, θα εξετάσει το πρόγραμμά σας και τα δεδομένα σε πραγματικό χρόνο για να δυναμικά τιμολογήσει τα μη συμπληρωμένα σημεία σας για να μεγιστοποιήσετε τα έσοδά σας.",
 };
 
 /* ------------------------------------ */
 // Projects section data
 /* ------------------------------------ */
-import project1 from '../../../common/assets/image/partners/projects/1.png';
+import project1 from "../../../common/assets/image/partners/projects/1.png";
 
 export const projectData = {
-  title: 'WORK PROCEDURE',
-  slogan: 'How We Do Our Projects',
+  title: "WORK PROCEDURE",
+  slogan: "How We Do Our Projects",
   thumb_url: project1,
   projects: [
     {
       id: 1,
       text:
-        'Create a mind map to brainstorm your project to inspire new ideas. Use a simple piece of paper, poster, or whiteboard for your mind map and we write the destination of your project in the middle.We  Write down related topics, subtopics, and relevant concepts around the goal and branch from them to create and follow different tangents.',
+        "Create a mind map to brainstorm your project to inspire new ideas. Use a simple piece of paper, poster, or whiteboard for your mind map and we write the destination of your project in the middle.We  Write down related topics, subtopics, and relevant concepts around the goal and branch from them to create and follow different tangents.",
       text2:
-        'When you conduct a group project, each group member can benefit from the ideas of others and gain new insights by brainstorming together.',
+        "When you conduct a group project, each group member can benefit from the ideas of others and gain new insights by brainstorming together.",
     },
     {
       id: 2,
       text:
-        'Schedule a brainstorming session in a quiet place with few distractions. If you are working on a project alone, you can use group discussions with friends or colleagues to gain a new perspective on the topic. When you conduct a group project, each group member can benefit from the ideas of others and gain new insights by brainstorming together.',
+        "Schedule a brainstorming session in a quiet place with few distractions. If you are working on a project alone, you can use group discussions with friends or colleagues to gain a new perspective on the topic. When you conduct a group project, each group member can benefit from the ideas of others and gain new insights by brainstorming together.",
       text2:
-        'Completing a successful project requires a significant amount of time and work, which means evaluating your priorities and planning your course of action.',
+        "Completing a successful project requires a significant amount of time and work, which means evaluating your priorities and planning your course of action.",
     },
     {
       id: 3,
       text:
-        'Create a mind map to brainstorm your project to inspire new ideas. Use a simple piece of paper, poster, or whiteboard for your mind map and we write the destination of your project in the middle.We  Write down related topics, subtopics, and relevant concepts around the goal and branch from them to create and follow different tangents.',
+        "Create a mind map to brainstorm your project to inspire new ideas. Use a simple piece of paper, poster, or whiteboard for your mind map and we write the destination of your project in the middle.We  Write down related topics, subtopics, and relevant concepts around the goal and branch from them to create and follow different tangents.",
       text2:
-        'When you conduct a group project, each group member can benefit from the ideas of others and gain new insights by brainstorming together.',
+        "When you conduct a group project, each group member can benefit from the ideas of others and gain new insights by brainstorming together.",
     },
   ],
 };
@@ -215,117 +216,117 @@ export const projectData = {
 /* ------------------------------------ */
 // Team section data
 /* ------------------------------------ */
-import { Icon } from 'react-icons-kit';
-import { socialFacebook } from 'react-icons-kit/ionicons/socialFacebook';
-import { socialDribbble } from 'react-icons-kit/ionicons/socialDribbble';
-import { socialGoogleplus } from 'react-icons-kit/ionicons/socialGoogleplus';
-import { socialSkype } from 'react-icons-kit/ionicons/socialSkype';
-import { socialTwitter } from 'react-icons-kit/ionicons/socialTwitter';
+import { Icon } from "react-icons-kit";
+import { socialFacebook } from "react-icons-kit/ionicons/socialFacebook";
+import { socialDribbble } from "react-icons-kit/ionicons/socialDribbble";
+import { socialGoogleplus } from "react-icons-kit/ionicons/socialGoogleplus";
+import { socialSkype } from "react-icons-kit/ionicons/socialSkype";
+import { socialTwitter } from "react-icons-kit/ionicons/socialTwitter";
 
-import member1 from '../../../common/assets/image/partners/team/member1.jpg';
-import member2 from '../../../common/assets/image/partners/team/member2.jpg';
-import member3 from '../../../common/assets/image/partners/team/member3.jpg';
+import member1 from "../../../common/assets/image/partners/team/member1.jpg";
+import member2 from "../../../common/assets/image/partners/team/member2.jpg";
+import member3 from "../../../common/assets/image/partners/team/member3.jpg";
 
 export const teamData = {
-  title: 'OUR TEAM MEMBER',
-  slogan: 'Meet Our Perfectionist',
+  title: "OUR TEAM MEMBER",
+  slogan: "Meet Our Perfectionist",
   members: [
     {
       id: 1,
       avatar: member1,
-      name: 'Roman Ul Oman',
-      designation: 'Project Manager',
+      name: "Roman Ul Oman",
+      designation: "Project Manager",
       social_links: [
         {
           id: 1,
           icon: <Icon icon={socialFacebook} />,
-          url: '#1',
+          url: "#1",
         },
         {
           id: 2,
           icon: <Icon icon={socialDribbble} />,
-          url: '#1',
+          url: "#1",
         },
         {
           id: 3,
           icon: <Icon icon={socialGoogleplus} />,
-          url: '#1',
+          url: "#1",
         },
         {
           id: 4,
           icon: <Icon icon={socialSkype} />,
-          url: '#1',
+          url: "#1",
         },
         {
           id: 5,
           icon: <Icon icon={socialTwitter} />,
-          url: '#1',
+          url: "#1",
         },
       ],
     },
     {
       id: 2,
       avatar: member2,
-      name: 'Jeny Doe',
-      designation: 'Lead Designer',
+      name: "Jeny Doe",
+      designation: "Lead Designer",
       social_links: [
         {
           id: 1,
           icon: <Icon icon={socialFacebook} />,
-          url: '#1',
+          url: "#1",
         },
         {
           id: 2,
           icon: <Icon icon={socialDribbble} />,
-          url: '#1',
+          url: "#1",
         },
         {
           id: 3,
           icon: <Icon icon={socialGoogleplus} />,
-          url: '#1',
+          url: "#1",
         },
         {
           id: 4,
           icon: <Icon icon={socialSkype} />,
-          url: '#1',
+          url: "#1",
         },
         {
           id: 5,
           icon: <Icon icon={socialTwitter} />,
-          url: '#1',
+          url: "#1",
         },
       ],
     },
     {
       id: 3,
       avatar: member3,
-      name: 'Naina Cooper',
-      designation: 'Marketing Manager',
+      name: "Naina Cooper",
+      designation: "Marketing Manager",
       social_links: [
         {
           id: 1,
           icon: <Icon icon={socialFacebook} />,
-          url: '#1',
+          url: "#1",
         },
         {
           id: 2,
           icon: <Icon icon={socialDribbble} />,
-          url: '#1',
+          url: "#1",
         },
         {
           id: 3,
           icon: <Icon icon={socialGoogleplus} />,
-          url: '#1',
+          url: "#1",
         },
         {
           id: 4,
           icon: <Icon icon={socialSkype} />,
-          url: '#1',
+          url: "#1",
         },
         {
           id: 5,
           icon: <Icon icon={socialTwitter} />,
-          url: '#1',
+          url: "#1",
         },
       ],
     },
@@ -338,35 +339,35 @@ export const teamData = {
 export const newsData = [
   {
     id: 1,
-    title: 'Corporate design is a crucial part of your brand.',
+    title: "Corporate design is a crucial part of your brand.",
     excerpt:
-      'Corporate design is a crucial part of your brand. Our approach corporate design is extraordinary. Please come and visit us',
-    link_text: 'Read',
-    link_url: '#',
+      "Corporate design is a crucial part of your brand. Our approach corporate design is extraordinary. Please come and visit us",
+    link_text: "Read",
+    link_url: "#",
   },
   {
     id: 2,
-    title: 'Learn more about landscape plans, how to design them.',
+    title: "Learn more about landscape plans, how to design them.",
     excerpt:
-      'Learn more about landscape plans, how to design them, what to watch out for in your layout. We deign the appropriate layout for our clients to deliver best',
-    link_text: 'Read',
-    link_url: '#',
+      "Learn more about landscape plans, how to design them, what to watch out for in your layout. We deign the appropriate layout for our clients to deliver best",
+    link_text: "Read",
+    link_url: "#",
   },
   {
     id: 3,
-    title: 'Discover our design ideas, beautiful photos for interior design.',
+    title: "Discover our design ideas, beautiful photos for interior design.",
     excerpt:
-      'Discover our design ideas, beautiful photos and how-to projects to create Interior Design. We try to reflect your personality on our design',
-    link_text: 'Read',
-    link_url: '#',
+      "Discover our design ideas, beautiful photos and how-to projects to create Interior Design. We try to reflect your personality on our design",
+    link_text: "Read",
+    link_url: "#",
   },
   {
     id: 4,
-    title: 'Interior design is an art and we are trying to paint monalisa.',
+    title: "Interior design is an art and we are trying to paint monalisa.",
     excerpt:
-      'With the best players in the designing sector, we explore a whole new world of interior design.Our approach corporate design is extraordinary',
-    link_text: 'Read',
-    link_url: '#',
+      "With the best players in the designing sector, we explore a whole new world of interior design.Our approach corporate design is extraordinary",
+    link_text: "Read",
+    link_url: "#",
   },
 ];
 
@@ -374,61 +375,61 @@ export const newsData = [
 // Testimonial data
 /* ------------------------------------ */
 export const testimonialData = {
-  title: 'TESTIMONIAL',
-  slogan: 'What Our Clients Say',
+  title: "TESTIMONIAL",
+  slogan: "What Our Clients Say",
   reviews: [
     {
       id: 0,
-      name: 'Parker Joe',
-      designation: 'Co-Founder & CEO',
-      username: '@amader craft',
-      account_url: '#',
+      name: "Parker Joe",
+      designation: "Co-Founder & CEO",
+      username: "@amader craft",
+      account_url: "#",
       comment:
-        'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
+        "Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.",
       avatar:
-        'https://tinyfac.es/data/avatars/7D3FA6C0-83C8-4834-B432-6C65ED4FD4C3-500w.jpeg',
+        "https://tinyfac.es/data/avatars/7D3FA6C0-83C8-4834-B432-6C65ED4FD4C3-500w.jpeg",
     },
     {
       id: 1,
-      name: 'Britney havana',
-      designation: 'Co-Founder & CEO',
-      username: '@Light’s craft',
-      account_url: '#',
+      name: "Britney havana",
+      designation: "Co-Founder & CEO",
+      username: "@Light’s craft",
+      account_url: "#",
       comment:
-        'Impressed with master class support of the team and really look forward for the future.Really, really well made! Love that each component is handmade and customised. Great Work :)',
-      avatar: 'https://randomuser.me/api/portraits/women/63.jpg',
+        "Impressed with master class support of the team and really look forward for the future.Really, really well made! Love that each component is handmade and customised. Great Work :)",
+      avatar: "https://randomuser.me/api/portraits/women/63.jpg",
     },
     {
       id: 2,
-      name: 'June Spears',
-      designation: 'Co-Founder & CEO',
-      username: '@Eagle’s craft',
-      account_url: '#',
+      name: "June Spears",
+      designation: "Co-Founder & CEO",
+      username: "@Eagle’s craft",
+      account_url: "#",
       comment:
-        'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
-      avatar: 'https://randomuser.me/api/portraits/women/44.jpg',
+        "Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.",
+      avatar: "https://randomuser.me/api/portraits/women/44.jpg",
     },
     {
       id: 3,
-      name: 'Jessica Parker',
-      designation: 'Co-Founder & CEO',
-      username: '@Earth’s craft',
-      account_url: '#',
+      name: "Jessica Parker",
+      designation: "Co-Founder & CEO",
+      username: "@Earth’s craft",
+      account_url: "#",
       comment:
-        'Impressed with master class support of the team and really look forward for the future.Really, really well made! Love that each component is handmade and customised. Great Work !',
+        "Impressed with master class support of the team and really look forward for the future.Really, really well made! Love that each component is handmade and customised. Great Work !",
       avatar:
-        'https://pbs.twimg.com/profile_images/1049383024306081792/cQkGbpRO.jpg',
+        "https://pbs.twimg.com/profile_images/1049383024306081792/cQkGbpRO.jpg",
     },
     {
       id: 4,
-      name: 'Django Dsuja',
-      designation: 'Co-Founder & CEO',
-      username: '@Moon’s craft',
-      account_url: '#',
+      name: "Django Dsuja",
+      designation: "Co-Founder & CEO",
+      username: "@Moon’s craft",
+      account_url: "#",
       comment:
-        'Impressed with master class support of the team and really look forward for the future.Really, really well made! Love that each component is handmade and customised. Great Work :)',
+        "Impressed with master class support of the team and really look forward for the future.Really, really well made! Love that each component is handmade and customised. Great Work :)",
       avatar:
-        'https://pbs.twimg.com/profile_images/974736784906248192/gPZwCbdS.jpg',
+        "https://pbs.twimg.com/profile_images/974736784906248192/gPZwCbdS.jpg",
     },
   ],
 };
@@ -436,42 +437,42 @@ export const testimonialData = {
 /* ------------------------------------ */
 // Gallery data
 /* ------------------------------------ */
-import galleryImg1 from '../../../common/assets/image/partners/gallery/1.jpg';
-import galleryImg2 from '../../../common/assets/image/partners/gallery/2.jpg';
-import galleryImg3 from '../../../common/assets/image/partners/gallery/3.jpg';
-import galleryImg4 from '../../../common/assets/image/partners/gallery/4.jpg';
-import galleryImg5 from '../../../common/assets/image/partners/gallery/5.jpg';
+import galleryImg1 from "../../../common/assets/image/partners/gallery/1.jpg";
+import galleryImg2 from "../../../common/assets/image/partners/gallery/2.jpg";
+import galleryImg3 from "../../../common/assets/image/partners/gallery/3.jpg";
+import galleryImg4 from "../../../common/assets/image/partners/gallery/4.jpg";
+import galleryImg5 from "../../../common/assets/image/partners/gallery/5.jpg";
 
 export const galleryData = [
   {
     id: 1,
     thumb_url: galleryImg1,
-    name: 'Eco friendly',
-    link: '#',
+    name: "Eco friendly",
+    link: "#",
   },
   {
     id: 2,
     thumb_url: galleryImg2,
-    name: 'Living',
-    link: '#',
+    name: "Living",
+    link: "#",
   },
   {
     id: 3,
     thumb_url: galleryImg3,
-    name: 'Corner',
-    link: '#',
+    name: "Corner",
+    link: "#",
   },
   {
     id: 4,
     thumb_url: galleryImg4,
-    name: 'Wall decor',
-    link: '#',
+    name: "Wall decor",
+    link: "#",
   },
   {
     id: 5,
     thumb_url: galleryImg5,
-    name: 'Restroom',
-    link: '#',
+    name: "Restroom",
+    link: "#",
   },
 ];
 
@@ -479,175 +480,175 @@ export const galleryData = [
 // Newsletter data
 /* ------------------------------------ */
 export const newsletterData = {
-  title: 'SUBSCRIBE NEWSLETTER',
-  slogan: 'Don’t Miss Out Any Offer',
+  title: "SUBSCRIBE NEWSLETTER",
+  slogan: "Don’t Miss Out Any Offer",
   note:
-    'Note: Please call us at 12pm to 8am. otherwise our customer supporter will not available to reach your call, but you can drop mail anytime.',
+    "Note: Please call us at 12pm to 8am. otherwise our customer supporter will not available to reach your call, but you can drop mail anytime.",
 };
 
 /* ------------------------------------ */
 // Footer data
 /* ------------------------------------ */
-import { facebook } from 'react-icons-kit/fa/facebook';
-import { dribbble } from 'react-icons-kit/fa/dribbble';
-import { googlePlus } from 'react-icons-kit/fa/googlePlus';
-import { skype } from 'react-icons-kit/fa/skype';
-import { twitter } from 'react-icons-kit/fa/twitter';
-import logo from '../../../common/assets/image/partners/logo.svg';
+import { facebook } from "react-icons-kit/fa/facebook";
+import { dribbble } from "react-icons-kit/fa/dribbble";
+import { googlePlus } from "react-icons-kit/fa/googlePlus";
+import { skype } from "react-icons-kit/fa/skype";
+import { twitter } from "react-icons-kit/fa/twitter";
+import logo from "../../../common/assets/image/partners/logo.svg";
 
 export const footerData = {
   logo: logo,
-  mail: 'hello@redq.io',
-  phone: '123-456-7890',
+  mail: "hello@redq.io",
+  phone: "123-456-7890",
   socialLinks: [
     {
       id: 1,
       icon: <Icon icon={facebook} />,
-      name: 'facebook',
-      link: '#',
+      name: "facebook",
+      link: "#",
     },
     {
       id: 2,
       icon: <Icon icon={dribbble} />,
-      name: 'dribbble',
-      link: '#',
+      name: "dribbble",
+      link: "#",
     },
     {
       id: 3,
       icon: <Icon icon={googlePlus} />,
-      name: 'googlePlus',
-      link: '#',
+      name: "googlePlus",
+      link: "#",
     },
     {
       id: 4,
       icon: <Icon icon={skype} />,
-      name: 'skype',
-      link: '#',
+      name: "skype",
+      link: "#",
     },
     {
       id: 5,
       icon: <Icon icon={twitter} />,
-      name: 'twitter',
-      link: '#',
+      name: "twitter",
+      link: "#",
     },
   ],
   menuWidgets: [
     {
       id: 1,
-      title: 'ABOUT US',
+      title: "ABOUT US",
       menu: [
         {
           id: 1,
-          text: 'Support Center',
-          link: '#',
+          text: "Support Center",
+          link: "#",
         },
         {
           id: 2,
-          text: 'Customer Support',
-          link: '#',
+          text: "Customer Support",
+          link: "#",
         },
         {
           id: 3,
-          text: 'About Us',
-          link: '#',
+          text: "About Us",
+          link: "#",
         },
         {
           id: 4,
-          text: 'Copyright',
-          link: '#',
+          text: "Copyright",
+          link: "#",
         },
         {
           id: 5,
-          text: 'Popular Campaign',
-          link: '#',
+          text: "Popular Campaign",
+          link: "#",
         },
       ],
     },
     {
       id: 2,
-      title: 'OUR INFORMATION',
+      title: "OUR INFORMATION",
       menu: [
         {
           id: 1,
-          text: 'Return Policy',
-          link: '#',
+          text: "Return Policy",
+          link: "#",
         },
         {
           id: 2,
-          text: 'Privacy Policy',
-          link: '#',
+          text: "Privacy Policy",
+          link: "#",
         },
         {
           id: 3,
-          text: 'Terms & Conditions',
-          link: '#',
+          text: "Terms & Conditions",
+          link: "#",
         },
         {
           id: 4,
-          text: 'Site Map',
-          link: '#',
+          text: "Site Map",
+          link: "#",
         },
         {
           id: 5,
-          text: 'Store Hours',
-          link: '#',
+          text: "Store Hours",
+          link: "#",
         },
       ],
     },
     {
       id: 3,
-      title: 'MY ACCOUNT',
+      title: "MY ACCOUNT",
       menu: [
         {
           id: 1,
-          text: 'Press inquiries',
-          link: '#',
+          text: "Press inquiries",
+          link: "#",
         },
         {
           id: 2,
-          text: 'Social media directories',
-          link: '#',
+          text: "Social media directories",
+          link: "#",
         },
         {
           id: 3,
-          text: 'Images & B-roll',
-          link: '#',
+          text: "Images & B-roll",
+          link: "#",
         },
         {
           id: 4,
-          text: 'Permissions',
-          link: '#',
+          text: "Permissions",
+          link: "#",
         },
         {
           id: 5,
-          text: 'Speaker requests',
-          link: '#',
+          text: "Speaker requests",
+          link: "#",
         },
       ],
     },
     {
       id: 4,
-      title: 'POLICY',
+      title: "POLICY",
       menu: [
         {
           id: 1,
-          text: 'Application security',
-          link: '#',
+          text: "Application security",
+          link: "#",
         },
         {
           id: 2,
-          text: 'Software principles',
-          link: '#',
+          text: "Software principles",
+          link: "#",
         },
         {
           id: 3,
-          text: 'Unwanted software policy',
-          link: '#',
+          text: "Unwanted software policy",
+          link: "#",
         },
         {
           id: 4,
-          text: 'Responsible supply chain',
-          link: '#',
+          text: "Responsible supply chain",
+          link: "#",
         },
       ],
     },
@@ -660,27 +661,27 @@ export const footerData = {
 export const socialProfile = [
   {
     id: 1,
-    icon: 'flaticon-facebook-logo',
-    link: '#',
+    icon: "flaticon-facebook-logo",
+    link: "#",
   },
   {
     id: 2,
-    icon: 'flaticon-twitter-logo-silhouette',
-    link: '#',
+    icon: "flaticon-twitter-logo-silhouette",
+    link: "#",
   },
   {
     id: 3,
-    icon: 'flaticon-instagram',
-    link: '#',
+    icon: "flaticon-instagram",
+    link: "#",
   },
   {
     id: 4,
-    icon: 'flaticon-tumblr-logo',
-    link: '#',
+    icon: "flaticon-tumblr-logo",
+    link: "#",
   },
   {
     id: 5,
-    icon: 'flaticon-dribble-logo',
-    link: '#',
+    icon: "flaticon-dribble-logo",
+    link: "#",
   },
 ];

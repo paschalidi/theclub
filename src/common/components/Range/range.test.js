@@ -1,12 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { expect } from 'chai';
-import { shallow } from 'enzyme';
-import sinon from 'sinon';
-import RangeBox from './index';
-import { string } from 'postcss-selector-parser';
+import React from "react";
+import ReactDOM from "react-dom";
+import { expect } from "chai";
+import { shallow } from "enzyme";
+import sinon from "sinon";
+import RangeBox from "./index";
+import { string } from "postcss-selector-parser";
 
-describe('<RangeBox /> Component', () => {
+describe("<RangeBox /> Component", () => {
   // const minProps = {
   //   type: 'range',
   //   min: 'a',
@@ -16,7 +16,7 @@ describe('<RangeBox /> Component', () => {
   // it('renders without crashing', () => {
   //   expect(shallow(<RangeBox {...minProps} />).length).toEqual(1);
   // });
-  it('renders without crashing', () => {
+  it("renders without crashing", () => {
     shallow(<RangeBox />);
   });
 });

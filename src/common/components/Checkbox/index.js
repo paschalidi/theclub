@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import useToggle from '../useToggle';
-import CheckBoxStyle from './checkbox.style';
+import React from "react";
+import PropTypes from "prop-types";
+import useToggle from "../useToggle";
+import CheckBoxStyle from "./checkbox.style";
 
 const CheckBox = ({
   className,
@@ -19,7 +19,7 @@ const CheckBox = ({
   const [toggleValue, toggleHandler] = useToggle(isChecked);
 
   // Add all classs to an array
-  const addAllClasses = ['reusecore__checkbox'];
+  const addAllClasses = ["reusecore__checkbox"];
 
   // Add label position class
   if (labelPosition) {
@@ -28,7 +28,7 @@ const CheckBox = ({
 
   // isMaterial prop checking
   if (isMaterial) {
-    addAllClasses.push('is-material');
+    addAllClasses.push("is-material");
   }
 
   // className prop checking
@@ -41,12 +41,12 @@ const CheckBox = ({
     <span className="reusecore__field-label">{labelText}</span>
   );
 
-  const position = labelPosition || 'right';
+  const position = labelPosition || "right";
 
   return (
-    <CheckBoxStyle className={addAllClasses.join(' ')} {...props}>
+    <CheckBoxStyle className={addAllClasses.join(" ")} {...props}>
       <label htmlFor={htmlFor}>
-        {position === 'left' || position === 'right' ? LabelField : ''}
+        {position === "left" || position === "right" ? LabelField : ""}
         <input
           type="checkbox"
           className="checkbox"
@@ -82,7 +82,7 @@ CheckBox.propTypes = {
   value: PropTypes.string,
 
   /** labelText of the checkbox field */
-  labelPosition: PropTypes.oneOf(['right', 'left']),
+  labelPosition: PropTypes.oneOf(["right", "left"]),
 
   /** Checkbox toggle state based on isChecked prop */
   isChecked: PropTypes.bool,
@@ -94,8 +94,8 @@ CheckBox.propTypes = {
 /** Checkbox default proptype */
 CheckBox.defaultProps = {
   isChecked: false,
-  labelText: 'Checkbox label',
-  labelPosition: 'right',
+  labelText: "Checkbox label",
+  labelPosition: "right",
   disabled: false,
 };
 export default CheckBox;

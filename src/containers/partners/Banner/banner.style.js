@@ -1,8 +1,8 @@
-import styled, { keyframes } from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled, { keyframes } from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
 
-import error from 'common/assets/image/error.svg';
-import success from 'common/assets/image/success.svg';
+import error from "../../../common/assets/image/error.svg";
+import success from "../../../common/assets/image/success.svg";
 
 const shake = keyframes`
   0% {
@@ -21,7 +21,7 @@ const shake = keyframes`
 const BannerWrapper = styled.div`
   padding-top: 30px;
   margin-bottom: 81px;
-  background-color: ${themeGet('colors.banner', '#171717')};
+  background-color: ${themeGet("colors.banner", "#171717")};
   @media only screen and (max-width: 1440px) {
     margin-bottom: 60px;
   }
@@ -75,7 +75,7 @@ export const ContentArea = styled.div`
 
   h1,
   p {
-    color: ${themeGet('colors.label', '#C6C6C6')};
+    color: ${themeGet("colors.label", "#C6C6C6")};
   }
 
   h1 {
@@ -99,8 +99,8 @@ export const HighlightedText = styled.p`
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: ${themeGet('colors.label', '#C6C6C6')};
-  background-color: ${themeGet('colors.darkBg', '#0D0D0D')};
+  color: ${themeGet("colors.label", "#C6C6C6")};
+  background-color: ${themeGet("colors.darkBg", "#0D0D0D")};
   margin: 0 0 40px;
   @media only screen and (max-width: 767px) {
     margin: 0 0 30px;
@@ -117,8 +117,8 @@ export const HighlightedText = styled.p`
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0;
-    color: ${themeGet('colors.heading', '#191919')};
-    background-color: ${themeGet('colors.primary', '#FDEF00')};
+    color: ${themeGet("colors.heading", "#191919")};
+    background-color: ${themeGet("colors.primary", "#FDEF00")};
     margin-right: 10px;
   }
 `;
@@ -130,7 +130,7 @@ export const FormWrapper = styled.form`
   }
 
   .formError {
-    font-size:13px;
+    font-size: 13px;
     color: #ff0033;
   }
   .input_element {
@@ -144,11 +144,11 @@ export const FormWrapper = styled.form`
       font-size: 16px;
       padding: 20px 25px 20px 65px;
       border-radius: 5px;
-      color: ${themeGet('colors.label', '#C6C6C6')};
-      background-color: ${themeGet('colors.black', '#000000')};
+      color: ${themeGet("colors.label", "#C6C6C6")};
+      background-color: ${themeGet("colors.black", "#000000")};
 
       &::placeholder {
-        color: ${themeGet('colors.lightText', '#7E7E7E')};
+        color: ${themeGet("colors.lightText", "#7E7E7E")};
       }
     }
 
@@ -157,7 +157,7 @@ export const FormWrapper = styled.form`
       left: 22px;
 
       i {
-        color: ${themeGet('colors.lightText', '#7E7E7E')};
+        color: ${themeGet("colors.lightText", "#7E7E7E")};
         svg {
           width: auto;
           height: 24px;
@@ -166,7 +166,7 @@ export const FormWrapper = styled.form`
     }
 
     &::after {
-      content: '';
+      content: "";
       width: 16px;
       height: 16px;
       position: absolute;
@@ -253,7 +253,7 @@ export const CarouselArea = styled.div`
         }
 
         &::after {
-          content: '';
+          content: "";
           display: block;
           width: 100%;
           height: 30%;
@@ -281,7 +281,7 @@ export const CarouselArea = styled.div`
           left: 0;
           margin: 0;
           padding: 25px 30px;
-          color: ${themeGet('colors.label', '#C6C6C6')};
+          color: ${themeGet("colors.label", "#C6C6C6")};
           font-weight: 600;
           z-index: 1;
           transition: bottom 0.3s ease;
@@ -303,7 +303,7 @@ export const CarouselArea = styled.div`
           }
 
           h4 {
-            color: ${themeGet('colors.white', '#ffffff')};
+            color: ${themeGet("colors.white", "#ffffff")};
             bottom: 10px;
           }
         }
@@ -315,18 +315,18 @@ export const CarouselArea = styled.div`
         > span {
           &.next_arrow {
             width: 45px;
-            background-color: ${themeGet('colors.primary', '#FDEF00')};
+            background-color: ${themeGet("colors.primary", "#FDEF00")};
             @media only screen and (max-width: 667px) {
               width: 30px;
             }
 
             &::before {
-              background-color: ${themeGet('colors.primary', '#FDEF00')};
+              background-color: ${themeGet("colors.primary", "#FDEF00")};
               transform: rotate(42deg);
             }
 
             &::after {
-              background-color: ${themeGet('colors.primary', '#FDEF00')};
+              background-color: ${themeGet("colors.primary", "#FDEF00")};
               transform: rotate(-42deg);
             }
           }

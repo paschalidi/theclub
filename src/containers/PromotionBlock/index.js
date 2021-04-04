@@ -1,19 +1,19 @@
-import React from 'react';
-import Link from 'next/link';
-import PropTypes from 'prop-types';
-import Box from 'common/components/Box';
-import Image from 'common/components/Image';
-import Text from 'common/components/Text';
-import Heading from 'common/components/Heading';
-import Container from 'common/components/UI/Container';
+import React from "react";
+import Link from "next/link";
+import PropTypes from "prop-types";
+import Box from "../../common/components/Box";
+import Image from "../../common/components/Image";
+import Text from "../../common/components/Text";
+import Heading from "../../common/components/Heading";
+import Container from "../../common/components/UI/Container";
 import BlockWrapper, {
   ContentWrapper,
   List,
   Item,
   ImageWrapper,
-} from './promotionBlock.style';
+} from "./promotionBlock.style";
 
-import { promotionData } from 'common/data';
+import { promotionData } from "../../common/data";
 
 const PromotionBlock = ({ row, col }) => {
   const { slogan, title, text1, text2, lists, image } = promotionData;
@@ -62,16 +62,16 @@ PromotionBlock.defaultProps = {
   // PromotionBlock row default style
   row: {
     flexBox: true,
-    flexWrap: 'wrap',
-    ml: '-15px',
-    mr: '-15px',
+    flexWrap: "wrap",
+    ml: "-15px",
+    mr: "-15px",
   },
   // PromotionBlock col default style
   col: {
-    width: ['100%', '50%', '50%'],
-    pl: '15px',
-    pr: '15px',
-    mb: '30px',
+    width: ["100%", "50%", "50%"],
+    pl: "15px",
+    pr: "15px",
+    mb: "30px",
   },
 };
 

@@ -1,8 +1,8 @@
-import styled from 'styled-components';
-import { variant } from 'styled-system';
-import { themeGet } from '@styled-system/theme-get';
-import { colorStyle } from '../customVariant';
-import { base } from '../base';
+import styled from "styled-components";
+import { variant } from "styled-system";
+import { themeGet } from "@styled-system/theme-get";
+import { colorStyle } from "../customVariant";
+import { base } from "../base";
 
 const AlertStyle = styled.div`
   /* Alert default style */
@@ -10,9 +10,9 @@ const AlertStyle = styled.div`
   border-radius: 4px;
   border-width: 1px;
   border-style: solid;
-  border-color: ${themeGet('colors.borderColor', '#dadada')};
-  font-size: ${themeGet('fontSizes.4', '16')}px;
-  color: ${themeGet('colors.textColor', '#484848')};
+  border-color: ${themeGet("colors.borderColor", "#dadada")};
+  font-size: ${themeGet("fontSizes.4", "16")}px;
+  color: ${themeGet("colors.textColor", "#484848")};
 
   p {
     &:last-child {
@@ -36,6 +36,6 @@ AlertStyle.propTypes = {
   ...variant.propTypes,
 };
 
-AlertStyle.displayName = 'AlertStyle';
+AlertStyle.displayName = "AlertStyle";
 
 export default AlertStyle;

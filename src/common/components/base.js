@@ -16,12 +16,12 @@ import {
   alignSelf,
   color,
   compose,
-} from 'styled-system';
+} from "styled-system";
 
 export const themed = (key) => (props) => props.theme[key];
 
 export const base = compose(
-  () => ({ boxSizing: 'border-box' }),
+  () => ({ boxSizing: "border-box" }),
   space,
   width,
   minWidth,

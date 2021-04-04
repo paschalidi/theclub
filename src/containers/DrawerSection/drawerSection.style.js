@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
-import { Button } from '../Navbar/navbar.style';
+import styled from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
+import { Button } from "../Navbar/navbar.style";
 
 const InnerWrapper = styled.div`
   min-height: 100vh;
@@ -26,7 +26,7 @@ export const SpreadButton = styled(Button)`
     }
 
     &::before {
-      content: '';
+      content: "";
       display: block;
       width: 100%;
       height: 100%;
@@ -38,26 +38,26 @@ export const SpreadButton = styled(Button)`
       visibility: hidden;
       background: repeating-linear-gradient(
         -45deg,
-        ${themeGet('colors.primary', '#FCF22B')},
-        ${themeGet('colors.primary', '#FCF22B')} 10px,
-        ${themeGet('colors.primaryHover', '#ECF22B')} 10px,
-        ${themeGet('colors.primaryHover', '#ECF22B')} 20px
+        ${themeGet("colors.primary", "#FCF22B")},
+        ${themeGet("colors.primary", "#FCF22B")} 10px,
+        ${themeGet("colors.primaryHover", "#ECF22B")} 10px,
+        ${themeGet("colors.primaryHover", "#ECF22B")} 20px
       );
       transition: all 0.45s ease;
 
       @media only screen and (max-width: 1440px) {
         background: repeating-linear-gradient(
           -45deg,
-          ${themeGet('colors.primary', '#FCF22B')},
-          ${themeGet('colors.primary', '#FCF22B')} 8px,
-          ${themeGet('colors.primaryHover', '#ECF22B')} 8px,
-          ${themeGet('colors.primaryHover', '#ECF22B')} 16px
+          ${themeGet("colors.primary", "#FCF22B")},
+          ${themeGet("colors.primary", "#FCF22B")} 8px,
+          ${themeGet("colors.primaryHover", "#ECF22B")} 8px,
+          ${themeGet("colors.primaryHover", "#ECF22B")} 16px
         );
       }
     }
 
     &:hover {
-      background-color: ${themeGet('colors.primary', '#FCF22B')};
+      background-color: ${themeGet("colors.primary", "#FCF22B")};
 
       &::before {
         left: 0;

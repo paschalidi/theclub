@@ -1,28 +1,28 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import Link from 'next/link';
-import Box from 'common/components/Box';
-import Text from 'common/components/Text';
-import Image from 'common/components/Image';
-import Container from 'common/components/UI/Container';
-import InputGroup from 'common/components/InputGroup';
-import RadioGroup from 'common/components/RadioGroup';
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+import Link from "next/link";
+import Box from "../../common/components/Box";
+import Text from "../../common/components/Text";
+import Image from "../../common/components/Image";
+import Container from "../../common/components/UI/Container";
+import InputGroup from "../../common/components/InputGroup";
+import RadioGroup from "../../common/components/RadioGroup";
 import SectionWrapper, {
   ContentArea,
   Heading,
   ButtonGroup,
   DonationForm,
   DonateButton,
-} from './donateSection.style';
+} from "./donateSection.style";
 
-import { paymentPolicy, currencyOptions } from 'common/data';
-import heartImage from 'common/assets/image/charity/heart-alt.svg';
+import { paymentPolicy, currencyOptions } from "../../common/data";
+import heartImage from "../../common/assets/image/charity/heart-alt.svg";
 
 const DonateSection = ({ row, col }) => {
   const [state, setState] = useState({
-    price: '',
-    currency: 'usd',
-    policy: 'oneTime',
+    price: "",
+    currency: "usd",
+    policy: "oneTime",
   });
 
   const handleFormData = (value, name) => {
@@ -34,11 +34,11 @@ const DonateSection = ({ row, col }) => {
 
   const handleDonation = (e) => {
     e.preventDefault();
-    console.log('Donation form data: ', state);
+    console.log("Donation form data: ", state);
 
     setState({
       ...state,
-      price: '',
+      price: "",
     });
   };
 
@@ -75,17 +75,17 @@ const DonateSection = ({ row, col }) => {
                 inputType="number"
                 placeholder="100.00"
                 inputValue={state.price}
-                inputOnChange={(e) => handleFormData(e.target.value, 'price')}
+                inputOnChange={(e) => handleFormData(e.target.value, "price")}
                 currency="$ USD"
                 selectedValue={state.currency}
                 selectOptions={currencyOptions}
-                selectOnUpdate={(value) => handleFormData(value, 'currency')}
+                selectOnUpdate={(value) => handleFormData(value, "currency")}
               />
               <RadioGroup
                 name="radioGroup"
                 value={state.policy}
                 items={paymentPolicy}
-                onUpdate={(value) => handleFormData(value, 'policy')}
+                onUpdate={(value) => handleFormData(value, "policy")}
               />
               <DonateButton type="submit">
                 Donate Now <Image src={heartImage} alt="Charity Landing" />
@@ -110,16 +110,16 @@ DonateSection.defaultProps = {
   // DonateSection row default style
   row: {
     flexBox: true,
-    flexWrap: 'wrap',
-    ml: '-15px',
-    mr: '-15px',
+    flexWrap: "wrap",
+    ml: "-15px",
+    mr: "-15px",
   },
   // DonateSection col default style
   col: {
-    width: ['100%', '50%', '50%'],
-    pl: '15px',
-    pr: '15px',
-    mb: '30px',
+    width: ["100%", "50%", "50%"],
+    pl: "15px",
+    pr: "15px",
+    mb: "30px",
   },
 };
 

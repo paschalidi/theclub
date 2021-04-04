@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
 
 const SectionWrapper = styled.div`
   background-color: #fbfafe;
@@ -17,11 +17,11 @@ const SectionWrapper = styled.div`
   }
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     width: 100%;
     height: 10vw;
-    background-color: ${themeGet('colors.white', '#ffffff')};
+    background-color: ${themeGet("colors.white", "#ffffff")};
     position: absolute;
     top: 0;
     left: 0;

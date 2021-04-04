@@ -1,12 +1,12 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
 
-import map from 'common/assets/image/interior/map.png';
+import map from "../../../common/assets/image/interior/map.png";
 
 const FooterWrapper = styled.footer`
   width: 100%;
   padding: 70px 0 40px;
-  background-color: ${themeGet('colors.heading', '#171717')};
+  background-color: ${themeGet("colors.heading", "#171717")};
   background-image: url(${map});
   background-repeat: no-repeat;
   background-position: top center;
@@ -19,13 +19,13 @@ const FooterWrapper = styled.footer`
   }
 
   .widget_title {
-    color: ${themeGet('colors.label', '#C6C6C6')};
+    color: ${themeGet("colors.label", "#C6C6C6")};
     font-size: 14px;
     margin-bottom: 16px;
   }
 
   .text {
-    color: ${themeGet('colors.label', '#C6C6C6')};
+    color: ${themeGet("colors.label", "#C6C6C6")};
     font-size: 14px;
     margin-bottom: 9px;
   }
@@ -56,12 +56,12 @@ const FooterWrapper = styled.footer`
 `;
 
 export const CurvIcon = styled.div`
-  background-color: ${themeGet('colors.lightBg', '#fbfafe')};
+  background-color: ${themeGet("colors.lightBg", "#fbfafe")};
 
   svg {
     width: 100%;
     margin-bottom: -5px;
-    fill: ${themeGet('colors.heading', '#171717')};
+    fill: ${themeGet("colors.heading", "#171717")};
   }
 `;
 
@@ -71,7 +71,7 @@ export const List = styled.ul`
 
 export const ListItem = styled.li`
   a {
-    color: ${themeGet('colors.lightText', '#7E7E7E')};
+    color: ${themeGet("colors.lightText", "#7E7E7E")};
     font-size: 14px;
     line-height: 35px;
     transition: all 0.3s ease;
@@ -80,7 +80,7 @@ export const ListItem = styled.li`
     &:focus {
       outline: 0;
       text-decoration: none;
-      color: ${themeGet('colors.inactiveIcon', '#EBEBEB')};
+      color: ${themeGet("colors.inactiveIcon", "#EBEBEB")};
       padding-left: 5px;
     }
   }
@@ -105,7 +105,7 @@ export const SocialList = styled.ul`
       align-items: center;
       justify-content: center;
       line-height: 1;
-      color: ${themeGet('colors.lightText', '#7E7E7E')};
+      color: ${themeGet("colors.lightText", "#7E7E7E")};
       position: relative;
       i {
         position: relative;
@@ -118,7 +118,7 @@ export const SocialList = styled.ul`
       }
 
       &:hover {
-        color: ${themeGet('colors.primary', '#FDEF00')};
+        color: ${themeGet("colors.primary", "#FDEF00")};
       }
     }
   }

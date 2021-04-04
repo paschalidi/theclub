@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
 
 const BlockWrapper = styled.div`
   width: 100%;
@@ -41,7 +41,7 @@ export const ContentWrapper = styled.div`
     line-height: 14px;
     font-weight: 600;
     text-transform: uppercase;
-    color: ${themeGet('colors.secondary2', '#EE2541')};
+    color: ${themeGet("colors.secondary2", "#EE2541")};
     margin-bottom: 30px;
     @media only screen and (max-width: 1440px) {
       margin-bottom: 27px;
@@ -85,7 +85,7 @@ export const ContentWrapper = styled.div`
     font-size: 18px;
     line-height: 28px;
     margin-bottom: 29px;
-    color: ${themeGet('colors.text', '#294859')};
+    color: ${themeGet("colors.text", "#294859")};
     @media only screen and (max-width: 1440px) {
       font-size: 16px;
       margin-bottom: 27px;
@@ -100,7 +100,7 @@ export const ContentWrapper = styled.div`
 
   .learn__more-btn {
     &::before {
-      background-color: ${themeGet('colors.primary', '#FCF22B')};
+      background-color: ${themeGet("colors.primary", "#FCF22B")};
     }
   }
 `;
@@ -124,7 +124,7 @@ export const Item = styled.li`
   font-size: 20px;
   line-height: 40px;
   padding: 4px 0;
-  color: ${themeGet('colors.heading', '#060F1E')};
+  color: ${themeGet("colors.heading", "#060F1E")};
   @media only screen and (max-width: 1440px) {
     font-size: 18px;
     line-height: 30px;

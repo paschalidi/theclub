@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
+import styled from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const SectionWrapper = styled.section`
   width: 100%;
@@ -142,7 +142,7 @@ export const TextAndLink = styled.div`
   }
 
   h4 {
-    color: ${themeGet('colors.secondary', '#D50032')};
+    color: ${themeGet("colors.secondary", "#D50032")};
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
@@ -160,7 +160,7 @@ export const TextAndLink = styled.div`
   }
 
   .text_btn {
-    color: ${themeGet('colors.heading', '#060F1E')};
+    color: ${themeGet("colors.heading", "#060F1E")};
     font-weight: 600;
     font-size: 18px;
     @media only screen and (max-width: 1440px) {
@@ -220,11 +220,11 @@ export const BarArea = styled.div`
   &::before,
   &::after {
     display: block;
-    content: '';
+    content: "";
     width: 100%;
     height: 5px;
     border-radius: 5px;
-    background-color: ${themeGet('colors.lightGray', '#f0f0f0')};
+    background-color: ${themeGet("colors.lightGray", "#f0f0f0")};
     position: absolute;
     bottom: -7px;
     left: 0;
@@ -232,7 +232,7 @@ export const BarArea = styled.div`
 
   &::after {
     width: 56%;
-    background-color: ${themeGet('colors.secondary', '#D50032')};
+    background-color: ${themeGet("colors.secondary", "#D50032")};
   }
 
   p {
@@ -246,11 +246,11 @@ export const BarArea = styled.div`
 `;
 
 export const CurrentStatus = styled.p`
-  color: ${themeGet('colors.heading', '#060F1E')} !important;
+  color: ${themeGet("colors.heading", "#060F1E")} !important;
   margin-top: -6px !important;
 
   strong {
-    color: ${themeGet('colors.secondary', '#D50032')};
+    color: ${themeGet("colors.secondary", "#D50032")};
     font-size: 40px;
     line-height: 28px;
     font-weight: 700;
@@ -293,8 +293,8 @@ export const DonateButton = styled(AnchorLink)`
   font-weight: 700;
   border-radius: 10px;
   cursor: pointer;
-  color: ${themeGet('colors.heading', '#060F1E')};
-  background-color: ${themeGet('colors.primary', '#FCF22B')};
+  color: ${themeGet("colors.heading", "#060F1E")};
+  background-color: ${themeGet("colors.primary", "#FCF22B")};
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -312,7 +312,7 @@ export const DonateButton = styled(AnchorLink)`
   }
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     width: 100%;
     height: 100%;
@@ -324,20 +324,20 @@ export const DonateButton = styled(AnchorLink)`
     visibility: hidden;
     background: repeating-linear-gradient(
       -45deg,
-      ${themeGet('colors.primary', '#FCF22B')},
-      ${themeGet('colors.primary', '#FCF22B')} 10px,
-      ${themeGet('colors.primaryHover', '#ECF22B')} 10px,
-      ${themeGet('colors.primaryHover', '#ECF22B')} 20px
+      ${themeGet("colors.primary", "#FCF22B")},
+      ${themeGet("colors.primary", "#FCF22B")} 10px,
+      ${themeGet("colors.primaryHover", "#ECF22B")} 10px,
+      ${themeGet("colors.primaryHover", "#ECF22B")} 20px
     );
     transition: all 0.45s ease;
 
     @media only screen and (max-width: 1440px) {
       background: repeating-linear-gradient(
         -45deg,
-        ${themeGet('colors.primary', '#FCF22B')},
-        ${themeGet('colors.primary', '#FCF22B')} 8px,
-        ${themeGet('colors.primaryHover', '#ECF22B')} 8px,
-        ${themeGet('colors.primaryHover', '#ECF22B')} 16px
+        ${themeGet("colors.primary", "#FCF22B")},
+        ${themeGet("colors.primary", "#FCF22B")} 8px,
+        ${themeGet("colors.primaryHover", "#ECF22B")} 8px,
+        ${themeGet("colors.primaryHover", "#ECF22B")} 16px
       );
     }
   }
@@ -363,7 +363,7 @@ export const Item = styled.li`
   margin-right: 30px;
   font-size: 20px;
   font-weight: 400;
-  color: ${themeGet('colors.heading', '#060F1E')};
+  color: ${themeGet("colors.heading", "#060F1E")};
   @media only screen and (max-width: 1440px) {
     font-size: 18px;
   }
@@ -378,7 +378,7 @@ export const Item = styled.li`
 
   svg {
     width: 20px;
-    fill: ${themeGet('colors.heading', '#060F1E')};
+    fill: ${themeGet("colors.heading", "#060F1E")};
     transition: all 0.3s ease;
   }
 
@@ -386,12 +386,12 @@ export const Item = styled.li`
     &:hover {
       &.twitter {
         svg {
-          fill: ${themeGet('colors.twitter', '#38A1F3')};
+          fill: ${themeGet("colors.twitter", "#38A1F3")};
         }
       }
       &.facebook {
         svg {
-          fill: ${themeGet('colors.facebook', '#38A1F3')};
+          fill: ${themeGet("colors.facebook", "#38A1F3")};
         }
       }
     }

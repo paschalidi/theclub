@@ -1,34 +1,34 @@
-import React, { useState } from 'react';
-import { Icon } from 'react-icons-kit';
-import { iosEmailOutline } from 'react-icons-kit/ionicons/iosEmailOutline';
-import Fade from 'react-reveal/Fade';
-import Heading from 'common/components/Heading';
-import Text from 'common/components/Text';
-import Button from 'common/components/Button';
-import Input from 'common/components/Input';
-import { SectionHeader } from '../interior.style';
-import SectionWrapper, { FormWrapper, FormGroup } from './newsletter.style';
+import React, { useState } from "react";
+import { Icon } from "react-icons-kit";
+import { iosEmailOutline } from "react-icons-kit/ionicons/iosEmailOutline";
+import Fade from "react-reveal/Fade";
+import Heading from "../../../common/components/Heading";
+import Text from "../../../common/components/Text";
+import Button from "../../../common/components/Button";
+import Input from "../../../common/components/Input";
+import { SectionHeader } from "../interior.style";
+import SectionWrapper, { FormWrapper, FormGroup } from "./newsletter.style";
 
-import { newsletterData } from 'common/data/Interior';
+import { newsletterData } from "../../../common/data/Interior";
 
 const Newsletter = () => {
   const { title, slogan, note } = newsletterData;
 
-  const [state, setState] = useState({ email: '', valid: '' });
+  const [state, setState] = useState({ email: "", valid: "" });
   const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
   const handleOnChange = (e) => {
-    let value = '';
+    let value = "";
     if (e.target.value.match(emailRegex)) {
       if (e.target.value.length > 0) {
         value = e.target.value;
-        setState({ ...state, email: value, valid: 'valid' });
+        setState({ ...state, email: value, valid: "valid" });
       }
     } else {
       if (e.target.value.length > 0) {
-        setState({ ...state, valid: 'invalid' });
+        setState({ ...state, valid: "invalid" });
       } else {
-        setState({ ...state, valid: '' });
+        setState({ ...state, valid: "" });
       }
     }
   };
@@ -37,7 +37,7 @@ const Newsletter = () => {
     e.preventDefault();
     if (state.email.match(emailRegex)) {
       console.log(state.email);
-      setState({ email: '', valid: '' });
+      setState({ email: "", valid: "" });
     }
   };
 

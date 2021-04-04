@@ -1,8 +1,8 @@
-import styled from 'styled-components';
-import { variant } from 'styled-system';
-import { colorStyle } from '../customVariant';
-import { AnimSpinner } from '../Animation';
-import { base } from '../base';
+import styled from "styled-components";
+import { variant } from "styled-system";
+import { colorStyle } from "../customVariant";
+import { AnimSpinner } from "../Animation";
+import { base } from "../base";
 
 const LoaderStyle = styled.span`
   /* loader default style */
@@ -14,7 +14,7 @@ const LoaderStyle = styled.span`
   border-width: 2px;
   border-style: solid;
   border-color: ${(props) =>
-    props.loaderColor ? props.loaderColor : '#000000'};
+    props.loaderColor ? props.loaderColor : "#000000"};
   border-top-color: transparent !important;
 
   /* animation goes here */
@@ -29,6 +29,6 @@ LoaderStyle.propTypes = {
   ...variant.propTypes,
 };
 
-LoaderStyle.displayName = 'LoaderStyle';
+LoaderStyle.displayName = "LoaderStyle";
 
 export default LoaderStyle;

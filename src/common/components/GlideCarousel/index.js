@@ -1,7 +1,7 @@
-import React, { Fragment, useEffect } from 'react';
-import PropTypes from 'prop-types';
-import Glide from '@glidejs/glide';
-import '@glidejs/glide/dist/css/glide.core.min.css';
+import React, { Fragment, useEffect } from "react";
+import PropTypes from "prop-types";
+import Glide from "@glidejs/glide";
+import "@glidejs/glide/dist/css/glide.core.min.css";
 
 import GlideWrapper, {
   ButtonControlWrapper,
@@ -9,7 +9,7 @@ import GlideWrapper, {
   BulletControlWrapper,
   BulletButton,
   DefaultBtn,
-} from './glide.style';
+} from "./glide.style";
 
 const GlideCarousel = ({
   className,
@@ -28,7 +28,7 @@ const GlideCarousel = ({
   carouselSelector,
 }) => {
   // Add all classs to an array
-  const addAllClasses = ['glide'];
+  const addAllClasses = ["glide"];
 
   // className prop checking
   if (className) {
@@ -44,18 +44,18 @@ const GlideCarousel = ({
   // Load glide
   useEffect(() => {
     const glide = new Glide(
-      carouselSelector ? `#${carouselSelector}` : '#glide',
+      carouselSelector ? `#${carouselSelector}` : "#glide",
       {
         ...options,
       }
     );
     glide.mount();
-  },[]);
+  }, []);
 
   return (
     <GlideWrapper
-      className={addAllClasses.join(' ')}
-      id={carouselSelector || 'glide'}
+      className={addAllClasses.join(" ")}
+      id={carouselSelector || "glide"}
     >
       <div className="glide__track" data-glide-el="track">
         <ul className="glide__slides">{children}</ul>

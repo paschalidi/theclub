@@ -1,10 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import HamburgMenuWrapper from './hamburgMenu.style';
+import React from "react";
+import PropTypes from "prop-types";
+import HamburgMenuWrapper from "./hamburgMenu.style";
 
 const HamburgMenu = ({ className, wrapperStyle, barColor, ...props }) => {
   // Add all classs to an array
-  const addAllClasses = ['hamburgMenu__bar'];
+  const addAllClasses = ["hamburgMenu__bar"];
 
   // className prop checking
   if (className) {
@@ -13,7 +13,7 @@ const HamburgMenu = ({ className, wrapperStyle, barColor, ...props }) => {
 
   return (
     <HamburgMenuWrapper
-      className={addAllClasses.join(' ')}
+      className={addAllClasses.join(" ")}
       {...wrapperStyle}
       barColor={barColor}
       aria-label="hamburgMenu"

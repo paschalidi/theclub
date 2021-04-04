@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
 
 const SectionWrapper = styled.section`
   width: 100%;
@@ -76,7 +76,7 @@ export const Text = styled.p`
   }
 
   .link {
-    color: ${themeGet('colors.secondary', '#D50032')};
+    color: ${themeGet("colors.secondary", "#D50032")};
     text-decoration: underline;
     margin-left: 5px;
   }
@@ -86,7 +86,7 @@ export const LinkArea = styled.div`
   .text__btn {
     display: inline-flex;
     align-items: center;
-    color: ${themeGet('colors.secondary', '#D50032')};
+    color: ${themeGet("colors.secondary", "#D50032")};
     font-size: 17px;
     line-height: 28px;
     @media only screen and (max-width: 1440px) {
@@ -105,7 +105,7 @@ export const LinkArea = styled.div`
       border-radius: 4px;
       margin-left: 26px;
       position: relative;
-      background-color: ${themeGet('colors.secondary', '#D50032')};
+      background-color: ${themeGet("colors.secondary", "#D50032")};
       @media only screen and (max-width: 1440px) {
         width: 50px;
         margin-left: 20px;
@@ -117,12 +117,12 @@ export const LinkArea = styled.div`
 
       &::before,
       &::after {
-        content: '';
+        content: "";
         display: block;
         width: 14px;
         height: 2px;
         border-radius: 4px;
-        background-color: ${themeGet('colors.secondary', '#D50032')};
+        background-color: ${themeGet("colors.secondary", "#D50032")};
         position: absolute;
         right: 0;
         z-index: 1;
@@ -177,7 +177,7 @@ export const PostArea = styled.div`
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 0 100px rgba(175, 182, 194, 0.2);
-    background-color: ${themeGet('colors.white', '#ffffff')};
+    background-color: ${themeGet("colors.white", "#ffffff")};
     @media only screen and (max-width: 1440px) {
       width: calc(50% - 70px);
       margin: 0 35px 30px;
@@ -211,7 +211,7 @@ export const PostArea = styled.div`
       }
 
       .title {
-        color: ${themeGet('colors.heading', '#060F1E')};
+        color: ${themeGet("colors.heading", "#060F1E")};
         font-size: 24px;
         line-height: 40px;
         font-weight: 400;
@@ -268,8 +268,8 @@ export const PostArea = styled.div`
       .learn__more-btn {
         &::before {
           background-color: ${themeGet(
-            'colors.primary2',
-            'rgba(252, 242, 43, 0.25)'
+            "colors.primary2",
+            "rgba(252, 242, 43, 0.25)"
           )};
         }
       }

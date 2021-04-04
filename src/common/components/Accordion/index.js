@@ -1,5 +1,5 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 import {
   AccordionWrapper,
   AccordionItemWrapper,
@@ -9,7 +9,7 @@ import {
   IconWrapper,
   OpenIcon,
   CloseIcon,
-} from './accordion.style';
+} from "./accordion.style";
 
 const Accordion = ({
   className,
@@ -18,7 +18,7 @@ const Accordion = ({
   preExpanded = [],
 }) => {
   // Add all classs to an array
-  const addAllClasses = ['reusecore__accordion'];
+  const addAllClasses = ["reusecore__accordion"];
 
   // className prop checking
   if (className) {
@@ -28,7 +28,7 @@ const Accordion = ({
   return (
     <AccordionWrapper
       allowZeroExpanded={allowZeroExpanded}
-      className={addAllClasses.join(' ')}
+      className={addAllClasses.join(" ")}
       preExpanded={preExpanded}
     >
       {children}
@@ -38,7 +38,7 @@ const Accordion = ({
 
 const AccordionItem = ({ className, children, uuid }) => {
   // Add all classs to an array
-  const addAllClasses = ['accordion__item'];
+  const addAllClasses = ["accordion__item"];
 
   // className prop checking
   if (className) {
@@ -46,7 +46,7 @@ const AccordionItem = ({ className, children, uuid }) => {
   }
 
   return (
-    <AccordionItemWrapper className={addAllClasses.join(' ')} uuid={uuid}>
+    <AccordionItemWrapper className={addAllClasses.join(" ")} uuid={uuid}>
       {children}
     </AccordionItemWrapper>
   );
@@ -54,7 +54,7 @@ const AccordionItem = ({ className, children, uuid }) => {
 
 const AccordionTitle = ({ className, children }) => {
   // Add all classs to an array
-  const addAllClasses = ['accordion__header'];
+  const addAllClasses = ["accordion__header"];
 
   // className prop checking
   if (className) {
@@ -62,7 +62,7 @@ const AccordionTitle = ({ className, children }) => {
   }
 
   return (
-    <AccordionTitleWrapper className={addAllClasses.join(' ')}>
+    <AccordionTitleWrapper className={addAllClasses.join(" ")}>
       <AccordionItemButtonWrapper>{children}</AccordionItemButtonWrapper>
     </AccordionTitleWrapper>
   );
@@ -70,7 +70,7 @@ const AccordionTitle = ({ className, children }) => {
 
 const AccordionBody = ({ className, children }) => {
   // Add all classs to an array
-  const addAllClasses = ['accordion__body'];
+  const addAllClasses = ["accordion__body"];
 
   // className prop checking
   if (className) {
@@ -78,7 +78,7 @@ const AccordionBody = ({ className, children }) => {
   }
 
   return (
-    <AccordionBodyWrapper className={addAllClasses.join(' ')}>
+    <AccordionBodyWrapper className={addAllClasses.join(" ")}>
       {children}
     </AccordionBodyWrapper>
   );

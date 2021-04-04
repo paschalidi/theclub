@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react';
+import React, { useReducer } from "react";
 
 const initialState = {
   isOpen: false,
@@ -6,7 +6,7 @@ const initialState = {
 
 function reducer(state, action) {
   switch (action.type) {
-    case 'TOGGLE':
+    case "TOGGLE":
       return {
         ...state,
         isOpen: !state.isOpen,

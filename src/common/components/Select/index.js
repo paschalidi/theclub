@@ -1,11 +1,11 @@
-import React from 'react';
-import ReactSelect from 'react-select';
-import PropTypes from 'prop-types';
-import SelectStyle from './select.style';
+import React from "react";
+import ReactSelect from "react-select";
+import PropTypes from "prop-types";
+import SelectStyle from "./select.style";
 
 const Select = ({ className, labelText, labelPosition, ...props }) => {
   // Add all classes to an array
-  const addAllClasses = ['reusecore__select'];
+  const addAllClasses = ["reusecore__select"];
 
   // Add label position class
   if (labelPosition) {
@@ -21,20 +21,20 @@ const Select = ({ className, labelText, labelPosition, ...props }) => {
     <span className="reusecore__field-label">{labelText}</span>
   );
 
-  const position = labelPosition || 'top';
+  const position = labelPosition || "top";
 
   return (
-    <SelectStyle className={addAllClasses.join(' ')}>
-      {position === 'left' || position === 'right' || position === 'top'
+    <SelectStyle className={addAllClasses.join(" ")}>
+      {position === "left" || position === "right" || position === "top"
         ? LabelField
-        : ''}
+        : ""}
 
       <ReactSelect
         className="select-field__wrapper"
         classNamePrefix="select"
         {...props}
       />
-      {position === 'bottom' && LabelField}
+      {position === "bottom" && LabelField}
     </SelectStyle>
   );
 };
@@ -48,12 +48,12 @@ Select.propTypes = {
   labelText: PropTypes.string,
 
   /** Set label position of the select field. By default it's top */
-  labelPosition: PropTypes.oneOf(['top', 'bottom', 'left', 'right']),
+  labelPosition: PropTypes.oneOf(["top", "bottom", "left", "right"]),
 };
 
 Select.defaultProps = {
-  as: 'div',
-  labelPosition: 'top',
+  as: "div",
+  labelPosition: "top",
 };
 
 export default Select;

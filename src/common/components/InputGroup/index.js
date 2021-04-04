@@ -1,13 +1,13 @@
 /* eslint-disable */
-import React, { useState, useRef } from 'react';
-import PropTypes from 'prop-types';
-import useOnClickOutside from 'common/hooks/useOnClickOutside';
+import React, { useState, useRef } from "react";
+import PropTypes from "prop-types";
+import useOnClickOutside from "../../common/hooks/useOnClickOutside";
 import ComponentWrapper, {
   Input,
   SelectWrapper,
   CurrentOption,
   Dropdown,
-} from './inputGroup.style';
+} from "./inputGroup.style";
 
 const InputGroup = ({
   className,
@@ -46,13 +46,13 @@ const InputGroup = ({
   const dropdownRef = useRef(null);
   useOnClickOutside(dropdownRef, () => setState({ ...state, open: false }));
 
-  const addAllClasses = ['input_group'];
+  const addAllClasses = ["input_group"];
   if (className) {
     addAllClasses.push(className);
   }
 
   return (
-    <ComponentWrapper className={addAllClasses.join(' ')}>
+    <ComponentWrapper className={addAllClasses.join(" ")}>
       <Input
         type={inputType}
         value={inputValue}
@@ -78,15 +78,15 @@ const InputGroup = ({
           </svg>
         </CurrentOption>
         <Dropdown
-          className={`dropdown ${state.open ? 'active' : 'hide'}`}
+          className={`dropdown ${state.open ? "active" : "hide"}`}
           ref={dropdownRef}
         >
           {selectOptions.map((item) => (
             <li
               className={
                 state.selectedValue === item.value.toLowerCase()
-                  ? 'selected'
-                  : ''
+                  ? "selected"
+                  : ""
               }
               key={`option_key${item.id}`}
               data={item.value.toLowerCase()}
@@ -105,7 +105,7 @@ InputGroup.propTypes = {
   /** className of the InputGroup. */
   className: PropTypes.string,
   /** inputType prop for input field type. This should be a number or text. */
-  inputType: PropTypes.oneOf(['number', 'text']),
+  inputType: PropTypes.oneOf(["number", "text"]),
   /** placeholder text for input field type. */
   placeholder: PropTypes.string,
   /** Call back function for inout onChange event. */
@@ -121,7 +121,7 @@ InputGroup.propTypes = {
 };
 
 InputGroup.defaultProps = {
-  inputType: 'number',
+  inputType: "number",
   selectOptions: [],
   inputOnChange: () => {},
   selectOnUpdate: () => {},

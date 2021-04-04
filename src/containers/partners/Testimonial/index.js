@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import Heading from '../../../common/components/Heading';
-import Container from '../../../common/components/UI/Container';
-import Carousel from './carousel';
-import { SectionHeader, CircleLoader } from '../interior.style';
-import SectionWrapper, { CarouselWrapper } from './testimonial.style';
+import React, { useState, useEffect } from "react";
+import Heading from "../../../common/components/Heading";
+import Container from "../../../common/components/UI/Container";
+import Carousel from "./carousel";
+import { SectionHeader, CircleLoader } from "../interior.style";
+import SectionWrapper, { CarouselWrapper } from "./testimonial.style";
 
-import { testimonialData } from '../../../common/data/partners';
+import { testimonialData } from "../../../common/data/partners";
 
 const Testimonial = () => {
   const { title, slogan, reviews } = testimonialData;

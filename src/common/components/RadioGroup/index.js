@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import ComponentWrapper from './radioGroup.style';
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+import ComponentWrapper from "./radioGroup.style";
 
 const RadioGroup = ({ className, name, value, items, onUpdate }) => {
   const [state, setState] = useState({ value: value });
@@ -14,23 +14,23 @@ const RadioGroup = ({ className, name, value, items, onUpdate }) => {
     onUpdate(e.target.value);
   };
 
-  const addAllClasses = ['radio_group'];
+  const addAllClasses = ["radio_group"];
 
   if (className) {
     addAllClasses.push(className);
   }
 
   return (
-    <ComponentWrapper className={addAllClasses.join(' ')}>
+    <ComponentWrapper className={addAllClasses.join(" ")}>
       {items.map((item) => (
         <label
-          htmlFor={item.title.toLowerCase().split(' ').join('-')}
+          htmlFor={item.title.toLowerCase().split(" ").join("-")}
           key={`radio__group-id${item.id}`}
-          className={state.value === item.value ? 'active' : ''}
+          className={state.value === item.value ? "active" : ""}
         >
           <input
             type="radio"
-            id={item.title.toLowerCase().split(' ').join('-')}
+            id={item.title.toLowerCase().split(" ").join("-")}
             name={name}
             onChange={onChange}
             value={item.value}
@@ -43,7 +43,7 @@ const RadioGroup = ({ className, name, value, items, onUpdate }) => {
               <p>{item.text && item.text}</p>
             </div>
           ) : (
-            ''
+            ""
           )}
         </label>
       ))}

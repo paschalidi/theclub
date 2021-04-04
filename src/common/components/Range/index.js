@@ -1,11 +1,11 @@
-import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
-import RangeBoxStyle from './range.style';
-import Rheostat from 'rheostat';
-import 'rheostat/initialize';
+import React, { Fragment } from "react";
+import PropTypes from "prop-types";
+import RangeBoxStyle from "./range.style";
+import Rheostat from "rheostat";
+import "rheostat/initialize";
 
 const handleChange = (props) => {
-  console.log(props, 'current range value');
+  console.log(props, "current range value");
 };
 
 //Main Component
@@ -16,13 +16,13 @@ const RangeBox = ({ className, labelText, labelPosition, type, ...props }) => {
   lastValue = max ? max : 100;
 
   // Add all classs to an array
-  const addAllClasses = ['reusecore__rangebox'];
+  const addAllClasses = ["reusecore__rangebox"];
   // Add label position class
   if (labelPosition) {
     addAllClasses.push(`label_${labelPosition}`);
   }
   // label control
-  const position = labelPosition || 'right';
+  const position = labelPosition || "right";
   const LabelField = labelText && (
     <span className="reusecore__field-label">{labelText}</span>
   );
@@ -33,11 +33,11 @@ const RangeBox = ({ className, labelText, labelPosition, type, ...props }) => {
 
   return (
     <Fragment>
-      <RangeBoxStyle className={addAllClasses.join(' ')}>
+      <RangeBoxStyle className={addAllClasses.join(" ")}>
         <label>
-          {position === 'left' || position === 'right' || position === 'top'
+          {position === "left" || position === "right" || position === "top"
             ? LabelField
-            : ''}
+            : ""}
           <Rheostat
             min={initValue}
             max={lastValue}
@@ -47,7 +47,7 @@ const RangeBox = ({ className, labelText, labelPosition, type, ...props }) => {
           <div>
             <div />
           </div>
-          {position === 'bottom' && LabelField}
+          {position === "bottom" && LabelField}
         </label>
       </RangeBoxStyle>
     </Fragment>
@@ -59,7 +59,7 @@ RangeBox.propTypes = {
   labelText: PropTypes.string,
 
   /** labelText of the range-box field */
-  labelPosition: PropTypes.oneOf(['top', 'bottom', 'right', 'left']),
+  labelPosition: PropTypes.oneOf(["top", "bottom", "right", "left"]),
 
   // /** type of the range-box  */
   // type: PropTypes.oneOf(['range', 'slide']).isRequired,
@@ -106,8 +106,8 @@ RangeBox.propTypes = {
 
 /** RangeBox default proptype */
 RangeBox.defaultProps = {
-  labelText: 'ReuseCore RangeBox',
-  labelPosition: 'top',
+  labelText: "ReuseCore RangeBox",
+  labelPosition: "top",
   // type: 'range',
   // disabled: false,
   min: 0,

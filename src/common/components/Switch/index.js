@@ -1,8 +1,8 @@
 /* eslint-disable */
-import React from 'react';
-import PropTypes from 'prop-types';
-import useToggle from '../useToggle';
-import SwitchStyle from './switch.style';
+import React from "react";
+import PropTypes from "prop-types";
+import useToggle from "../useToggle";
+import SwitchStyle from "./switch.style";
 
 const Switch = ({
   className,
@@ -23,7 +23,7 @@ const Switch = ({
   const [toggleValue, toggleHandler] = useToggle(isChecked);
 
   // Add all classs to an array
-  const addAllClasses = ['reusecore__switch'];
+  const addAllClasses = ["reusecore__switch"];
 
   // Add label position class
   if (labelPosition) {
@@ -32,7 +32,7 @@ const Switch = ({
 
   // isMaterial prop checking
   if (isMaterial) {
-    addAllClasses.push('is-material');
+    addAllClasses.push("is-material");
   }
 
   // className prop checking
@@ -49,20 +49,20 @@ const Switch = ({
     <span className="reusecore__field-label">{labelText}</span>
   );
 
-  const position = labelPosition || 'top';
+  const position = labelPosition || "top";
 
   return (
     <SwitchStyle
-      className={addAllClasses.join(' ')}
+      className={addAllClasses.join(" ")}
       switchColor={switchColor}
       switchSize={switchSize}
       barColor={barColor}
       {...props}
     >
       <label>
-        {position === 'left' || position === 'right' || position === 'top'
+        {position === "left" || position === "right" || position === "top"
           ? LabelField
-          : ''}
+          : ""}
 
         <input
           checked={toggleValue}
@@ -76,7 +76,7 @@ const Switch = ({
         <div>
           <div />
         </div>
-        {position === 'bottom' && LabelField}
+        {position === "bottom" && LabelField}
       </label>
     </SwitchStyle>
   );
@@ -96,7 +96,7 @@ Switch.propTypes = {
   switchSize: PropTypes.string,
 
   /** Set label position of the switch field */
-  labelPosition: PropTypes.oneOf(['top', 'bottom', 'left', 'right']),
+  labelPosition: PropTypes.oneOf(["top", "bottom", "left", "right"]),
 
   /** Switch toggle state based on isChecked prop */
   isChecked: PropTypes.bool,
@@ -128,7 +128,7 @@ Switch.propTypes = {
 
 Switch.defaultProps = {
   isChecked: false,
-  labelPosition: 'top',
+  labelPosition: "top",
   onBlur: () => {},
   onFocus: () => {},
   onChange: () => {},

@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
 
 const InputField = styled.div`
   position: relative;
@@ -57,13 +57,13 @@ const InputField = styled.div`
   /* Label default style */
   label {
     display: block;
-    color: ${themeGet('colors.labelColor', '#767676')};
-    font-size: ${themeGet('fontSizes.4', '16')}px;
-    font-weight: ${themeGet('fontWeights.4', '500')};
-    margin-bottom: ${themeGet('space.3', '10')}px;
+    color: ${themeGet("colors.labelColor", "#767676")};
+    font-size: ${themeGet("fontSizes.4", "16")}px;
+    font-weight: ${themeGet("fontWeights.4", "500")};
+    margin-bottom: ${themeGet("space.3", "10")}px;
     transition: 0.2s ease all;
   }
-  
+
   /* Input and textarea default style */
   textarea,
   input {
@@ -71,14 +71,13 @@ const InputField = styled.div`
     padding: 11px;
     display: block;
     width: 100%;
-    color: ${themeGet('colors.textColor', '#484848')};
+    color: ${themeGet("colors.textColor", "#484848")};
     box-shadow: none;
     border-radius: 4px;
     box-sizing: border-box;
     transition: border-color 0.2s ease;
-    border: 1px solid ${themeGet('colors.inactiveIcon', '#767676')};
-    
-    
+    border: 1px solid ${themeGet("colors.inactiveIcon", "#767676")};
+
     &:focus {
       outline: none;
     }
@@ -161,19 +160,19 @@ const InputField = styled.div`
     /* Material input focus style */
     &.is-focus {
       input {
-        border-color: ${themeGet('colors.inactiveIcon', '#767676')};
+        border-color: ${themeGet("colors.inactiveIcon", "#767676")};
       }
 
       label {
         top: -16px;
         font-size: 12px;
-        color: ${themeGet('colors.textColor', '#484848')};
+        color: ${themeGet("colors.textColor", "#484848")};
       }
 
       .highlight {
         width: 100%;
         height: 2px;
-        background-color: ${themeGet('colors.primary', '#028489')};
+        background-color: ${themeGet("colors.primary", "#028489")};
         left: 0;
       }
     }
@@ -201,13 +200,13 @@ const EyeButton = styled.button`
     width: 12px;
     height: 12px;
     display: block;
-    border: solid 1px ${themeGet('colors.textColor', '#484848')};
+    border: solid 1px ${themeGet("colors.textColor", "#484848")};
     border-radius: 75% 15%;
     transform: rotate(45deg);
     position: relative;
 
     &:before {
-      content: '';
+      content: "";
       display: block;
       width: 4px;
       height: 4px;
@@ -215,21 +214,21 @@ const EyeButton = styled.button`
       left: 3px;
       top: 3px;
       position: absolute;
-      border: solid 1px ${themeGet('colors.textColor', '#484848')};
+      border: solid 1px ${themeGet("colors.textColor", "#484848")};
     }
   }
 
   &.eye-closed {
     > span {
       &:after {
-        content: '';
+        content: "";
         display: block;
         width: 1px;
         height: 20px;
         left: calc(50% - 1px / 2);
         top: -4px;
         position: absolute;
-        background-color: ${themeGet('colors.textColor', '#484848')};
+        background-color: ${themeGet("colors.textColor", "#484848")};
         transform: rotate(-12deg);
       }
     }

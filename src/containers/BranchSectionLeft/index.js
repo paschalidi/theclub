@@ -1,27 +1,38 @@
-import React from 'react';
-import Link from 'next/link';
-import Fade from 'react-reveal/Fade';
-import Text from 'common/components/Text';
-import Heading from 'common/components/Heading';
-import Image from 'common/components/Image';
-import { Panel } from 'common/components/Tabs';
-import SectionWrapper, { ContentWrapper, Item, List  } from './branchSection.style';
+import React from "react";
+import Link from "next/link";
+import Fade from "react-reveal/Fade";
+import Text from "../../common/components/Text";
+import Heading from "../../common/components/Heading";
+import Image from "../../common/components/Image";
+import { Panel } from "../../common/components/Tabs";
+import SectionWrapper, {
+  ContentWrapper,
+  Item,
+  List,
+} from "./branchSection.style";
 
-import { branchData } from '../../common/data';
+import { branchData } from "../../common/data";
 
 const BranchSectionLeft = () => {
   const title = (text) => {
     return { __html: text };
   };
 
-  const { id, slogan, lists, image, menuItem, description, linkText, linkUrl, textTitle } = branchData;
+  const {
+    id,
+    slogan,
+    lists,
+    image,
+    menuItem,
+    description,
+    linkText,
+    linkUrl,
+    textTitle,
+  } = branchData;
 
   return (
     <SectionWrapper id="partner">
-      <Panel
-        title={<Text content={menuItem} />}
-        key={`tab_key${id}`}
-      >
+      <Panel title={<Text content={menuItem} />} key={`tab_key${id}`}>
         <ContentWrapper>
           <Fade>
             <div className="image">

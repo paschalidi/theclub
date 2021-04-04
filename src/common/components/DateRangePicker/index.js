@@ -1,9 +1,9 @@
-import React, { Fragment, Component } from 'react';
-import PropTypes from 'prop-types';
-import { DateRangePicker } from 'react-dates';
-import 'react-dates/lib/css/_datepicker.css';
-import DateRangePickerStyle from './daterangepicker.style';
-import moment from 'moment';
+import React, { Fragment, Component } from "react";
+import PropTypes from "prop-types";
+import { DateRangePicker } from "react-dates";
+import "react-dates/lib/css/_datepicker.css";
+import DateRangePickerStyle from "./daterangepicker.style";
+import moment from "moment";
 
 class DateRangePickerBox extends Component {
   constructor(props) {
@@ -12,8 +12,8 @@ class DateRangePickerBox extends Component {
     let date,
       startDate,
       endDate = null;
-    const separator = item && item.separator ? item.separator : '-';
-    const dateFormat = item && item.format ? item.format : 'llll';
+    const separator = item && item.separator ? item.separator : "-";
+    const dateFormat = item && item.format ? item.format : "llll";
     if (date) {
       const dates = date.split(` ${separator} `);
       startDate = moment(dates[0], dateFormat);
@@ -80,13 +80,13 @@ class DateRangePickerBox extends Component {
     } = this.props;
 
     // Add all classs to an array **************
-    const addAllClasses = ['reusecore__DatePicker'];
+    const addAllClasses = ["reusecore__DatePicker"];
     // Add label position class **************
     if (labelPosition) {
       addAllClasses.push(`label_${labelPosition}`);
     }
     // label control **************
-    const position = labelPosition || 'right';
+    const position = labelPosition || "right";
     const LabelField = labelText && (
       <span className="reusecore__field-label">{labelText}</span>
     );
@@ -97,8 +97,8 @@ class DateRangePickerBox extends Component {
 
     // DatePicker Props List
     const datePickerPropsOptions = {
-      startDateId: startDateId ? startDateId : 'start_unique_id',
-      endDateId: endDateId ? endDateId : 'end_date_unique_id',
+      startDateId: startDateId ? startDateId : "start_unique_id",
+      endDateId: endDateId ? endDateId : "end_date_unique_id",
       startDate,
       endDate,
       focusedInput,
@@ -123,9 +123,9 @@ class DateRangePickerBox extends Component {
     // console.log(datePickerPropsOptions, 'datePickerPropsOptions');
     return (
       <Fragment>
-        <DateRangePickerStyle className={addAllClasses.join(' ')}>
+        <DateRangePickerStyle className={addAllClasses.join(" ")}>
           <label>
-            {position === 'left' || position === 'right' || position === 'top'
+            {position === "left" || position === "right" || position === "top"
               ? LabelField
               : null}
             <DateRangePicker {...datePickerPropsOptions} />
@@ -141,7 +141,7 @@ class DateRangePickerBox extends Component {
             <div>
               <div />
             </div>
-            {position === 'bottom' && LabelField}
+            {position === "bottom" && LabelField}
           </label>
         </DateRangePickerStyle>
       </Fragment>
@@ -153,7 +153,7 @@ DateRangePickerBox.propTypes = {
   /** labelText of the date-picker field */
   labelText: PropTypes.string,
   /** labelText of the date-picker field */
-  labelPosition: PropTypes.oneOf(['top', 'bottom', 'right', 'left']),
+  labelPosition: PropTypes.oneOf(["top", "bottom", "right", "left"]),
   /** startDateId of the date-picker field */
   startDateId: PropTypes.string.isRequired,
   /** endDateId of the date-picker field */
@@ -165,7 +165,7 @@ DateRangePickerBox.propTypes = {
   /** disabled of the date-picker field */
   disabled: PropTypes.oneOfType([
     PropTypes.bool,
-    PropTypes.oneOf(['START_DATE', 'END_DATE']),
+    PropTypes.oneOf(["START_DATE", "END_DATE"]),
   ]),
 
   /** showClearDate of the date-picker field */
@@ -173,9 +173,9 @@ DateRangePickerBox.propTypes = {
   /** isRTL of the date-picker field */
   isRTL: PropTypes.bool,
   /** orientation of the date-picker field */
-  orientation: PropTypes.oneOf(['horizontal', 'vertical']),
+  orientation: PropTypes.oneOf(["horizontal", "vertical"]),
   /** anchorDirection of the date-picker field */
-  anchorDirection: PropTypes.oneOf(['left', 'right']),
+  anchorDirection: PropTypes.oneOf(["left", "right"]),
   /** withPortal of the date-picker field */
   withPortal: PropTypes.bool,
   /** withFullScreenPortal of the date-picker field */
@@ -184,7 +184,7 @@ DateRangePickerBox.propTypes = {
 
 /** RangeBox default proptype */
 DateRangePickerBox.defaultProps = {
-  labelText: 'ReuseCore DateRangePickerBox',
-  labelPosition: 'top',
+  labelText: "ReuseCore DateRangePickerBox",
+  labelPosition: "top",
 };
 export default DateRangePickerBox;

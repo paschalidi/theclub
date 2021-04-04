@@ -1,7 +1,7 @@
-import React from 'react';
-import { Icon } from 'react-icons-kit';
-import { star } from 'react-icons-kit/fa/star';
-import { starO } from 'react-icons-kit/fa/starO';
+import React from "react";
+import { Icon } from "react-icons-kit";
+import { star } from "react-icons-kit/fa/star";
+import { starO } from "react-icons-kit/fa/starO";
 
 const Rating = ({ rating }) => {
   const totalRating = [];

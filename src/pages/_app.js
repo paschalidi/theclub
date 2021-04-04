@@ -1,14 +1,13 @@
-import Head from 'next/head'
-import { Modal } from '@redq/reuse-modal';
-import Router from 'next/router'
-import NProgress from 'nprogress'
-import '@redq/reuse-modal/es/index.css';
-import 'common/assets/css/flaticon.css';
+import Head from "next/head";
+import { Modal } from "@redq/reuse-modal";
+import Router from "next/router";
+import NProgress from "nprogress";
+import "@redq/reuse-modal/es/index.css";
+import "../common/assets/css/flaticon.css";
 
-Router.events.on('routeChangeStart', () => NProgress.start())
-Router.events.on('routeChangeComplete', () => NProgress.done())
-Router.events.on('routeChangeError', () => NProgress.done())
-
+Router.events.on("routeChangeStart", () => NProgress.start());
+Router.events.on("routeChangeComplete", () => NProgress.done());
+Router.events.on("routeChangeError", () => NProgress.done());
 
 export default function CustomApp({ Component, pageProps }) {
   return (

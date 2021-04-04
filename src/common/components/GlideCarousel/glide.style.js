@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 import {
   width,
   height,
@@ -16,7 +16,7 @@ import {
   alignItems,
   justifyContent,
   flexWrap,
-} from 'styled-system';
+} from "styled-system";
 
 // Glide wrapper style
 const GlideWrapper = styled.div`

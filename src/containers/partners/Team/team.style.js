@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
 
 const SectionWrapper = styled.section`
   padding: 10px 0 81px;
@@ -31,30 +31,30 @@ const SectionWrapper = styled.section`
         > span {
           &.next_arrow {
             width: 45px;
-            background-color: ${themeGet('colors.link', '#352FD9')};
+            background-color: ${themeGet("colors.link", "#352FD9")};
             @media only screen and (max-width: 667px) {
               width: 30px;
             }
 
             &::before {
-              background-color: ${themeGet('colors.link', '#352FD9')};
+              background-color: ${themeGet("colors.link", "#352FD9")};
               transform: rotate(42deg);
             }
 
             &::after {
               transform: rotate(-42deg);
-              background-color: ${themeGet('colors.link', '#352FD9')};
+              background-color: ${themeGet("colors.link", "#352FD9")};
             }
           }
         }
 
         &:hover {
           > span {
-            background-color: ${themeGet('colors.link', '#352FD9')};
+            background-color: ${themeGet("colors.link", "#352FD9")};
 
             &::before,
             &::after {
-              background-color: ${themeGet('colors.link', '#352FD9')};
+              background-color: ${themeGet("colors.link", "#352FD9")};
             }
 
             &.next_arrow {
@@ -96,7 +96,7 @@ export const ImageWrapper = styled.div`
   border-radius: 20px;
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     width: 100%;
     height: 150px;
@@ -131,7 +131,7 @@ export const TextWrapper = styled.div`
     margin: -43px 0 20px 60px;
     padding: 16px;
     border-radius: 10px;
-    background-color: ${themeGet('colors.primary', '#FDEF00')};
+    background-color: ${themeGet("colors.primary", "#FDEF00")};
     position: relative;
     z-index: 1;
     @media only screen and (max-width: 1200px) {
@@ -148,7 +148,7 @@ export const TextWrapper = styled.div`
     }
 
     h3 {
-      color: ${themeGet('colors.heading', '#191919')};
+      color: ${themeGet("colors.heading", "#191919")};
       font-size: 20px;
       line-height: 1;
       font-weight: 500;
@@ -164,7 +164,7 @@ export const TextWrapper = styled.div`
     }
 
     p {
-      color: ${themeGet('colors.heading', '#191919')};
+      color: ${themeGet("colors.heading", "#191919")};
       font-size: 14px;
       font-weight: 400;
       margin: 0;
@@ -200,12 +200,12 @@ export const TextWrapper = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        color: ${themeGet('colors.heading3', '#273343')};
+        color: ${themeGet("colors.heading3", "#273343")};
         transition: background-color 0.3s ease;
 
         &:hover {
           text-decoration: none;
-          background-color: ${themeGet('colors.primary', '#FDEF00')};
+          background-color: ${themeGet("colors.primary", "#FDEF00")};
         }
       }
     }

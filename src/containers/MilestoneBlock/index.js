@@ -1,15 +1,15 @@
-import React from 'react';
-import Link from 'next/link';
-import Text from 'common/components/Text';
-import Heading from 'common/components/Heading';
-import Container from 'common/components/UI/Container';
+import React from "react";
+import Link from "next/link";
+import Text from "../../common/components/Text";
+import Heading from "../../common/components/Heading";
+import Container from "../../common/components/UI/Container";
 import BlockWrapper, {
   MilestoneCard,
   CounterWrapper,
   CounterItem,
-} from './milestoneBlock.style';
+} from "./milestoneBlock.style";
 
-import { milestoneData } from 'common/data';
+import { milestoneData } from "../../common/data";
 
 const MilestoneBlock = () => {
   const { title, amount, text, counterItems } = milestoneData;

@@ -1,16 +1,16 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
-import { base, themed } from '../base';
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import { base, themed } from "../base";
 
-const ImageWrapper = styled('img')(
+const ImageWrapper = styled("img")(
   {
-    display: 'block',
-    maxWidth: '100%',
-    height: 'auto',
+    display: "block",
+    maxWidth: "100%",
+    height: "auto",
   },
   base,
-  themed('Image')
+  themed("Image")
 );
 
 const Image = ({ src, alt, ...props }) => (

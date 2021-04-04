@@ -1,19 +1,19 @@
-import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
-import Link from 'next/link';
-import Box from 'common/components/Box';
-import Text from 'common/components/Text';
-import Heading from 'common/components/Heading';
-import Logo from 'common/components/UIElements/Logo';
-import Container from 'common/components/UI/Container';
+import React, { Fragment } from "react";
+import PropTypes from "prop-types";
+import Link from "next/link";
+import Box from "../../../common/components/Box";
+import Text from "../../../common/components/Text";
+import Heading from "../../../common/components/Heading";
+import Logo from "../../../common/components/UIElements/Logo";
+import Container from "../../../common/components/UI/Container";
 import FooterWrapper, {
   CurvIcon,
   List,
   ListItem,
   SocialList,
-} from './footer.style';
+} from "./footer.style";
 
-import { footerData } from 'common/data/Interior';
+import { footerData } from "../../../common/data/Interior";
 
 const Footer = ({ row, col, colOne, colTwo }) => {
   const { logo, mail, phone, socialLinks, menuWidgets } = footerData;
@@ -119,30 +119,30 @@ Footer.defaultProps = {
   // Footer row default style
   row: {
     flexBox: true,
-    flexWrap: 'wrap',
-    ml: '-15px',
-    mr: '-15px',
+    flexWrap: "wrap",
+    ml: "-15px",
+    mr: "-15px",
   },
   // Footer col one style
   colOne: {
-    width: ['100%', '30%', '35%', '28%'],
-    mt: [0, '13px', '0'],
-    mb: ['30px', 0],
-    pl: ['15px', 0],
-    pr: ['15px', '15px', 0],
+    width: ["100%", "30%", "35%", "28%"],
+    mt: [0, "13px", "0"],
+    mb: ["30px", 0],
+    pl: ["15px", 0],
+    pr: ["15px", "15px", 0],
   },
   // Footer col two style
   colTwo: {
-    width: ['100%', '70%', '65%', '72%'],
+    width: ["100%", "70%", "65%", "72%"],
     flexBox: true,
-    flexWrap: 'wrap',
+    flexWrap: "wrap",
   },
   // Footer col default style
   col: {
-    width: ['100%', '50%', '50%', '25%'],
-    pl: '15px',
-    pr: '15px',
-    mb: '30px',
+    width: ["100%", "50%", "50%", "25%"],
+    pl: "15px",
+    pr: "15px",
+    mb: "30px",
   },
 };
 
