@@ -20,29 +20,28 @@ const SectionWrapper = styled.section`
 
 export const FeatureWrapper = styled.div`
   display: flex;
-  margin: 0 -71.5px;
   @media only screen and (max-width: 1360px) {
-    margin: 0 -25px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
   }
-  @media only screen and (max-width: 767px) {
+
+  @media only screen and (max-width: 480px) {
     flex-wrap: wrap;
   }
 
   .blog_post {
     width: 30%;
-    padding: 0 71.5px;
+    padding: 0 36px;
     text-align: center;
     @media only screen and (max-width: 1360px) {
-      padding: 0 25px;
-    }
-    @media only screen and (max-width: 767px) {
       width: 50%;
       margin-bottom: 30px;
     }
     @media only screen and (max-width: 480px) {
-      text-align: left;
-      display: flex;
       width: 100%;
+      text-align: left;
+      padding: 0;
     }
 
     .thumbnail {
@@ -59,8 +58,13 @@ export const FeatureWrapper = styled.div`
         }
       }
       @media only screen and (max-width: 480px) {
+        img {
+          margin-bottom: 12px;
+          width: auto;
+          height: auto;
+        }
         margin: 0;
-        width: 60px;
+        width: 120px;
         flex-shrink: 0;
       }
     }
@@ -68,7 +72,6 @@ export const FeatureWrapper = styled.div`
     .content {
       @media only screen and (max-width: 480px) {
         width: calc(100% - 60px);
-        padding-left: 20px;
       }
       h3 {
         margin: 0 0 16px;

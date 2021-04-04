@@ -47,6 +47,7 @@ import icon1 from "../../assets/image/partners/feature/svg-4.svg";
 import icon2 from "../../assets/image/partners/feature/svg-3.svg";
 import icon3 from "../../assets/image/partners/feature/svg-1.svg";
 import icon4 from "../../assets/image/partners/feature/svg-2.svg";
+import icon5 from "../../assets/image/partners/feature/svg-5.svg";
 
 /* ------------------------------------ */
 // About section data
@@ -197,7 +198,14 @@ export const featureData = {
       icon: icon4,
       title: "ΚΑΝΕΝΑ ΚΟΣΤΟΣ ΕΓΓΡΑΦΗΣ",
       description:
-        "Γίνετε συνεργάτης εντελώς δωρεάν - δεν υπάρχουν χρεώσεις εγγραφής. Λειτουργούμε με προμήθειες επί των κρατήσεων που σημαίνει ότι η επιτυχίας σας μετράει!\n",
+        "Γίνετε συνεργάτης εντελώς δωρεάν - δεν υπάρχουν χρεώσεις εγγραφής. Λειτουργούμε με προμήθειες επί των κρατήσεων που σημαίνει ότι η επιτυχίας σας μετράει!",
+    },
+    {
+      id: 5,
+      icon: icon5,
+      title: "ΕΝΙΣΧΥΣΗ ΤΗΣ ΕΙΚΟΝΑΣ ΣΑΣ",
+      description:
+        "Φωτογράφιση των εγκαταστάσεών σας. Δημιουργούμε μια προσαρμοσμένη καρτέλα με πλήρη περιγραφή της επιχείρησης, των υπηρεσιών και του προγράμματός σας.",
     },
   ],
 };

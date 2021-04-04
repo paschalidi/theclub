@@ -1,6 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
-import FavIcon from "../common/assets/image/favicon.png";
+import FavIcon from "../common/assets/image/charity/favicon.svg";
 
 const GOOGLE_ANALYTICS_ID = "G-KC83SL4CS8";
 

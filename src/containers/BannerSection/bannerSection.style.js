@@ -89,6 +89,7 @@ export const ContentWrapper = styled.div`
 `;
 
 export const TextArea = styled.div`
+  margin-top: 5vh;
   width: 450px;
   align-self: center;
   padding-right: 45px;
@@ -112,7 +113,7 @@ export const TextArea = styled.div`
 
   h2 {
     font-size: 50px;
-    line-height: 70px;
+    line-height: 68px;
     font-weight: 900;
     margin-bottom: 27px;
     @media only screen and (max-width: 1440px) {
@@ -133,8 +134,8 @@ export const TextArea = styled.div`
   }
 
   h4 {
-    font-size: 25px;
-    line-height: 40px;
+    font-size: 23px;
+    line-height: 37px;
     font-weight: 400;
     color: ${themeGet("colors.text", "#294859")};
     margin-bottom: 22px;
@@ -151,14 +152,14 @@ export const TextArea = styled.div`
   p {
     font-size: 18px;
     line-height: 28px;
-    margin-bottom: 45px;
+    margin-top: 28px;
     @media only screen and (max-width: 1440px) {
       font-size: 16px;
-      margin-bottom: 40px;
+      margin-yop: 20px;
     }
     @media only screen and (max-width: 1360px) {
       font-size: 15px;
-      margin-bottom: 40px;
+      margin-top: 20px;
     }
 
     &.highlighted_text {

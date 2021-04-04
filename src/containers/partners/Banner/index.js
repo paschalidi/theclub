@@ -51,7 +51,7 @@ const Banner = () => {
     <BannerWrapper>
       <Container>
         <ContentArea>
-          <Fade bottom delay={30}>
+          <Fade bottom delay={10}>
             <Heading as="h1" content={title} />
             <Text content={text} />
             <List>

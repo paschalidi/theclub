@@ -3,6 +3,7 @@ import { iosEmailOutline } from "react-icons-kit/ionicons/iosEmailOutline";
 
 import { Icon } from "react-icons-kit";
 import Heading from "../../common/components/Heading";
+import Text from "../../common/components/Text";
 import Image from "../../common/components/Image";
 import GlideCarousel from "../../common/components/GlideCarousel";
 import GlideSlide from "../../common/components/GlideCarousel/glideSlide";
@@ -97,35 +98,38 @@ const BannerSection = () => {
           {message !== "" ? (
             <Heading as="h3" content={message} />
           ) : (
-            <FormWrapper onSubmit={handleSubscriptionForm}>
-              <Input
-                ref={inputEl}
-                inputType="email"
-                htmlFor="remember"
-                id="remember"
-                placeholder="Πληκτρολογείστε το email σας εδώ"
-                icon={<Icon icon={iosEmailOutline} />}
-                iconPosition="left"
-                required
-                onChange={handleOnChange}
-                aria-label="email"
-              />
-
-              <div style={{ margin: "8px 0" }} className="formError">
-                {error.length ? (
-                  <div>{error}</div>
-                ) : (
-                  <div style={{ visibility: "hidden" }}>empty</div>
-                )}
-              </div>
-              <ButtonGroup>
-                <Button
-                  type="submit"
-                  colors="primaryWithBg"
-                  title="ΣΤΕΙΛΤΕ ΜΑΣ ΜΥΝΗΜΑ"
+            <>
+              <Text content="Εγγραφείτε τώρα και αποκτήστε έκπτωση στην πρώτη συνδρομή." />
+              <FormWrapper onSubmit={handleSubscriptionForm}>
+                <Input
+                  ref={inputEl}
+                  inputType="email"
+                  htmlFor="remember"
+                  id="remember"
+                  placeholder="Πληκτρολογείστε το email σας εδώ"
+                  icon={<Icon icon={iosEmailOutline} />}
+                  iconPosition="left"
+                  required
+                  onChange={handleOnChange}
+                  aria-label="email"
                 />
-              </ButtonGroup>
-            </FormWrapper>
+
+                <div style={{ margin: "8px 0" }} className="formError">
+                  {error.length ? (
+                    <div>{error}</div>
+                  ) : (
+                    <div style={{ visibility: "hidden" }}>empty</div>
+                  )}
+                </div>
+                <ButtonGroup>
+                  <Button
+                    type="submit"
+                    colors="primaryWithBg"
+                    title="ΣΤΕΙΛΤΕ ΜΑΣ ΜΥΝΗΜΑ"
+                  />
+                </ButtonGroup>
+              </FormWrapper>
+            </>
           )}
         </TextArea>
         <ImageArea>

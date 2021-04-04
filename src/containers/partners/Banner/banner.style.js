@@ -73,6 +73,9 @@ export const ContentArea = styled.div`
     padding-right: 0;
   }
 
+  h1 {
+    font-size: 40px;
+  }
   h1,
   p {
     color: ${themeGet("colors.label", "#C6C6C6")};
@@ -124,11 +127,6 @@ export const HighlightedText = styled.p`
 `;
 
 export const FormWrapper = styled.form`
-  margin-top: 45px;
-  @media only screen and (max-width: 767px) {
-    margin-top: 40px;
-  }
-
   .formError {
     font-size: 13px;
     color: #ff0033;
@@ -189,8 +187,8 @@ export const FormWrapper = styled.form`
 
 export const ButtonGroup = styled.div`
   @media only screen and (max-width: 767px) {
-    margin-top: 25px;
-    margin-bottom: 54px;
+    margin-top: 12px;
+    margin-bottom: 24px;
   }
 
   .reusecore__button {

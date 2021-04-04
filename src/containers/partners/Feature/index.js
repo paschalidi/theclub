@@ -19,8 +19,8 @@ const Feature = () => {
           <Heading content={slogan} />
         </SectionHeader>
       </Fade>
-      <Container width="1360px">
-        <Fade bottom delay={30}>
+      <Container width="1460px">
+        <Fade bottom delay={10}>
           <FeatureWrapper>
             {features.map((item) => (
               <BlogPost
