@@ -118,12 +118,12 @@ export const bannerSlides = [
     thumbUrl: bannerSlide0,
   },
   {
-    id: 1,
-    thumbUrl: bannerSlide5,
-  },
-  {
     id: 4,
     thumbUrl: bannerSlide1,
+  },
+  {
+    id: 1,
+    thumbUrl: bannerSlide5,
   },
   {
     id: 2,
