@@ -7,7 +7,6 @@ import Navbar from "../containers/Navbar";
 import Banner from "../containers/partners/Banner";
 import Feature from "../containers/partners/Feature";
 import AboutUs from "../containers/partners/AboutUs";
-import Testimonial from "../containers/partners/Testimonial";
 import Footer from "../containers/Footer";
 import { ResetCSS } from "../common/assets/css/style";
 import {
@@ -39,7 +38,6 @@ const Partners = () => (
         <ContentWrapper>
           <Banner />
           <Feature />
-          <Testimonial />
           <AboutUs />
           <Faq />
         </ContentWrapper>
