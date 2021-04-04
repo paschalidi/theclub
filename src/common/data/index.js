@@ -496,12 +496,12 @@ export const menuWidgets = [
     menu: [
       {
         id: 1,
-        label: "Συχνές ερωτήσεις για μέλη",
+        label: "Συχνές ερωτήσεις μελών",
         href: "/#faq",
       },
       {
         id: 2,
-        label: "Συχνές ερωτήσεις για συνεργάτες",
+        label: "Συχνές ερωτήσεις συνεργατών",
         href: "/partners#faq",
       },
     ],
