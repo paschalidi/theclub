@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import Scrollspy from "react-scrollspy";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import { useRouter } from "next/router";
 import Drawer from "../../common/components/Drawer";
 import Image from "../../common/components/Image";
 import { DrawerContext } from "../../common/contexts/DrawerContext";
@@ -10,6 +11,7 @@ import { menuItems } from "../../common/data";
 import heartImage from "../../common/assets/image/charity/heart-red.png";
 
 const DrawerSection = () => {
+  const router = useRouter();
   const [toggleState, setToggleState] = useState(false);
   const { state, dispatch } = useContext(DrawerContext);
 
@@ -36,6 +38,7 @@ const DrawerSection = () => {
       placement="right"
       drawerHandler={
         <button
+          type="button"
           className={`drawer_btn ${toggleState ? "active" : ""}`}
           onClick={handleActiveClass}
           aria-label="drawer toggle button"
@@ -64,8 +67,8 @@ const DrawerSection = () => {
           offset={-81}
           currentClassName="active"
         >
-          {menuItems.map((menu, index) => (
-            <li key={`menu_key${index}`}>
+          {menuItems.map((menu) => (
+            <li key={`menu_key${menu.path}`}>
               <AnchorLink
                 href={menu.path}
                 offset={menu.offset}
@@ -76,9 +79,13 @@ const DrawerSection = () => {
             </li>
           ))}
         </Scrollspy>
-        <SpreadButton>
-          <span className="text">SPREAD</span>
-          <Image src={heartImage} alt="Charity Landing" />
+        <SpreadButton
+          onClick={() => {
+            router.push("/partners");
+          }}
+        >
+          <span className="text">Γίνε Συνεργάτης</span>
+          <Image src={heartImage} alt="Γίνε Συνεργάτης με την Urbanfit.gr" />
         </SpreadButton>
       </InnerWrapper>
     </Drawer>

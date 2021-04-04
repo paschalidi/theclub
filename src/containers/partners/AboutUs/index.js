@@ -32,9 +32,9 @@ const AboutUs = () => {
         <ImageWrapper>
           <Fade left>
             <Image
-              style={{ width: "90%", borderRadius: "16%" }}
+              style={{ borderRadius: "16%" }}
               src={thumbUrl}
-              alt="Interior Landing by RedQ"
+              alt="Μάθε πώς δουλεύει - Γίνε Συνεργάτης με την Urbanfit.gr"
             />
           </Fade>
         </ImageWrapper>
