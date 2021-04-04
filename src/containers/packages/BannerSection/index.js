@@ -6,17 +6,47 @@ import BannerWrapper from "./bannerSection.style";
 
 const BannerSection = ({ title }) => (
   <BannerWrapper>
-    <Container>
+    <Container width="870px">
       <br />
       <br />
       <br />
       <br />
       <br />
-      <Heading
-        textAlign="center"
-        content="Το site βρήσκεται υπό κατασκευή"
-        {...title}
-      />
+      <br />
+      <br />
+      <br />
+      <div style={{ backgroundColor: "#1b2525" }}>
+        <Heading
+          style={{ color: "white", margin: 0 }}
+          textAlign="center"
+          content="Το site βρίσκεται υπό κατασκευή."
+          {...title}
+        />
+        <Heading
+          style={{ color: "white", margin: 0 }}
+          textAlign="center"
+          content="Eπικοινωνήστε μαζί μας στο"
+          {...title}
+        />
+        {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-static-element-interactions */}
+        <a
+          onClick={() => {
+            window.location.href = `mailto:urbanfitgr@gmail.com?subject=${encodeURIComponent(
+              "Επικοινώνησε με την urbanfit."
+            )}&body=${encodeURIComponent(
+              "Πείτε μας πως θα μπορούσαμε να βοηθήσουμε."
+            )}`;
+          }}
+          className="mail"
+        >
+          <Heading
+            style={{ color: "#FCF22B" }}
+            textAlign="center"
+            content="urbanfitgr@gmail.com"
+            {...title}
+          />
+        </a>
+      </div>
     </Container>
   </BannerWrapper>
 );
