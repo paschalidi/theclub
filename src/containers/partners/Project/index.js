@@ -40,7 +40,7 @@ const Project = () => {
             nextButton={<span className="next_arrow" />}
             prevButton={<span className="prev_arrow" />}
           >
-            <Fragment>
+            <>
               {projects.map((project) => (
                 <GlideSlide key={`project_key${project.id}`}>
                   <TextWrapper>
@@ -49,7 +49,7 @@ const Project = () => {
                   </TextWrapper>
                 </GlideSlide>
               ))}
-            </Fragment>
+            </>
           </GlideCarousel>
 
           <ImageWrapper>

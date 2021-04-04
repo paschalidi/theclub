@@ -23,6 +23,8 @@ Link.propTypes = {
 
 Link.defaultProps = {
   as: "a",
+  // eslint-disable-next-line react/default-props-match-prop-types
   m: 0,
+  // eslint-disable-next-line react/default-props-match-prop-types
   display: "inline-block",
 };

@@ -5,6 +5,7 @@ import { starO } from "react-icons-kit/fa/starO";
 
 const Rating = ({ rating }) => {
   const totalRating = [];
+  // eslint-disable-next-line no-plusplus
   for (let i = 0; i < 5; i++) {
     if (i < rating) {
       totalRating.push(

@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { themeGet } from "@styled-system/theme-get";
 import patter1 from "../../common/assets/image/charity/branch/highlight-pattern.svg";
 import patter2 from "../../common/assets/image/charity/branch/highlight-pattern2.svg";

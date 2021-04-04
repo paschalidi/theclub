@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import ComponentWrapper from "./radioGroup.style";
 
 const RadioGroup = ({ className, name, value, items, onUpdate }) => {
-  const [state, setState] = useState({ value: value });
+  const [state, setState] = useState({ value });
 
   const onChange = (e) => {
     const currentValue = e.target.value;
@@ -54,15 +54,11 @@ const RadioGroup = ({ className, name, value, items, onUpdate }) => {
 RadioGroup.propTypes = {
   /** className of the RadioGroup. */
   className: PropTypes.string,
-  /** title or value of the RadioGroup. */
-  title: PropTypes.string,
-  /** text or sub title for single radio component / element. */
-  text: PropTypes.string,
   /** active item value of the RadioGroup. The prop should be a string but in camelCase. */
   value: PropTypes.string,
   /** RadioGroup data in array of object form. Each object item should has 3 properties id, title and text. */
   items: PropTypes.array,
-  /** This prop contain active radio field value.*/
+  /** This prop contain active radio field value. */
   onUpdate: PropTypes.func,
 };
 

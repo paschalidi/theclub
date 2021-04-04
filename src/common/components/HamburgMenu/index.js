@@ -33,7 +33,7 @@ HamburgMenu.propTypes = {
   /** barColor allow to change hambrug menu's bar color. */
   barColor: PropTypes.string,
 
-  /** wrapperStyle prop allow to change Hamburg menu bg color, width, height, space, boxShadow, border and borderRadius.*/
+  /** wrapperStyle prop allow to change Hamburg menu bg color, width, height, space, boxShadow, border and borderRadius. */
   wrapperStyle: PropTypes.object,
 };
 

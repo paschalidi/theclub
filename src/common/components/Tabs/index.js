@@ -25,10 +25,10 @@ const Tab = ({ active, className, children }) => {
     <TabWrapper className={addAllClasses.join(" ")}>
       <TabMenu className="tab_menu">
         {children.map((element, index) => {
-          let activeClass = index === state.active ? "active" : "";
+          const activeClass = index === state.active ? "active" : "";
           return (
             <MenuItem
-              key={index}
+              key={element.id}
               className={activeClass}
               onClick={() => handleChange(index)}
             >
@@ -53,7 +53,6 @@ Tab.propTypes = {
 
 Panel.propTypes = {
   children: PropTypes.element,
-  title: PropTypes.element.isRequired,
 };
 
 export default Tab;

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { useToggle } from "../useToggle";
+import useToggle from "../useToggle";
 import RadioBoxStyle from "./radio.style";
 
 const Radio = ({
@@ -45,6 +45,7 @@ const Radio = ({
 
   return (
     <RadioBoxStyle className={addAllClasses.join(" ")} {...props}>
+      {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
       <label>
         {position === "left" || position === "right" ? LabelField : ""}
         <input

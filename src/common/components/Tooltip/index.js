@@ -76,7 +76,7 @@ Tooltip.propTypes = {
   /** Change tooltip tooltipColor */
   tooltipColor: PropTypes.string,
 
-  /** triggerStyle prop allow to change tooltip trigger fontSize, fontWeight, margin, padding, color and bg color.*/
+  /** triggerStyle prop allow to change tooltip trigger fontSize, fontWeight, margin, padding, color and bg color. */
   triggerStyle: PropTypes.object,
 
   /** bubbleSize prop allow to change tooltip's buble width including min and max width.
@@ -91,8 +91,6 @@ Tooltip.propTypes = {
 };
 
 /** Tooltip default proptype */
-Tooltip.defaultProps = {
-  isChecked: false,
-};
+Tooltip.defaultProps = {};
 
 export default Tooltip;

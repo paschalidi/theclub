@@ -40,24 +40,27 @@ const Carousel = ({ data }) => {
         </div>
         <div className="glide__arrows" data-glide-el="controls">
           <button
+            type="button"
             className="glide__arrow glide__arrow--left"
             data-glide-dir="<"
             aria-label="prev"
           >
-            <span className="prev_arrow"></span>
+            <span className="prev_arrow" />
           </button>
           <button
+            type="button"
             className="glide__arrow glide__arrow--right"
             data-glide-dir=">"
             aria-label="next"
           >
-            <span className="next_arrow"></span>
+            <span className="next_arrow" />
           </button>
         </div>
       </div>
       <div className="glide__bullets" data-glide-el="controls[nav]">
         {data.map((item) => (
           <button
+            type="button"
             className="glide__bullet"
             data-glide-dir={`=${item.id}`}
             key={`glide_bullet--key${item.id}`}

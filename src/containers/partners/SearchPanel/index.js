@@ -1,26 +1,24 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Icon } from "react-icons-kit";
+import { iosSearchStrong } from "react-icons-kit/ionicons/iosSearchStrong";
 import Text from "../../../common/components/Text";
 import Heading from "../../../common/components/Heading";
 import Input from "../../../common/components/Input";
-import { Icon } from "react-icons-kit";
-import { iosSearchStrong } from "react-icons-kit/ionicons/iosSearchStrong";
 import SearchPanelWrapper from "./searchPanel.style";
 
-const SearchPanel = ({ titleStyle, hintStyle }) => {
-  return (
-    <SearchPanelWrapper>
-      <Heading content="Search Panel" {...titleStyle} />
-      <Input
-        inputType="email"
-        iconPosition="right"
-        placeholder="Type what you want"
-        icon={<Icon icon={iosSearchStrong} />}
-      />
-      <Text content="Example: “App Template” “Application”" {...hintStyle} />
-    </SearchPanelWrapper>
-  );
-};
+const SearchPanel = ({ titleStyle, hintStyle }) => (
+  <SearchPanelWrapper>
+    <Heading content="Search Panel" {...titleStyle} />
+    <Input
+      inputType="email"
+      iconPosition="right"
+      placeholder="Type what you want"
+      icon={<Icon icon={iosSearchStrong} />}
+    />
+    <Text content="Example: “App Template” “Application”" {...hintStyle} />
+  </SearchPanelWrapper>
+);
 
 // SearchPanel style props
 SearchPanel.propTypes = {
@@ -39,7 +37,7 @@ SearchPanel.defaultProps = {
     mb: "30px",
   },
   // hint default style
-  hintStyle: {
+  hintTextStyle: {
     fontSize: "15px",
     fontWeight: "400",
     color: "rgba(32, 32, 29, 0.55)",

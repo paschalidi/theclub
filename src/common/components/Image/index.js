@@ -25,5 +25,6 @@ Image.propTypes = {
 };
 
 Image.defaultProps = {
+  // eslint-disable-next-line react/default-props-match-prop-types
   m: 0,
 };

@@ -27,8 +27,8 @@ const Testimonial = () => {
             <Carousel data={reviews} />
           ) : (
             <CircleLoader className="alt">
-              <div className="circle"></div>
-              <div className="circle"></div>
+              <div className="circle" />
+              <div className="circle" />
             </CircleLoader>
           )}
         </CarouselWrapper>

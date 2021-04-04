@@ -85,7 +85,7 @@ const AccordionBody = ({ className, children }) => {
 };
 
 Accordion.propTypes = {
-  /** ClassName of the Accordion. Default class is reusecore__accordion*/
+  /** ClassName of the Accordion. Default class is reusecore__accordion */
   className: PropTypes.string,
 
   /** Used to render any component */

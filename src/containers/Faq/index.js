@@ -2,7 +2,6 @@ import React from "react";
 import { Icon } from "react-icons-kit";
 import { plusCircled } from "react-icons-kit/ionicons/plusCircled";
 import { minusCircled } from "react-icons-kit/ionicons/minusCircled";
-import { fontWeight, lineHeight } from "styled-system";
 import Text from "../../common/components/Text";
 import Heading from "../../common/components/Heading";
 import Container from "../../common/components/UI/Container";

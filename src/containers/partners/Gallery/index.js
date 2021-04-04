@@ -32,7 +32,7 @@ const Gallery = () => {
         nextButton={<i className="flaticon-next" />}
         prevButton={<i className="flaticon-left-arrow" />}
       >
-        <Fragment>
+        <>
           {galleryData.map((item) => (
             <GlideSlide key={`gallery_key${item.id}`}>
               <GalleryCard>
@@ -40,7 +40,7 @@ const Gallery = () => {
                   <a>
                     <Image src={item.thumbUrl} alt={item.name} />
                     <Button className="read_more__btn">
-                      <span className="arrow"></span>
+                      <span className="arrow" />
                       {item.name}
                     </Button>
                   </a>
@@ -48,7 +48,7 @@ const Gallery = () => {
               </GalleryCard>
             </GlideSlide>
           ))}
-        </Fragment>
+        </>
       </GlideCarousel>
     </GalleryWrapper>
   );

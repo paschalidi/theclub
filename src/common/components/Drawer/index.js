@@ -22,7 +22,7 @@ const Drawer = ({
   }
 
   return (
-    <Fragment>
+    <>
       <RcDrawer
         open={open}
         onClose={toggleHandler}
@@ -51,7 +51,7 @@ const Drawer = ({
       >
         {drawerHandler}
       </div>
-    </Fragment>
+    </>
   );
 };
 
@@ -75,7 +75,9 @@ Drawer.propTypes = {
 
 Drawer.defaultProps = {
   width: "300px",
+  // eslint-disable-next-line react/default-props-match-prop-types
   handler: false,
+  // eslint-disable-next-line react/default-props-match-prop-types
   level: null,
 };
 

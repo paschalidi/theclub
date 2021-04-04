@@ -21,7 +21,7 @@ const NavbarWrapper = styled.nav`
   }
 
   .logo {
-    max-width: 107px;
+    max-width: 180px;
     width: 100%;
   }
 `;

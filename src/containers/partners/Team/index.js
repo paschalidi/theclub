@@ -62,7 +62,7 @@ const Team = () => {
                 nextButton={<span className="next_arrow" />}
                 prevButton={<span className="prev_arrow" />}
               >
-                <Fragment>
+                <>
                   {members.map((member) => (
                     <GlideSlide key={`project_key${member.id}`}>
                       <TeamCard className="team_card">
@@ -89,12 +89,12 @@ const Team = () => {
                       </TeamCard>
                     </GlideSlide>
                   ))}
-                </Fragment>
+                </>
               </GlideCarousel>
             ) : (
               <CircleLoader className="alt">
-                <div className="circle"></div>
-                <div className="circle"></div>
+                <div className="circle" />
+                <div className="circle" />
               </CircleLoader>
             )}
           </CarouselWrapper>

@@ -37,6 +37,7 @@ const GlideCarousel = ({
 
   // number of bullets loop
   const totalBullets = [];
+  // eslint-disable-next-line no-plusplus
   for (let i = 0; i < numberOfBullets; i++) {
     totalBullets.push(i);
   }
@@ -74,7 +75,7 @@ const GlideCarousel = ({
             data-glide-dir="<"
             aria-label="prev"
           >
-            {prevButton ? prevButton : <DefaultBtn>Prev</DefaultBtn>}
+            {prevButton || <DefaultBtn>Prev</DefaultBtn>}
           </ButtonWrapper>
           <ButtonWrapper
             {...nextWrapper}
@@ -82,7 +83,7 @@ const GlideCarousel = ({
             data-glide-dir=">"
             aria-label="next"
           >
-            {nextButton ? nextButton : <DefaultBtn>Next</DefaultBtn>}
+            {nextButton || <DefaultBtn>Next</DefaultBtn>}
           </ButtonWrapper>
         </ButtonControlWrapper>
       )}
@@ -94,7 +95,7 @@ const GlideCarousel = ({
           data-glide-el="controls[nav]"
           {...bulletWrapperStyle}
         >
-          <Fragment>
+          <>
             {totalBullets.map((index) => (
               <BulletButton
                 key={index}
@@ -104,7 +105,7 @@ const GlideCarousel = ({
                 {...bulletButtonStyle}
               />
             ))}
-          </Fragment>
+          </>
         </BulletControlWrapper>
       )}
     </GlideWrapper>

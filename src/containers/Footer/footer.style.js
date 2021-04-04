@@ -13,7 +13,7 @@ const FooterWrapper = styled.footer`
 
   .col-one {
     .logo {
-      width: 110px;
+      width: 180px;
       margin: 0 0 45px;
       @media only screen and (max-width: 1440px) {
         margin-bottom: 40px;

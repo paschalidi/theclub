@@ -17,11 +17,9 @@ export default async (req, res) => {
     return res.status(201).json({ error: "" });
   } catch (error) {
     if (error.status === 400) {
-      return res
-        .status(400)
-        .json({
-          error: "Εχετέ ήδη εγγραφή με αυτό το email. Δοκιμάστε άλλο email.",
-        });
+      return res.status(400).json({
+        error: "Εχετέ ήδη εγγραφή με αυτό το email. Δοκιμάστε άλλο email.",
+      });
     }
     return res.status(500).json({ error: "Κατι πήγε στραβά. Δοκιμάστε ξανα." });
   }

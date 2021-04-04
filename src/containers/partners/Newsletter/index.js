@@ -9,13 +9,13 @@ import Input from "../../../common/components/Input";
 import { SectionHeader } from "../interior.style";
 import SectionWrapper, { FormWrapper, FormGroup } from "./newsletter.style";
 
-import { newsletterData } from "../../../common/data/Interior";
+import { newsletterData } from "../../../common/data/partners";
 
 const Newsletter = () => {
   const { title, slogan, note } = newsletterData;
 
   const [state, setState] = useState({ email: "", valid: "" });
-  const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  const emailRegex = /^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/;
 
   const handleOnChange = (e) => {
     let value = "";
@@ -24,12 +24,10 @@ const Newsletter = () => {
         value = e.target.value;
         setState({ ...state, email: value, valid: "valid" });
       }
+    } else if (e.target.value.length > 0) {
+      setState({ ...state, valid: "invalid" });
     } else {
-      if (e.target.value.length > 0) {
-        setState({ ...state, valid: "invalid" });
-      } else {
-        setState({ ...state, valid: "" });
-      }
+      setState({ ...state, valid: "" });
     }
   };
 
@@ -58,7 +56,7 @@ const Newsletter = () => {
               placeholder="Enter email address"
               icon={<Icon icon={iosEmailOutline} />}
               iconPosition="left"
-              required={true}
+              required
               onChange={handleOnChange}
               aria-label="email"
             />

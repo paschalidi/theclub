@@ -10,13 +10,6 @@ const DropdownMenu = (props) => {
     show: false,
   });
 
-  useEffect(() => {
-    window.addEventListener("click", handleDocumentClick);
-    return () => {
-      window.removeEventListener("click", handleDocumentClick);
-    };
-  });
-
   const handleToggle = () => {
     setMenuState((prevState) => ({
       ...menuState,
@@ -30,10 +23,18 @@ const DropdownMenu = (props) => {
     }
   };
 
+  useEffect(() => {
+    window.addEventListener("click", handleDocumentClick);
+    return () => {
+      window.removeEventListener("click", handleDocumentClick);
+    };
+  });
+
   const { content, dropdownItems, dropdownDirection, className } = props;
 
   return (
     <DropdownMenuWrapper onClick={(e) => e.stopPropagation()}>
+      {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-static-element-interactions */}
       <span onClick={handleToggle}>{content}</span>
       {menuState.show && (
         <DropdownMenuItemsWrapper
@@ -41,8 +42,8 @@ const DropdownMenu = (props) => {
           dropdownDirection={dropdownDirection}
         >
           {dropdownItems &&
-            dropdownItems.map((item, index) => (
-              <DropdownMenuItemWrapper key={index} onClick={handleToggle}>
+            dropdownItems.map((item) => (
+              <DropdownMenuItemWrapper key={item.id} onClick={handleToggle}>
                 {item}
               </DropdownMenuItemWrapper>
             ))}

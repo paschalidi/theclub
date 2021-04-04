@@ -6,7 +6,7 @@ import Container from "../../../common/components/UI/Container";
 import { SectionHeader } from "../interior.style";
 import SectionWrapper, { FeatureWrapper } from "./feature.style";
 
-import { featureData } from "../../../common/data/partners/";
+import { featureData } from "../../../common/data/partners";
 
 const Feature = () => {
   const { title, slogan, features } = featureData;

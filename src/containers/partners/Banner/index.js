@@ -68,7 +68,7 @@ const Banner = () => {
                 }}
                 type="submit"
                 colors="primaryWithBg"
-                title="ΣΤΕΙΛΤΕ ΜΑΣ ΜΥΝΗΜΑ"
+                title="ΣΥΜΠΛΗΡΩΣΤΕ ΤΗΝ ONLINE ΦΟΡΜΑ"
               />
             </ButtonGroup>
           </Fade>

@@ -49,7 +49,7 @@ const AboutUs = () => {
             <Text content={text3} />
             <Link href="/partners-contact-form">
               <a className="learn__more-btn">
-                <span className="btn_text">ΣΤΕΙΛΤΕ ΜΑΣ ΜΥΝΗΜΑ</span>
+                <span className="btn_text">Συμπληρώστε την online φόρμα</span>
                 <span className="next_arrow" />
               </a>
             </Link>

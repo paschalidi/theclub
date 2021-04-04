@@ -19,7 +19,7 @@ const Navbar = ({ className, children, navbarStyle, ...props }) => {
 };
 
 Navbar.propTypes = {
-  /** ClassName of the Navbar. Default class is reusecore__navbar*/
+  /** ClassName of the Navbar. Default class is reusecore__navbar */
   className: PropTypes.string,
 
   /** Used to render menu, logo, button or any component that

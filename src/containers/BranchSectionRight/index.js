@@ -14,9 +14,7 @@ import SectionWrapper, {
 import { branchRightData } from "../../common/data";
 
 const BranchSectionRight = () => {
-  const title = (text) => {
-    return { __html: text };
-  };
+  const title = (text) => ({ __html: text });
 
   const {
     id,
@@ -36,6 +34,7 @@ const BranchSectionRight = () => {
         <ContentWrapper>
           <div className="content">
             <Heading as="h4" content={slogan} />
+            {/* eslint-disable-next-line react/no-danger */}
             <h2 dangerouslySetInnerHTML={title(textTitle)} />
             <Text content={description} />
             <List>

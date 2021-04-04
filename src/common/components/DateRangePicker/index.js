@@ -29,6 +29,7 @@ class DateRangePickerBox extends Component {
     this.onFocusChangeFunc = this.onFocusChangeFunc.bind(this);
   }
 
+  /*eslint-disable-next-line*/
   onDateChangeFunc = ({ startDate, endDate }) => {
     // ********* Date passing will be START here.... *********
     // const { item } = this.props;
