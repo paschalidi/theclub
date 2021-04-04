@@ -589,7 +589,22 @@ const InteriorWrapper = styled.div`
 const ContentWrapper = styled.div`
   flex: 1 0 auto;
   width: 100%;
-  overflow: hidden;
+`;
+
+const FormWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #fff872;
+
+  .successMessage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  iframe {
+    overflow: hidden;
+  }
 `;
 
 /* ------------------------------------ */
@@ -698,6 +713,7 @@ export {
   GlobalStyle,
   InteriorWrapper,
   ContentWrapper,
+  FormWrapper,
   SectionHeader,
   CircleLoader,
 };

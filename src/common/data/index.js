@@ -212,7 +212,7 @@ export const workData = {
     {
       id: 1,
       icon: search,
-      title: "Ανακάληψε",
+      title: "Ανακάλυψε",
       description:
         "Από τη γιόγκα στο padel, από το bouldering έως την high-intensity training, περιηγηθείτε στις αγαπημένες σας δραστηριότητες ή δοκιμάστε κάτι νέο!",
     },
@@ -485,7 +485,7 @@ export const menuWidgets = [
       },
       {
         id: 2,
-        label: "Επιχειρησιακά πακέτα",
+        label: "Εταιρικά πακέτα",
         href: "/#corporate",
       },
     ],

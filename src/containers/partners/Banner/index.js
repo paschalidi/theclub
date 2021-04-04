@@ -1,6 +1,7 @@
-import React, { Fragment, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Fade from "react-reveal/Fade";
+import { useRouter } from "next/router";
 import Heading from "../../../common/components/Heading";
 import Text from "../../../common/components/Text";
 import Image from "../../../common/components/Image";
@@ -8,6 +9,7 @@ import Button from "../../../common/components/Button";
 import GlideCarousel from "../../../common/components/GlideCarousel";
 import GlideSlide from "../../../common/components/GlideCarousel/glideSlide";
 import { CircleLoader } from "../interior.style";
+
 import BannerWrapper, {
   Container,
   ContentArea,
@@ -44,6 +46,7 @@ const Banner = () => {
     setLoading(true);
   }, []);
 
+  const router = useRouter();
   return (
     <BannerWrapper>
       <Container>
@@ -61,7 +64,7 @@ const Banner = () => {
             <ButtonGroup>
               <Button
                 onClick={() => {
-                  window.location = "https://forms.gle/gVe6rsUiMEAbvJW66";
+                  router.push("/partners-contact-form");
                 }}
                 type="submit"
                 colors="primaryWithBg"
@@ -70,19 +73,18 @@ const Banner = () => {
             </ButtonGroup>
           </Fade>
         </ContentArea>
-        {/* End of content section */}
 
         <CarouselArea>
           {loading ? (
             <GlideCarousel
-              controls={true}
-              bullets={true}
+              controls
+              bullets
               carouselSelector="interior_carousel"
               options={glideOptions}
               nextButton={<span className="next_arrow" />}
               prevButton={<span className="prev_arrow" />}
             >
-              <Fragment>
+              <>
                 {carousel.map((item) => (
                   <GlideSlide key={`carousel_key${item.id}`}>
                     {item.link ? (
@@ -100,16 +102,15 @@ const Banner = () => {
                     )}
                   </GlideSlide>
                 ))}
-              </Fragment>
+              </>
             </GlideCarousel>
           ) : (
             <CircleLoader>
-              <div className="circle"></div>
-              <div className="circle"></div>
+              <div className="circle" />
+              <div className="circle" />
             </CircleLoader>
           )}
         </CarouselArea>
-        {/* End of carousel section */}
       </Container>
     </BannerWrapper>
   );

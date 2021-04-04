@@ -1,5 +1,7 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
+import Link from "next/link";
+
 import Image from "../../../common/components/Image";
 import Heading from "../../../common/components/Heading";
 import Text from "../../../common/components/Text";
@@ -22,9 +24,7 @@ const AboutUs = () => {
     text2,
     text3,
   } = aboutData;
-  const setTitle = (title) => {
-    return { __html: title };
-  };
+  const setTitle = (t) => ({ __html: t });
 
   return (
     <SectionWrapper id="aboutUs">
@@ -47,13 +47,12 @@ const AboutUs = () => {
             <Text content={text2} />
             <Heading as="h4" content={title3} />
             <Text content={text3} />
-            <a
-              href="https://forms.gle/gVe6rsUiMEAbvJW66"
-              className="learn__more-btn"
-            >
-              <span className="btn_text">ΣΤΕΙΛΤΕ ΜΑΣ ΜΥΝΗΜΑ</span>
-              <span className="next_arrow"></span>
-            </a>
+            <Link href="/partners-contact-form">
+              <a className="learn__more-btn">
+                <span className="btn_text">ΣΤΕΙΛΤΕ ΜΑΣ ΜΥΝΗΜΑ</span>
+                <span className="next_arrow" />
+              </a>
+            </Link>
           </Fade>
         </TextWrapper>
       </Container>

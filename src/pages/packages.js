@@ -13,7 +13,6 @@ import { CharityWrapper } from "../containers/charity.style";
 const Agency = () => (
   <ThemeProvider theme={charityTheme}>
     <>
-      {/* Start agency head section */}
       <Head>
         <title>Εταιρικά πακέτα</title>
         <meta name="Description" content="Urbanfit Εταιρικά πακέτα" />
@@ -28,7 +27,6 @@ const Agency = () => (
         <BannerSection />
         <Footer />
       </CharityWrapper>
-      {/* End of agency wrapper section */}
     </>
   </ThemeProvider>
 );

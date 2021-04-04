@@ -15,7 +15,6 @@ import {
 } from "../containers/partners/interior.style";
 import { CharityWrapper } from "../containers/charity.style";
 import Faq from "../containers/Faq";
-
 import { faq } from "../common/data/partners";
 
 const Partners = () => (
@@ -32,6 +31,7 @@ const Partners = () => (
       <ResetCSS />
       <GlobalStyle />
 
+      {/* Start writing your markup from here. */}
       <CharityWrapper>
         <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
           <Navbar type="dark" />
@@ -44,6 +44,7 @@ const Partners = () => (
         </ContentWrapper>
         <Footer />
       </CharityWrapper>
+      {/* End of markup section. */}
     </>
   </ThemeProvider>
 );
