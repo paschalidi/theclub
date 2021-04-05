@@ -8,7 +8,7 @@ import { ResetCSS } from "../assets/css/style";
 
 const Page = ({
   children,
-  description = "Αποκτήστε πρόσβαση σε διαφορετικά προγράμματα, από γυμναστήρια και στούντιο γιόγκα μεχρι κολυμβητήρια και πολεμικές τέχνες. Επιλέξτε αυτό που σας ταιριάζει κάθε φορά χωρίς δεσμεύσεις ή περιορισμούς.",
+  description = "Αποκτήστε πρόσβαση σε διαφορετικά προγράμματα, από γυμναστήρια και στούντιο γιόγκα μεχρι κολυμβητήρια και πολεμικές τέχνες.",
   image = "/images/banner-0.jpg",
   title = "Urbanfit - Μία συνδρομή για όλες τις δραστηριότητες",
   keywords = "Urbanfit,  Μια συνδρομή, Ελλάδα, Γυμναστηρια, Yoga, Crossfit, GR",
@@ -75,7 +75,8 @@ const Page = ({
         <meta content={formattedTitle} property="og:title" />
         <meta content={description} property="og:description" />
         <meta content={canonical} property="og:url" />
-        <meta content="5e41b2275db646a5" name="yandex-verification" />
+        <meta property="og:type" content="website" />
+
         <meta
           content="kg_1_BJrSz5YJmxoOPEVNKLJFPosa28069YfhC4ViHQ"
           name="google-site-verification"
