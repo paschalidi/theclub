@@ -33,7 +33,7 @@ export const MilestoneCard = styled.div`
   max-width: 323px;
   padding: 62px 55px 70px;
   border-radius: 10px;
-  background-color: ${themeGet("colors.primary", "#FCF22B")};
+  background-color: ${themeGet("colors.primary", "#fff535")};
   text-align: center;
   @media only screen and (max-width: 1440px) {
     padding: 56px 45px 56px;

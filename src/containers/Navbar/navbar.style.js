@@ -65,7 +65,7 @@ export const Button = styled.button`
   font-weight: 600;
   cursor: pointer;
   color: ${themeGet("colors.heading", "#060F1E")};
-  background-color: ${themeGet("colors.primary", "#FCF22B")};
+  background-color: ${themeGet("colors.primary", "#fff535")};
   transition: all 0.3s ease;
   @media only screen and (max-width: 1440px) {
     font-size: 15px;

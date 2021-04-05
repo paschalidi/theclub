@@ -40,7 +40,7 @@ const BannerSection = ({ title }) => (
           className="mail"
         >
           <Heading
-            style={{ color: "#FCF22B" }}
+            style={{ color: "#fff535" }}
             textAlign="center"
             content="urbanfitgr@gmail.com"
             {...title}

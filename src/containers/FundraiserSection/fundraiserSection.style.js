@@ -294,7 +294,7 @@ export const DonateButton = styled(AnchorLink)`
   border-radius: 10px;
   cursor: pointer;
   color: ${themeGet("colors.heading", "#060F1E")};
-  background-color: ${themeGet("colors.primary", "#FCF22B")};
+  background-color: ${themeGet("colors.primary", "#fff535")};
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -324,8 +324,8 @@ export const DonateButton = styled(AnchorLink)`
     visibility: hidden;
     background: repeating-linear-gradient(
       -45deg,
-      ${themeGet("colors.primary", "#FCF22B")},
-      ${themeGet("colors.primary", "#FCF22B")} 10px,
+      ${themeGet("colors.primary", "#fff535")},
+      ${themeGet("colors.primary", "#fff535")} 10px,
       ${themeGet("colors.primaryHover", "#ECF22B")} 10px,
       ${themeGet("colors.primaryHover", "#ECF22B")} 20px
     );
@@ -334,8 +334,8 @@ export const DonateButton = styled(AnchorLink)`
     @media only screen and (max-width: 1440px) {
       background: repeating-linear-gradient(
         -45deg,
-        ${themeGet("colors.primary", "#FCF22B")},
-        ${themeGet("colors.primary", "#FCF22B")} 8px,
+        ${themeGet("colors.primary", "#fff535")},
+        ${themeGet("colors.primary", "#fff535")} 8px,
         ${themeGet("colors.primaryHover", "#ECF22B")} 8px,
         ${themeGet("colors.primaryHover", "#ECF22B")} 16px
       );

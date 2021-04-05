@@ -27,7 +27,7 @@ const Index = () => (
       <Head>
         <title>Μία συνδρομή για γυμναστήριο, ευεξία και ομορφιά</title>
         <meta name="Description" content="Urbanfit" />
-        <meta name="theme-color" content="#FCF22B" />
+        <meta name="theme-color" content="#fff535" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="keywords"
@@ -53,7 +53,6 @@ const Index = () => (
         </ContentWrapper>
         <Footer />
       </CharityWrapper>
-      {/* End of charity wrapper section */}
     </>
   </ThemeProvider>
 );

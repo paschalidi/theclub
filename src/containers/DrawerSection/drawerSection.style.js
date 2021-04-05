@@ -38,8 +38,8 @@ export const SpreadButton = styled(Button)`
       visibility: hidden;
       background: repeating-linear-gradient(
         -45deg,
-        ${themeGet("colors.primary", "#FCF22B")},
-        ${themeGet("colors.primary", "#FCF22B")} 10px,
+        ${themeGet("colors.primary", "#fff535")},
+        ${themeGet("colors.primary", "#fff535")} 10px,
         ${themeGet("colors.primaryHover", "#ECF22B")} 10px,
         ${themeGet("colors.primaryHover", "#ECF22B")} 20px
       );
@@ -48,8 +48,8 @@ export const SpreadButton = styled(Button)`
       @media only screen and (max-width: 1440px) {
         background: repeating-linear-gradient(
           -45deg,
-          ${themeGet("colors.primary", "#FCF22B")},
-          ${themeGet("colors.primary", "#FCF22B")} 8px,
+          ${themeGet("colors.primary", "#fff535")},
+          ${themeGet("colors.primary", "#fff535")} 8px,
           ${themeGet("colors.primaryHover", "#ECF22B")} 8px,
           ${themeGet("colors.primaryHover", "#ECF22B")} 16px
         );
@@ -57,7 +57,7 @@ export const SpreadButton = styled(Button)`
     }
 
     &:hover {
-      background-color: ${themeGet("colors.primary", "#FCF22B")};
+      background-color: ${themeGet("colors.primary", "#fff535")};
 
       &::before {
         left: 0;

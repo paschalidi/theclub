@@ -108,7 +108,7 @@ export const ContentWrapper = styled.div`
 
   .learn__more-btn {
     &::before {
-      background-color: ${themeGet("colors.primary", "#FCF22B")};
+      background-color: ${themeGet("colors.primary", "#fff535")};
     }
   }
 `;

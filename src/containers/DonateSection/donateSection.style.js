@@ -96,7 +96,7 @@ export const Heading = styled.h2`
   }
 
   span {
-    color: ${themeGet("color.primary", "#FCF22B")};
+    color: ${themeGet("color.primary", "#fff535")};
   }
 `;
 
@@ -122,21 +122,21 @@ export const ButtonGroup = styled.div`
   }
 
   .learn__more-btn {
-    color: ${themeGet("color.primary", "#FCF22B")} !important;
+    color: ${themeGet("color.primary", "#fff535")} !important;
 
     &::before {
       background-color: rgba(255, 255, 255, 0.1) !important;
     }
 
     .hyphen {
-      background-color: ${themeGet("color.primary", "#FCF22B")}!important;
+      background-color: ${themeGet("color.primary", "#fff535")}!important;
     }
 
     &:hover {
       color: ${themeGet("colors.heading", "#060F1E")}!important;
 
       &::before {
-        background-color: ${themeGet("color.primary", "#FCF22B")}!important;
+        background-color: ${themeGet("color.primary", "#fff535")}!important;
       }
 
       .hyphen {
@@ -149,7 +149,7 @@ export const ButtonGroup = styled.div`
 
       &::before {
         width: 100%;
-        background-color: ${themeGet("color.primary", "#FCF22B")}!important;
+        background-color: ${themeGet("color.primary", "#fff535")}!important;
       }
 
       .hyphen {
@@ -276,8 +276,8 @@ export const DonationForm = styled.form`
         margin: 10px 0;
       }
       &.active {
-        border-color: ${themeGet("colors.primary", "#FCF22B")};
-        background-color: ${themeGet("colors.primary", "#FCF22B")};
+        border-color: ${themeGet("colors.primary", "#fff535")};
+        background-color: ${themeGet("colors.primary", "#fff535")};
       }
 
       h4 {

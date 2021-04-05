@@ -68,9 +68,9 @@ const SectionWrapper = styled.section`
         }
 
         &:hover {
-          color: ${themeGet("colors.primary", "#FCF22B")};
+          color: ${themeGet("colors.primary", "#fff535")};
           p {
-            color: ${themeGet("colors.primary", "#FCF22B")};
+            color: ${themeGet("colors.primary", "#fff535")};
           }
         }
 
@@ -163,7 +163,7 @@ export const ContentWrapper = styled.div`
   .content {
     width: 750px;
     padding: 80px 86px 77px;
-    background-color: ${themeGet("colors.primary", "#FCF22B")};
+    background-color: ${themeGet("colors.primary", "#fff535")};
     @media only screen and (max-width: 1440px) {
       width: 600px;
       padding: 70px 65px;
@@ -246,7 +246,7 @@ export const ContentWrapper = styled.div`
 
     .learn__more-btn {
       &::before {
-        background-color: #fffa9a;
+        background-color: #fffccc;
       }
     }
   }
