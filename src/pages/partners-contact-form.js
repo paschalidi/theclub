@@ -38,11 +38,11 @@ const PartnersContactForm = () => {
           <title>Γίνε Συνεργάτης</title>
           <meta
             name="description"
-            content="Γίνε Συνεργάτης με την Urbanfit.gr"
+            content="Συμπλήρωσε τγη φόρμα και γίνε Συνεργάτης με την Urbanfit.gr"
           />
           <meta
             name="keywords"
-            content="Urbanfit, Ελλάδα, Γυμναστηρια, Yoga, Crossfit"
+            content="Urbanfit,  Μια συνδρομή, Ελλάδα, Γυμναστηρια, Yoga, Crossfit, GR"
           />
         </Head>
         <ResetCSS />

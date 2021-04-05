@@ -29,6 +29,10 @@ const Index = () => (
         <meta name="Description" content="Urbanfit" />
         <meta name="theme-color" content="#FCF22B" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="keywords"
+          content="Urbanfit,  Μια συνδρομή, Ελλάδα, Γυμναστηρια, Yoga, Crossfit, GR"
+        />
       </Head>
       <ResetCSS />
       <GlobalStyle />

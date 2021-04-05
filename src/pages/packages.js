@@ -16,6 +16,10 @@ const Agency = () => (
       <Head>
         <title>Εταιρικά πακέτα</title>
         <meta name="Description" content="Urbanfit Εταιρικά πακέτα" />
+        <meta
+          name="keywords"
+          content="Urbanfit,  Μια συνδρομή, Ελλάδα, Γυμναστηρια, Yoga, Crossfit, GR"
+        />
       </Head>
       <ResetCSS />
       <CharityWrapper>

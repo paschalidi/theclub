@@ -25,7 +25,7 @@ const Partners = () => (
         <meta name="description" content="Γίνε Συνεργάτης με την Urbanfit.gr" />
         <meta
           name="keywords"
-          content="Urbanfit, Ελλάδα, Γυμναστηρια, Yoga, Crossfit"
+          content="Urbanfit,  Μια συνδρομή, Ελλάδα, Γυμναστηρια, Yoga, Crossfit, GR"
         />
       </Head>
       <ResetCSS />
