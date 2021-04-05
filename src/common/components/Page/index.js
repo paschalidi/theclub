@@ -2,20 +2,18 @@ import Head from "next/head";
 import { withRouter } from "next/router";
 import React from "react";
 
-import titleStyle from "./title-style";
-import { GlobalStyle } from "../../containers/charity.style";
-import { ResetCSS } from "../assets/css/style";
+import { GlobalStyle } from "../../../containers/charity.style";
+import { ResetCSS } from "../../assets/css/style";
 
-const Page = ({
+const Index = ({
   children,
   description = "Αποκτήστε πρόσβαση σε διαφορετικά προγράμματα, από γυμναστήρια και στούντιο γιόγκα μεχρι κολυμβητήρια και πολεμικές τέχνες.",
   image = "/images/banner-0.jpg",
-  title = "Urbanfit - Μία συνδρομή για όλες τις δραστηριότητες",
-  keywords = "Urbanfit,  Μια συνδρομή, Ελλάδα, Γυμναστηρια, Yoga, Crossfit, GR",
+  title = "Μία συνδρομή για όλες τις δραστηριότητες - Urbanfit",
+  keywords = "Urbanfit,  Μια συνδρομή, Ελλάδα,Yoga, Γυμναστηρια, Crossfit, GR, ευεξία, Athina, Αθήνα, Athens",
   router,
 }) => {
   const domain = "https://urbanfit.gr";
-  const formattedTitle = titleStyle(title);
   const url = router && router.asPath ? router.asPath : undefined;
   const canonical = url && url === "/" ? domain : domain + url;
   const featuredImage = domain + image;
@@ -23,7 +21,7 @@ const Page = ({
   return (
     <>
       <Head>
-        <title>{formattedTitle}</title>
+        <title>{title}</title>
         <meta charSet="utf-8" />
         <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -72,7 +70,7 @@ const Page = ({
         />
         {url && <link href={canonical} rel="canonical" />}
         <meta content="en_US" property="og:locale" />
-        <meta content={formattedTitle} property="og:title" />
+        <meta content={title} property="og:title" />
         <meta content={description} property="og:description" />
         <meta content={canonical} property="og:url" />
         <meta property="og:type" content="website" />
@@ -98,4 +96,4 @@ const Page = ({
   );
 };
 
-export default withRouter(Page);
+export default withRouter(Index);

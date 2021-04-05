@@ -12,7 +12,7 @@ import BranchSectionLeft from "../containers/BranchSectionLeft";
 import BranchSectionRight from "../containers/BranchSectionRight";
 import Faq from "../containers/Faq";
 import Footer from "../containers/Footer";
-import Page from "../common/components/page";
+import Page from "../common/components/Page";
 import { CharityWrapper, ContentWrapper } from "../containers/charity.style";
 import { faq } from "../common/data";
 

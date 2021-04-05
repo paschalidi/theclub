@@ -4,7 +4,7 @@ import { ThemeProvider } from "styled-components";
 import BannerSection from "../containers/packages/BannerSection";
 import Footer from "../containers/Footer";
 import Navbar from "../containers/Navbar";
-import Page from "../common/components/page";
+import Page from "../common/components/Page";
 import { DrawerProvider } from "../common/contexts/DrawerContext";
 import { charityTheme } from "../common/theme/charity";
 import { CharityWrapper } from "../containers/charity.style";

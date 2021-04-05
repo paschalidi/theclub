@@ -6,7 +6,7 @@ import "@typeform/embed/build/css/widget.css";
 import { useRouter } from "next/router";
 import { charityTheme } from "../common/theme/charity";
 import Navbar from "../containers/Navbar";
-import Page from "../common/components/page";
+import Page from "../common/components/Page";
 import Footer from "../containers/Footer";
 import {
   GlobalStyle,
@@ -33,7 +33,7 @@ const PartnersContactForm = () => {
   return (
     <ThemeProvider theme={charityTheme}>
       <Page
-        title="Urbanfit - Φόρμα επικοινωνίας συνεργατών"
+        title="Φόρμα επικοινωνίας συνεργατών - Urbanfit"
         description="Πείτε μας για την επιχείρησή σας, δηλώστε τα διαθέσιμα προγράμματα γυμναστικής, υποδεχτείτε τους πελάτες και πληρωθείτε για την κάθε επίσκεψη."
       >
         <GlobalStyle />

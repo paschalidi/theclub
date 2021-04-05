@@ -7,7 +7,7 @@ import Banner from "../containers/partners/Banner";
 import Feature from "../containers/partners/Feature";
 import AboutUs from "../containers/partners/AboutUs";
 import Footer from "../containers/Footer";
-import Page from "../common/components/page";
+import Page from "../common/components/Page";
 import {
   GlobalStyle,
   ContentWrapper,
@@ -20,7 +20,7 @@ const Partners = () => (
   <ThemeProvider theme={charityTheme}>
     <Page
       description="Επεκτείνετε το πελατολόγιό σας χωρίς οικονομικές δεσμεύσεις και κάντε την επιχείρησή σας γνωστή σε μεγαλύτερο κοινό."
-      title="Urbanfit - πληρωθείτε για καθε check in"
+      title="Πληρωθείτε για καθε check in - Urbanfit"
       image="/images/banner-0.jpeg"
     >
       <GlobalStyle />

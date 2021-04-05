@@ -1,15 +1,10 @@
 import React from "react";
-import Head from "next/head";
 import ErrorSec from "../containers/Error";
-import { ResetCSS } from "../common/assets/css/style";
+import Page from "../common/components/Page";
 
 export default function Error({ statusCode }) {
   return (
-    <>
-      <Head>
-        <title>404: Not found</title>
-      </Head>
-      <ResetCSS />
+    <Page>
       <div>
         {statusCode ? (
           `An error ${statusCode} occurred on server`
@@ -17,7 +12,7 @@ export default function Error({ statusCode }) {
           <ErrorSec />
         )}
       </div>
-    </>
+    </Page>
   );
 }
 
