@@ -96,7 +96,7 @@ export const menuItems = [
     offset: "81",
   },
   {
-    label: "Γίνε συναίτερος",
+    label: "Γίνε συνεργάτης",
     path: "#partner",
     offset: "81",
   },
