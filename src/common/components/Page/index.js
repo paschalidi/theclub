@@ -9,7 +9,7 @@ const Index = ({
   children,
   description = "Αποκτήστε πρόσβαση σε διαφορετικά προγράμματα, από γυμναστήρια και στούντιο γιόγκα μεχρι κολυμβητήρια και πολεμικές τέχνες.",
   image = "/images/banner-0.jpg",
-  title = "Μία συνδρομή για όλες τις δραστηριότητες - Urbanfit",
+  title = "Μία συνδρομή για όλες σας τις δραστηριότητες - Urbanfit",
   keywords = "Urbanfit,  Μια συνδρομή, Ελλάδα,Yoga, Γυμναστηρια, Crossfit, GR, ευεξία, Athina, Αθήνα, Athens",
   router,
 }) => {

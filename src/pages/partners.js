@@ -19,8 +19,8 @@ import { faq } from "../common/data/partners";
 const Partners = () => (
   <ThemeProvider theme={charityTheme}>
     <Page
-      description="Επεκτείνετε το πελατολόγιό σας χωρίς οικονομικές δεσμεύσεις και κάντε την επιχείρησή σας γνωστή σε μεγαλύτερο κοινό."
-      title="Πληρωθείτε για καθε check in - Urbanfit"
+      description="Έχετε στούντιο γυμναστικής ή χώρο άθλησης; Επεκτείνετε το πελατολόγιό σας χωρίς οικονομικές δεσμεύσεις και κάντε την επιχείρησή σας γνωστή."
+      title="Πληρωθείτε για καθε check in στο χωρο σας - Urbanfit"
       image="/images/banner-0.jpeg"
     >
       <GlobalStyle />
