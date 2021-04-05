@@ -246,7 +246,7 @@ export const ContentWrapper = styled.div`
 
     .learn__more-btn {
       &::before {
-        background-color: #fffccc
+        background-color: #fffccc;
       }
     }
   }

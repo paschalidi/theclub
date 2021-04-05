@@ -34,7 +34,6 @@ const Newsletter = () => {
   const handleSubscriptionForm = (e) => {
     e.preventDefault();
     if (state.email.match(emailRegex)) {
-      console.log(state.email);
       setState({ email: "", valid: "" });
     }
   };

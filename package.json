@@ -8,17 +8,15 @@
     "build": "next build",
     "start": "next start",
     "export": "next build && next export",
-    "lint": "eslint '*/**/*.{js,jsx}' --config ./.eslintrc"
+    "lint": "eslint '*/**/*.{js,jsx}' --config ./.eslintrc",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@glidejs/glide": "^3.4.1",
     "@mailchimp/mailchimp_marketing": "^3.0.36",
-    "@reach/accordion": "^0.11.2",
     "@redq/reuse-modal": "^1.1.9",
     "@styled-system/theme-get": "^5.1.2",
     "@typeform/embed": "^1.0.2",
-    "firebase-admin": "^9.4.1",
-    "firebase-functions": "^3.11.0",
     "next": "^10.0.1",
     "next-compose-plugins": "^2.2.1",
     "next-fonts": "1.5.1",
@@ -33,7 +31,6 @@
     "react-icons-kit": "^1.3.1",
     "react-particles-js": "^3.4.1",
     "react-reveal": "^1.2.2",
-    "react-rnd": "^10.2.3",
     "react-scrollspy": "^3.4.3",
     "react-select": "^3.1.0",
     "react-stickynode": "3.0.4",
@@ -50,11 +47,14 @@
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.23.1",
-    "firebase-tools": "^8.16.2",
+    "husky": "^6.0.0",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-optipng": "^8.0.0",
     "imagemin-svgo": "^8.0.0",
-    "postcss": "^8.2.8",
+    "lint-staged": ">=10",
     "prettier": "^2.2.1"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
   }
 }

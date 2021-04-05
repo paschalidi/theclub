@@ -8,8 +8,8 @@ import { socialProfile } from "../../../common/data/partners";
 const Copyright = () => (
   <CopyrightWrapper className="copyright_section">
     <ul>
-      {socialProfile.map((profile, index) => (
-        <li key={`profile_key_${index}`}>
+      {socialProfile.map((profile) => (
+        <li key={`profile_key_${profile.id}`}>
           <Link href="#1">
             <a>
               <i className={profile.icon} />

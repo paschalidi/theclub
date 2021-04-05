@@ -70,10 +70,10 @@ const BannerSection = () => {
         method: "POST",
       });
 
-      const { error } = await res.json();
+      const { error: errorResponse } = await res.json();
 
-      if (error) {
-        setError(error);
+      if (errorResponse) {
+        setError(errorResponse);
         return;
       }
 

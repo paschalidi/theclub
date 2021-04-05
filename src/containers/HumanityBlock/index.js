@@ -13,42 +13,37 @@ import BlockWrapper, {
   ImageWrapper,
 } from "./humanityBlock.style";
 
-import { humanityData } from "../../common/data";
-
-const HumanityBlock = ({ row, col }) => {
-  const { slogan, title, text, lists, image } = humanityData;
-  return (
-    <BlockWrapper id="socialFundraising">
-      <Container width="1260px">
-        <Box className="row" {...row}>
-          <Box className="col" {...col}>
-            <ImageWrapper>
-              <Image src={image} alt="Charity Landing" />
-            </ImageWrapper>
-          </Box>
-          <Box className="col" {...col}>
-            <ContentWrapper>
-              <Heading as="h5" content={slogan} />
-              <Heading content={title} />
-              <Text content={text} />
-              <List>
-                {lists.map((item) => (
-                  <Item key={`list_key${item.id}`}>{item.text}</Item>
-                ))}
-              </List>
-              <Link href="#1">
-                <a className="learn__more-btn">
-                  <span className="hyphen" />
-                  <span className="btn_text">Μάθετε περισσότερα.</span>
-                </a>
-              </Link>
-            </ContentWrapper>
-          </Box>
+const HumanityBlock = ({ row, col, slogan, title, text, lists, image }) => (
+  <BlockWrapper id="socialFundraising">
+    <Container width="1260px">
+      <Box className="row" {...row}>
+        <Box className="col" {...col}>
+          <ImageWrapper>
+            <Image src={image} alt="Charity Landing" />
+          </ImageWrapper>
         </Box>
-      </Container>
-    </BlockWrapper>
-  );
-};
+        <Box className="col" {...col}>
+          <ContentWrapper>
+            <Heading as="h5" content={slogan} />
+            <Heading content={title} />
+            <Text content={text} />
+            <List>
+              {lists.map((item) => (
+                <Item key={`list_key${item.id}`}>{item.text}</Item>
+              ))}
+            </List>
+            <Link href="#1">
+              <a className="learn__more-btn">
+                <span className="hyphen" />
+                <span className="btn_text">Μάθετε περισσότερα.</span>
+              </a>
+            </Link>
+          </ContentWrapper>
+        </Box>
+      </Box>
+    </Container>
+  </BlockWrapper>
+);
 
 // HumanityBlock style props
 HumanityBlock.propTypes = {

@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { Modal } from "@redq/reuse-modal";
 import Router from "next/router";
 import NProgress from "nprogress";
 import "@redq/reuse-modal/es/index.css";
@@ -15,9 +14,7 @@ export default function CustomApp({ Component, pageProps }) {
       <Head>
         <link rel="stylesheet" type="text/css" href="/nprogress.css" />
       </Head>
-      <Modal>
-        <Component {...pageProps} />
-      </Modal>
+      <Component {...pageProps} />
     </>
   );
 }

@@ -49,6 +49,7 @@ Card.propTypes = {
 };
 
 Card.defaultProps = {
+  // eslint-disable-next-line react/default-props-match-prop-types
   boxShadow: "0px 20px 35px rgba(0, 0, 0, 0.05)",
 };
 export default Card;
