@@ -1,5 +1,4 @@
 import React, { useRef, useEffect, useState } from "react";
-import Head from "next/head";
 import Sticky from "react-stickynode";
 import { ThemeProvider } from "styled-components";
 import { createWidget } from "@typeform/embed";
@@ -7,8 +6,8 @@ import "@typeform/embed/build/css/widget.css";
 import { useRouter } from "next/router";
 import { charityTheme } from "../common/theme/charity";
 import Navbar from "../containers/Navbar";
+import Page from "../common/components/page";
 import Footer from "../containers/Footer";
-import { ResetCSS } from "../common/assets/css/style";
 import {
   GlobalStyle,
   FormWrapper,
@@ -33,19 +32,10 @@ const PartnersContactForm = () => {
   const [formIsVisible, setVisibility] = useState(true);
   return (
     <ThemeProvider theme={charityTheme}>
-      <>
-        <Head>
-          <title>Γίνε Συνεργάτης</title>
-          <meta
-            name="description"
-            content="Συμπλήρωσε τγη φόρμα και γίνε Συνεργάτης με την Urbanfit.gr"
-          />
-          <meta
-            name="keywords"
-            content="Urbanfit,  Μια συνδρομή, Ελλάδα, Γυμναστηρια, Yoga, Crossfit, GR"
-          />
-        </Head>
-        <ResetCSS />
+      <Page
+        title="Urbanfit - Φόρμα επικοινωνίας συνεργατών"
+        description="Πείτε μας για την επιχείρησή σας, δηλώστε τα διαθέσιμα προγράμματα γυμναστικής, υποδεχτείτε τους πελάτες και πληρωθείτε για την κάθε επίσκεψη."
+      >
         <GlobalStyle />
 
         <CharityWrapper>
@@ -69,7 +59,7 @@ const PartnersContactForm = () => {
           </FormWrapper>
           {!formIsVisible && <Footer />}
         </CharityWrapper>
-      </>
+      </Page>
     </ThemeProvider>
   );
 };

@@ -24,7 +24,6 @@ const AboutUs = () => {
     text2,
     text3,
   } = aboutData;
-  const setTitle = (t) => ({ __html: t });
 
   return (
     <SectionWrapper id="aboutUs">
@@ -40,12 +39,12 @@ const AboutUs = () => {
         </ImageWrapper>
         <TextWrapper>
           <Fade right>
-            <Heading dangerouslySetInnerHTML={setTitle(title)} />
-            <Heading as="h4" content={title1} />
+            <Heading content={title} />
+            <Heading as="h3" content={title1} />
             <Text content={text1} />
-            <Heading as="h4" content={title2} />
+            <Heading as="h3" content={title2} />
             <Text content={text2} />
-            <Heading as="h4" content={title3} />
+            <Heading as="h3" content={title3} />
             <Text content={text3} />
             <Link href="/partners-contact-form">
               <a className="learn__more-btn">

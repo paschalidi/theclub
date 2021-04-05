@@ -74,8 +74,26 @@ export const ContentArea = styled.div`
   }
 
   h1 {
-    font-size: 40px;
+    font-size: 50px;
+    line-height: 68px;
+    margin-bottom: 27px;
+    @media only screen and (max-width: 1440px) {
+      font-size: 46px;
+      line-height: 64px;
+      margin-bottom: 20px;
+    }
+    @media only screen and (max-width: 1360px) {
+      font-size: 42px;
+      line-height: 50px;
+      margin-bottom: 25px;
+    }
+    @media only screen and (max-width: 480px) {
+      font-size: 36px;
+      line-height: 46px;
+      margin-bottom: 20px;
+    }
   }
+
   h1,
   p {
     color: ${themeGet("colors.label", "#C6C6C6")};

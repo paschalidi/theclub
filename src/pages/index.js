@@ -1,9 +1,7 @@
 import React from "react";
-import Head from "next/head";
 import Sticky from "react-stickynode";
 import { ThemeProvider } from "styled-components";
 import { charityTheme } from "../common/theme/charity";
-import { ResetCSS } from "../common/assets/css/style";
 import { DrawerProvider } from "../common/contexts/DrawerContext";
 import Navbar from "../containers/Navbar";
 import DrawerSection from "../containers/DrawerSection";
@@ -14,28 +12,13 @@ import BranchSectionLeft from "../containers/BranchSectionLeft";
 import BranchSectionRight from "../containers/BranchSectionRight";
 import Faq from "../containers/Faq";
 import Footer from "../containers/Footer";
-import {
-  GlobalStyle,
-  CharityWrapper,
-  ContentWrapper,
-} from "../containers/charity.style";
+import Page from "../common/components/page";
+import { CharityWrapper, ContentWrapper } from "../containers/charity.style";
 import { faq } from "../common/data";
 
 const Index = () => (
   <ThemeProvider theme={charityTheme}>
-    <>
-      <Head>
-        <title>Μία συνδρομή για γυμναστήριο, ευεξία και ομορφιά</title>
-        <meta name="Description" content="Urbanfit" />
-        <meta name="theme-color" content="#fff535" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-          name="keywords"
-          content="Urbanfit,  Μια συνδρομή, Ελλάδα, Γυμναστηρια, Yoga, Crossfit, GR"
-        />
-      </Head>
-      <ResetCSS />
-      <GlobalStyle />
+    <Page>
       <CharityWrapper>
         <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
           <Navbar />
@@ -53,7 +36,7 @@ const Index = () => (
         </ContentWrapper>
         <Footer />
       </CharityWrapper>
-    </>
+    </Page>
   </ThemeProvider>
 );
 export default Index;

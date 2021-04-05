@@ -31,7 +31,7 @@ export default class CustomDocument extends Document {
 
   render() {
     return (
-      <Html lang="en">
+      <Html lang="el-GR">
         <Head>
           <script
             async

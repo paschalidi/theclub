@@ -1,5 +1,4 @@
 import React from "react";
-import Head from "next/head";
 import Sticky from "react-stickynode";
 import { ThemeProvider } from "styled-components";
 import { charityTheme } from "../common/theme/charity";
@@ -8,7 +7,7 @@ import Banner from "../containers/partners/Banner";
 import Feature from "../containers/partners/Feature";
 import AboutUs from "../containers/partners/AboutUs";
 import Footer from "../containers/Footer";
-import { ResetCSS } from "../common/assets/css/style";
+import Page from "../common/components/page";
 import {
   GlobalStyle,
   ContentWrapper,
@@ -19,19 +18,13 @@ import { faq } from "../common/data/partners";
 
 const Partners = () => (
   <ThemeProvider theme={charityTheme}>
-    <>
-      <Head>
-        <title>Γίνε Συνεργάτης</title>
-        <meta name="description" content="Γίνε Συνεργάτης με την Urbanfit.gr" />
-        <meta
-          name="keywords"
-          content="Urbanfit,  Μια συνδρομή, Ελλάδα, Γυμναστηρια, Yoga, Crossfit, GR"
-        />
-      </Head>
-      <ResetCSS />
+    <Page
+      description="Έχετε στούντιο γυμναστικής ή χώρο άθλησης; Γίνετε μέλος του δικτύου μας και αναδείξτε τον χώρο και τις υπηρεσίες σας. Επεκτείνετε το πελατολόγιό σας χωρίς οικονομικές δεσμεύσεις και κάντε την επιχείρησή σας γνωστή σε μεγαλύτερο κοινό. Και όλα αυτά χωρίς προκαταβολές ή επιπλέον χρεώσεις."
+      title="Urbanfit - Συνεργαστείτε μαζι μας και πληρωθείτε για καθε check in"
+      image="/images/banner-0.jpeg"
+    >
       <GlobalStyle />
 
-      {/* Start writing your markup from here. */}
       <CharityWrapper>
         <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
           <Navbar type="dark" />
@@ -44,8 +37,7 @@ const Partners = () => (
         </ContentWrapper>
         <Footer />
       </CharityWrapper>
-      {/* End of markup section. */}
-    </>
+    </Page>
   </ThemeProvider>
 );
 export default Partners;

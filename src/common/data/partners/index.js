@@ -31,14 +31,14 @@ import { dribbble } from "react-icons-kit/fa/dribbble";
 import { googlePlus } from "react-icons-kit/fa/googlePlus";
 import { skype } from "react-icons-kit/fa/skype";
 import { twitter } from "react-icons-kit/fa/twitter";
-import slide1 from "../../../pages/images/partners-banner-1.jpeg";
-import slide2 from "../../../pages/images/partners-banner-2.jpeg";
-import slide3 from "../../../pages/images/partners-banner-3.jpeg";
-import slide4 from "../../../pages/images/partners-banner-4.jpeg";
-import slide5 from "../../../pages/images/partners-banner-5.jpeg";
-import slide6 from "../../../pages/images/partners-banner-6.jpeg";
-import slide7 from "../../../pages/images/partners-banner-7.jpeg";
-import slide8 from "../../../pages/images/partners-banner-8.jpeg";
+import slide1 from "../../../../public/images/partners-banner-1.jpeg";
+import slide2 from "../../../../public/images/partners-banner-2.jpeg";
+import slide3 from "../../../../public/images/partners-banner-3.jpeg";
+import slide4 from "../../../../public/images/partners-banner-4.jpeg";
+import slide5 from "../../../../public/images/partners-banner-5.jpeg";
+import slide6 from "../../../../public/images/partners-banner-6.jpeg";
+import slide7 from "../../../../public/images/partners-banner-7.jpeg";
+import slide8 from "../../../../public/images/partners-banner-8.jpeg";
 
 /* ------------------------------------ */
 // Feature section data

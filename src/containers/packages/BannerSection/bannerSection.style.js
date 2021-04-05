@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { themeGet } from "@styled-system/theme-get";
-import BannerBG from "../../../pages/images/under-construction.jpeg";
+import BannerBG from "../../../../public/images/under-construction.jpeg";
 
 const BannerWrapper = styled.section`
   padding-top: 210px;

@@ -26,15 +26,15 @@ import { Icon } from "react-icons-kit";
 import { linkedin } from "react-icons-kit/fa/linkedin";
 import { facebook } from "react-icons-kit/fa/facebook";
 import { instagram } from "react-icons-kit/fa/instagram";
-import bannerSlide0 from "../../pages/images/banner-0.jpeg";
-import bannerSlide1 from "../../pages/images/banner-1.jpeg";
-import bannerSlide2 from "../../pages/images/banner-2.jpeg";
-import bannerSlide3 from "../../pages/images/banner-3.jpeg";
-import bannerSlide4 from "../../pages/images/banner-4.jpeg";
-import bannerSlide5 from "../../pages/images/banner-5.jpeg";
-import bannerSlide7 from "../../pages/images/banner-7.jpeg";
-import bannerSlide9 from "../../pages/images/banner-9.jpeg";
-import bannerSlide10 from "../../pages/images/banner-10.jpeg";
+import bannerSlide0 from "../../../public/images/banner-0.jpeg";
+import bannerSlide1 from "../../../public/images/banner-1.jpeg";
+import bannerSlide2 from "../../../public/images/banner-2.jpeg";
+import bannerSlide3 from "../../../public/images/banner-3.jpeg";
+import bannerSlide4 from "../../../public/images/banner-4.jpeg";
+import bannerSlide5 from "../../../public/images/banner-5.jpeg";
+import bannerSlide7 from "../../../public/images/banner-7.jpeg";
+import bannerSlide9 from "../../../public/images/banner-9.jpeg";
+import bannerSlide10 from "../../../public/images/banner-10.jpeg";
 
 /* ------------------------------------ */
 // Feature section data
@@ -56,12 +56,12 @@ import checkIn from "../assets/image/charity/check.svg";
 /* ------------------------------------ */
 // BranchLelft section data
 /* ------------------------------------ */
-import thumbImage1 from "../../pages/images/section-partner.jpeg";
+import thumbImage1 from "../../../public/images/section-partner.jpeg";
 
 /* ------------------------------------ */
 // BranchRight section data
 /* ------------------------------------ */
-import thumbImage2 from "../../pages/images/section-corporate.jpeg";
+import thumbImage2 from "../../../public/images/section-corporate.jpeg";
 
 /* ------------------------------------ */
 // Promotion block data
