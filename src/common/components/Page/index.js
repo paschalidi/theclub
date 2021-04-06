@@ -71,6 +71,7 @@ const Index = ({
         {url && <link href={canonical} rel="canonical" />}
         <meta content="en_US" property="og:locale" />
         <meta content={title} property="og:title" />
+        <meta property="og:site_name" content="urbanfit" />
         <meta content={description} property="og:description" />
         <meta content={canonical} property="og:url" />
         <meta property="og:type" content="website" />
