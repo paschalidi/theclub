@@ -207,21 +207,21 @@ export const workData = {
     {
       id: 1,
       icon: search,
-      title: "Ανακαλύψτε",
+      title: "1. Ανακαλύψτε νέα studio",
       description:
         "Από τη γιόγκα στο crossfit, από το bouldering έως το high-intensity training, περιηγηθείτε στις αγαπημένες σας δραστηριότητες.",
     },
     {
       id: 2,
       icon: booking,
-      title: "Κάντε κράτηση",
+      title: "2. Κάντε κράτηση",
       description:
         "Με διάφορες δραστηριότητες από εξειδικευμένους χώρους συνεργατών, είστε βέβαιοι ότι θα βρείτε την τέλεια δραστηριότητα για εσάς.",
     },
     {
       id: 3,
       icon: checkIn,
-      title: "Check in",
+      title: "3. Check in",
       description:
         "Ήρθε η ώρα να ξεκινήσετε! Χρησιμοποιήστε την εφαρμογή σας για να κάνετε check-in και απολάυστε τη γυμναστική σας!",
     },
