@@ -1,24 +1,3 @@
-/* charity dummy data list :-
-- Navbar
-- Banner section
-- Feature section
-- Branch section
-- Work section
-- Milestone block
-- Humanity block
-- Promotion block
-- Donation section
-- Blog section
-- Client block
-- Footer
-  - menu widget
-  - copyright 
-  - social links
-*/
-
-/* ------------------------------------ */
-// Navbar menu
-/* ------------------------------------ */
 /* ------------------------------------ */
 // Banner section data
 /* ------------------------------------ */
