@@ -474,19 +474,19 @@ export const socialLinks = [
     id: 1,
     icon: <Icon icon={linkedin} />,
     name: "linkedin",
-    link: "http://linkedin.com/in/urbanfit-gr-b7899020a",
+    link: "https://www.linkedin.com/company/urbanfitgr/",
   },
   {
     id: 2,
     icon: <Icon icon={facebook} />,
     name: "facebook",
-    link: "https://www.facebook.com/urbanfitgr.urbanfitgr",
+    link: "https://www.facebook.com/UrbanFitgr-112860604235970/",
   },
   {
     id: 3,
     icon: <Icon icon={instagram} />,
     name: "instagram",
-    link: "https://instagram.com/urbanfit.gr",
+    link: "https://www.instagram.com/urbanfit.gr/",
   },
 ];
 
