@@ -125,7 +125,7 @@ const BannerSection = () => {
                   <Button
                     type="submit"
                     colors="primaryWithBg"
-                    title="ΚΕΡΔΙΣΕ ΤΗΝ ΕΚΠΤΩΣΗ"
+                    title="ΕΓΓΡΑΦΗ"
                   />
                 </ButtonGroup>
               </FormWrapper>
