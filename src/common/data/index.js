@@ -80,7 +80,7 @@ export const menuItems = [
     offset: "81",
   },
   {
-    label: "Πακέτα για επιχηρήσεις",
+    label: "Πακέτα για επιχειρήσεις",
     path: "#corporate",
     offset: "81",
   },
