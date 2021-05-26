@@ -221,7 +221,7 @@ export const ImageArea = styled.div`
   }
   @media only screen and (max-width: 667px) {
     width: 100%;
-    padding: 70px 0 40px;
+    padding: 70px 0 0;
   }
 
   #charitySlide {

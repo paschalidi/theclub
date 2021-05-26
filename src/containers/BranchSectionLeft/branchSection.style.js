@@ -247,6 +247,9 @@ export const ContentWrapper = styled.div`
       @media only screen and (max-width: 991px) {
         margin-bottom: 35px;
       }
+      @media only screen and (max-width: 768px) {
+        margin-bottom: 8px;
+      }
     }
 
     .learn__more-btn {
