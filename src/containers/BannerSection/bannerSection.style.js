@@ -148,7 +148,7 @@ export const TextArea = styled.div`
 
   h4 {
     font-size: 20px;
-    line-height: 37px;
+    line-height: 32px;
     font-weight: 400;
     color: ${themeGet("colors.text", "#294859")};
     margin-bottom: 22px;

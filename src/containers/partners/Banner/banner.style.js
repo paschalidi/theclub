@@ -78,6 +78,7 @@ export const ContentArea = styled.div`
   h1 {
     font-size: 50px;
     line-height: 68px;
+    font-weight: 900;
     margin-bottom: 27px;
     @media only screen and (max-width: 1440px) {
       font-size: 46px;

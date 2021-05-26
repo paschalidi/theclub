@@ -279,7 +279,7 @@ export const List = styled.ul`
 
 export const Item = styled.li`
   font-size: 20px;
-  line-height: 40px;
+  line-height: 32px;
   padding: 4px 0;
   color: ${(props) => (props.type === "light" ? `white` : `#060F1E`)};
   @media only screen and (max-width: 1440px) {
