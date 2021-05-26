@@ -65,11 +65,9 @@ export const Button = styled.button`
   font-weight: 600;
   cursor: pointer;
   color: ${themeGet("colors.heading", "#060F1E")};
-  background: radial-gradient(
-    circle,
-    rgb(216 249 234) 0%,
-    rgb(213 232 255) 100%
-  );
+  background-color: ${themeGet("colors.white")};
+  box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
+    rgb(0 0 0 / 30%) 0px 1px 3px -1px;
   transition: all 0.3s ease;
   @media only screen and (max-width: 1440px) {
     font-size: 15px;
@@ -79,7 +77,9 @@ export const Button = styled.button`
   }
 
   &:hover {
-    background-color: ${themeGet("colors.primaryHover", "#ECF22F")};
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background: rgb(237 249 188);
   }
 
   img {
@@ -92,7 +92,6 @@ export const Button = styled.button`
   &:hover,
   &:focus {
     content: 0;
-    box-shadow: none;
   }
 `;
 
