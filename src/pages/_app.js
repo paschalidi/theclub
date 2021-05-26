@@ -15,7 +15,7 @@ export default function CustomApp({ Component, pageProps }) {
         <link rel="stylesheet" type="text/css" href="/nprogress.css" />
         <link
           rel="apple-touch-icon"
-          sizes="152x152"
+          sizes="180x180"
           href="/apple-touch-icon.png"
         />
         <link
