@@ -120,7 +120,7 @@ export const TextArea = styled.div`
     width: calc(100% - 30px);
     max-width: 480px;
     align-self: flex-start;
-    padding-top: 160px;
+    padding-top: 11vh;
   }
 
   h1 {
