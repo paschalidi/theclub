@@ -4,7 +4,6 @@ const colors = {
   primary: "#ECFF6B",
   primaryHover: "#D7F31B",
   secondary: "#021210",
-  secondaryHover: "#D7F31B",
   thirdy: "#001e29",
   label: "#fcfcfc",
   backgroundDark: "#072329",

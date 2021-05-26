@@ -35,8 +35,8 @@ export const charityTheme = {
       color: colors.secondary,
       borderColor: colors.secondary,
       "&:hover": {
-        color: colors.secondaryHover,
-        borderColor: colors.secondaryHover,
+        color: colors.primaryHover,
+        borderColor: colors.primaryHover,
       },
     },
     warning: {
@@ -48,8 +48,8 @@ export const charityTheme = {
       },
     },
     error: {
-      color: colors.secondaryHover,
-      borderColor: colors.secondaryHover,
+      color: colors.primaryHover,
+      borderColor: colors.primaryHover,
       "&:hover": {
         color: colors.secondary,
         borderColor: colors.secondary,
@@ -69,8 +69,8 @@ export const charityTheme = {
       backgroundColor: colors.secondary,
       borderColor: colors.secondary,
       "&:hover": {
-        backgroundColor: colors.secondaryHover,
-        borderColor: colors.secondaryHover,
+        backgroundColor: colors.primaryHover,
+        borderColor: colors.primaryHover,
       },
     },
     warningWithBg: {
@@ -84,8 +84,8 @@ export const charityTheme = {
     },
     errorWithBg: {
       color: colors.white,
-      backgroundColor: colors.secondaryHover,
-      borderColor: colors.secondaryHover,
+      backgroundColor: colors.primaryHover,
+      borderColor: colors.primaryHover,
       "&:hover": {
         backgroundColor: colors.secondary,
         borderColor: colors.secondary,
@@ -106,11 +106,11 @@ export const charityTheme = {
       backgroundColor: "transparent",
       color: colors.primary,
       "&:hover": {
-        backgroundColor: colors.primaryHover,
+        backgroundColor: colors.primary,
         color: colors.heading,
         borderWidth: "2px",
         borderStyle: "solid",
-        borderColor: colors.primaryHover,
+        borderColor: colors.primary,
       },
     },
     fab: {

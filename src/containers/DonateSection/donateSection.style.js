@@ -360,8 +360,8 @@ export const DonateButton = styled.button`
       -45deg,
       ${themeGet("colors.secondary", "#D50032")},
       ${themeGet("colors.secondary", "#D50032")} 10px,
-      ${themeGet("colors.secondaryHover", "#FF282F")} 10px,
-      ${themeGet("colors.secondaryHover", "#FF282F")} 20px
+      ${themeGet("colors.primaryHover", "#FF282F")} 10px,
+      ${themeGet("colors.primaryHover", "#FF282F")} 20px
     );
     transition: all 0.45s ease;
     @media only screen and (max-width: 1440px) {
@@ -369,8 +369,8 @@ export const DonateButton = styled.button`
         -45deg,
         ${themeGet("colors.secondary", "#D50032")},
         ${themeGet("colors.secondary", "#D50032")} 8px,
-        ${themeGet("colors.secondaryHover", "#FF282F")} 8px,
-        ${themeGet("colors.secondaryHover", "#FF282F")} 16px
+        ${themeGet("colors.primaryHover", "#FF282F")} 8px,
+        ${themeGet("colors.primaryHover", "#FF282F")} 16px
       );
     }
   }
