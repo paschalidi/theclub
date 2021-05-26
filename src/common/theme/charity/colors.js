@@ -7,7 +7,7 @@ const colors = {
   secondaryHover: "#D7F31B",
   thirdy: "#001e29",
   label: "#fcfcfc",
-  backgroundLime: "#faffe5",
+  backgroundDark: "#072329",
   yellow: "#fdb32a",
   yellowHover: "#F29E02",
   border: "#dadada",
@@ -24,5 +24,7 @@ const colors = {
   select: "#525F7F",
   error: "#ff5e7e",
 };
+export const bannerBackground =
+  "linear-gradient(90deg, rgba(0,21,29,1) 9%, rgba(0,50,61,1) 75%)";
 
 export default colors;

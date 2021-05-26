@@ -1,6 +1,7 @@
 import styled, { createGlobalStyle, keyframes } from "styled-components";
 import { themeGet } from "@styled-system/theme-get";
 import footerBg from "../common/assets/image/charity/footer-bg.png";
+import { bannerBackground } from "../common/theme/charity/colors";
 
 const shake = keyframes`
 0% {
@@ -184,7 +185,8 @@ const CharityWrapper = styled.div`
   .sticky-nav-active {
     .navbar {
       padding: 16px 0;
-      background-color: ${themeGet("colors.secondary", "#ffffff")};
+      background: ${bannerBackground};
+
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 
       &::before {
@@ -261,7 +263,7 @@ const CharityWrapper = styled.div`
     .drawer_btn {
       border: 0;
       width: 80px;
-      height: 82px;
+      height: 100px;
       padding: 0;
       display: flex;
       align-items: center;

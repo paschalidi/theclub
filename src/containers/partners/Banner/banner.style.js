@@ -3,6 +3,7 @@ import { themeGet } from "@styled-system/theme-get";
 
 import error from "../../../common/assets/image/error.svg";
 import success from "../../../common/assets/image/success.svg";
+import { bannerBackground } from "../../../common/theme/charity/colors";
 
 const shake = keyframes`
   0% {
@@ -21,7 +22,8 @@ const shake = keyframes`
 const BannerWrapper = styled.div`
   padding-top: 30px;
   margin-bottom: 81px;
-  background-color: ${themeGet("colors.secondary", "#171717")};
+  background: ${bannerBackground};
+
   @media only screen and (max-width: 1440px) {
     margin-bottom: 60px;
   }

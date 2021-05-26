@@ -1,11 +1,12 @@
 import styled, { css } from "styled-components";
 import { themeGet } from "@styled-system/theme-get";
+import { bannerBackground } from "../../common/theme/charity/colors";
 
 const NavbarWrapper = styled.nav`
   ${(props) =>
     props.type === "dark" &&
     css`
-      background: ${themeGet("colors.secondary")};
+      background: ${bannerBackground};
     `}
   .container {
     padding: 0 200px 0 120px;

@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import { themeGet } from "@styled-system/theme-get";
+import { bannerBackground } from "../../common/theme/charity/colors";
 
 const shake = keyframes`
 0% {
@@ -17,7 +18,7 @@ const BannerWrapper = styled.div`
   display: flex;
   height: 100vh;
   margin-bottom: 81px;
-  background-color: ${themeGet("colors.secondary")};
+  background: ${bannerBackground};
   @media only screen and (max-width: 1360px) {
     margin-bottom: 50px;
   }
