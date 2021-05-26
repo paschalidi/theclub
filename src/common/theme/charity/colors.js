@@ -25,6 +25,6 @@ const colors = {
   error: "#ff5e7e",
 };
 export const bannerBackground =
-  "linear-gradient(90deg, rgba(0,21,29,1) 9%, rgba(0,50,61,1) 75%)";
+  "linear-gradient(90deg, rgba(0,21,29,1) 9%, rgba(0,45,55,1) 75%)";
 
 export default colors;
