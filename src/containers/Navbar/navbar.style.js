@@ -5,10 +5,10 @@ const NavbarWrapper = styled.nav`
   ${(props) =>
     props.type === "dark" &&
     css`
-      background: black;
+      background: ${themeGet("colors.secondary")};
     `}
   .container {
-    padding: 0 200px;
+    padding: 0 200px 0 120px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -65,7 +65,11 @@ export const Button = styled.button`
   font-weight: 600;
   cursor: pointer;
   color: ${themeGet("colors.heading", "#060F1E")};
-  background-color: ${themeGet("colors.primary", "#fff535")};
+  background: radial-gradient(
+    circle,
+    rgb(216 249 234) 0%,
+    rgb(213 232 255) 100%
+  );
   transition: all 0.3s ease;
   @media only screen and (max-width: 1440px) {
     font-size: 15px;

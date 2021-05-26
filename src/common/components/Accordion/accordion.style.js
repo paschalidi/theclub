@@ -7,6 +7,7 @@ import {
   AccordionItemPanel,
 } from "react-accessible-accordion";
 import "react-accessible-accordion/dist/fancy-example.css";
+import themeGet from "@styled-system/theme-get";
 
 const fadeIn = keyframes`
   0% {
@@ -74,7 +75,7 @@ export const IconWrapper = styled.div`
 
   ${OpenIcon},
   ${CloseIcon} {
-    color: #ee2541;
+    color: ${themeGet("colors.secondary", "#ffffff")};
     position: absolute;
     top: 50%;
     right: 0;

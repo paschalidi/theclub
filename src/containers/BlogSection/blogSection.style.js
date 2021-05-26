@@ -267,10 +267,7 @@ export const PostArea = styled.div`
 
       .learn__more-btn {
         &::before {
-          background-color: ${themeGet(
-            "colors.primary2",
-            "rgba(252, 242, 43, 0.25)"
-          )};
+          background-color: ${themeGet("colors.primaryHover")};
         }
       }
     }

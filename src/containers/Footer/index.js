@@ -12,7 +12,7 @@ import FooterWrapper, {
   CopyrightText,
   SocialList,
 } from "./footer.style";
-import LogoImage from "../../common/assets/image/charity/logo.svg";
+import LogoImage from "../../common/assets/image/charity/logo-opposite.svg";
 import { menuWidgets, socialLinks } from "../../common/data";
 
 const Footer = ({ row, col, colOne, colTwo }) => (

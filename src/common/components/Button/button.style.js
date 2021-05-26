@@ -17,7 +17,7 @@ const ButtonStyle = styled.button`
   border-radius: ${themeGet("radius.0", "3")}px;
   font-family: inherit;
   font-size: ${themeGet("fontSizes.4", "16")}px;
-  font-weight: ${themeGet("fontWeights.4", "500")};
+  font-weight: ${themeGet("fontWeights.5", "800")};
   text-decoration: none;
   text-transform: capitalize;
   padding-top: ${themeGet("space.2", "8")}px;

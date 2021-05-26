@@ -85,7 +85,10 @@ const DrawerSection = () => {
           }}
         >
           <span className="text">Γίνε Συνεργάτης</span>
-          <Image src={heartImage} alt="Γίνε Συνεργάτης με την Urbanfit.gr" />
+          <Image
+            src={heartImage}
+            alt="Γίνε Συνεργάτης με την Urbanfit Athens"
+          />
         </SpreadButton>
       </InnerWrapper>
     </Drawer>

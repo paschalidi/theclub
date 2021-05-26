@@ -17,6 +17,7 @@ const BannerWrapper = styled.div`
   display: flex;
   height: 100vh;
   margin-bottom: 81px;
+  background-color: ${themeGet("colors.secondary")};
   @media only screen and (max-width: 1360px) {
     margin-bottom: 50px;
   }
@@ -31,7 +32,7 @@ const BannerWrapper = styled.div`
   }
 
   .leftbar {
-    width: 200px;
+    width: 120px;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
@@ -76,7 +77,7 @@ const BannerWrapper = styled.div`
 
 export const ContentWrapper = styled.div`
   display: flex;
-  width: calc(100% - 200px);
+  width: calc(100% - 120px);
   @media only screen and (max-width: 1440px) {
     width: calc(100% - 170px);
   }
@@ -86,11 +87,22 @@ export const ContentWrapper = styled.div`
   @media only screen and (max-width: 667px) {
     flex-direction: column;
   }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: ${themeGet("colors.label", "#C6C6C6")} !important;
+  }
+
+  p {
+    color: ${themeGet("colors.grayLight", "#C6C6C6")} !important;
+  }
 `;
 
 export const TextArea = styled.div`
   margin-top: 5vh;
-  width: 450px;
+  width: 600px;
   align-self: center;
   padding-right: 45px;
   @media only screen and (max-width: 1440px) {
@@ -111,7 +123,7 @@ export const TextArea = styled.div`
     padding-top: 160px;
   }
 
-  h2 {
+  h1 {
     font-size: 50px;
     line-height: 68px;
     font-weight: 900;
@@ -134,7 +146,7 @@ export const TextArea = styled.div`
   }
 
   h4 {
-    font-size: 23px;
+    font-size: 20px;
     line-height: 37px;
     font-weight: 400;
     color: ${themeGet("colors.text", "#294859")};
@@ -150,7 +162,7 @@ export const TextArea = styled.div`
   }
 
   p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 28px;
     margin-top: 28px;
     @media only screen and (max-width: 1440px) {
@@ -200,7 +212,7 @@ export const HighlightedText = styled.p`
 `;
 
 export const ImageArea = styled.div`
-  width: calc(100% - 450px);
+  width: calc(100% - 600px);
   @media only screen and (max-width: 1360px) {
     width: calc(100% - 500px);
   }

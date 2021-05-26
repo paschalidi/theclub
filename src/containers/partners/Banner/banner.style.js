@@ -21,7 +21,7 @@ const shake = keyframes`
 const BannerWrapper = styled.div`
   padding-top: 30px;
   margin-bottom: 81px;
-  background-color: ${themeGet("colors.banner", "#171717")};
+  background-color: ${themeGet("colors.secondary", "#171717")};
   @media only screen and (max-width: 1440px) {
     margin-bottom: 60px;
   }
@@ -147,7 +147,12 @@ export const HighlightedText = styled.p`
 export const FormWrapper = styled.form`
   .formError {
     font-size: 13px;
-    color: #ff0033;
+    color: ${themeGet("colors.error")};
+  }
+  max-width: 350px;
+
+  button {
+    width: 100%;
   }
   .input_element {
     display: flex;
@@ -211,7 +216,7 @@ export const ButtonGroup = styled.div`
 
   .reusecore__button {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: ${themeGet("fontWeights.4", "500")};
     border-radius: 5px;
     &:first-child {
       margin-right: 20px;

@@ -90,7 +90,10 @@ const BannerSection = () => {
       <LeftBar text="SCROLL" offset={81} sectionId="#feature" />
       <ContentWrapper>
         <TextArea>
-          <Heading content="Μία συνδρομή για όλες τις δραστηριότητες" />
+          <Heading
+            as="h1"
+            content="Μία συνδρομή για όλες τις αθλητικές σου δραστηριότητες"
+          />
           <Heading
             as="h4"
             content="Αποκτήστε πρόσβαση σε διαφορετικά προγράμματα, από γυμναστήρια και στούντιο γιόγκα μεχρι κολυμβητήρια και πολεμικές τέχνες. Επιλέξτε αυτό που σας ταιριάζει κάθε φορά χωρίς δεσμεύσεις ή περιορισμούς."
@@ -114,7 +117,7 @@ const BannerSection = () => {
                   aria-label="email"
                 />
 
-                <div style={{ margin: "8px 0" }} className="formError">
+                <div style={{ margin: "4px 0 8px 0 " }} className="formError">
                   {error.length ? (
                     <div>{error}</div>
                   ) : (
@@ -122,11 +125,7 @@ const BannerSection = () => {
                   )}
                 </div>
                 <ButtonGroup>
-                  <Button
-                    type="submit"
-                    colors="primaryWithBg"
-                    title="ΕΓΓΡΑΦΗ"
-                  />
+                  <Button type="submit" title="ΕΓΓΡΑΦΗ" variant="outlined" />
                 </ButtonGroup>
               </FormWrapper>
             </>

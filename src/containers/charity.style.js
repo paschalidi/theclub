@@ -184,7 +184,7 @@ const CharityWrapper = styled.div`
   .sticky-nav-active {
     .navbar {
       padding: 16px 0;
-      background-color: ${themeGet("colors.white", "#ffffff")};
+      background-color: ${themeGet("colors.secondary", "#ffffff")};
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 
       &::before {
@@ -228,6 +228,8 @@ const CharityWrapper = styled.div`
       border-radius: 40px;
       width: 72px;
       background-color: ${themeGet("colors.primary", "#fff535")};
+      box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
+        rgb(0 0 0 / 30%) 0px 1px 3px -1px;
       transition: all 0.3s ease-out;
     }
 
@@ -259,7 +261,7 @@ const CharityWrapper = styled.div`
     .drawer_btn {
       border: 0;
       width: 80px;
-      height: 100px;
+      height: 82px;
       padding: 0;
       display: flex;
       align-items: center;
@@ -269,7 +271,7 @@ const CharityWrapper = styled.div`
       top: 0;
       right: 60px;
       z-index: 99999;
-      background-color: ${themeGet("colors.secondary", "#D50032")};
+      background-color: ${themeGet("colors.secondary")};
       transition: background-color 0.2s ease;
       @media only screen and (max-width: 1440px) {
         width: 75px;
@@ -279,7 +281,7 @@ const CharityWrapper = styled.div`
       }
 
       &:hover {
-        background-color: #e00032;
+        background-color: ${themeGet("colors.thirdy")};
       }
 
       &:hover,
@@ -348,7 +350,7 @@ export const SectionHeader = styled.header`
     line-height: 24px;
     margin-bottom: 12px;
     letter-spacing: 1.5px;
-    color: ${themeGet("colors.secondary2", "#EE2541")};
+    color: ${themeGet("colors.thirdy", "#EE2541")};
     text-transform: uppercase;
     @media only screen and (max-width: 991px) {
       font-size: 13px;

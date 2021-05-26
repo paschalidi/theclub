@@ -6,6 +6,7 @@ const SearchPanelWrapper = styled.div`
   margin: 0 auto;
   padding: 0 15px;
   .reusecore__input {
+    max-width: 300px;
     .field-wrapper {
       input {
         border: 0;

@@ -627,7 +627,7 @@ const SectionHeader = styled.header`
   }
 
   h5 {
-    color: ${themeGet("colors.link", "#352FD9")};
+    color: ${themeGet("colors.heading")};
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;

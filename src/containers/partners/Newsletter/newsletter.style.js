@@ -124,7 +124,7 @@ export const FormGroup = styled.div`
     width: 132px;
     height: 60px;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: ${themeGet("fontWeights.4", "500")};
     text-transform: uppercase;
     @media only screen and (max-width: 667px) {
       width: 100%;

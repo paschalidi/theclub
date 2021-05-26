@@ -27,8 +27,9 @@ const FooterWrapper = styled.footer`
     }
 
     .mail {
+      font-weight: 600;
       font-size: 18px;
-      color: ${themeGet("colors.secondary", "#D50032")};
+      color: ${themeGet("colors.text")};
       @media only screen and (max-width: 1440px) {
         font-size: 16px;
       }
@@ -54,10 +55,10 @@ const FooterWrapper = styled.footer`
   }
 
   .text {
-    color: ${themeGet("colors.secondaryText", "#616970")};
+    color: ${themeGet("colors.text")};
     line-height: 1.7rem;
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     @media only screen and (max-width: 1440px) {
       font-size: 16px;
       margin-bottom: 15px;

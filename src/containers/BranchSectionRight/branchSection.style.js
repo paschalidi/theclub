@@ -163,7 +163,12 @@ export const ContentWrapper = styled.div`
   .content {
     width: 750px;
     padding: 80px 86px 77px;
-    background-color: ${themeGet("colors.primary", "#fff535")};
+    background: linear-gradient(
+      90deg,
+      rgba(215, 243, 27, 1) 10%,
+      rgba(236, 255, 107, 1) 85%
+    );
+
     @media only screen and (max-width: 1440px) {
       width: 5600px;
       padding: 70px 65px;
@@ -227,11 +232,12 @@ export const ContentWrapper = styled.div`
       }
     }
 
-    p {
+    p,
+    li {
       font-size: 18px;
       line-height: 30px;
       margin-bottom: 8px;
-      color: ${themeGet("colors.text", "#294859")};
+      color: ${themeGet("colors.secondary")};
       @media only screen and (max-width: 1440px) {
         font-size: 16px;
         margin-bottom: 8px;
@@ -246,7 +252,13 @@ export const ContentWrapper = styled.div`
 
     .learn__more-btn {
       &::before {
-        background-color: #fffccc;
+        background: radial-gradient(
+          circle,
+          rgb(216 249 234) 0%,
+          rgb(213 232 255) 100%
+        );
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+          rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
       }
     }
   }

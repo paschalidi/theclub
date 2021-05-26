@@ -3,7 +3,6 @@ import Link from "next/link";
 import Fade from "react-reveal/Fade";
 import { useRouter } from "next/router";
 import Heading from "../../../common/components/Heading";
-import Text from "../../../common/components/Text";
 import Image from "../../../common/components/Image";
 import Button from "../../../common/components/Button";
 import GlideCarousel from "../../../common/components/GlideCarousel";
@@ -21,7 +20,7 @@ import { bannerData } from "../../../common/data/partners";
 import { Item, List } from "../../BranchSectionLeft/branchSection.style";
 
 const Banner = () => {
-  const { lists, title, text, carousel } = bannerData;
+  const { lists, title, carousel } = bannerData;
   const glideOptions = {
     type: "carousel",
     autoplay: 2500,
@@ -53,7 +52,6 @@ const Banner = () => {
         <ContentArea>
           <Fade bottom delay={10}>
             <Heading as="h1" content={title} />
-            <Text content={text} />
             <List>
               {lists.map((item) => (
                 <Item type="light" key={`list_key${item.id}`}>
@@ -67,7 +65,7 @@ const Banner = () => {
                   router.push("/partners-contact-form");
                 }}
                 type="submit"
-                colors="primaryWithBg"
+                variant="outlined"
                 title="ΣΥΜΠΛΗΡΩΣΤΕ ΤΗΝ ONLINE ΦΟΡΜΑ"
               />
             </ButtonGroup>

@@ -33,7 +33,7 @@ const PartnersContactForm = () => {
   return (
     <ThemeProvider theme={charityTheme}>
       <Page
-        title="Φόρμα επικοινωνίας συνεργατών - Urbanfit"
+        title="Φόρμα επικοινωνίας συνεργατών - Urbanfit Athens"
         description="Πείτε μας για την επιχείρησή σας, δηλώστε τα διαθέσιμα προγράμματα γυμναστικής, υποδεχτείτε τους πελάτες και πληρωθείτε για την κάθε επίσκεψη."
       >
         <GlobalStyle />

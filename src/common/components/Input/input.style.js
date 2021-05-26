@@ -23,7 +23,7 @@ const InputField = styled.div`
         align-items: center;
         justify-content: center;
         width: 34px;
-        height: 40px;
+        height: 46px;
       }
     }
   }
@@ -68,7 +68,7 @@ const InputField = styled.div`
   textarea,
   input {
     font-size: 16px;
-    padding: 11px;
+    padding: 14px;
     display: block;
     width: 100%;
     color: ${themeGet("colors.textColor", "#484848")};
