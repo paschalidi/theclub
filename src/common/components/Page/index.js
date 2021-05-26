@@ -7,13 +7,13 @@ import { ResetCSS } from "../../assets/css/style";
 
 const Index = ({
   children,
-  description = "Αποκτήστε πρόσβαση σε διαφορετικά προγράμματα, από γυμναστήρια και στούντιο γιόγκα μεχρι κολυμβητήρια και πολεμικές τέχνες.",
   image = "/images/banner-0.jpg",
   title = "Μία συνδρομή για όλες σας τις δραστηριότητες - Urbanfit Athens",
+  description = "Με μία συνδρομή αποκτήστε πρόσβαση σε γυμναστήρια, στούντιο γιόγκα, μαθήματα χωρού, κολυμβητήρια και πολεμικές τέχνες.",
   keywords = "Urbanfit Athens, Athina, Αθήνα, Athens, Μια συνδρομή, Yoga, Γυμναστηρια, Crossfit, GR, ευεξία",
   router,
 }) => {
-  const domain = "https://urbanfit.gr";
+  const domain = "https://www.urbanfit.gr";
   const url = router && router.asPath ? router.asPath : undefined;
   const canonical = url && url === "/" ? domain : domain + url;
   const featuredImage = domain + image;
@@ -25,8 +25,8 @@ const Index = ({
         <meta charSet="utf-8" />
         <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
-        {description && <meta content={description} name="description" />}
-        {keywords && <meta content={keywords} name="keywords" />}
+        <meta content={description} name="description" />
+        <meta content={keywords} name="keywords" />
         <meta content="follow, index" name="robots" />
         <meta name="theme-color" content="#fff535" />
         <meta name="msapplication-TileColor" content="#fff535" />
