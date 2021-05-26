@@ -271,7 +271,7 @@ export const branchRightData = {
     },
   ],
   linkUrl: "/packages",
-  linkText: "Επικοινωνήστε μαζί μας",
+  linkText: "Γίνετε Συνεργάτης",
 };
 
 export const promotionData = {
