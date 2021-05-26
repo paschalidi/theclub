@@ -237,7 +237,7 @@ export const branchData = {
     },
   ],
   linkUrl: "/partners",
-  linkText: "Μάθετε περισσότερα",
+  linkText: "Γίνε Συνεργάτης",
 };
 
 export const branchRightData = {
@@ -271,7 +271,7 @@ export const branchRightData = {
     },
   ],
   linkUrl: "/packages",
-  linkText: "Γίνετε Συνεργάτης",
+  linkText: "Επικοινωνήστε μαζί μας",
 };
 
 export const promotionData = {
