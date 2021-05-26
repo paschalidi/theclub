@@ -10,7 +10,7 @@ const Index = ({
   image = "/images/banner-0.jpg",
   title = "Μία συνδρομή για όλες σας τις δραστηριότητες - Urbanfit Athens",
   description = "Με μία συνδρομή αποκτήστε πρόσβαση σε γυμναστήρια, στούντιο γιόγκα, μαθήματα χορού, κολυμβητήρια και πολεμικές τέχνες.",
-  keywords = "Urbanfit Athens, Athina, Αθήνα, Athens, Μια συνδρομή, Yoga, Γυμναστηρια, Crossfit, GR, ευεξία",
+  keywords = "Urbanfit Athens, Athina, Αθήνα, συνδρομή, Yoga, Γυμναστηρια",
   router,
 }) => {
   const domain = "https://www.urbanfit.gr";
