@@ -42,7 +42,7 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   @media only screen and (max-width: 1600px) {
-    padding: 0 81px;
+    padding: 0 120px;
   }
   @media only screen and (max-width: 1360px) {
     padding: 0 60px;
