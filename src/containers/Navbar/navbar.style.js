@@ -1,12 +1,12 @@
 import styled, { css } from "styled-components";
 import { themeGet } from "@styled-system/theme-get";
-import { bannerBackground } from "../../common/theme/charity/colors";
+import colors from "../../common/theme/charity/colors";
 
 const NavbarWrapper = styled.nav`
   ${(props) =>
     props.type === "dark" &&
     css`
-      background: ${bannerBackground};
+      background: ${colors.linearBackground};
     `}
   .container {
     padding: 0 200px 0 120px;

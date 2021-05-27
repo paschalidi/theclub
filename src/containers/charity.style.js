@@ -1,7 +1,7 @@
 import styled, { createGlobalStyle, keyframes } from "styled-components";
 import { themeGet } from "@styled-system/theme-get";
 import footerBg from "../common/assets/image/charity/footer-bg.png";
-import { bannerBackground } from "../common/theme/charity/colors";
+import colors from "../common/theme/charity/colors";
 
 const shake = keyframes`
 0% {
@@ -137,6 +137,7 @@ const GlobalStyle = createGlobalStyle`
 
 /* Charity wrapper style */
 const CharityWrapper = styled.div`
+  background-color: ${themeGet("colors.lightGray")};
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -185,9 +186,7 @@ const CharityWrapper = styled.div`
   .sticky-nav-active {
     .navbar {
       padding: 16px 0;
-      background: ${bannerBackground};
-
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      background: ${colors.bannerBackground};
 
       &::before {
         display: none;
@@ -283,7 +282,7 @@ const CharityWrapper = styled.div`
       }
 
       &:hover {
-        background-color: ${themeGet("colors.thirdy")};
+        background-color: ${themeGet("colors.heading")};
       }
 
       &:hover,
@@ -352,7 +351,7 @@ export const SectionHeader = styled.header`
     line-height: 24px;
     margin-bottom: 12px;
     letter-spacing: 1.5px;
-    color: ${themeGet("colors.thirdy", "#EE2541")};
+    color: ${themeGet("colors.heading", "#EE2541")};
     text-transform: uppercase;
     @media only screen and (max-width: 991px) {
       font-size: 13px;

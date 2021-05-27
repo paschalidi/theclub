@@ -1,6 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import { themeGet } from "@styled-system/theme-get";
-import { bannerBackground } from "../../common/theme/charity/colors";
+import colors from "../../common/theme/charity/colors";
 
 const shake = keyframes`
 0% {
@@ -18,7 +18,7 @@ const BannerWrapper = styled.div`
   display: flex;
   height: 100vh;
   margin-bottom: 81px;
-  background: ${bannerBackground};
+  background: ${colors.bannerBackground};
   @media only screen and (max-width: 1360px) {
     margin-bottom: 50px;
   }
@@ -97,7 +97,7 @@ export const ContentWrapper = styled.div`
   }
 
   p {
-    color: ${themeGet("colors.grayLight", "#C6C6C6")} !important;
+    color: ${themeGet("colors.headingLight", "#C6C6C6")} !important;
   }
 `;
 

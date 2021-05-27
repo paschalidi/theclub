@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { themeGet } from "@styled-system/theme-get";
 import patter1 from "../../common/assets/image/charity/branch/highlight-pattern.svg";
 import patter2 from "../../common/assets/image/charity/branch/highlight-pattern2.svg";
+import colors from "../../common/theme/charity/colors";
 
 const SectionWrapper = styled.section`
   width: 100%;
@@ -165,9 +166,10 @@ export const ContentWrapper = styled.div`
     padding: 80px 86px 77px;
     background: linear-gradient(
       90deg,
-      rgba(236, 255, 107, 1) 20%,
-      rgba(215, 243, 27, 1) 85%
+      ${colors.primaryLight} 0%,
+      ${colors.primary} 85%
     );
+
     @media only screen and (max-width: 1440px) {
       width: 600px;
       padding: 70px 65px;
@@ -281,7 +283,7 @@ export const Item = styled.li`
   font-size: 20px;
   line-height: 32px;
   padding: 4px 0;
-  color: ${(props) => (props.type === "light" ? `white` : `#060F1E`)};
+  color: ${(props) => (props.type === "light" ? `white` : `${colors.headingLight}`)};
   @media only screen and (max-width: 1440px) {
     font-size: 18px;
     line-height: 30px;

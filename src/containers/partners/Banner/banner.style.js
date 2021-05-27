@@ -1,9 +1,8 @@
 import styled, { keyframes } from "styled-components";
 import { themeGet } from "@styled-system/theme-get";
-
 import error from "../../../common/assets/image/error.svg";
 import success from "../../../common/assets/image/success.svg";
-import { bannerBackground } from "../../../common/theme/charity/colors";
+import colors from "../../../common/theme/charity/colors";
 
 const shake = keyframes`
   0% {
@@ -22,7 +21,7 @@ const shake = keyframes`
 const BannerWrapper = styled.div`
   padding-top: 30px;
   margin-bottom: 81px;
-  background: ${bannerBackground};
+  background: ${colors.linearBackground};
 
   @media only screen and (max-width: 1440px) {
     margin-bottom: 60px;
@@ -99,7 +98,7 @@ export const ContentArea = styled.div`
 
   h1,
   p {
-    color: ${themeGet("colors.label", "#C6C6C6")};
+    color: ${themeGet("colors.lightGray", "#C6C6C6")};
   }
 
   h1 {
@@ -305,7 +304,7 @@ export const CarouselArea = styled.div`
           left: 0;
           margin: 0;
           padding: 25px 30px;
-          color: ${themeGet("colors.label", "#C6C6C6")};
+          color: ${themeGet("colors.white", "#C6C6C6")};
           font-weight: 600;
           z-index: 1;
           transition: bottom 0.3s ease;

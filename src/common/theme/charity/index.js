@@ -104,6 +104,19 @@ export const charityTheme = {
       borderWidth: "2px",
       borderStyle: "solid",
       backgroundColor: "transparent",
+      color: colors.heading,
+      "&:hover": {
+        backgroundColor: colors.primary,
+        color: colors.heading,
+        borderWidth: "2px",
+        borderStyle: "solid",
+        borderColor: colors.primary,
+      },
+    },
+    outlinedLight: {
+      borderWidth: "2px",
+      borderStyle: "solid",
+      backgroundColor: "transparent",
       color: colors.primary,
       "&:hover": {
         backgroundColor: colors.primary,

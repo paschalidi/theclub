@@ -92,7 +92,13 @@ Button.propTypes = {
   iconPosition: PropTypes.oneOf(["left", "right"]),
 
   /** Variant change button shape */
-  variant: PropTypes.oneOf(["textButton", "outlined", "fab", "extendedFab"]),
+  variant: PropTypes.oneOf([
+    "textButton",
+    "outlined",
+    "outlinedLight",
+    "fab",
+    "extendedFab",
+  ]),
 
   /** primary || secondary || warning || error  change text and border color.
    *  And primaryWithBg || secondaryWithBg || warningWithBg || errorWithBg change text, border and background color */

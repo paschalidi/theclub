@@ -65,7 +65,7 @@ const Banner = () => {
                   router.push("/partners-contact-form");
                 }}
                 type="submit"
-                variant="outlined"
+                variant="outlinedLight"
                 title="ΣΥΜΠΛΗΡΩΣΤΕ ΤΗΝ ONLINE ΦΟΡΜΑ"
               />
             </ButtonGroup>
