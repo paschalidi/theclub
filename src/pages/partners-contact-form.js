@@ -40,7 +40,7 @@ const PartnersContactForm = () => {
 
         <CharityWrapper>
           <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
-            <Navbar type="dark" />
+            <Navbar />
           </Sticky>
           <FormWrapper>
             {formIsVisible ? (

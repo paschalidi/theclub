@@ -6,14 +6,15 @@ import Container from "../../common/components/UI/Container";
 import NavbarWrapper, { MenuWrapper, Button } from "./navbar.style";
 
 import logoImage from "../../common/assets/image/charity/logo.svg";
+import logoImageDark from "../../common/assets/image/charity/logo-opposite.svg";
 import heartImage from "../../common/assets/image/charity/heart-red.png";
 
-const Navbar = ({ type }) => (
-  <NavbarWrapper type={type} className="navbar">
+const Navbar = ({ light = true }) => (
+  <NavbarWrapper className="navbar">
     <Container fullWidth>
       <Logo
         href="/"
-        logoSrc={logoImage}
+        logoSrc={light ? logoImage : logoImageDark}
         className="logo"
         title="Charity React Next Landing"
       />

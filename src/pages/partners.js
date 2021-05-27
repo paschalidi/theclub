@@ -28,7 +28,12 @@ const Partners = () => (
 
       <CharityWrapper>
         <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
-          <Navbar type="dark" />
+          {(status) => {
+            if (status.status === Sticky.STATUS_FIXED) {
+              return <Navbar light={false} />;
+            }
+            return <Navbar light />;
+          }}
         </Sticky>
         <ContentWrapper>
           <Banner />

@@ -21,7 +21,12 @@ const Index = () => (
     <Page>
       <CharityWrapper>
         <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
-          <Navbar />
+          {(status) => {
+            if (status.status === Sticky.STATUS_FIXED) {
+              return <Navbar light={false} />;
+            }
+            return <Navbar light />;
+          }}
         </Sticky>
         <DrawerProvider>
           <DrawerSection />

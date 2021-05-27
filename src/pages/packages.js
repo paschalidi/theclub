@@ -16,7 +16,7 @@ const Agency = () => (
         <CharityWrapper>
           <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
             <DrawerProvider>
-              <Navbar type="dark" />
+              <Navbar />
             </DrawerProvider>
           </Sticky>
           <BannerSection />
