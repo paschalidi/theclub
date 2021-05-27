@@ -105,7 +105,7 @@ export const TextArea = styled.div`
   margin-top: 5vh;
   width: 600px;
   align-self: center;
-  padding-right: 45px;
+  padding-right: 70px;
   @media only screen and (max-width: 1440px) {
     padding-top: 30px;
   }
