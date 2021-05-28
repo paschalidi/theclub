@@ -23,8 +23,8 @@ const Banner = () => {
   const { lists, title, carousel } = bannerData;
   const glideOptions = {
     type: "carousel",
-    autoplay: 2000,
-    animationDuration: 1500,
+    autoplay: 2400,
+    animationDuration: 700,
     animationTimingFunc: "cubic-bezier(0, 0, 0.58, 1)",
     perView: 3,
     gap: 20,

@@ -31,6 +31,7 @@ import slide5 from "../../../../public/images/partners-banner-5.jpeg";
 import slide6 from "../../../../public/images/partners-banner-6.jpeg";
 import slide7 from "../../../../public/images/partners-banner-7.jpeg";
 import slide8 from "../../../../public/images/partners-banner-8.jpeg";
+import slide9 from "../../../../public/images/partners-banner-9.jpeg";
 
 /* ------------------------------------ */
 // Feature section data
@@ -127,6 +128,12 @@ export const bannerData = {
       alt: "Γυμναστήρια είναι συνεργάτες της Urbanfit Athens",
     },
     {
+      id: 9,
+      thumbUrl: slide9,
+      title: "Χορός",
+      alt: "Τάξεις χορού είναι συνεργάτες της Urbanfit Athens",
+    },
+    {
       id: 2,
       thumbUrl: slide2,
       title: "Boxing",
@@ -153,8 +160,8 @@ export const bannerData = {
     {
       id: 4,
       thumbUrl: slide4,
-      title: "Γυμναστήρια είναι συνεργάτες της Urbanfit Athens",
-      alt: "Γυμναστήρια",
+      title: "Γυμναστήρια",
+      alt: "Γυμναστήρια  είναι συνεργάτες της Urbanfit Athens",
     },
   ],
 };

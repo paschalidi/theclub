@@ -22,8 +22,8 @@ import Button from "../../common/components/Button";
 const Glide = ({ slides }) => {
   const glideOptions = {
     type: "carousel",
-    autoplay: 2000,
-    animationDuration: 1500,
+    autoplay: 2400,
+    animationDuration: 700,
     animationTimingFunc: "cubic-bezier(0, 0, 0.58, 1)",
     perView: 1,
     gap: 0,
