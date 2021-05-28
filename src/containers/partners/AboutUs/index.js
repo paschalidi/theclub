@@ -33,7 +33,7 @@ const AboutUs = () => {
             <Image
               style={{ borderRadius: "16%" }}
               src={thumbUrl}
-              alt="Μάθε πώς δουλεύει - Γίνε Συνεργάτης με την Urbanfit"
+              alt="Μάθε πώς δουλεύει και γίνε συνεργάτης με την Urbanfit Athens"
             />
           </Fade>
         </ImageWrapper>
