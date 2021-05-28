@@ -89,13 +89,13 @@ const Banner = () => {
                       <Link href={item.link}>
                         <a className="item_wrapper">
                           <Heading as="h4" content={item.title} />
-                          <Image src={item.thumbUrl} alt={item.title} />
+                          <Image src={item.thumbUrl} alt={item.alt} />
                         </a>
                       </Link>
                     ) : (
                       <span className="item_wrapper">
                         <Heading as="h4" content={item.title} />
-                        <Image src={item.thumbUrl} alt={item.title} />
+                        <Image src={item.thumbUrl} alt={item.alt} />
                       </span>
                     )}
                   </GlideSlide>

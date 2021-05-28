@@ -24,7 +24,7 @@ const Footer = ({ row, col, colOne, colTwo }) => (
             className="logo"
             href="/"
             logoSrc={LogoImage}
-            title="urbanfit"
+            title="Urbanfit Athens logo"
           />
           <Text
             className="text"
@@ -75,7 +75,7 @@ const Footer = ({ row, col, colOne, colTwo }) => (
         <CopyrightText>
           <Text
             className="text"
-            content="© 2021 Urbanfit. All Rights Reserved"
+            content="© 2021 Urbanfit Athens. All Rights Reserved"
           />
         </CopyrightText>
         <SocialList>
@@ -86,7 +86,7 @@ const Footer = ({ row, col, colOne, colTwo }) => (
                 onClick={() => {
                   window.open(item.link, "mywindow").focus();
                 }}
-                aria-label="social share link"
+                aria-label={`Social media ${item.name} Urbanfit Athens`}
               >
                 {item.icon}
               </a>

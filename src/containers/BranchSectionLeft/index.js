@@ -34,7 +34,7 @@ const BranchSectionLeft = () => {
         <ContentWrapper>
           <Fade>
             <div className="image">
-              <Image src={image} alt="Charity Landing" />
+              <Image src={image} alt="Urbanfit Athens Landing" />
             </div>
           </Fade>
           <div className="content">

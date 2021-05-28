@@ -16,14 +16,14 @@ const Navbar = ({ light = true }) => (
         href="/"
         logoSrc={light ? logoImage : logoImageDark}
         className="logo"
-        title="Charity React Next Landing"
+        title="Urbanfit Athens Logo"
       />
       <MenuWrapper>
         <Link href="/partners">
           <a>
             <Button>
               <span className="text">Γίνε Συνεργάτης</span>
-              <Image src={heartImage} alt="Charity Landing" />
+              <Image src={heartImage} alt="Γίνε Συνεργάτης με την Urbanfit Athens" />
             </Button>
           </a>
         </Link>

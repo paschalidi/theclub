@@ -51,7 +51,7 @@ const BranchSectionRight = () => {
           </div>
           <Fade>
             <div className="image">
-              <Image src={image} alt="Charity Landing" />
+              <Image src={image} alt="Urbanfit Athens Landing" />
             </div>
           </Fade>
         </ContentWrapper>

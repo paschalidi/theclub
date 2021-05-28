@@ -50,18 +50,6 @@ import happyKids from "../assets/image/charity/section-corporate.jpeg";
 /* ------------------------------------ */
 // Blog post data
 /* ------------------------------------ */
-import thumb1 from "../assets/image/charity/blog/thumb-1.png";
-import thumb2 from "../assets/image/charity/blog/thumb-2.png";
-
-/* ------------------------------------ */
-// Client block data
-/* ------------------------------------ */
-import windows from "../assets/image/charity/clients/1.png";
-import airbnb from "../assets/image/charity/clients/2.png";
-import adidas from "../assets/image/charity/clients/3.png";
-import ibm from "../assets/image/charity/clients/4.png";
-import amazon from "../assets/image/charity/clients/5.png";
-import google from "../assets/image/charity/clients/6.png";
 
 export const menuItems = [
   {
@@ -95,38 +83,47 @@ export const bannerSlides = [
   {
     id: 0,
     thumbUrl: bannerSlide0,
+    alt: "Γυμναστήρια με μια συνδρομή",
   },
   {
     id: 4,
     thumbUrl: bannerSlide1,
+    alt: "Κολυμβητήρια με μια συνδρομή",
   },
   {
     id: 1,
     thumbUrl: bannerSlide5,
+    alt: "cross training με μια συνδρομή",
   },
   {
     id: 2,
     thumbUrl: bannerSlide4,
+    alt: "Yoga class με μια συνδρομή",
   },
   {
     id: 10,
     thumbUrl: bannerSlide10,
+    alt: "cross training με μια συνδρομή",
   },
   {
     id: 3,
     thumbUrl: bannerSlide2,
+    alt: "Γυμναστήρια αναρρίχησης με μια συνδρομή",
   },
   {
     id: 5,
     thumbUrl: bannerSlide3,
+    alt: "Kick boxing με μια συνδρομή",
   },
   {
     id: 7,
     thumbUrl: bannerSlide7,
+    alt: "Pilates με μια συνδρομή",
   },
   {
     id: 9,
     thumbUrl: bannerSlide9,
+    alt: "Μαθηματα χορού με μια συνδρομή",
   },
 ];
 
@@ -159,7 +156,7 @@ export const featureData = {
     {
       id: 3,
       icon: featureIcon3,
-      title: "Υποστηρίξτε τα στούντιο της περιοχής σας",
+      title: "Υποστήριξε τα στούντιο της περιοχής σου",
       description:
         "Ανακαλύψτε εξειδικευμένα στούντιο στην περιοχή σας και υποστηρίξτε τις τοπικες αθλητικές εγκαταστάσεις και τους εκπαιδευτές τους.",
     },
@@ -186,21 +183,21 @@ export const workData = {
     {
       id: 1,
       icon: search,
-      title: "1. Ανακαλύψτε νέα studio",
+      title: "1. Ανακάλυψε νέα studio",
       description:
         "Από τη γιόγκα στο crossfit, από το bouldering στο high-intensity training. Ψάξτε και βρείτε τι ταιριάζει σε εσάς από μια μεγάλη ποικιλία δραστηριοτήτων.",
     },
     {
       id: 2,
       icon: booking,
-      title: "2. Κάντε κράτηση",
+      title: "2. Κάνε κράτηση",
       description:
         "Αφού βρείτε τη δραστηριότητα που θέλετε να κάνετε σήμερα, κλείστε θέση μέσω της εφαρμογής σας! Είναι τόσο εύκολο.",
     },
     {
       id: 3,
       icon: checkIn,
-      title: "3. Γυμναστείτε",
+      title: "3. Γυμνάσου",
       description:
         "Ήρθε η ώρα να απολάυστε τη γυμναστική σας! Επισκεφτείτε το στουντιο που επιλέξατε και χρησιμοποιήστε την εφαρμογή σας για να κάνετε check-in.",
     },
@@ -336,67 +333,6 @@ export const currencyOptions = [
   },
 ];
 
-export const posts = [
-  {
-    id: 1,
-    title: "Uganda Embraces South Sudanese Refugees, For Now",
-    excerpt:
-      "72 million children around the world are not enrolled in school. Concern Worldwide focuses on providing basic education to those…",
-    thumbUrl: thumb1,
-    btnText: "Learn More ",
-    btnUrl: "#1",
-  },
-  {
-    id: 2,
-    title: "BRITs Week 2019 together with O2 is here",
-    excerpt:
-      "72 million children around the world are not enrolled in school. Concern Worldwide focuses on providing basic education to those…",
-    thumbUrl: thumb2,
-    btnText: "Learn More ",
-    btnUrl: "#1",
-  },
-];
-
-export const clients = [
-  {
-    id: 1,
-    logo: windows,
-    name: "windows",
-    link: "#1",
-  },
-  {
-    id: 2,
-    logo: airbnb,
-    name: "airbnb",
-    link: "#2",
-  },
-  {
-    id: 3,
-    logo: adidas,
-    name: "adidas",
-    link: "#3",
-  },
-  {
-    id: 4,
-    logo: ibm,
-    name: "ibm",
-    link: "#4",
-  },
-  {
-    id: 5,
-    logo: amazon,
-    name: "amazon",
-    link: "#5",
-  },
-  {
-    id: 6,
-    logo: google,
-    name: "google",
-    link: "#6",
-  },
-];
-
-/* ------------------------------------ */
 // Footer data section
 /* ------------------------------------ */
 export const menuWidgets = [

@@ -12,7 +12,11 @@ import { CharityWrapper } from "../containers/charity.style";
 const Agency = () => (
   <ThemeProvider theme={charityTheme}>
     <>
-      <Page>
+      <Page
+        description="Θέλετε να είστε ακόμα περισσοτερο αρεστοί στους υπαλληλους σας, χαρήστε τους ευεξία με το Urbanfit"
+        title="Χαρίστε στους υπαλλήλους σας φυσική κατάσταση και ευεξία! - Urbanfit Athens"
+        keywords="Urbanfit Athens, Athina, Αθήνα, check-in, Yoga, Γυμναστήριο, προσφορά, φθηνά γυμναστήρια"
+      >
         <CharityWrapper>
           <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
             <DrawerProvider>

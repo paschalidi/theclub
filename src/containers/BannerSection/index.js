@@ -38,7 +38,7 @@ const Glide = ({ slides }) => {
     >
       {slides.map((slide) => (
         <GlideSlide key={slide.id}>
-          <Image src={slide.thumbUrl} alt="Charity Landing" />
+          <Image src={slide.thumbUrl} alt={slide.alt} />
         </GlideSlide>
       ))}
     </GlideCarousel>
