@@ -23,7 +23,10 @@ const Navbar = ({ light = true }) => (
           <a>
             <Button>
               <span className="text">Γίνε Συνεργάτης</span>
-              <Image src={heartImage} alt="Γίνε Συνεργάτης με την Urbanfit Athens" />
+              <Image
+                src={heartImage}
+                alt="Γίνε Συνεργάτης με την Urbanfit Athens"
+              />
             </Button>
           </a>
         </Link>

@@ -240,8 +240,8 @@ export const branchData = {
 export const branchRightData = {
   id: 1,
   image: thumbImage2,
-  slogan: "ΠΡΟΓΡΑΜΜΑΤΑ ΕΤΑΙΡΙΚΗΣ ΕΥΕΞΙΑΣ - COMING SOON",
-  textTitle: `Χαρίστε στους υπαλλήλους σας φυσική κατάσταση και ευεξία!`,
+  slogan: "ΠΡΟΓΡΑΜΜΑΤΑ ΚΑΙ ΕΤΑΙΡΙΚΑ ΠΑΚΕΤΑ ΓΙΑ ΥΠΑΛΛΗΛΟΥΣ - COMING SOON",
+  textTitle: `Χαρίστε στους υπαλλήλους σας καλύτερη φυσική κατάσταση και ευεξία!`,
   description:
     "Τώρα είναι η τέλεια στιγμή για να επενδύσετε στους υπαλλήλους σας.",
   lists: [
