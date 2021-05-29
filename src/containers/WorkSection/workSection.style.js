@@ -158,11 +158,9 @@ export const FeatureWrapper = styled.div`
           font-size: 18px;
         }
         @media only screen and (max-width: 1360px) {
-          font-size: 16px;
           line-height: 28px;
         }
         @media only screen and (max-width: 991px) {
-          font-size: 15px;
           line-height: 26px;
           margin-bottom: 8px;
         }
@@ -174,7 +172,7 @@ export const FeatureWrapper = styled.div`
         line-height: 28px;
         color: ${themeGet("colors.text", "#294859")};
         @media only screen and (max-width: 1360px) {
-          font-size: 15px;
+          font-size: 16px;
         }
         @media only screen and (max-width: 991px) {
           line-height: 25px;

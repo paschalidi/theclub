@@ -75,7 +75,7 @@ const Footer = ({ row, col, colOne, colTwo }) => (
         <CopyrightText>
           <Text
             className="text"
-            content="© 2021 Urbanfit Athens. All Rights Reserved"
+            content="© 2021 Urbanfit Athens. All Rights Reserved - Thiseos 70, Paleo Faliro 175 62, Greece"
           />
         </CopyrightText>
         <SocialList>
