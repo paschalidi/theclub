@@ -557,7 +557,7 @@ export const socialProfile = [
 ];
 
 export const faq = {
-  slogan: "Συχνες Ερωτησεις Συνεργατων Urbanfit",
+  slogan: "Συχνές Ερωτήσεις Συνεργατών Urbanfit",
   title: "Μπορείτε να μας καλέσετε στο +306988221619",
   faqs: [
     {
