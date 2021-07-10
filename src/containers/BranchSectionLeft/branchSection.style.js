@@ -9,7 +9,7 @@ const SectionWrapper = styled.section`
   margin: 81px 0 0 0;
   background-color: ${themeGet("colors.heading", "#060F1E")};
   @media only screen and (max-width: 1440px) {
-    margin: 70px 0;
+    margin: 70px 0 0 0;
   }
   @media only screen and (max-width: 1360px) {
     margin: 50px 0 0 0;

@@ -219,9 +219,7 @@ export const ButtonGroup = styled.div`
   .reusecore__button {
     font-size: 14px;
     font-weight: ${themeGet("fontWeights.4", "500")};
-    border-radius: 4px;
     &:first-child {
-      margin-right: 20px;
       &:hover {
         opacity: 0.95;
       }

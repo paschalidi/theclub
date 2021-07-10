@@ -1,5 +1,6 @@
 import styled, { createGlobalStyle, keyframes } from "styled-components";
 import { themeGet } from "@styled-system/theme-get";
+import colors from "../../common/theme/charity/colors";
 
 const shake = keyframes`
   0% {
@@ -18,6 +19,11 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Work Sans', sans-serif;
   }
 
+  ::selection {
+    background-color: ${colors.headingLight};
+    color: ${colors.primaryLight};
+  }
+  
   h1 {
     font-size: 36px;
     line-height: 56px;

@@ -9,7 +9,7 @@ const SectionWrapper = styled.section`
   margin: 0 0 81px 0;
   background-color: ${themeGet("colors.heading", "#060F1E")};
   @media only screen and (max-width: 1440px) {
-    margin: 70px 0;
+    margin: 0 0 70px 0;
   }
   @media only screen and (max-width: 1360px) {
     margin: 0 0 50px 0;
@@ -171,7 +171,7 @@ export const ContentWrapper = styled.div`
     );
 
     @media only screen and (max-width: 1440px) {
-      width: 5600px;
+      width: 600px;
       padding: 70px 65px;
     }
     @media only screen and (max-width: 1360px) {

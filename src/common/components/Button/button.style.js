@@ -6,6 +6,7 @@ import { base } from "../base";
 
 const ButtonStyle = styled.button`
   /* button default style */
+  -webkit-transform: skewX(-8deg);
   cursor: pointer;
   display: inline-flex;
   align-items: center;

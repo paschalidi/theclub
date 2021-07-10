@@ -68,7 +68,7 @@ const Banner = () => {
                 }}
                 type="submit"
                 variant="outlinedLight"
-                title="ΣΥΜΠΛΗΡΩΣΤΕ ΤΗΝ ONLINE ΦΟΡΜΑ"
+                title="ΕΠΙΚΟΙΝΩΝΗΣΤΕ ΜΑΖΙ ΜΑΣ"
               />
             </ButtonGroup>
           </Fade>

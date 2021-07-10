@@ -31,6 +31,11 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Work Sans', sans-serif;
   }
 
+  ::selection {
+    background-color: ${colors.headingLight};
+    color: ${colors.primaryLight};
+  }
+
   .gm-style .gm-style-iw {
     top: 0 !important;
     left: 0 !important;
@@ -268,7 +273,7 @@ const CharityWrapper = styled.div`
       top: 0;
       left: 0;
       height: 100%;
-      border-radius: 40px;
+      -webkit-transform: skewX(-8deg);
       width: 72px;
       background-color: ${themeGet("colors.primary", "#fff535")};
       box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,

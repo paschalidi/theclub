@@ -55,7 +55,7 @@ export const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 20px;
+  -webkit-transform: skewX(-8deg);
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;

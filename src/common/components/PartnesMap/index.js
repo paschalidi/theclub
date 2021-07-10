@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import { GoogleApiWrapper, InfoWindow, Map, Marker } from "google-maps-react";
-import { BlogCard, Column, HR, Row, } from "../../../containers/ClientBlock/Card";
+import {
+  BlogCard,
+  Column,
+  HR,
+  Row,
+} from "../../../containers/ClientBlock/Card";
 import Image from "../Image";
 import Heading from "../Heading";
 import Text from "../Text";
@@ -172,7 +177,7 @@ export const PartnesMap = GoogleApiWrapper({
                       </Row>
                       <p
                         css={{
-                          fontSize: 14,
+                          fontSize: 15,
                           marginTop: 4,
                           color: colors.secondary,
                         }}
@@ -180,7 +185,7 @@ export const PartnesMap = GoogleApiWrapper({
                         {description}
                       </p>
                       <a
-                        css={{ color: colors.twitter }}
+                        css={{ color: colors.twitter, fontSize: 13 }}
                         href={gmLink}
                         target="_blank"
                         rel="noreferrer"
@@ -189,7 +194,11 @@ export const PartnesMap = GoogleApiWrapper({
                       </a>
 
                       <a
-                        css={{ paddingTop: 8, color: colors.twitter }}
+                        css={{
+                          paddingTop: 8,
+                          color: colors.twitter,
+                          fontSize: 13,
+                        }}
                         href={`tel:${phoneNumber}`}
                       >
                         {phoneNumber}
