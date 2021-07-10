@@ -97,7 +97,7 @@ export const PartnesMap = GoogleApiWrapper({
   const { title, slogan } = mapData;
 
   return (
-    <ComponentWrapper>
+    <ComponentWrapper id="locations">
       <SectionHeader>
         <Heading content={title} />
         <Text content={slogan} />

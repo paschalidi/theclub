@@ -63,6 +63,11 @@ export const menuItems = [
     offset: "81",
   },
   {
+    label: "Που μπορώ να πάω",
+    path: "#locations",
+    offset: "81",
+  },
+  {
     label: "Γίνε συνεργάτης",
     path: "#partner",
     offset: "81",
