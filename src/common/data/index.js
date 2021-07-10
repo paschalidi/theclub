@@ -204,6 +204,11 @@ export const workData = {
   ],
 };
 
+export const mapData = {
+  title: "Αθλητικά κέντρα σε όλη την Αθήνα",
+  slogan: "Διάλεξε ότι σου ταιριάζει",
+};
+
 export const branchData = {
   id: 1,
   image: thumbImage1,

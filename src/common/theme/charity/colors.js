@@ -20,7 +20,7 @@ const colors = {
   lightText: "rgba(41, 72, 89, 0.5)",
   linkedin: "#0077B5",
   facebook: "#3b5998",
-  twitter: "#38A1F3",
+  twitter: "#0a69b4",
   github: "#211f1f",
   select: "#525F7F",
   error: "#ff2f4d",

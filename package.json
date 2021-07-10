@@ -16,6 +16,7 @@
     "@redq/reuse-modal": "^1.1.9",
     "@styled-system/theme-get": "^5.1.2",
     "@typeform/embed": "^1.0.2",
+    "google-maps-react": "2.0.6",
     "next": "^10.0.1",
     "next-compose-plugins": "^2.2.1",
     "next-fonts": "1.5.1",

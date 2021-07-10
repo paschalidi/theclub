@@ -15,6 +15,7 @@ import Footer from "../containers/Footer";
 import Page from "../common/components/Page";
 import { CharityWrapper, ContentWrapper } from "../containers/charity.style";
 import { faq } from "../common/data";
+import { PartnesMap } from "../common/components/PartnesMap";
 
 const Index = () => (
   <ThemeProvider theme={charityTheme}>
@@ -35,6 +36,7 @@ const Index = () => (
           <BannerSection />
           <FeatureSection />
           <WorkSection />
+          <PartnesMap />
           <BranchSectionLeft />
           <BranchSectionRight />
           <Faq faq={faq} />

@@ -31,6 +31,48 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Work Sans', sans-serif;
   }
 
+  .gm-style .gm-style-iw {
+    top: 0 !important;
+    left: 0 !important;
+    min-height: 120px !important;
+    padding: 0;
+    display: block !important;
+  }
+  .gm-style-iw-t::after {
+    display: none !important;
+  }
+
+  .gm-style-iw-c{
+    box-shadow: rgb(0 0 0 / 28%) 0px 8px 28px  !important;
+  }
+  .gm-style-iw-d {
+    overflow: hidden !important;
+    padding: 0 !important;
+  }
+  
+  .gm-style-iw>button{
+    background: white !important;
+    border-radius: 50% !important;
+    top: 0 !important;
+    right: 0 !important;
+    width: 30px !important;
+    height: 30px !important;
+    opacity: 0.3;
+    
+  }
+
+  /*style the p tag*/
+  .gm-style .gm-style-iw #google-popup p{
+    padding: 0px;
+  }
+
+
+  /*style the arrow*/
+  .gm-style div div div div div div div div {
+    padding: 0;
+    margin: 0;
+  }
+  
   section {
     position: relative;
   }

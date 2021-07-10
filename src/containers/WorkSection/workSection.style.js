@@ -25,6 +25,8 @@ export const SectionHeader = styled.header`
   }
   @media only screen and (max-width: 991px) {
     margin-bottom: 54px;
+    margin-left: 16px;
+    margin-right: 16px;
   }
 
   h2 {
