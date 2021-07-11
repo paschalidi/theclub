@@ -1,6 +1,5 @@
-import React, { useState, useRef } from "react";
+import React, { useRef, useState } from "react";
 import { iosEmailOutline } from "react-icons-kit/ionicons/iosEmailOutline";
-
 import { Icon } from "react-icons-kit";
 import Heading from "../../common/components/Heading";
 import Text from "../../common/components/Text";
@@ -10,10 +9,10 @@ import GlideSlide from "../../common/components/GlideCarousel/glideSlide";
 import LeftBar from "./leftBar";
 import BannerWrapper, {
   ContentWrapper,
-  TextArea,
   ImageArea,
+  TextArea,
 } from "./bannerSection.style";
-import { FormWrapper, ButtonGroup } from "../partners/Banner/banner.style";
+import { ButtonGroup, FormWrapper } from "../partners/Banner/banner.style";
 
 import { bannerSlides } from "../../common/data";
 import Input from "../../common/components/Input";
@@ -104,7 +103,10 @@ const BannerSection = () => {
             <Heading as="h3" content={message} />
           ) : (
             <>
-              <Text content="Κάνε εγγραφή τώρα και απόκτησε έκπτωση στην πρώτη σου συνδρομή." />
+              <Text
+                style={{ fontWeight: "bold", textDecorationLine: "underline" }}
+                content="Κάνε εγγραφή τώρα και κέρδισε 7 δωρεάν check-ins!"
+              />
               <FormWrapper onSubmit={handleSubscriptionForm}>
                 <Input
                   ref={inputEl}
