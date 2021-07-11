@@ -15,6 +15,19 @@ const SectionWrapper = styled.section`
   @media only screen and (max-width: 991px) {
     padding: 40px 0 25px;
   }
+
+  &.work {
+    padding: 11px 0;
+    @media only screen and (max-width: 1440px) {
+      padding: 0px 0 50px;
+    }
+    @media only screen and (max-width: 1360px) {
+      padding: 25px 0 30px;
+    }
+    @media only screen and (max-width: 991px) {
+      padding: 20px 0 25px;
+    }
+  }
 `;
 
 export const SectionHeader = styled.header`

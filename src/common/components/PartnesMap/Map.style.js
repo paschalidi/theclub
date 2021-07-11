@@ -3,8 +3,16 @@ import Image from "../Image";
 
 export const ComponentWrapper = styled.div`
   overflow: hidden;
-  margin-top: 80px;
-  margin-bottom: 24vh;
+  padding: 81px 0;
+  @media only screen and (max-width: 1440px) {
+    padding: 70px 0;
+  }
+  @media only screen and (max-width: 1360px) {
+    padding: 50px 0;
+  }
+  @media only screen and (max-width: 991px) {
+    padding: 40px 0;
+  }
 `;
 export const MapWrapper = styled.div`
   display: flex;

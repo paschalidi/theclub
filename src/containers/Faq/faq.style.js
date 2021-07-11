@@ -2,13 +2,15 @@ import styled from "styled-components";
 import { themeGet } from "@styled-system/theme-get";
 
 const FaqSection = styled.section`
-  padding: 162px 0;
-  overflow: hidden;
-  @media only screen and (max-width: 1366px) {
-    padding: 90px 0;
-  }
-  @media only screen and (max-width: 667px) {
+  padding: 81px 0;
+  @media only screen and (max-width: 1440px) {
     padding: 70px 0;
+  }
+  @media only screen and (max-width: 1360px) {
+    padding: 50px 0;
+  }
+  @media only screen and (max-width: 991px) {
+    padding: 40px 0;
   }
 
   .centeredButton {

@@ -5,14 +5,14 @@ import BlogPost from "../../common/components/BlogPost";
 import Container from "../../common/components/UI/Container";
 import { workData } from "../../common/data";
 import SectionWrapper, {
-  SectionHeader,
   FeatureWrapper,
+  SectionHeader,
 } from "./workSection.style";
 
 const WorkSection = () => {
   const { title, slogan, features } = workData;
   return (
-    <SectionWrapper id="work">
+    <SectionWrapper id="work" className="work">
       <Container width="1260px">
         <SectionHeader>
           <Heading content={title} />
