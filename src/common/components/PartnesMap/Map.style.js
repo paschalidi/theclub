@@ -4,7 +4,7 @@ import Image from "../Image";
 export const ComponentWrapper = styled.div`
   overflow: hidden;
   margin-top: 80px;
-  margin-bottom: 18vh;
+  margin-bottom: 24vh;
 `;
 export const MapWrapper = styled.div`
   display: flex;

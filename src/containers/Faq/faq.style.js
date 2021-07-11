@@ -2,13 +2,13 @@ import styled from "styled-components";
 import { themeGet } from "@styled-system/theme-get";
 
 const FaqSection = styled.section`
-  padding: 75px 0;
+  padding: 162px 0;
   overflow: hidden;
   @media only screen and (max-width: 1366px) {
-    padding: 60px 0;
+    padding: 90px 0;
   }
   @media only screen and (max-width: 667px) {
-    padding: 45px 0;
+    padding: 70px 0;
   }
 
   .centeredButton {

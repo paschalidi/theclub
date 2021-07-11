@@ -19,12 +19,13 @@ const SectionWrapper = styled.section`
 
 export const SectionHeader = styled.header`
   text-align: center;
-  margin-bottom: 90px;
+
+  margin-bottom: 58px;
   @media only screen and (max-width: 1440px) {
-    margin-bottom: 70px;
+    margin-bottom: 40px;
   }
   @media only screen and (max-width: 991px) {
-    margin-bottom: 54px;
+    margin-bottom: 32px;
     margin-left: 16px;
     margin-right: 16px;
   }
@@ -69,8 +70,6 @@ export const SectionHeader = styled.header`
 export const FeatureWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -25px;
-  padding: 0 51px;
   position: relative;
   z-index: 1;
   @media only screen and (max-width: 1440px) {

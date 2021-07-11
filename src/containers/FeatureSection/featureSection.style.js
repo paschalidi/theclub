@@ -17,12 +17,12 @@ const SectionWrapper = styled.section`
 
 export const SectionHeader = styled.header`
   text-align: center;
-  margin-bottom: 90px;
+  margin-bottom: 58px;
   @media only screen and (max-width: 1440px) {
-    margin-bottom: 70px;
+    margin-bottom: 40px;
   }
   @media only screen and (max-width: 991px) {
-    margin-bottom: 54px;
+    margin-bottom: 32px;
   }
 
   h2 {
@@ -47,7 +47,7 @@ export const SectionHeader = styled.header`
   p {
     text-align: center;
     font-size: 18px;
-    line-height: 40px;
+    line-height: 1.6;
     margin-bottom: 0;
     @media only screen and (max-width: 1440px) {
       font-size: 16px;
@@ -63,20 +63,13 @@ export const SectionHeader = styled.header`
 export const FeatureWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin: -120px -35px 0;
-  @media only screen and (max-width: 1440px) {
-    margin: -70px -30px 0;
-  }
-  @media only screen and (max-width: 1360px) {
-    margin: -50px -15px 0;
-  }
 
   .blog_post {
     width: calc(100% / 3);
     padding: 0 35px;
     display: flex;
     align-items: flex-start;
-    margin-top: 70px;
+    margin-bottom: 70px;
     @media only screen and (max-width: 1440px) {
       margin-top: 30px;
       padding: 0 30px;
