@@ -21,9 +21,18 @@ const PartnersPage = () => {
     return <div />;
   }
 
+  const content = partners[slug];
+
+  if (!content) {
+    return <div />;
+  }
+
   return (
     <ThemeProvider theme={charityTheme}>
-      <Page>
+      <Page
+        title={`${content.shelter} - Urbanfit Athens`}
+        description="Κάντε πελάτες σας όλο το κοινό που χρησημοποιεί την εφαρμογή μας. Και γεμίστε τάξεις που ίσως να μην γέμιζαν μέχρι χτες!"
+      >
         <CharityWrapper>
           <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
             {(status) => {
