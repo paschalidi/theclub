@@ -38,5 +38,3 @@ export const AwardItem = styled.div`
     display: block;
   }
 `;
-
-export const AwardImageWrapper = styled.div``;

@@ -37,16 +37,16 @@ const Courses = ({
         <>
           {content?.courses.map((course, index) => (
             <AwardItem>
-              <AwardImageWrapper>
+              <>
                 {course.icon && (
                   <Image
-                    style={{ margin: "0 auto" }}
+                    style={{ margin: "0 auto 12px auto" }}
                     src={course.icon}
                     alt={`award-logo-${index}`}
                     {...awardLogoStyle}
                   />
                 )}
-              </AwardImageWrapper>
+              </>
               <Heading content={course.text} {...awardNameStyle} />
               <Text content={course.details} {...awardDetailsStyle} />
             </AwardItem>
@@ -92,8 +92,7 @@ Courses.defaultProps = {
     ml: "auto",
     mr: "auto",
     mb: "25px",
-    width: "50px",
-    margin: "0 auto",
+    width: "60px",
   },
   awardNameStyle: {
     fontSize: ["16px", "16px", "18px", "20px"],
