@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import Link from "next/link";
 import colors from "../../../common/theme/charity/colors";
-import Heading from "../../../common/components/Heading";
 
 export const AA = styled.a``;
 
@@ -50,8 +49,13 @@ export const HR = styled.hr`
   }
 `;
 
-export const HeadingStyled = styled(Heading)`
+export const HeadingStyled = styled.h2`
+  font-size: 28px;
+  font-weight: normal;
+  margin: 0;
+  color: ${colors.headingLight};
+
   ${AA}:hover & {
-    color: ${colors.headingLight};
+    color: ${colors.secondary};
   }
 `;

@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import { GoogleApiWrapper, InfoWindow, Map, Marker } from "google-maps-react";
+import Icon from "react-icons-kit";
+import { androidOpen } from "react-icons-kit/ionicons/androidOpen";
 import {
   AA,
   BlogCard,
   Column,
+  HeadingStyled,
   HR,
   Row,
 } from "../../../containers/ClientBlock/Card";
@@ -136,14 +139,31 @@ export const PartnesMap = GoogleApiWrapper({
                           alt={`Venue ${shelter} Banner`}
                         />
                       </Column>
-                      <Column css={{ flex: 1 }}>
-                        <Heading
-                          fontSize={28}
-                          as="h2"
-                          mb={12}
-                          mt={0}
-                          content={shelter}
-                        />
+                      <Column css={{ flex: 1, marginBottom: 12 }}>
+                        <Row>
+                          <Column
+                            css={{
+                              flex: 0.1,
+                              justifyContent: "center",
+                              alignItems: "flex-end",
+                              marginRight: 8,
+                            }}
+                          >
+                            <Icon
+                              css={`
+                                ${AA}:hover & {
+                                  color: ${colors.twitter};
+                                }
+                              `}
+                              size={20}
+                              icon={androidOpen}
+                            />
+                          </Column>
+                          <Column css={{ flex: 1.9 }}>
+                            <HeadingStyled>{shelter}</HeadingStyled>
+                          </Column>
+                        </Row>
+
                         <p
                           css={`
                             font-size: 15px;
@@ -208,25 +228,51 @@ export const PartnesMap = GoogleApiWrapper({
               </Link>
               <div
                 style={{
-                  padding: 16,
+                  padding: 12,
                 }}
               >
-                <Heading
-                  as="h2"
-                  mt={0}
-                  mb={3}
-                  content={selectedPlace?.shelter}
-                  style={{
-                    width: "calc(15vw - 36px)",
-                    whiteSpace: "nowrap",
-                    overflow: "hidden",
-                    textOverflow: "ellipsis",
-                  }}
-                />
+                <Link href={`/partner/${selectedPlace?.slug}`}>
+                  <Row>
+                    <Column
+                      css={{
+                        flex: 0.1,
+                        justifyContent: "center",
+                        alignItems: "flex-start",
+                        marginRight: 8,
+                      }}
+                    >
+                      <Icon
+                        css={`
+                          margin-right: 8px;
+                          &:hover {
+                            color: ${colors.twitter};
+                          }
+                        `}
+                        size={16}
+                        icon={androidOpen}
+                      />
+                    </Column>
+                    <Column css={{ flex: 1.9 }}>
+                      <Heading
+                        as="h3"
+                        mt={0}
+                        mb={0}
+                        content={selectedPlace?.shelter}
+                        style={{
+                          width: "calc(15vw - 48px)",
+                          whiteSpace: "nowrap",
+                          overflow: "hidden",
+                          textOverflow: "ellipsis",
+                        }}
+                      />
+                    </Column>
+                  </Row>
+                </Link>
+
                 <div
                   style={{
                     marginTop: 4,
-                    width: "calc(15vw - 36px)",
+                    width: "calc(15vw - 24px)",
                     whiteSpace: "nowrap",
                     overflow: "hidden",
                     textOverflow: "ellipsis",
@@ -247,7 +293,7 @@ export const PartnesMap = GoogleApiWrapper({
                 <div
                   style={{
                     marginTop: 4,
-                    width: "calc(15vw - 36px)",
+                    width: "calc(15vw - 24px)",
                     whiteSpace: "nowrap",
                     overflow: "hidden",
                     textOverflow: "ellipsis",
