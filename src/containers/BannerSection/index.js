@@ -105,7 +105,7 @@ const BannerSection = () => {
             <>
               <Text
                 style={{ fontWeight: "bold", textDecorationLine: "underline" }}
-                content="Κάνε εγγραφή τώρα και κέρδισε 7 δωρεάν check-ins!"
+                content="Κάνε εγγραφή τώρα και κέρδισε 7 check-ins και δύο εβδομάδες δωρέαν!"
               />
               <FormWrapper onSubmit={handleSubscriptionForm}>
                 <Input
@@ -129,7 +129,7 @@ const BannerSection = () => {
                   )}
                 </div>
                 <ButtonGroup>
-                  <Button type="submit" title="ΕΓΓΡΑΦΗ" variant="outlined" />
+                  <Button type="submit" title="ΓΡΑΨΟΥ ΤΩΡΑ" variant="outlined" />
                 </ButtonGroup>
               </FormWrapper>
             </>
