@@ -269,16 +269,16 @@ export const PartnesMap = GoogleApiWrapper({
                 </div>
               </div>
             </InfoWindow>
-            {Object.values(partners).map((marker) => (
+            {Object.values(partners).map((partner) => (
               <Marker
                 icon={{
                   url: "/images/destination.svg",
                   scaledSize: new google.maps.Size(48, 48),
                 }}
-                title={marker.shelter}
-                name={marker.id}
-                key={marker.id}
-                position={{ lat: marker.latitude, lng: marker.longitude }}
+                title={partner.shelter}
+                name={partner.slug}
+                key={partner.id}
+                position={{ lat: partner.latitude, lng: partner.longitude }}
                 onClick={onMarkerClick}
               />
             ))}
