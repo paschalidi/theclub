@@ -152,7 +152,7 @@ export const PartnesMap = GoogleApiWrapper({
                             <Icon
                               css={`
                                 ${AA}:hover & {
-                                  color: ${colors.twitter};
+                                  color: ${colors.hoverLink};
                                 }
                               `}
                               size={20}
@@ -245,7 +245,7 @@ export const PartnesMap = GoogleApiWrapper({
                         css={`
                           margin-right: 8px;
                           &:hover {
-                            color: ${colors.twitter};
+                            color: ${colors.hoverLink};
                           }
                         `}
                         size={16}
@@ -281,7 +281,7 @@ export const PartnesMap = GoogleApiWrapper({
                   <a
                     style={{
                       fontWeight: 400,
-                      color: colors.twitter,
+                      color: colors.hoverLink,
                     }}
                     href={selectedPlace?.link}
                     target="_blank"
@@ -302,7 +302,7 @@ export const PartnesMap = GoogleApiWrapper({
                   <a
                     style={{
                       fontWeight: 400,
-                      color: colors.twitter,
+                      color: colors.hoverLink,
                     }}
                     href={selectedPlace?.gmLink}
                     target="_blank"
@@ -323,7 +323,7 @@ export const PartnesMap = GoogleApiWrapper({
                   <a
                     css={{
                       fontWeight: 400,
-                      color: colors.twitter,
+                      color: colors.hoverLink,
                     }}
                     href={`tel:${selectedPlace?.phoneNumber}`}
                   >
