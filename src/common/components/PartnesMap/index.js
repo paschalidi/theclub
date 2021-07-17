@@ -109,6 +109,7 @@ export const PartnesMap = GoogleApiWrapper({
             flexDirection: "column",
             flexBasis: "100%",
             minHeight: "65vh",
+            maxHeight: "65vh",
             flex: 1,
             marginLeft: 24,
             marginRight: 20,
