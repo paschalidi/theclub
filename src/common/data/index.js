@@ -5,6 +5,12 @@ import { Icon } from "react-icons-kit";
 import { linkedin } from "react-icons-kit/fa/linkedin";
 import { facebook } from "react-icons-kit/fa/facebook";
 import { instagram } from "react-icons-kit/fa/instagram";
+import { socialInstagram } from "react-icons-kit/ionicons/socialInstagram";
+import { socialFacebook } from "react-icons-kit/ionicons/socialFacebook";
+import { androidMail } from "react-icons-kit/ionicons/androidMail";
+import { androidMap } from "react-icons-kit/ionicons/androidMap";
+import { iosTelephone } from "react-icons-kit/ionicons/iosTelephone";
+import { iosWorld } from "react-icons-kit/ionicons/iosWorld";
 import bannerSlide0 from "../../../public/images/banner-0.jpeg";
 import bannerSlide1 from "../../../public/images/banner-1.jpeg";
 import bannerSlide2 from "../../../public/images/banner-2.jpeg";
@@ -495,4 +501,176 @@ export const faq = {
     },
   ],
   link: "",
+};
+
+export const partners = {
+  cuerposuerte: {
+    slug: "cuerposuerte",
+    id: 0,
+    latitude: 37.934201572147366,
+    longitude: 23.7092749728358,
+    shelter: "Cuerpo Suerte Fitness Lab",
+    image: "/images/partner-cuerpo-suerte.jpeg",
+    link: "https://cuerposuerte.gr/",
+    gmLink: "https://goo.gl/maps/Wdz8TGrv7mgXy8zDA",
+    address: "Αρκαδιουπόλεως 30 & Παμφυλίας, Παλαιό Φάληρο",
+    phoneNumber: "+302121069691",
+    description:
+      "Το γυμναστήριο Cuerpo Suerte Fitness Lab είναι ένας σύγχρονος και άρτια εξοπλισμένος χώρος που επιτρέπει όχι μονο την ασφαλή εκγύμναση των ασκούμενων, αλλα και την αποκατάσταση τους απο οποιαδήποτε χρόνια πάθηση και μυοσκελετικό τραυματισμό. Στόχος του είναι οι ασκούμενοι ανεξαρτήτως φύλου, ηλικίας και φυσικής κατάστασης να είναι πάντα ικανοποιημένοι απο την άσκηση, τα οφέλη της και τα αποτελέσματα της καθώς και απο την φιλική και ευχάριστη ατμόσφαιρα του γυμναστηρίου.\n",
+    socialProfiles: [
+      {
+        icon: socialInstagram,
+        url: "https://www.instagram.com/cuerposuerte",
+        name: "instagram",
+      },
+      {
+        icon: socialFacebook,
+        url: "https://www.facebook.com/cuerposuertefitnesslab/",
+        name: "facebook",
+      },
+      {
+        icon: iosWorld,
+        url: "https://cuerposuerte.gr/",
+        name: "website",
+      },
+      {
+        icon: androidMap,
+        url: "https://goo.gl/maps/Wdz8TGrv7mgXy8zDA",
+        name: "location",
+      },
+      {
+        icon: iosTelephone,
+        url: "tel:+302121069691",
+        name: "phone number",
+      },
+    ],
+    courses: [
+      {
+        icon: "/images/personal-training.svg",
+        text: "Personal Training",
+        details:
+          "Το Personal Training είναι o πιο αποτελεσματικός και αποδοτικός τρόπος εκγύμνασης, για να πετύχεις τους στόχους σου γρηγορότερα και ασφελέστερα",
+      },
+      {
+        icon: "/images/personal-training-2.svg",
+        text: "Group Training",
+        details: "Προπονήσου με τους καλύτερους",
+      },
+      {
+        icon: "/images/trx.svg",
+        text: "TRX cross training",
+        details: "Είναι μια επαναστατική μέθοδος προπόνησης που χρησιμοποιεί το σωματικό σας βάρος και τη βαρύτητα ως αντίσταση. Πετυχάινει την οικοδόμηση αντοχής, ισορροπίας, συντονισμού, ευελιξίας, σταθερότητας του κορμού και των αρθρώσεων.",
+      },
+      {
+        icon: "/images/pilates-jump.svg",
+        text: "Training pilates hopping",
+        details: "With jumping BOOTS",
+      },
+    ],
+  },
+  "spiti-yoga": {
+    slug: "spiti-yoga",
+    id: 1,
+    latitude: 37.97829444719235,
+    longitude: 23.730325435963476,
+    shelter: "Spiti Yoga",
+    image: "/images/partner-spiti-yoga.jpg",
+    link: "https://spitiyoga.gr/",
+    gmLink: "https://goo.gl/maps/44iQfqCJHJH2D4eLA",
+    address: "Λεωχάρους 6, Αθήνα, 10562, 5ος όροφος.",
+    phoneNumber: "+306948060953",
+    description:
+      "Το Spiti Yoga είναι ένας χώρος σωματικής άσκησης και έκφρασης που φιλοξενεί μαθήματα Yoga, Pilates, Barre à Terre και Χορού. Δημιουργήθηκε το Σεπτέμβριο του 2015 από τον Γιώργο Ανδρουλάκη, χορευτή, δάσκαλο Yoga και θεραπευτή Thai massage. Στον χώρο, εκτός από τα τακτικά μαθήματα, διοργανώνονται σεμινάρια και εκπαιδευτικά προγράμματα με κεντρικό άξονα τα διάφορα είδη Yoga και τις εναλλακτικές θεραπείες. Επιπλέον, προσφέρονται θεραπευτικές συνεδρίες (Thai massage, Reiki, Shiatsu).\n",
+    socialProfiles: [
+      {
+        icon: socialInstagram,
+        url: "https://www.instagram.com/spitiyoga/",
+        name: "instagram",
+      },
+      {
+        icon: socialFacebook,
+        url: "https://www.facebook.com/spitiyoga",
+        name: "facebook",
+      },
+      {
+        icon: iosWorld,
+        url: "https://spitiyoga.gr/",
+        name: "website",
+      },
+      {
+        icon: androidMap,
+        url: "https://goo.gl/maps/44iQfqCJHJH2D4eLA",
+        name: "location",
+      },
+      {
+        icon: iosTelephone,
+        url: "tel:+306948060953",
+        name: "phone number",
+      },
+      {
+        icon: androidMail,
+        url: "mailto:spitiyoga@gmail.com",
+        name: "email",
+      },
+    ],
+    courses: [
+      {
+        icon: "/images/yoga-8.svg",
+        text: "Hatha yoga",
+        details: "Εξασκήσου με τις παραδοσιακές στάσεις yoga",
+      },
+      {
+        icon: "/images/yoga-7.svg",
+        text: "Vinyasa yoga",
+        details: "Μια ομαλή μετάβαση μεταξύ των asanas",
+      },
+      {
+        icon: "/images/yoga-aerial.svg",
+        text: "Aerial yoga",
+        details:
+          "Συνδυάζει τις παραδοσιακές στάσεις yoga, pilates και χορό με τη χρήση αιώρας",
+      },
+      {
+        icon: "/images/yoga-2.svg",
+        text: "Yin",
+        details: "H Yin Yoga είναι ένα στυλ yoga με αργό ρυθμό",
+      },
+      {
+        icon: "/images/yoga-nidra.svg",
+        text: "Nidra yoga",
+        details:
+          "Η Nidra Yoga είναι ένα στυλ yoga όπου το σώμα χαλαρώνει απόλυτα",
+      },
+      {
+        icon: "/images/pilates-mat.svg",
+        text: "Pilates mat",
+        details: "Μια πρακτική άσκησης pilates που μπορεί να γίνει σε mat",
+      },
+      {
+        icon: "/images/pilates-mat-1.svg",
+        text: "Θεραπευτικό Pilates mat",
+        details:
+          "Θεραπευτικό Πιλάτες είναι μια ο μέθοδος άσκησης η οποία επικεντρώνεται στη σωστή στάση του σώματος, και στη σταθεροποίηση του κεντρικού κορμού",
+      },
+      {
+        icon: "/images/yoga-5.svg",
+        text: "Barre à Terre",
+        details:
+          "Το Barre à terre είναι μια τεχνική ενδυνάμωσης των κάτω άκρων και της κοιλιακής χώρας που βασίζεται στο ασκησιολόγιο του μπαλέτου",
+      },
+    ],
+  },
+  //    2: {
+  //      id: 2,
+  //      latitude:  37.97829444719235,
+  //      longitude:  23.730325435963476,
+  //      shelter: "Domn Wellness Hall",
+  //      image: "/images/partner-spiti-yoga.jpg",
+  /// /         link: "",
+  //      gmLink: "https://goo.gl/maps/TRLF7DH8pGjWoWhE8",
+  //      address: "Μ. Μερκούρη 19, Χαλάνδρι 15238",
+  //      phoneNumber: "+306983478886",
+  //      description:
+  //       "Το Domn Wellness Hall είναι ένας σύγχρονος χώρος σωματικής άσκησης. (Personal & mini group trainings, Pilates mat, Yoga & aerial classes.) \n",
+  //         },
 };

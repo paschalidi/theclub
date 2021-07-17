@@ -10,7 +10,7 @@ import Image from "../Image";
 import Heading from "../Heading";
 import Text from "../Text";
 import { SectionHeader } from "../../../containers/WorkSection/workSection.style";
-import { mapData } from "../../data";
+import { mapData, partners } from "../../data";
 import colors from "../../theme/charity/colors";
 import { ComponentWrapper, MapWrapper, StyledImage } from "./Map.style";
 
@@ -55,48 +55,6 @@ export const PartnesMap = GoogleApiWrapper({
   const [activeMarker, setActiveMarker] = useState(null);
   const [showingInfoWindow, setShowingInfoWindow] = useState(false);
 
-  const markers = {
-    0: {
-      id: 0,
-      latitude: 37.934201572147366,
-      longitude: 23.7092749728358,
-      shelter: "Cuerpo Suerte Fitness Lab",
-      image: "/images/partner-cuerpo-suerte.jpeg",
-      link: "https://cuerposuerte.gr/",
-      gmLink: "https://goo.gl/maps/Wdz8TGrv7mgXy8zDA",
-      address: "Αρκαδιουπόλεως 30 & Παμφυλίας, Παλαιό Φάληρο, 17564 ",
-      phoneNumber: "+302121069691",
-      description:
-        "Το γυμναστήριο Cuerpo Suerte Fitness Lab είναι ένας σύγχρονος και άρτια εξοπλισμένος χώρος που επιτρέπει όχι μονο την ασφαλή εκγύμναση των ασκούμενων, αλλα και την αποκατάσταση τους απο οποιαδήποτε χρόνια πάθηση και μυοσκελετικό τραυματισμό. Στόχος του είναι οι ασκούμενοι ανεξαρτήτως φύλου, ηλικίας και φυσικής κατάστασης να είναι πάντα ικανοποιημένοι απο την άσκηση, τα οφέλη της και τα αποτελέσματα της καθώς και απο την φιλική και ευχάριστη ατμόσφαιρα του γυμναστηρίου.\n",
-    },
-    1: {
-      id: 1,
-      latitude: 37.97829444719235,
-      longitude: 23.730325435963476,
-      shelter: "Spiti Yoga",
-      image: "/images/partner-spiti-yoga.jpg",
-      link: "https://spitiyoga.gr/",
-      gmLink: "https://goo.gl/maps/44iQfqCJHJH2D4eLA",
-      address: "Λεωχάρους 6, Αθήνα, 10562, 5ος όροφος.",
-      phoneNumber: "+306948060953",
-      description:
-        "Το Spiti Yoga είναι ένας χώρος σωματικής άσκησης και έκφρασης που φιλοξενεί μαθήματα Yoga, Pilates, Barre à Terre και Χορού. Δημιουργήθηκε το Σεπτέμβριο του 2015 από τον Γιώργο Ανδρουλάκη, χορευτή, δάσκαλο Yoga και θεραπευτή Thai massage. Στον χώρο, εκτός από τα τακτικά μαθήματα, διοργανώνονται σεμινάρια και εκπαιδευτικά προγράμματα με κεντρικό άξονα τα διάφορα είδη Yoga και τις εναλλακτικές θεραπείες. Επιπλέον, προσφέρονται θεραπευτικές συνεδρίες (Thai massage, Reiki, Shiatsu).\n",
-    },
-    //    2: {
-    //      id: 2,
-    //      latitude:  37.97829444719235,
-    //      longitude:  23.730325435963476,
-    //      shelter: "Domn Wellness Hall",
-    //      image: "/images/partner-spiti-yoga.jpg",
-    /// /         link: "",
-    //      gmLink: "https://goo.gl/maps/TRLF7DH8pGjWoWhE8",
-    //      address: "Μ. Μερκούρη 19, Χαλάνδρι 15238",
-    //      phoneNumber: "+306983478886",
-    //      description:
-    //       "Το Domn Wellness Hall είναι ένας σύγχρονος χώρος σωματικής άσκησης. (Personal & mini group trainings, Pilates mat, Yoga & aerial classes.) \n",
-    //         },
-  };
-
   const mapLoaded = (mapProps, map) => {
     map.setOptions({
       styles: mapStyle,
@@ -112,7 +70,7 @@ export const PartnesMap = GoogleApiWrapper({
       gmLink,
       phoneNumber,
       address,
-    } = markers[props.name];
+    } = partners[props.name];
     setSelectedPlace({
       shelter,
       image,
@@ -153,85 +111,84 @@ export const PartnesMap = GoogleApiWrapper({
             overflow: "scroll",
           }}
         >
-          {markers &&
-            Object.values(markers).map(
-              (
-                {
-                  id,
-                  image,
-                  shelter,
-                  description,
-                  phoneNumber,
-                  link,
-                  address,
-                  gmLink,
-                },
-                index,
-                array
-              ) => (
-                <BlogCard key={id}>
-                  <Row>
-                    <Column css={{ flex: 0.7, justifyContent: "center" }}>
-                      <StyledImage
-                        src={image}
-                        alt={`Venue ${shelter} Banner`}
-                      />
-                    </Column>
-                    <Column css={{ flex: 1.3 }}>
-                      <Row>
-                        <Column css={{ flex: 1.5 }}>
-                          <Heading as="h2" mb={12} mt={0} content={shelter} />
-                        </Column>
-                        <Column
+          {partners &&
+            Object.values(partners).map(
+              ({
+                id,
+                image,
+                shelter,
+                description,
+                phoneNumber,
+                link,
+                address,
+                gmLink,
+                slug,
+              }) => (
+                <BlogCard key={id} href={`/partner/${slug}`}>
+                  <a>
+                    <Row>
+                      <Column css={{ flex: 0.8, justifyContent: "center" }}>
+                        <StyledImage
+                          src={image}
+                          alt={`Venue ${shelter} Banner`}
+                        />
+                      </Column>
+                      <Column css={{ flex: 1.2 }}>
+                        <Row>
+                          <Column css={{ flex: 1.5 }}>
+                            <Heading as="h2" mb={12} mt={0} content={shelter} />
+                          </Column>
+                          <Column
+                            css={{
+                              flex: 0.5,
+                              justifyContent: "flex-end",
+                              alignItems: "flex-end",
+                              marginRight: 16,
+                              marginBottom: 2,
+                            }}
+                          >
+                            <a
+                              css={{ marginBottom: 12, color: colors.twitter }}
+                              href={link}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              website
+                            </a>
+                          </Column>
+                        </Row>
+                        <p
                           css={{
-                            flex: 0.5,
-                            justifyContent: "flex-end",
-                            alignItems: "flex-end",
-                            marginRight: 16,
-                            marginBottom: 2,
+                            fontSize: 15,
+                            marginTop: 4,
+                            color: colors.secondary,
                           }}
                         >
-                          <a
-                            css={{ marginBottom: 12, color: colors.twitter }}
-                            href={link}
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            website
-                          </a>
-                        </Column>
-                      </Row>
-                      <p
-                        css={{
-                          fontSize: 15,
-                          marginTop: 4,
-                          color: colors.secondary,
-                        }}
-                      >
-                        {description}
-                      </p>
-                      <a
-                        css={{ color: colors.twitter, fontSize: 13 }}
-                        href={gmLink}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        {address}
-                      </a>
+                          {description}
+                        </p>
+                        <a
+                          css={{ color: colors.twitter, fontSize: 13 }}
+                          href={gmLink}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          {address}
+                        </a>
 
-                      <a
-                        css={{
-                          paddingTop: 8,
-                          color: colors.twitter,
-                          fontSize: 13,
-                        }}
-                        href={`tel:${phoneNumber}`}
-                      >
-                        {phoneNumber}
-                      </a>
-                    </Column>
-                  </Row>
-                  {index + 1 !== array.length && <HR />}
+                        <a
+                          css={{
+                            paddingTop: 8,
+                            color: colors.twitter,
+                            fontSize: 13,
+                          }}
+                          href={`tel:${phoneNumber}`}
+                        >
+                          {phoneNumber}
+                        </a>
+                      </Column>
+                    </Row>
+                    <HR />
+                  </a>
                 </BlogCard>
               )
             )}
@@ -341,7 +298,7 @@ export const PartnesMap = GoogleApiWrapper({
                 </div>
               </div>
             </InfoWindow>
-            {Object.values(markers).map((marker) => (
+            {Object.values(partners).map((marker) => (
               <Marker
                 icon={{
                   url: "/images/destination.svg",
