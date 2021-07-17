@@ -14,6 +14,7 @@ import { SectionHeader } from "../../../containers/WorkSection/workSection.style
 import { mapData, partners } from "../../data";
 import colors from "../../theme/charity/colors";
 import { ComponentWrapper, MapWrapper, StyledImage } from "./Map.style";
+import Link from "../Link";
 
 const mapStyle = [
   {
@@ -71,6 +72,7 @@ export const PartnesMap = GoogleApiWrapper({
       gmLink,
       phoneNumber,
       address,
+      slug,
     } = partners[props.name];
     setSelectedPlace({
       shelter,
@@ -80,6 +82,7 @@ export const PartnesMap = GoogleApiWrapper({
       gmLink,
       phoneNumber,
       address,
+      slug,
     });
     setActiveMarker(marker);
     setShowingInfoWindow(true);
@@ -126,20 +129,31 @@ export const PartnesMap = GoogleApiWrapper({
                 <BlogCard key={id} href={`/partner/${slug}`}>
                   <AA>
                     <Row>
-                      <Column css={{ flex: 0.8, justifyContent: "center" }}>
+                      <Column css={{ flex: 1, justifyContent: "center" }}>
                         <StyledImage
                           src={image}
                           alt={`Venue ${shelter} Banner`}
                         />
                       </Column>
-                      <Column css={{ flex: 1.2 }}>
-                        <Heading as="h2" mb={12} mt={0} content={shelter} />
+                      <Column css={{ flex: 1 }}>
+                        <Heading
+                          fontSize={28}
+                          as="h2"
+                          mb={12}
+                          mt={0}
+                          content={shelter}
+                        />
                         <p
-                          css={{
-                            fontSize: 15,
-                            marginTop: 4,
-                            color: colors.headingLight,
-                          }}
+                          css={`
+                            font-size: 15px;
+                            margin-top: 4px;
+                            color: ${colors.headingLight};
+                            display: -webkit-box;
+                            overflow: hidden;
+                            -webkit-line-clamp: 10;
+                            lineheight: 1.4;
+                            -webkit-box-orient: vertical;
+                          `}
                         >
                           {description}
                         </p>
@@ -184,18 +198,20 @@ export const PartnesMap = GoogleApiWrapper({
               onClose={() => setShowingInfoWindow(false)}
               visible={showingInfoWindow}
             >
-              <Image
-                css={{ borderRadius: 2, width: "15vw" }}
-                src={selectedPlace?.image}
-                alt={`Venue ${selectedPlace?.shelter} Banner`}
-              />
+              <Link href={`/partner/${selectedPlace?.slug}`}>
+                <Image
+                  css={{ borderRadius: 2, width: "15vw" }}
+                  src={selectedPlace?.image}
+                  alt={`Venue ${selectedPlace?.shelter} Banner`}
+                />
+              </Link>
               <div
                 style={{
                   padding: 16,
                 }}
               >
                 <Heading
-                  as="h3"
+                  as="h2"
                   mt={0}
                   mb={3}
                   content={selectedPlace?.shelter}
