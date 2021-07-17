@@ -38,7 +38,7 @@ const BannerSection = ({
               <Icon
                 icon={cornerDownRight}
                 style={{ color: colors.primary }}
-                size={18}
+                size={21}
               />
               <Heading content={`${content?.address}`} {...roleStyle} />
             </Box>
