@@ -5,7 +5,6 @@ import Text from "../Text";
 import Heading from "../Heading";
 import Container from "../UI/Container";
 import {
-  AwardImageWrapper,
   AwardItem,
   AwardSectionWrapper,
 } from "./awards.style";
