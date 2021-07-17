@@ -1,6 +1,11 @@
 import styled from "styled-components";
+import Link from "next/link";
+import colors from "../../../common/theme/charity/colors";
+import Heading from "../../../common/components/Heading";
 
-export const BlogCard = styled.div`
+export const AA = styled.a``;
+
+export const BlogCard = styled.div.attrs({ as: Link })`
   border-radius: 6px;
   > img {
     border-top-left-radius: 6px;
@@ -12,18 +17,6 @@ export const BlogCard = styled.div`
     }
     @media (max-width: 1199px) {
       font-size: 15px;
-    }
-  }
-
-  .blogLink {
-    color: #3183ff;
-    font-size: 15px;
-    font-weight: 500;
-    padding-left: 20px;
-    padding-right: 20px;
-    i {
-      position: relative;
-      top: -2px;
     }
   }
 `;
@@ -50,6 +43,15 @@ export const HR = styled.hr`
 
   border: 0;
   height: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgb(180, 180, 180);
+
+  ${AA}:hover & {
+    border-color: ${colors.headingLight};
+  }
+`;
+
+export const HeadingStyled = styled(Heading)`
+  ${AA}:hover & {
+    color: ${colors.headingLight};
+  }
 `;

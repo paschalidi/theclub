@@ -87,10 +87,6 @@ const GlobalStyle = createGlobalStyle`
     height: auto;
   }
 
-  p {
-    color: ${themeGet("colors.secondaryText", "#616970")};
-  }
-
   /* Drawer menu style */
   .drawer {
     .drawer-content-wrapper {

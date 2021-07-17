@@ -2,13 +2,15 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import {
+  color,
   fontFamily,
   fontWeight,
-  textAlign,
-  lineHeight,
   letterSpacing,
+  lineHeight,
+  textAlign,
 } from "styled-system";
 import { base, themed } from "../base";
+import colors from "../../theme/charity/colors";
 
 const TextWrapper = styled("p")(
   base,
@@ -17,6 +19,7 @@ const TextWrapper = styled("p")(
   textAlign,
   lineHeight,
   letterSpacing,
+  color,
   themed("Text")
 );
 
@@ -28,6 +31,7 @@ const Text = ({ content = "", ...props }) => {
 export default Text;
 
 Text.propTypes = {
+  color: PropTypes.string,
   content: PropTypes.string,
   as: PropTypes.string,
   mt: PropTypes.oneOfType([
@@ -86,4 +90,5 @@ Text.defaultProps = {
   as: "p",
   mt: 0,
   mb: "1rem",
+  color: colors.secondaryText,
 };

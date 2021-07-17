@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { GoogleApiWrapper, InfoWindow, Map, Marker } from "google-maps-react";
 import {
+  AA,
   BlogCard,
   Column,
   HR,
@@ -119,13 +120,11 @@ export const PartnesMap = GoogleApiWrapper({
                 shelter,
                 description,
                 phoneNumber,
-                link,
                 address,
-                gmLink,
                 slug,
               }) => (
                 <BlogCard key={id} href={`/partner/${slug}`}>
-                  <a>
+                  <AA>
                     <Row>
                       <Column css={{ flex: 0.8, justifyContent: "center" }}>
                         <StyledImage
@@ -134,61 +133,33 @@ export const PartnesMap = GoogleApiWrapper({
                         />
                       </Column>
                       <Column css={{ flex: 1.2 }}>
-                        <Row>
-                          <Column css={{ flex: 1.5 }}>
-                            <Heading as="h2" mb={12} mt={0} content={shelter} />
-                          </Column>
-                          <Column
-                            css={{
-                              flex: 0.5,
-                              justifyContent: "flex-end",
-                              alignItems: "flex-end",
-                              marginRight: 16,
-                              marginBottom: 2,
-                            }}
-                          >
-                            <a
-                              css={{ marginBottom: 12, color: colors.twitter }}
-                              href={link}
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              website
-                            </a>
-                          </Column>
-                        </Row>
+                        <Heading as="h2" mb={12} mt={0} content={shelter} />
                         <p
                           css={{
                             fontSize: 15,
                             marginTop: 4,
-                            color: colors.secondary,
+                            color: colors.headingLight,
                           }}
                         >
                           {description}
                         </p>
-                        <a
-                          css={{ color: colors.twitter, fontSize: 13 }}
-                          href={gmLink}
-                          target="_blank"
-                          rel="noreferrer"
+                        <div
+                          css={{
+                            color: colors.headingLight,
+                            fontSize: 13,
+                            marginBottom: 4,
+                          }}
                         >
                           {address}
-                        </a>
+                        </div>
 
-                        <a
-                          css={{
-                            paddingTop: 8,
-                            color: colors.twitter,
-                            fontSize: 13,
-                          }}
-                          href={`tel:${phoneNumber}`}
-                        >
+                        <div css={{ color: colors.headingLight, fontSize: 13 }}>
                           {phoneNumber}
-                        </a>
+                        </div>
                       </Column>
                     </Row>
                     <HR />
-                  </a>
+                  </AA>
                 </BlogCard>
               )
             )}
