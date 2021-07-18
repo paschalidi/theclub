@@ -42,10 +42,10 @@ export const HR = styled.hr`
 
   border: 0;
   height: 0;
-  border-top: 1px solid rgb(180, 180, 180);
+  border-top: 1px solid #D6C8F3;
 
   ${AA}:hover & {
-    border-color: ${colors.headingLight};
+    border-color: #AC90E7;
   }
 `;
 
