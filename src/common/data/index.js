@@ -615,23 +615,28 @@ export const partners = {
       "Σκοπός των προγραμμάτων μας είναι η προσαρμογή ειδικών ασκήσεων για κάθε άθλημα ή αγώνισμα ξεχωριστά ώστε να έχουμε τα μέγιστα αποτελέσματα και τις προσαρμογές που θέλουμε, τα οποία θα βοηθήσουν και θα αυξήσουν την απόδοση. Με άριστο επαγγελματισμό, υπομονή κι επιμονή, υπευθυνότητα και αμοιβαία ηθική δέσμευση δημιουργούμε μακρόχρονες σχέσεις εμπιστοσύνης και αφοσίωσης με τους αθλητές μας.",
     socialProfiles: [
       {
+        icon: socialYoutube,
+        url: "https://www.youtube.com/channel/UChYcmKrtaowYW7hoF4QOEsA",
+        name: "youtube",
+      },
+      {
         icon: socialInstagram,
-        url: "https://www.instagram.com/pilatesstadio",
+        url: "https://instagram.com/stadiosportspower",
         name: "instagram",
       },
       {
         icon: socialFacebook,
-        url: "https://www.facebook.com/pilatesstadio/",
+        url: "https://www.facebook.com/stadiosportspower/",
         name: "facebook",
       },
       {
         icon: iosWorld,
-        url: "https://www.stadio-sportspower.com/",
+        url: "https://www.stadio-sportspower.gr/",
         name: "website",
       },
       {
         icon: androidMap,
-        url: "https://g.page/pilates-stadio",
+        url: "https://g.page/stadio-sportspower",
         name: "location",
       },
       {
@@ -745,7 +750,7 @@ export const partners = {
     longitude: 23.6912210846564,
     shelter: "STADIO Fitness Club",
     image: "/images/partner-stadio-fitness-club-1.jpeg",
-    link: "http://www.stadiogym.gr/",
+    link: "https://www.stadiogym.gr/",
     gmLink: "https://g.page/stadiogym",
     address: "25ης Μαρτίου 142, Πετρούπολη 132 31",
     phoneNumber: "+302105024206",
@@ -769,7 +774,7 @@ export const partners = {
       },
       {
         icon: iosWorld,
-        url: "http://www.stadiogym.gr/",
+        url: "https://www.stadiogym.gr/",
         name: "website",
       },
       {
@@ -828,7 +833,7 @@ export const partners = {
     longitude: 23.691424020897482,
     shelter: "STADIO Ladies Fitness & Pilates",
     image: "/images/partner-stadio-fitness-club-2.jpeg",
-    link: "http://www.smilestudios.gr/",
+    link: "https://www.smilestudios.gr/",
     gmLink: "https://g.page/stadioladies",
     address: "Μεσολογγίου 54, Περιστέρι 121 34",
     phoneNumber: "+302105779100",
@@ -847,7 +852,7 @@ export const partners = {
       },
       {
         icon: iosWorld,
-        url: "http://www.smilestudios.gr/",
+        url: "https://www.smilestudios.gr/",
         name: "website",
       },
       {
@@ -912,7 +917,7 @@ export const partners = {
     longitude: 23.691329442328204,
     shelter: "STADIO Pilates",
     image: "/images/partner-stadio-fitness-club-3.jpeg",
-    link: "http://www.stadio-pilates.gr/",
+    link: "https://www.stadio-pilates.gr/",
     gmLink: "https://g.page/pilates-stadio",
     address: "Προκοπίου 7, Πετρούπολη 132 31",
     phoneNumber: "+302105024206",
@@ -931,7 +936,7 @@ export const partners = {
       },
       {
         icon: iosWorld,
-        url: "http://www.stadio-pilates.gr/",
+        url: "https://www.stadio-pilates.gr/",
         name: "website",
       },
       {
