@@ -4,10 +4,7 @@ import Box from "../Box";
 import Text from "../Text";
 import Heading from "../Heading";
 import Container from "../UI/Container";
-import {
-  AwardItem,
-  AwardSectionWrapper,
-} from "./awards.style";
+import { AwardItem, AwardSectionWrapper } from "./awards.style";
 import { partners } from "../../data";
 import Image from "../Image";
 
@@ -30,7 +27,10 @@ const Courses = ({
             {...secTitle}
             content={`Δες όλα τια μαθήματα που μπορείς να κάνεις στο ${content?.shelter}`}
           />
-          <Text {...secDescription} content="Διάλεξε αυτό που σου ταιρίαζει" />
+          <Text
+            {...secDescription}
+            content={`Διάλεξε αυτό που σου ταιρίαζει απο τη λίστα μαθημάτων του ${content?.shelter}`}
+          />
         </Box>
 
         <>
