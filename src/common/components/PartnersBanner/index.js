@@ -100,7 +100,7 @@ BannerSection.defaultProps = {
   nameStyle: {
     as: "h1",
     color: colors.primary,
-    fontSize: ["38px", "38px", "40px", "52px", "60px"],
+    fontSize: ["38px", "38px", "40px", "40px", "48px"],
     fontWeight: "800",
     mb: "6px",
   },

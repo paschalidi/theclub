@@ -7,6 +7,7 @@ import { facebook } from "react-icons-kit/fa/facebook";
 import { instagram } from "react-icons-kit/fa/instagram";
 import { socialInstagram } from "react-icons-kit/ionicons/socialInstagram";
 import { socialFacebook } from "react-icons-kit/ionicons/socialFacebook";
+import { socialYoutube } from "react-icons-kit/ionicons/socialYoutube";
 import { androidMail } from "react-icons-kit/ionicons/androidMail";
 import { androidMap } from "react-icons-kit/ionicons/androidMap";
 import { iosTelephone } from "react-icons-kit/ionicons/iosTelephone";
@@ -504,71 +505,6 @@ export const faq = {
 };
 
 export const partners = {
-  cuerposuerte: {
-    slug: "cuerposuerte",
-    id: 0,
-    latitude: 37.934201572147366,
-    longitude: 23.7092749728358,
-    shelter: "Cuerpo Suerte Fitness Lab",
-    image: "/images/partner-cuerpo-suerte.jpeg",
-    link: "https://cuerposuerte.gr/",
-    gmLink: "https://goo.gl/maps/Wdz8TGrv7mgXy8zDA",
-    address: "Αρκαδιουπόλεως 30 & Παμφυλίας,  Παλαιό Φάληρο, 17564",
-    phoneNumber: "+302121069691",
-    description:
-      "Το γυμναστήριο Cuerpo Suerte Fitness Lab είναι ένας σύγχρονος και άρτια εξοπλισμένος χώρος που επιτρέπει όχι μονο την ασφαλή εκγύμναση των ασκούμενων, αλλα και την αποκατάσταση τους απο οποιαδήποτε χρόνια πάθηση και μυοσκελετικό τραυματισμό. Στόχος του είναι οι ασκούμενοι ανεξαρτήτως φύλου, ηλικίας και φυσικής κατάστασης να είναι πάντα ικανοποιημένοι απο την άσκηση, τα οφέλη της και τα αποτελέσματα της καθώς και απο την φιλική και ευχάριστη ατμόσφαιρα του γυμναστηρίου.\n",
-    socialProfiles: [
-      {
-        icon: socialInstagram,
-        url: "https://www.instagram.com/cuerposuerte",
-        name: "instagram",
-      },
-      {
-        icon: socialFacebook,
-        url: "https://www.facebook.com/cuerposuertefitnesslab/",
-        name: "facebook",
-      },
-      {
-        icon: iosWorld,
-        url: "https://cuerposuerte.gr/",
-        name: "website",
-      },
-      {
-        icon: androidMap,
-        url: "https://goo.gl/maps/Wdz8TGrv7mgXy8zDA",
-        name: "location",
-      },
-      {
-        icon: iosTelephone,
-        url: "tel:+302121069691",
-        name: "phone number",
-      },
-    ],
-    courses: [
-      {
-        icon: "/images/personal-training.svg",
-        text: "Personal Training",
-        details:
-          "Το Personal Training είναι o πιο αποτελεσματικός και αποδοτικός τρόπος εκγύμνασης, για να πετύχεις τους στόχους σου γρηγορότερα και ασφελέστερα",
-      },
-      {
-        icon: "/images/personal-training-2.svg",
-        text: "Group Training",
-        details: "Προπονήσου με τους καλύτερους",
-      },
-      {
-        icon: "/images/trx.svg",
-        text: "TRX cross training",
-        details:
-          "Είναι μια επαναστατική μέθοδος προπόνησης που χρησιμοποιεί το σωματικό σας βάρος και τη βαρύτητα ως αντίσταση. Πετυχάινει την οικοδόμηση αντοχής, ισορροπίας, συντονισμού, ευελιξίας, σταθερότητας του κορμού και των αρθρώσεων.",
-      },
-      {
-        icon: "/images/pilates-jump.svg",
-        text: "Training pilates hopping",
-        details: "With jumping BOOTS",
-      },
-    ],
-  },
   "spiti-yoga": {
     slug: "spiti-yoga",
     id: 1,
@@ -617,47 +553,409 @@ export const partners = {
     courses: [
       {
         icon: "/images/yoga-8.svg",
-        text: "Hatha yoga",
-        details: "Εξασκήσου με τις παραδοσιακές στάσεις yoga",
+        text: "Hatha Yoga",
+        details:
+          "Εξασκήσου με τις παραδοσιακές στάσεις yoga. Η πρακτική περιλαμβάνει την αναπνοή, το σώμα και το μυαλό, και τα μαθήματα διακούν συνήθως 45 λεπτά έως 90 λεπτά. Δουλεύουμε συνεχείς αναπνοές, στάσεις yoga και διαλογισμός.",
       },
       {
         icon: "/images/yoga-7.svg",
-        text: "Vinyasa yoga",
-        details: "Μια ομαλή μετάβαση μεταξύ των asanas",
+        text: "Vinyasa Yoga",
+        details:
+          "Μια ομαλή μετάβαση μεταξύ των asanas. Ο σκοπός της Vinyasa Yoga είναι να χρησιμοποιήσει την αναπνοή για να ευθυγραμμίσει το σώμα και το μυαλό. Θα αναπτύξετε μια ισχυρότερη σύνδεση νου-σώματος και θα αναπτύξετε δύναμη και ευελιξία.",
       },
       {
         icon: "/images/yoga-aerial.svg",
-        text: "Aerial yoga",
+        text: "Aerial Yoga",
         details:
-          "Συνδυάζει τις παραδοσιακές στάσεις yoga, pilates και χορό με τη χρήση αιώρας",
+          "Συνδυάζει τις παραδοσιακές στάσεις yoga, pilates και χορό με τη χρήση αιώρας. Η εναέρια yoga σας επιτρέπει να διατηρείτε άνετα κάθε στάση. Με την πάροδο του χρόνου, μπορείτε ακόμη και να περιμένετε να βελτιώσετε την ικανότητα των πνευμόνων σας. Το μάθημα εναέριας yoga θα σας βοηθήσει σίγουρα να τεντώσετε με ασφάλεια τους μύες και τους τένοντες σας.",
       },
       {
         icon: "/images/yoga-2.svg",
-        text: "Yin",
-        details: "H Yin Yoga είναι ένα στυλ yoga με αργό ρυθμό",
+        text: "Yin Yoga",
+        details: "H Yin Yoga είναι ένα στυλ yoga με αργό ρυθμό. Ένα μάθημα Yin yoga αποτελείται συνήθως από μια σειρά παθητικών στάσεων που λειτουργούν κυρίως στο χαμηλότερο μέρος του σώματος - τους γοφούς, τη λεκάνη, τους εσωτερικούς μηρούς, την κάτω σπονδυλική στήλη. Αυτές οι περιοχές είναι ιδιαίτερα πλούσιες σε συνδετικούς ιστούς. Οι πόζες κρατούνται για έως και πέντε λεπτά, μερικές φορές περισσότερο.",
       },
       {
         icon: "/images/yoga-nidra.svg",
         text: "Nidra yoga",
         details:
-          "Η Nidra Yoga είναι ένα στυλ yoga όπου το σώμα χαλαρώνει απόλυτα",
+          "Η Nidra Yoga είναι ένα στυλ yoga όπου το σώμα χαλαρώνει απόλυτα. Eίναι μια κατάσταση συνείδησης ανάμεσα στο ξύπνημα και τον ύπνο, που συνήθως προκαλείται από έναν αθοδηγημένο διαλογισμό.",
       },
       {
         icon: "/images/pilates-mat.svg",
         text: "Pilates mat",
-        details: "Μια πρακτική άσκησης pilates που μπορεί να γίνει σε mat",
+        details:
+          "Το Mat Pilates είναι μια πρακτική άσκησης pilates που μπορεί να γίνεται σε χαλάκι. Aυτό σημαίνει ότι δεν χρησιμοποιείται αναμορφωτής. Στο μάθημα, δουλεύονται στάσεις όπως σανίδες, πλευρικές σανίδες και πολλές ασκήσεις κορμού.",
       },
       {
         icon: "/images/pilates-mat-1.svg",
         text: "Θεραπευτικό Pilates mat",
         details:
-          "Θεραπευτικό Πιλάτες είναι μια ο μέθοδος άσκησης η οποία επικεντρώνεται στη σωστή στάση του σώματος, και στη σταθεροποίηση του κεντρικού κορμού",
+          "Θεραπευτικό Pilates είναι μια ο μέθοδος άσκησης η οποία επικεντρώνεται στη σωστή στάση του σώματος, και στη σταθεροποίηση του κεντρικού κορμού.",
       },
       {
         icon: "/images/yoga-5.svg",
         text: "Barre à Terre",
         details:
-          "Το Barre à terre είναι μια τεχνική ενδυνάμωσης των κάτω άκρων και της κοιλιακής χώρας που βασίζεται στο ασκησιολόγιο του μπαλέτου",
+          "Το Barre à terre είναι μια τεχνική ενδυνάμωσης των κάτω άκρων και της κοιλιακής χώρας που βασίζεται στο ασκησιολόγιο του μπαλέτου.",
+      },
+    ],
+  },
+  "stadio-sports-power": {
+    slug: "stadio-sports-power",
+    id: 5,
+    latitude: 38.03821668061964,
+    longitude: 23.691459726807487,
+    shelter: "STADIO Sports Power",
+    image: "/images/partner-stadio-fitness-club-4.jpeg",
+    link: "http://www.stadio-sportspower.gr/",
+    gmLink: "https://g.page/stadio-sportspower",
+    address: "Προκοπίου 7, Πετρούπολη 132 31",
+    phoneNumber: "+302105024206",
+    description:
+      "Σκοπός των προγραμμάτων μας είναι η προσαρμογή ειδικών ασκήσεων για κάθε άθλημα ή αγώνισμα ξεχωριστά ώστε να έχουμε τα μέγιστα αποτελέσματα και τις προσαρμογές που θέλουμε, τα οποία θα βοηθήσουν και θα αυξήσουν την απόδοση. Με άριστο επαγγελματισμό, υπομονή κι επιμονή, υπευθυνότητα και αμοιβαία ηθική δέσμευση δημιουργούμε μακρόχρονες σχέσεις εμπιστοσύνης και αφοσίωσης με τους αθλητές μας.",
+    socialProfiles: [
+      {
+        icon: socialInstagram,
+        url: "https://www.instagram.com/pilatesstadio",
+        name: "instagram",
+      },
+      {
+        icon: socialFacebook,
+        url: "https://www.facebook.com/pilatesstadio/",
+        name: "facebook",
+      },
+      {
+        icon: iosWorld,
+        url: "https://www.stadio-sportspower.com/",
+        name: "website",
+      },
+      {
+        icon: androidMap,
+        url: "https://g.page/pilates-stadio",
+        name: "location",
+      },
+      {
+        icon: iosTelephone,
+        url: "tel:+302105024206",
+        name: "phone number",
+      },
+      {
+        icon: androidMail,
+        url: "mailto:stadiogym@stadiogym.gr",
+        name: "email",
+      },
+    ],
+    courses: [
+      {
+        icon: "/images/personal-training-0.svg",
+        text: "Personal Training",
+        details:
+          "Personal Training σημαίνει προπόνηση με προσωπικό γυμναστή. Με τη μέθοδο αυτή τα αποτελέσματα είναι μεγαλύτερα και γρηγορότερα. Αυτό συμβαίνει γιατί ο προσωπικός γυμναστής είναι πάντα δίπλα στον ασκούμενο με σκοπό να τον καθοδηγήσει σωστά, αρχικά δημιουργώντας το κατάλληλο πρόγραμμα προσαρμοσμένο στις ανάγκες του και μετά καθοδηγώντας τον κατά τη διάρκεια της εκτέλεσης του.",
+      },
+      {
+        icon: "/images/personal-training-1.svg",
+        text: "Προπόνηση Αθλητών",
+        details:
+          "Οι καθηγητές φυσικής αγωγής μας μπορούν να εκπονήσουν συνδυαστικά προπονητικά προγράμματα, ώστε να ελέγχουν και να αξιολογούν την αποτελεσματικότητα των επιδόσεων των αθλητών, καλύπτοντας όλες τις ανάγκες τις προετοιμασίες τους.",
+      },
+      {
+        icon: "/images/hiit-0.svg",
+        text: "Cross training",
+        details:
+          "To Cross-training, θα το δεις συχνά και ως κυκλική προπόνηση, αναφέρεται σε συνδυασμό ασκήσεων από άλλα προγράμματα, διαφοετικά από την κλασική σου προπόνηση. Σε μία προπόνηση το cross training περιλαμβάνει 45 λεπτά ενος έντονου προγράμματος με ασκήσεις από μια ποικιλία προπονήσεων. Το αποτέλεσμα; Έντονη προπόνηση ΗΙΙΤ που καίει θερμίδες και ποτάμια ιδρώτα.",
+      },
+      {
+        icon: "/images/trx.svg",
+        text: "TRX",
+        details:
+          "Γνωστό και ως Total Resistance eXercise, είναι μια ειδική μέθοδος προπόνησης με ιμάντες. Χρησιμοποιεί τους ειδικούς ιμάντες με λαβές και την κατάλληλη τοποθέτηση του σώματος του ασκούμενου για να αναπτύξει τη δύναμη, την ισορροπία και τη δύναμη των σταθεροποιών μυών ταυτόχρονα. Η χρήση των ιμάντων TRX αξιοποιεί τη βαρύτητα για να παρέχει την κατάλληλη επιβάρυνση στον ασκούμενο, η οποία αλλάζει σε ευκολότερη ή δυσκολότερη ανάλογα με την τοποθέτηση του σώματος.",
+      },
+    ],
+  },
+  cuerposuerte: {
+    slug: "cuerposuerte",
+    id: 0,
+    latitude: 37.934201572147366,
+    longitude: 23.7092749728358,
+    shelter: "Cuerpo Suerte Fitness Lab",
+    image: "/images/partner-cuerpo-suerte.jpeg",
+    link: "https://cuerposuerte.gr/",
+    gmLink: "https://goo.gl/maps/Wdz8TGrv7mgXy8zDA",
+    address: "Αρκαδιουπόλεως 30 & Παμφυλίας,  Παλαιό Φάληρο, 17564",
+    phoneNumber: "+302121069691",
+    description:
+      "Το γυμναστήριο Cuerpo Suerte Fitness Lab είναι ένας σύγχρονος και άρτια εξοπλισμένος χώρος που επιτρέπει όχι μονο την ασφαλή εκγύμναση των ασκούμενων, αλλα και την αποκατάσταση τους απο οποιαδήποτε χρόνια πάθηση και μυοσκελετικό τραυματισμό. Στόχος του είναι οι ασκούμενοι ανεξαρτήτως φύλου, ηλικίας και φυσικής κατάστασης να είναι πάντα ικανοποιημένοι απο την άσκηση, τα οφέλη της και τα αποτελέσματα της καθώς και απο την φιλική και ευχάριστη ατμόσφαιρα του γυμναστηρίου.\n",
+    socialProfiles: [
+      {
+        icon: socialInstagram,
+        url: "https://www.instagram.com/cuerposuerte",
+        name: "instagram",
+      },
+      {
+        icon: socialFacebook,
+        url: "https://www.facebook.com/cuerposuertefitnesslab/",
+        name: "facebook",
+      },
+      {
+        icon: iosWorld,
+        url: "https://cuerposuerte.gr/",
+        name: "website",
+      },
+      {
+        icon: androidMap,
+        url: "https://goo.gl/maps/Wdz8TGrv7mgXy8zDA",
+        name: "location",
+      },
+      {
+        icon: iosTelephone,
+        url: "tel:+302121069691",
+        name: "phone number",
+      },
+    ],
+    courses: [
+      {
+        icon: "/images/personal-training.svg",
+        text: "Personal Training",
+        details:
+          "Personal Training σημαίνει προπόνηση με προσωπικό γυμναστή. Με τη μέθοδο αυτή τα αποτελέσματα είναι μεγαλύτερα και γρηγορότερα. Αυτό συμβαίνει γιατί ο προσωπικός γυμναστής είναι πάντα δίπλα στον ασκούμενο με σκοπό να τον καθοδηγήσει σωστά, αρχικά δημιουργώντας το κατάλληλο πρόγραμμα προσαρμοσμένο στις ανάγκες του και μετά καθοδηγώντας τον κατά τη διάρκεια της εκτέλεσης του.",
+      },
+      {
+        icon: "/images/personal-training-2.svg",
+        text: "Group Training",
+        details:
+          "To Group Training πρόκειται για ομαδικές προπονήσεις με λίγα άτομα. Mε άλλα λογια, είναι η εμπειρία ενός Personal Training σε μικρά ομαδικά τμήματα.",
+      },
+      {
+        icon: "/images/trx.svg",
+        text: "TRX cross training",
+        details:
+          "Γνωστό και ως Total Resistance eXercise, είναι μια ειδική μέθοδος προπόνησης με ιμάντες. Χρησιμοποιεί τους ειδικούς ιμάντες με λαβές και την κατάλληλη τοποθέτηση του σώματος του ασκούμενου για να αναπτύξει τη δύναμη, την ισορροπία και τη δύναμη των σταθεροποιών μυών ταυτόχρονα. Η χρήση των ιμάντων TRX αξιοποιεί τη βαρύτητα για να παρέχει την κατάλληλη επιβάρυνση στον ασκούμενο, η οποία αλλάζει σε ευκολότερη ή δυσκολότερη ανάλογα με την τοποθέτηση του σώματος.",
+      },
+      {
+        icon: "/images/pilates-jump.svg",
+        text: "Training pilates hopping",
+        details: "With jumping BOOTS",
+      },
+    ],
+  },
+  "stadio-fitness-club": {
+    slug: "stadio-fitness-club",
+    id: 2,
+    latitude: 38.03908162341641,
+    longitude: 23.6912210846564,
+    shelter: "STADIO Fitness Club",
+    image: "/images/partner-stadio-fitness-club-1.jpeg",
+    link: "http://www.stadiogym.gr/",
+    gmLink: "https://g.page/stadiogym",
+    address: "25ης Μαρτίου 142, Πετρούπολη 132 31",
+    phoneNumber: "+302105024206",
+    description:
+      "Γυμναστήριο που παρέχει ομαδικά μαθήματα Cycling, TRX, Tae Box, Μπάρες, Pilates, Yoga, Zumba. Επίσης υπάρχει μεγάλη αίθουσα οργάνων για μυϊκή τόνωση & σύσφιξη όπου κάλλιστα μπορείτε να κάνετε Personal Training!",
+    socialProfiles: [
+      {
+        icon: socialYoutube,
+        url: "https://www.youtube.com/channel/UChYcmKrtaowYW7hoF4QOEsA",
+        name: "youtube",
+      },
+      {
+        icon: socialInstagram,
+        url: "https://www.instagram.com/stadiogym/?hl=en",
+        name: "instagram",
+      },
+      {
+        icon: socialFacebook,
+        url: "https://www.facebook.com/stadiogym/",
+        name: "facebook",
+      },
+      {
+        icon: iosWorld,
+        url: "http://www.stadiogym.gr/",
+        name: "website",
+      },
+      {
+        icon: androidMap,
+        url: "https://g.page/stadiogym",
+        name: "location",
+      },
+      {
+        icon: iosTelephone,
+        url: "tel:+302105024206",
+        name: "phone number",
+      },
+      {
+        icon: androidMail,
+        url: "mailto:stadiogym@stadiogym.gr",
+        name: "email",
+      },
+    ],
+    courses: [
+      {
+        icon: "/images/rowing-0.svg",
+        text: "Αίθουσα μυηκής τόνοσης",
+        details:
+          "Ένας χώρος με διαδρόμους, ποδήλατα stepper, τροχαλίες, μπάρες και ελεύθερα βάρη.",
+      },
+      {
+        icon: "/images/pilates-1.svg",
+        text: "Pilates",
+        details:
+          "Oι pilates είναι μια μέθοδος άσκησης που αποτελείται από ασκήσεις ευελιξίας, μυϊκή ενδυνάμωση και ασκήσεις αντοχής. Οι pilates δίνουν έμφαση στη σωστή ορθοστατική ευθυγράμμιση, τη δύναμη του κορμού και την ισορροπία των μυών.",
+      },
+      {
+        icon: "/images/spinning-1.svg",
+        text: "Spinning & Cycling",
+        details:
+          "Η εσωτερική ποδηλασία, που συχνά ονομάζεται και spinning, είναι μια μορφή άσκησης με μαθήματα που εστιάζουν στην αντοχή, τη δύναμη, τα διαστήματα και την υψηλή ένταση. Οι τάξεις περιλαμβάνουν τη χρήση ενός ειδικού ποδηλάτου σταθερής άσκησης με σταθμισμένο σφόνδυλο.",
+      },
+      {
+        icon: "/images/tae-bo.svg",
+        text: "Tae Bo",
+        details:
+          "Το tae bo είναι ένα είδος άθλησης που συνδυάζει στοιχεία του tae kwon do, του μποξ και άλλων ρουτίνων φυσικής κατάστασης. Συνδιάζετε με έντονη μουσική και και χορευτικές κινήσεις.",
+      },
+      {
+        icon: "/images/yoga-9.svg",
+        text: "Yoga",
+        details:
+          "Η yoga είναι μια φυσική δραστηριότητα που αποτελείται κυρίως από στάσεις και ακολουθίες flow. Μερικές φορές συνοδεύονται από αναπνευστικές ασκήσεις. Συχνά τα μαθήματα τελειώνει χαλαρώνοντας ή με διαλογισμό.",
+      },
+    ],
+  },
+  "stadio-ladies-fitness": {
+    slug: "stadio-ladies-fitness",
+    id: 3,
+    latitude: 38.013595878269,
+    longitude: 23.691424020897482,
+    shelter: "STADIO Ladies Fitness & Pilates",
+    image: "/images/partner-stadio-fitness-club-2.jpeg",
+    link: "http://www.smilestudios.gr/",
+    gmLink: "https://g.page/stadioladies",
+    address: "Μεσολογγίου 54, Περιστέρι 121 34",
+    phoneNumber: "+302105779100",
+    description:
+      "Γυμναστική μόνο για Γυναίκες. Παρέχει ποιοτικά πρόγραμμα κυκλικής άσκησης 30 λεπτών. Θα βρείτε ένα πλήρες εξοπλισμένο studio για Pilates. Με όργανα όπως Reformers, Cadilac, Wuda Chairs, Wall Units, Barrell. Οι γυμναστές μας είναι πολύ καλά εκπαιδευμένες από την βασική μας γυμνάστρια την Annemarie Huizinga, η οποία είναι Ολλανδικής υπηκοότητας.",
+    socialProfiles: [
+      {
+        icon: socialInstagram,
+        url: "https://www.instagram.com/stadiogymladies_pilates/",
+        name: "instagram",
+      },
+      {
+        icon: socialFacebook,
+        url: "https://www.facebook.com/stadiogymladies/",
+        name: "facebook",
+      },
+      {
+        icon: iosWorld,
+        url: "http://www.smilestudios.gr/",
+        name: "website",
+      },
+      {
+        icon: androidMap,
+        url: "https://g.page/stadioladies",
+        name: "location",
+      },
+      {
+        icon: iosTelephone,
+        url: "tel:+302105779100",
+        name: "phone number",
+      },
+      {
+        icon: androidMail,
+        url: "mailto:info@smilestudios.gr",
+        name: "email",
+      },
+    ],
+    courses: [
+      {
+        icon: "/images/personal-training-0.svg",
+        text: "Personal Training",
+        details:
+          "Η εσωτερική ποδηλασία, που συχνά ονομάζεται και spinning, είναι μια μορφή άσκησης με μαθήματα που εστιάζουν στην αντοχή, τη δύναμη, τα διαστήματα και την υψηλή ένταση. Οι τάξεις περιλαμβάνουν τη χρήση ενός ειδικού ποδηλάτου σταθερής άσκησης με σταθμισμένο σφόνδυλο.",
+      },
+      {
+        icon: "/images/metabolic-training-1.svg",
+        text: "Metabolic Training ΗΙΙΤ",
+        details:
+          "Είναι σύνθετες ασκήσεις με λίγη ανάπαυση. Δίνεται έμφαση στο να μεγιστοποιηθεί το κάψιμο των θερμίδων και να αυξηθεί ο μεταβολικός ρυθμός κατά τη διάρκεια και μετά την προπόνηση.",
+      },
+      {
+        icon: "/images/pilates-ball-0.svg",
+        text: "Pilates",
+        details:
+          "Oι pilates είναι μια μέθοδος άσκησης που αποτελείται από ασκήσεις ευελιξίας, μυϊκή ενδυνάμωση και ασκήσεις αντοχής. Οι pilates δίνουν έμφαση στη σωστή ορθοστατική ευθυγράμμιση, τη δύναμη του κορμού και την ισορροπία των μυών.",
+      },
+      {
+        icon: "/images/mat-0.svg",
+        text: "Pilates Μat",
+        details:
+          "Το Mat Pilates είναι μια πρακτική άσκησης pilates που μπορεί να γίνεται σε χαλάκι. Aυτό σημαίνει ότι δεν χρησιμοποιείται αναμορφωτής. Στο μάθημα, δουλεύονται στάσεις όπως σανίδες, πλευρικές σανίδες και πολλές ασκήσεις κορμού.",
+      },
+      {
+        icon: "/images/roller-0.svg",
+        text: "Μαθήματα για γοφοούς κοιλιακούς",
+        details:
+          "Οι ασκήσεις για τους κοιλιακούς και τους γλουτούς είναι εύκολες και μπορεί να τις εκτελέσει ακόμα και ένας αρχάριος. Οι ασκήσεις δίνουν ιδιαίτερη έμφαση στην περιοχή της κοιλιάς, των γλουτών και των ποδιών. Μέσα σε σύντομο διάστημα θα δείτε την εμφάνισή σας να αλλάζει θεαματικά.",
+      },
+      {
+        icon: "/images/trampoline-0.svg",
+        text: "Μαθήματα τραμπολίνο",
+        details:
+          "Τα μαθήματα τραμπολίνου είναι μια έντονη αερόβια προπόνηση, που σημαίνει ότι αυξάνει τον ρυθμό με τον οποίο η καρδιά μας αντλεί αίμα. Συνεπώς αυξάνει το οξυγόνο, γύρω από το σώμα μας. Αυτό ενισχύει τους μυς του καρδιαγγειακού μας συστήματος.",
+      },
+    ],
+  },
+  "stadio-pilates": {
+    slug: "stadio-pilates",
+    id: 4,
+    latitude: 38.038240875631445,
+    longitude: 23.691329442328204,
+    shelter: "STADIO Pilates",
+    image: "/images/partner-stadio-fitness-club-3.jpeg",
+    link: "http://www.stadio-pilates.gr/",
+    gmLink: "https://g.page/pilates-stadio",
+    address: "Προκοπίου 7, Πετρούπολη 132 31",
+    phoneNumber: "+302105024206",
+    description:
+      "Pilates Classic. Είναι η αυθεντική μέθοδος και πολύ αποτελεσματική όπως μας την δίδαξε ο εμπνευστής της Joseph. Ο τρόπος που εκτελείτε από εμάς είναι το αποτέλεσμα της 30χρονης εμπειρίας μας με πολλές διαφορετικές μεθόδους άσκησης, αλλά και σοβαρής μελέτης των τρόπων βελτίωσης της Φυσικής Κατάστασης του ανθρώπινου σώματος. Είναι η μέθοδος που πιστεύουμε και σας προτείνουμε για τα καλύτερα αποτελέσματα.",
+    socialProfiles: [
+      {
+        icon: socialInstagram,
+        url: "https://www.instagram.com/pilatesstadio",
+        name: "instagram",
+      },
+      {
+        icon: socialFacebook,
+        url: "https://www.facebook.com/pilatesstadio/",
+        name: "facebook",
+      },
+      {
+        icon: iosWorld,
+        url: "http://www.stadio-pilates.gr/",
+        name: "website",
+      },
+      {
+        icon: androidMap,
+        url: "https://g.page/pilates-stadio",
+        name: "location",
+      },
+      {
+        icon: iosTelephone,
+        url: "tel:+302105024206",
+        name: "phone number",
+      },
+      {
+        icon: androidMail,
+        url: "mailto:stadiogym@stadiogym.gr",
+        name: "email",
+      },
+    ],
+    courses: [
+      {
+        icon: "/images/pilates-1.svg",
+        text: "Pilates Classic",
+        details:
+          "Oι pilates είναι μια μέθοδος άσκησης που αποτελείται από ασκήσεις ευελιξίας, μυϊκή ενδυνάμωση και ασκήσεις αντοχής. Οι pilates δίνουν έμφαση στη σωστή ορθοστατική ευθυγράμμιση, τη δύναμη του κορμού και την ισορροπία των μυών.",
       },
     ],
   },
@@ -675,3 +973,6 @@ export const partners = {
   //       "Το Domn Wellness Hall είναι ένας σύγχρονος χώρος σωματικής άσκησης. (Personal & mini group trainings, Pilates mat, Yoga & aerial classes.) \n",
   //         },
 };
+// https://www.flaticon.com/packs/sport-fitness-1
+// https://www.flaticon.com/packs/gym-14
+// https://www.flaticon.com/packs/fitness-44

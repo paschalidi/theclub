@@ -202,14 +202,14 @@ export const PartnesMap = GoogleApiWrapper({
         <MapWrapper>
           <Map
             google={google}
-            zoom={13}
+            zoom={12}
             style={{
               width: "calc(50% - 24px)",
               height: "65vh",
             }}
             initialCenter={{
-              lat: 37.9729,
-              lng: 23.7256,
+              lat: 37.98886809387591,
+              lng: 23.732712594691073,
             }}
             onReady={(mapProps, map) => mapLoaded(mapProps, map)}
           >
