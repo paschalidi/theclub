@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import Box from "../Box";
 import Button from "../Button";
 import Loader from "../Loader";
-import Text from "../Text";
 
 const LoadMore = ({
   handleLoadMore,
@@ -87,7 +86,7 @@ const ListGrid = ({
           <>
             {limits.map((index) => (
               <Box width={columnWidth} key={index} {...componentContainerStyle}>
-                {placeholder || <Text content="Loading ..." />}
+                {placeholder || null}
               </Box>
             ))}
           </>
